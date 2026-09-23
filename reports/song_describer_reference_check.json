@@ -1,0 +1,1023 @@
+{
+  "caption_track_count": 546,
+  "decision_intervals": {
+    "full_label_corruption": {
+      "prevalence_reference": {
+        "accepts": true,
+        "summary": {
+          "author_differences": {
+            "artist_fold_00": 0.035922,
+            "artist_fold_01": -0.000368,
+            "artist_fold_02": 0.014512,
+            "artist_fold_03": 0.082446,
+            "artist_fold_04": 0.014283,
+            "artist_fold_05": 0.368844,
+            "artist_fold_06": 0.108938,
+            "artist_fold_07": 0.184769,
+            "artist_fold_08": 0.050289,
+            "artist_fold_09": 0.087923
+          },
+          "ci95_high": 0.174205,
+          "ci95_low": 0.015307,
+          "ci95_method": "paired_student_t_95",
+          "mean_difference": 0.094756,
+          "n_independent_authors": 10,
+          "sample_standard_deviation": 0.11107,
+          "standard_error": 0.035123
+        }
+      },
+      "tie_aware_reference": {
+        "accepts": false,
+        "summary": {
+          "author_differences": {
+            "artist_fold_00": -0.024465,
+            "artist_fold_01": -0.068118,
+            "artist_fold_02": -0.049096,
+            "artist_fold_03": 0.022916,
+            "artist_fold_04": -0.021729,
+            "artist_fold_05": 0.259671,
+            "artist_fold_06": 0.037496,
+            "artist_fold_07": 0.104145,
+            "artist_fold_08": 0.006583,
+            "artist_fold_09": 0.022726
+          },
+          "ci95_high": 0.09665,
+          "ci95_low": -0.038625,
+          "ci95_method": "paired_student_t_95",
+          "mean_difference": 0.029013,
+          "n_independent_authors": 10,
+          "sample_standard_deviation": 0.094557,
+          "standard_error": 0.029902
+        }
+      }
+    },
+    "label_set_permutation": {
+      "prevalence_reference": {
+        "accepts": true,
+        "summary": {
+          "author_differences": {
+            "artist_fold_00": 0.083563,
+            "artist_fold_01": 0.080074,
+            "artist_fold_02": 0.082805,
+            "artist_fold_03": 0.020919,
+            "artist_fold_04": 0.028945,
+            "artist_fold_05": 0.406755,
+            "artist_fold_06": 0.075949,
+            "artist_fold_07": 0.056916,
+            "artist_fold_08": 0.021166,
+            "artist_fold_09": 0.203913
+          },
+          "ci95_high": 0.190548,
+          "ci95_low": 0.021653,
+          "ci95_method": "paired_student_t_95",
+          "mean_difference": 0.106101,
+          "n_independent_authors": 10,
+          "sample_standard_deviation": 0.118058,
+          "standard_error": 0.037333
+        }
+      },
+      "tie_aware_reference": {
+        "accepts": false,
+        "summary": {
+          "author_differences": {
+            "artist_fold_00": 0.023177,
+            "artist_fold_01": 0.012324,
+            "artist_fold_02": 0.019197,
+            "artist_fold_03": -0.038611,
+            "artist_fold_04": -0.007067,
+            "artist_fold_05": 0.297581,
+            "artist_fold_06": 0.004507,
+            "artist_fold_07": -0.023708,
+            "artist_fold_08": -0.022541,
+            "artist_fold_09": 0.138716
+          },
+          "ci95_high": 0.113925,
+          "ci95_low": -0.03321,
+          "ci95_method": "paired_student_t_95",
+          "mean_difference": 0.040358,
+          "n_independent_authors": 10,
+          "sample_standard_deviation": 0.102847,
+          "standard_error": 0.032523
+        }
+      }
+    },
+    "observed": {
+      "prevalence_reference": {
+        "accepts": true,
+        "summary": {
+          "author_differences": {
+            "artist_fold_00": 0.128412,
+            "artist_fold_01": 0.121998,
+            "artist_fold_02": 0.147065,
+            "artist_fold_03": 0.100707,
+            "artist_fold_04": 0.111235,
+            "artist_fold_05": 0.081865,
+            "artist_fold_06": 0.059676,
+            "artist_fold_07": 0.201242,
+            "artist_fold_08": 0.088972,
+            "artist_fold_09": 0.110601
+          },
+          "ci95_high": 0.143155,
+          "ci95_low": 0.087199,
+          "ci95_method": "paired_student_t_95",
+          "mean_difference": 0.115177,
+          "n_independent_authors": 10,
+          "sample_standard_deviation": 0.039113,
+          "standard_error": 0.012369
+        }
+      },
+      "tie_aware_reference": {
+        "accepts": true,
+        "summary": {
+          "author_differences": {
+            "artist_fold_00": 0.068025,
+            "artist_fold_01": 0.054248,
+            "artist_fold_02": 0.083457,
+            "artist_fold_03": 0.041177,
+            "artist_fold_04": 0.075223,
+            "artist_fold_05": -0.027309,
+            "artist_fold_06": -0.011766,
+            "artist_fold_07": 0.120618,
+            "artist_fold_08": 0.045265,
+            "artist_fold_09": 0.045404
+          },
+          "ci95_high": 0.080518,
+          "ci95_low": 0.01835,
+          "ci95_method": "paired_student_t_95",
+          "mean_difference": 0.049434,
+          "n_independent_authors": 10,
+          "sample_standard_deviation": 0.043455,
+          "standard_error": 0.013742
+        }
+      }
+    }
+  },
+  "fold_comparisons": {
+    "artist_fold_00": {
+      "full_label_corruption": {
+        "ap": 0.11627861501711967,
+        "prevalence_reference": 0.080357,
+        "tie_aware_reference": 0.14074372460108323
+      },
+      "label_set_permutation": {
+        "ap": 0.16392035688033035,
+        "prevalence_reference": 0.080357,
+        "tie_aware_reference": 0.14074372460108323
+      },
+      "observed": {
+        "ap": 0.20876862275836522,
+        "prevalence_reference": 0.080357,
+        "tie_aware_reference": 0.14074372460108323
+      }
+    },
+    "artist_fold_01": {
+      "full_label_corruption": {
+        "ap": 0.06493798591793781,
+        "prevalence_reference": 0.065306,
+        "tie_aware_reference": 0.13305595429229916
+      },
+      "label_set_permutation": {
+        "ap": 0.1453803417107286,
+        "prevalence_reference": 0.065306,
+        "tie_aware_reference": 0.13305595429229916
+      },
+      "observed": {
+        "ap": 0.1873039018209052,
+        "prevalence_reference": 0.065306,
+        "tie_aware_reference": 0.13305595429229916
+      }
+    },
+    "artist_fold_02": {
+      "full_label_corruption": {
+        "ap": 0.13696132509604922,
+        "prevalence_reference": 0.122449,
+        "tie_aware_reference": 0.18605690031809746
+      },
+      "label_set_permutation": {
+        "ap": 0.20525426110130485,
+        "prevalence_reference": 0.122449,
+        "tie_aware_reference": 0.18605690031809746
+      },
+      "observed": {
+        "ap": 0.2695143685490819,
+        "prevalence_reference": 0.122449,
+        "tie_aware_reference": 0.18605690031809746
+      }
+    },
+    "artist_fold_03": {
+      "full_label_corruption": {
+        "ap": 0.18790074255883055,
+        "prevalence_reference": 0.105455,
+        "tie_aware_reference": 0.16498509118746246
+      },
+      "label_set_permutation": {
+        "ap": 0.12637421587385833,
+        "prevalence_reference": 0.105455,
+        "tie_aware_reference": 0.16498509118746246
+      },
+      "observed": {
+        "ap": 0.20616179531205972,
+        "prevalence_reference": 0.105455,
+        "tie_aware_reference": 0.16498509118746246
+      }
+    },
+    "artist_fold_04": {
+      "full_label_corruption": {
+        "ap": 0.1170873813285469,
+        "prevalence_reference": 0.102804,
+        "tie_aware_reference": 0.1388160969251324
+      },
+      "label_set_permutation": {
+        "ap": 0.13174870752122356,
+        "prevalence_reference": 0.102804,
+        "tie_aware_reference": 0.1388160969251324
+      },
+      "observed": {
+        "ap": 0.2140387998094337,
+        "prevalence_reference": 0.102804,
+        "tie_aware_reference": 0.1388160969251324
+      }
+    },
+    "artist_fold_05": {
+      "full_label_corruption": {
+        "ap": 0.5434472934472935,
+        "prevalence_reference": 0.174603,
+        "tie_aware_reference": 0.28377670845052533
+      },
+      "label_set_permutation": {
+        "ap": 0.5813575313575313,
+        "prevalence_reference": 0.174603,
+        "tie_aware_reference": 0.28377670845052533
+      },
+      "observed": {
+        "ap": 0.25646763756007457,
+        "prevalence_reference": 0.174603,
+        "tie_aware_reference": 0.28377670845052533
+      }
+    },
+    "artist_fold_06": {
+      "full_label_corruption": {
+        "ap": 0.18301237302270892,
+        "prevalence_reference": 0.074074,
+        "tie_aware_reference": 0.14551658492321806
+      },
+      "label_set_permutation": {
+        "ap": 0.15002323582178392,
+        "prevalence_reference": 0.074074,
+        "tie_aware_reference": 0.14551658492321806
+      },
+      "observed": {
+        "ap": 0.1337502004168671,
+        "prevalence_reference": 0.074074,
+        "tie_aware_reference": 0.14551658492321806
+      }
+    },
+    "artist_fold_07": {
+      "full_label_corruption": {
+        "ap": 0.2958799619522863,
+        "prevalence_reference": 0.111111,
+        "tie_aware_reference": 0.19173483674399083
+      },
+      "label_set_permutation": {
+        "ap": 0.16802681653314805,
+        "prevalence_reference": 0.111111,
+        "tie_aware_reference": 0.19173483674399083
+      },
+      "observed": {
+        "ap": 0.31235274427568893,
+        "prevalence_reference": 0.111111,
+        "tie_aware_reference": 0.19173483674399083
+      }
+    },
+    "artist_fold_08": {
+      "full_label_corruption": {
+        "ap": 0.17127748693135558,
+        "prevalence_reference": 0.120988,
+        "tie_aware_reference": 0.16469461990842588
+      },
+      "label_set_permutation": {
+        "ap": 0.14215407070103878,
+        "prevalence_reference": 0.120988,
+        "tie_aware_reference": 0.16469461990842588
+      },
+      "observed": {
+        "ap": 0.20995986017849227,
+        "prevalence_reference": 0.120988,
+        "tie_aware_reference": 0.16469461990842588
+      }
+    },
+    "artist_fold_09": {
+      "full_label_corruption": {
+        "ap": 0.21558271531921364,
+        "prevalence_reference": 0.12766,
+        "tie_aware_reference": 0.192856853612841
+      },
+      "label_set_permutation": {
+        "ap": 0.33157288461444856,
+        "prevalence_reference": 0.12766,
+        "tie_aware_reference": 0.192856853612841
+      },
+      "observed": {
+        "ap": 0.2382606860491655,
+        "prevalence_reference": 0.12766,
+        "tie_aware_reference": 0.192856853612841
+      }
+    }
+  },
+  "fold_labels": {
+    "artist_fold_00": [
+      "pop",
+      "classical",
+      "electronic",
+      "folk",
+      "easylistening"
+    ],
+    "artist_fold_01": [
+      "classical",
+      "pop",
+      "electronic",
+      "folk",
+      "easylistening"
+    ],
+    "artist_fold_02": [
+      "electronic",
+      "classical",
+      "folk",
+      "pop",
+      "easylistening"
+    ],
+    "artist_fold_03": [
+      "pop",
+      "classical",
+      "folk",
+      "electronic",
+      "easylistening"
+    ],
+    "artist_fold_04": [
+      "pop",
+      "electronic",
+      "classical",
+      "easylistening",
+      "folk"
+    ],
+    "artist_fold_05": [
+      "classical",
+      "pop",
+      "folk",
+      "electronic",
+      "easylistening"
+    ],
+    "artist_fold_06": [
+      "pop",
+      "classical",
+      "electronic",
+      "easylistening",
+      "folk"
+    ],
+    "artist_fold_07": [
+      "classical",
+      "electronic",
+      "pop",
+      "folk",
+      "easylistening"
+    ],
+    "artist_fold_08": [
+      "classical",
+      "pop",
+      "folk",
+      "easylistening",
+      "electronic"
+    ],
+    "artist_fold_09": [
+      "classical",
+      "pop",
+      "electronic",
+      "easylistening",
+      "folk"
+    ]
+  },
+  "fold_support": {
+    "artist_fold_00": {
+      "full_label_corruption": {
+        "classical": {
+          "k": 5,
+          "n": 56
+        },
+        "easylistening": {
+          "k": 5,
+          "n": 56
+        },
+        "electronic": {
+          "k": 5,
+          "n": 56
+        },
+        "folk": {
+          "k": 3,
+          "n": 56
+        }
+      },
+      "label_set_permutation": {
+        "classical": {
+          "k": 5,
+          "n": 56
+        },
+        "easylistening": {
+          "k": 5,
+          "n": 56
+        },
+        "electronic": {
+          "k": 5,
+          "n": 56
+        },
+        "folk": {
+          "k": 3,
+          "n": 56
+        }
+      },
+      "observed": {
+        "classical": {
+          "k": 5,
+          "n": 56
+        },
+        "easylistening": {
+          "k": 5,
+          "n": 56
+        },
+        "electronic": {
+          "k": 5,
+          "n": 56
+        },
+        "folk": {
+          "k": 3,
+          "n": 56
+        }
+      }
+    },
+    "artist_fold_01": {
+      "full_label_corruption": {
+        "classical": {
+          "k": 2,
+          "n": 49
+        },
+        "easylistening": {
+          "k": 7,
+          "n": 49
+        },
+        "electronic": {
+          "k": 1,
+          "n": 49
+        },
+        "folk": {
+          "k": 1,
+          "n": 49
+        },
+        "pop": {
+          "k": 5,
+          "n": 49
+        }
+      },
+      "label_set_permutation": {
+        "classical": {
+          "k": 2,
+          "n": 49
+        },
+        "easylistening": {
+          "k": 7,
+          "n": 49
+        },
+        "electronic": {
+          "k": 1,
+          "n": 49
+        },
+        "folk": {
+          "k": 1,
+          "n": 49
+        },
+        "pop": {
+          "k": 5,
+          "n": 49
+        }
+      },
+      "observed": {
+        "classical": {
+          "k": 2,
+          "n": 49
+        },
+        "easylistening": {
+          "k": 7,
+          "n": 49
+        },
+        "electronic": {
+          "k": 1,
+          "n": 49
+        },
+        "folk": {
+          "k": 1,
+          "n": 49
+        },
+        "pop": {
+          "k": 5,
+          "n": 49
+        }
+      }
+    },
+    "artist_fold_02": {
+      "full_label_corruption": {
+        "classical": {
+          "k": 11,
+          "n": 49
+        },
+        "easylistening": {
+          "k": 4,
+          "n": 49
+        },
+        "electronic": {
+          "k": 1,
+          "n": 49
+        },
+        "folk": {
+          "k": 1,
+          "n": 49
+        },
+        "pop": {
+          "k": 13,
+          "n": 49
+        }
+      },
+      "label_set_permutation": {
+        "classical": {
+          "k": 11,
+          "n": 49
+        },
+        "easylistening": {
+          "k": 4,
+          "n": 49
+        },
+        "electronic": {
+          "k": 1,
+          "n": 49
+        },
+        "folk": {
+          "k": 1,
+          "n": 49
+        },
+        "pop": {
+          "k": 13,
+          "n": 49
+        }
+      },
+      "observed": {
+        "classical": {
+          "k": 11,
+          "n": 49
+        },
+        "easylistening": {
+          "k": 4,
+          "n": 49
+        },
+        "electronic": {
+          "k": 1,
+          "n": 49
+        },
+        "folk": {
+          "k": 1,
+          "n": 49
+        },
+        "pop": {
+          "k": 13,
+          "n": 49
+        }
+      }
+    },
+    "artist_fold_03": {
+      "full_label_corruption": {
+        "classical": {
+          "k": 11,
+          "n": 55
+        },
+        "easylistening": {
+          "k": 1,
+          "n": 55
+        },
+        "electronic": {
+          "k": 8,
+          "n": 55
+        },
+        "folk": {
+          "k": 1,
+          "n": 55
+        },
+        "pop": {
+          "k": 8,
+          "n": 55
+        }
+      },
+      "label_set_permutation": {
+        "classical": {
+          "k": 11,
+          "n": 55
+        },
+        "easylistening": {
+          "k": 1,
+          "n": 55
+        },
+        "electronic": {
+          "k": 8,
+          "n": 55
+        },
+        "folk": {
+          "k": 1,
+          "n": 55
+        },
+        "pop": {
+          "k": 8,
+          "n": 55
+        }
+      },
+      "observed": {
+        "classical": {
+          "k": 11,
+          "n": 55
+        },
+        "easylistening": {
+          "k": 1,
+          "n": 55
+        },
+        "electronic": {
+          "k": 8,
+          "n": 55
+        },
+        "folk": {
+          "k": 1,
+          "n": 55
+        },
+        "pop": {
+          "k": 8,
+          "n": 55
+        }
+      }
+    },
+    "artist_fold_04": {
+      "full_label_corruption": {
+        "classical": {
+          "k": 17,
+          "n": 107
+        },
+        "easylistening": {
+          "k": 11,
+          "n": 107
+        },
+        "electronic": {
+          "k": 3,
+          "n": 107
+        },
+        "folk": {
+          "k": 16,
+          "n": 107
+        },
+        "pop": {
+          "k": 8,
+          "n": 107
+        }
+      },
+      "label_set_permutation": {
+        "classical": {
+          "k": 17,
+          "n": 107
+        },
+        "easylistening": {
+          "k": 11,
+          "n": 107
+        },
+        "electronic": {
+          "k": 3,
+          "n": 107
+        },
+        "folk": {
+          "k": 16,
+          "n": 107
+        },
+        "pop": {
+          "k": 8,
+          "n": 107
+        }
+      },
+      "observed": {
+        "classical": {
+          "k": 17,
+          "n": 107
+        },
+        "easylistening": {
+          "k": 11,
+          "n": 107
+        },
+        "electronic": {
+          "k": 3,
+          "n": 107
+        },
+        "folk": {
+          "k": 16,
+          "n": 107
+        },
+        "pop": {
+          "k": 8,
+          "n": 107
+        }
+      }
+    },
+    "artist_fold_05": {
+      "full_label_corruption": {
+        "easylistening": {
+          "k": 3,
+          "n": 21
+        },
+        "electronic": {
+          "k": 7,
+          "n": 21
+        },
+        "pop": {
+          "k": 1,
+          "n": 21
+        }
+      },
+      "label_set_permutation": {
+        "easylistening": {
+          "k": 3,
+          "n": 21
+        },
+        "electronic": {
+          "k": 7,
+          "n": 21
+        },
+        "pop": {
+          "k": 1,
+          "n": 21
+        }
+      },
+      "observed": {
+        "easylistening": {
+          "k": 3,
+          "n": 21
+        },
+        "electronic": {
+          "k": 7,
+          "n": 21
+        },
+        "pop": {
+          "k": 1,
+          "n": 21
+        }
+      }
+    },
+    "artist_fold_06": {
+      "full_label_corruption": {
+        "classical": {
+          "k": 3,
+          "n": 45
+        },
+        "folk": {
+          "k": 5,
+          "n": 45
+        },
+        "pop": {
+          "k": 2,
+          "n": 45
+        }
+      },
+      "label_set_permutation": {
+        "classical": {
+          "k": 3,
+          "n": 45
+        },
+        "folk": {
+          "k": 5,
+          "n": 45
+        },
+        "pop": {
+          "k": 2,
+          "n": 45
+        }
+      },
+      "observed": {
+        "classical": {
+          "k": 3,
+          "n": 45
+        },
+        "folk": {
+          "k": 5,
+          "n": 45
+        },
+        "pop": {
+          "k": 2,
+          "n": 45
+        }
+      }
+    },
+    "artist_fold_07": {
+      "full_label_corruption": {
+        "classical": {
+          "k": 1,
+          "n": 36
+        },
+        "easylistening": {
+          "k": 3,
+          "n": 36
+        },
+        "electronic": {
+          "k": 3,
+          "n": 36
+        },
+        "pop": {
+          "k": 9,
+          "n": 36
+        }
+      },
+      "label_set_permutation": {
+        "classical": {
+          "k": 1,
+          "n": 36
+        },
+        "easylistening": {
+          "k": 3,
+          "n": 36
+        },
+        "electronic": {
+          "k": 3,
+          "n": 36
+        },
+        "pop": {
+          "k": 9,
+          "n": 36
+        }
+      },
+      "observed": {
+        "classical": {
+          "k": 1,
+          "n": 36
+        },
+        "easylistening": {
+          "k": 3,
+          "n": 36
+        },
+        "electronic": {
+          "k": 3,
+          "n": 36
+        },
+        "pop": {
+          "k": 9,
+          "n": 36
+        }
+      }
+    },
+    "artist_fold_08": {
+      "full_label_corruption": {
+        "classical": {
+          "k": 3,
+          "n": 81
+        },
+        "easylistening": {
+          "k": 10,
+          "n": 81
+        },
+        "electronic": {
+          "k": 21,
+          "n": 81
+        },
+        "folk": {
+          "k": 11,
+          "n": 81
+        },
+        "pop": {
+          "k": 4,
+          "n": 81
+        }
+      },
+      "label_set_permutation": {
+        "classical": {
+          "k": 3,
+          "n": 81
+        },
+        "easylistening": {
+          "k": 10,
+          "n": 81
+        },
+        "electronic": {
+          "k": 21,
+          "n": 81
+        },
+        "folk": {
+          "k": 11,
+          "n": 81
+        },
+        "pop": {
+          "k": 4,
+          "n": 81
+        }
+      },
+      "observed": {
+        "classical": {
+          "k": 3,
+          "n": 81
+        },
+        "easylistening": {
+          "k": 10,
+          "n": 81
+        },
+        "electronic": {
+          "k": 21,
+          "n": 81
+        },
+        "folk": {
+          "k": 11,
+          "n": 81
+        },
+        "pop": {
+          "k": 4,
+          "n": 81
+        }
+      }
+    },
+    "artist_fold_09": {
+      "full_label_corruption": {
+        "classical": {
+          "k": 5,
+          "n": 47
+        },
+        "electronic": {
+          "k": 3,
+          "n": 47
+        },
+        "folk": {
+          "k": 8,
+          "n": 47
+        },
+        "pop": {
+          "k": 8,
+          "n": 47
+        }
+      },
+      "label_set_permutation": {
+        "classical": {
+          "k": 5,
+          "n": 47
+        },
+        "electronic": {
+          "k": 3,
+          "n": 47
+        },
+        "folk": {
+          "k": 8,
+          "n": 47
+        },
+        "pop": {
+          "k": 8,
+          "n": 47
+        }
+      },
+      "observed": {
+        "classical": {
+          "k": 5,
+          "n": 47
+        },
+        "electronic": {
+          "k": 3,
+          "n": 47
+        },
+        "folk": {
+          "k": 8,
+          "n": 47
+        },
+        "pop": {
+          "k": 8,
+          "n": 47
+        }
+      }
+    }
+  },
+  "inputs_sha256": {
+    "captions": "fb853b0327394cfdbdc205f712fdb64df70e6fcd3bae3a9d3f1617d54b45ad70",
+    "config": "a18a6481105e787f5d644eb9c73bba38f1a10971f7a60ddd87068ec7f48bc766",
+    "mtg_manifest": "6a6ec24b8847f5d228faf6dc9c8a4e9cf8bc70e934d5d1db10c3ac9cc1031f88",
+    "prediction_replay": "432cbd3b3eb84082661379baaf489a4e5a68074b0c5bdad87e0635ba5cb41208",
+    "study_manifest": "16808dc07c3ab2dd23a4b85000c2b8fe16fb23790da9c7a67084bfd0f0bba70b"
+  },
+  "replay_receipt": {
+    "conditions": [
+      "observed",
+      "label_set_permutation",
+      "full_label_corruption",
+      "codeword_injection"
+    ],
+    "manifest_sha256": "16808dc07c3ab2dd23a4b85000c2b8fe16fb23790da9c7a67084bfd0f0bba70b",
+    "output": "reproduced/song_describer_reference_check.jsonl.gz",
+    "primary_view": "target_label_masked",
+    "record_count": 10920,
+    "schema": "fullsongeval-calibration-prediction-replay-receipt/v1",
+    "score_direction": "higher_is_more_positive",
+    "sha256": "432cbd3b3eb84082661379baaf489a4e5a68074b0c5bdad87e0635ba5cb41208",
+    "source": "MTG-Jamendo"
+  },
+  "schema": "fullsongeval-song-describer-reference-check/v1",
+  "scope": "A prospective application of a post-audit diagnostic to a new caption source, with shared MTG tracks and tags. It cannot establish operational validity on a fully untouched music collection, audio quality, or listener preference.",
+  "status": "complete"
+}

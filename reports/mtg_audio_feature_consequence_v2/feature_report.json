@@ -1,0 +1,14 @@
+{
+  "feature_specification": "log1p(max(0,x)) for lowlevel.melbands.mean[40] and lowlevel.melbands.var[40]",
+  "inputs_sha256": {
+    "tar_manifest": "5b5ea02a4365e77302dd93253412c06807b6d1517cc61b3cb7df7f40f970d353",
+    "track_manifest": "996549c334d1cefff4eb8e6eb79ccb0352932f89d51bd3a1f22c5bd4db427a37"
+  },
+  "invalid_features": [],
+  "official_tar_count": 100,
+  "official_track_count": 55699,
+  "output_sha256": "42510cf3e1914701ea80a1af93f45ccefa22ef6f42a3203a751e86069d530226",
+  "schema": "fullsongeval-mtg-audio-features/v1",
+  "status": "complete",
+  "valid_feature_count": 55699
+}

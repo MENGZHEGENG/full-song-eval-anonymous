@@ -1,0 +1,323 @@
+{
+  "blocks": [
+    {
+      "ap": {
+        "full_label_corruption": 0.3373015873015873,
+        "label_set_permutation": 0.9166666666666666,
+        "observed": 0.8333333333333333
+      },
+      "fold": "artist_fold_03",
+      "k": 3,
+      "label": "ambient",
+      "n": 7,
+      "taxonomy": "genre_electronic"
+    },
+    {
+      "ap": {
+        "full_label_corruption": 0.5443070199034126,
+        "label_set_permutation": 0.49778520292617456,
+        "observed": 0.825947432155209
+      },
+      "fold": "artist_fold_03",
+      "k": 34,
+      "label": "electronic",
+      "n": 63,
+      "taxonomy": "genre_dortmund"
+    },
+    {
+      "ap": {
+        "full_label_corruption": 0.2824058500688935,
+        "label_set_permutation": 0.506575369075369,
+        "observed": 0.903741458704694
+      },
+      "fold": "artist_fold_03",
+      "k": 12,
+      "label": "classical",
+      "n": 49,
+      "taxonomy": "genre_rosamerica"
+    },
+    {
+      "ap": {
+        "full_label_corruption": 0.2682625118010953,
+        "label_set_permutation": 0.5688820491645002,
+        "observed": 0.9065771349862259
+      },
+      "fold": "artist_fold_03",
+      "k": 11,
+      "label": "classical",
+      "n": 43,
+      "taxonomy": "genre_tzanetakis"
+    },
+    {
+      "ap": {
+        "full_label_corruption": 0.035165484633569735,
+        "label_set_permutation": 0.54,
+        "observed": 0.04326494201605709
+      },
+      "fold": "artist_fold_03",
+      "k": 2,
+      "label": "alternative",
+      "n": 63,
+      "taxonomy": "genre_dortmund"
+    },
+    {
+      "ap": {
+        "full_label_corruption": 0.02513227513227513,
+        "label_set_permutation": 0.032539682539682535,
+        "observed": 0.032467532467532464
+      },
+      "fold": "artist_fold_03",
+      "k": 2,
+      "label": "pop",
+      "n": 63,
+      "taxonomy": "genre_dortmund"
+    },
+    {
+      "ap": {
+        "full_label_corruption": 0.10778496290918652,
+        "label_set_permutation": 0.19328779742842392,
+        "observed": 0.31887657361795296
+      },
+      "fold": "artist_fold_03",
+      "k": 7,
+      "label": "pop",
+      "n": 49,
+      "taxonomy": "genre_rosamerica"
+    },
+    {
+      "ap": {
+        "full_label_corruption": 0.14603023855843406,
+        "label_set_permutation": 0.22384514059323518,
+        "observed": 0.1941578503260872
+      },
+      "fold": "artist_fold_03",
+      "k": 7,
+      "label": "pop",
+      "n": 43,
+      "taxonomy": "genre_tzanetakis"
+    },
+    {
+      "ap": {
+        "full_label_corruption": 0.17599898013431844,
+        "label_set_permutation": 0.25804770626199197,
+        "observed": 0.6392657062825129
+      },
+      "fold": "artist_fold_03",
+      "k": 7,
+      "label": "dance",
+      "n": 49,
+      "taxonomy": "genre_rosamerica"
+    },
+    {
+      "ap": {
+        "full_label_corruption": 0.16380073560524686,
+        "label_set_permutation": 0.21095157811354281,
+        "observed": 0.5231197742254796
+      },
+      "fold": "artist_fold_03",
+      "k": 7,
+      "label": "hiphop",
+      "n": 49,
+      "taxonomy": "genre_rosamerica"
+    },
+    {
+      "ap": {
+        "full_label_corruption": 0.22144627928678107,
+        "label_set_permutation": 0.3039476176944208,
+        "observed": 0.8069444444444445
+      },
+      "fold": "artist_fold_03",
+      "k": 9,
+      "label": "hiphop",
+      "n": 43,
+      "taxonomy": "genre_tzanetakis"
+    },
+    {
+      "ap": {
+        "full_label_corruption": 0.19029700164792426,
+        "label_set_permutation": 0.33178375901620144,
+        "observed": 0.7945767010148281
+      },
+      "fold": "artist_fold_03",
+      "k": 13,
+      "label": "rock",
+      "n": 63,
+      "taxonomy": "genre_dortmund"
+    },
+    {
+      "ap": {
+        "full_label_corruption": 0.2881450759974283,
+        "label_set_permutation": 0.35981562831642366,
+        "observed": 0.9593837535014005
+      },
+      "fold": "artist_fold_03",
+      "k": 14,
+      "label": "rock",
+      "n": 49,
+      "taxonomy": "genre_rosamerica"
+    },
+    {
+      "ap": {
+        "full_label_corruption": 0.21655106196702123,
+        "label_set_permutation": 0.3742999714538869,
+        "observed": 0.4072362278244631
+      },
+      "fold": "artist_fold_03",
+      "k": 6,
+      "label": "rock",
+      "n": 43,
+      "taxonomy": "genre_tzanetakis"
+    },
+    {
+      "ap": {
+        "full_label_corruption": 0.04369369369369369,
+        "label_set_permutation": 0.0478021978021978,
+        "observed": 0.325
+      },
+      "fold": "artist_fold_03",
+      "k": 2,
+      "label": "reggae",
+      "n": 43,
+      "taxonomy": "genre_tzanetakis"
+    },
+    {
+      "ap": {
+        "full_label_corruption": 0.040873015873015874,
+        "label_set_permutation": 0.026984126984126985,
+        "observed": 0.6111111111111112
+      },
+      "fold": "artist_fold_03",
+      "k": 2,
+      "label": "jazz",
+      "n": 63,
+      "taxonomy": "genre_dortmund"
+    },
+    {
+      "ap": {
+        "full_label_corruption": 0.05374149659863946,
+        "label_set_permutation": 0.03555967841682127,
+        "observed": 0.5714285714285714
+      },
+      "fold": "artist_fold_03",
+      "k": 2,
+      "label": "jazz",
+      "n": 49,
+      "taxonomy": "genre_rosamerica"
+    },
+    {
+      "ap": {
+        "full_label_corruption": 0.07881136950904392,
+        "label_set_permutation": 0.0404971932638332,
+        "observed": 0.5909090909090909
+      },
+      "fold": "artist_fold_03",
+      "k": 2,
+      "label": "jazz",
+      "n": 43,
+      "taxonomy": "genre_tzanetakis"
+    }
+  ],
+  "fold_index": 3,
+  "heldout_artist_fold": "artist_fold_03",
+  "heldout_tracks_with_consensus": 86,
+  "heldout_tracks_with_features": 6266,
+  "inputs_sha256": {
+    "annotations": "9b060b3db785d475870ceb0682241782bf20053d751863fbd42e02cf11088e1d",
+    "config": "d432c098d7f92b634ed4bd337a2478ed58ab6b6e1fa7f6d91db3f6ca01607b24",
+    "feature_report": "70a0228e071019e4b967acfcb034a40e7471c523ee5f87e2f8b1522ff2b98138",
+    "features": "42510cf3e1914701ea80a1af93f45ccefa22ef6f42a3203a751e86069d530226",
+    "gate_report": "a6b6386d94a65e7cd2ea099f4fe809f0ccc2f7227c1a94a3d46ff491e708374b",
+    "manifest": "6a6ec24b8847f5d228faf6dc9c8a4e9cf8bc70e934d5d1db10c3ac9cc1031f88"
+  },
+  "predictions_sha256": "2c6ec4a61607ada076392495452e603a60bc8fd18c5f5d6c95489f66873e323d",
+  "schema": "fullsongeval-mtg-audio-feature-consequence-fold/v1",
+  "selected_labels": [
+    "ambient",
+    "electronic",
+    "classical",
+    "alternative",
+    "easylistening",
+    "pop",
+    "chillout",
+    "dance",
+    "hiphop",
+    "folk",
+    "blues",
+    "soundtrack",
+    "indie",
+    "rock",
+    "reggae",
+    "jazz"
+  ],
+  "software": {
+    "numpy": "2.4.6",
+    "scikit_learn": "1.9.0"
+  },
+  "status": "complete",
+  "target_masked_admission_intervals": {
+    "full_label_corruption": {
+      "author_differences": {
+        "artist_fold_00": 0.001342,
+        "artist_fold_01": 0.001579,
+        "artist_fold_02": 0.001863,
+        "artist_fold_03": 0.001121,
+        "artist_fold_04": 0.000353,
+        "artist_fold_05": 0.001362,
+        "artist_fold_06": 0.001733,
+        "artist_fold_07": 0.001574,
+        "artist_fold_08": 0.001068,
+        "artist_fold_09": 0.003301
+      },
+      "ci95_high": 0.002069,
+      "ci95_low": 0.00099,
+      "ci95_method": "paired_student_t_95",
+      "mean_difference": 0.00153,
+      "n_independent_authors": 10,
+      "sample_standard_deviation": 0.000754,
+      "standard_error": 0.000239
+    },
+    "label_set_permutation": {
+      "author_differences": {
+        "artist_fold_00": 0.001407,
+        "artist_fold_01": 0.001025,
+        "artist_fold_02": 0.001822,
+        "artist_fold_03": 0.003889,
+        "artist_fold_04": 0.002606,
+        "artist_fold_05": 0.001471,
+        "artist_fold_06": 0.002029,
+        "artist_fold_07": 0.00165,
+        "artist_fold_08": 0.000409,
+        "artist_fold_09": 0.002533
+      },
+      "ci95_high": 0.002573,
+      "ci95_low": 0.001195,
+      "ci95_method": "paired_student_t_95",
+      "mean_difference": 0.001884,
+      "n_independent_authors": 10,
+      "sample_standard_deviation": 0.000963,
+      "standard_error": 0.000305
+    },
+    "observed": {
+      "author_differences": {
+        "artist_fold_00": 0.032537,
+        "artist_fold_01": 0.034739,
+        "artist_fold_02": 0.02226,
+        "artist_fold_03": 0.031832,
+        "artist_fold_04": 0.040411,
+        "artist_fold_05": 0.024703,
+        "artist_fold_06": 0.024766,
+        "artist_fold_07": 0.035843,
+        "artist_fold_08": 0.026041,
+        "artist_fold_09": 0.031685
+      },
+      "ci95_high": 0.034655,
+      "ci95_low": 0.026309,
+      "ci95_method": "paired_student_t_95",
+      "mean_difference": 0.030482,
+      "n_independent_authors": 10,
+      "sample_standard_deviation": 0.005834,
+      "standard_error": 0.001845
+    }
+  },
+  "training_tracks_with_features": 48860
+}

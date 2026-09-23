@@ -1,6 +1,6 @@
 # FullSongEval anonymous audit source
 
-This archive reproduces the text-label rule audit reported in the manuscript. It contains no audio, generated songs, listener data, credentials, machine paths, or author identity.
+This archive reproduces the text-label rule audit and its downstream genre checks. It contains no audio waveforms, generated songs, listener data, credentials, machine paths, or author identity.
 
 ## Environment and tests
 
@@ -194,7 +194,7 @@ PYTHONPATH=src python scripts/analyze_changed_label_controls.py --source MTG-Jam
   --output reproduced/mtg_changed_label_controls.json
 ```
 
-The independent target uses the creators' clean consensus genre annotations on overlapping MTG tracks. No audio or human evaluation is collected for this paper. Download the pinned 4.27 MB annotation file and check its digest:
+The independent target uses the creators' clean consensus genre annotations on overlapping MTG tracks. No new human evaluation is collected for this paper. Download the pinned 4.27 MB annotation file and check its digest:
 
 ```sh
 curl -L https://raw.githubusercontent.com/MTG/mtg-jamendo-dataset/cafd8e20c265ed84f1e61f1c875327971f43a62f/derived/music-classification-annotations/music-classification-annotations-clean.tsv -o data/mtg-jamendo/music-classification-annotations-clean.tsv
@@ -212,3 +212,38 @@ PYTHONPATH=src python scripts/evaluate_independent_genre_target.py \
 The frozen primary configuration contains three taxonomies. A post-audit check includes the fourth clean genre taxonomy with the same command and `--config configs/mtg_independent_genre_target_all_taxonomies_sensitivity.json --output reproduced/mtg_independent_genre_target_all_taxonomies_sensitivity.json`. Compare both fold contrasts and support counts with the packaged reports. The genre target is separate from the scorer's training labels but uses previously analyzed MTG tracks; the five-positive-block check is also post-audit.
 
 `reports/target_masked_manuscript_summary.json` records all ten fold-level contrasts used in the manuscript table, including the matched-deletion checks. The reported Student-t intervals summarize the ten fixed held-out-group differences; training sets overlap.
+
+## Check the additional genre results
+
+The Song Describer check uses the official human-caption CSV at
+`https://zenodo.org/records/10072001`; verify SHA-256
+`fb853b0327394cfdbdc205f712fdb64df70e6fcd3bae3a9d3f1617d54b45ad70`.
+The source is not bundled. The pinned config, evaluator, report, and score replay
+are included. Recompute after generating the MTG manifest above:
+
+```sh
+PYTHONPATH=src:scripts python scripts/evaluate_song_describer_reference_check.py   --config configs/song_describer_reference_check_v1.json   --captions data/song_describer.csv   --mtg-manifest reproduced/mtg_jamendo_manifest.jsonl   --study-manifest reproduced/song_describer_manifest.jsonl   --replay reproduced/song_describer_recomputed.jsonl.gz   --output reproduced/song_describer_reference_check.json
+```
+
+The audio-derived feature study uses the official MTG-Jamendo
+`raw_30s/acousticbrainz` release. Its 100 archive checksums and 55,699 track
+checksums are bundled under `data/mtg_audio/`; downloaded shards are about
+1.3 GB. Download them to a storage location with adequate space, then use
+`scripts/extract_mtg_acoustic_features.py` to verify every archive and track
+and produce the 80-coordinate feature file. The pinned evaluator uses
+`numpy==2.4.6` and `scikit-learn==1.9.0`; no model selection uses consensus
+labels. The packaged ten fold reports, prediction replays, and aggregate let
+readers validate the scored result without downloading the large feature
+release:
+
+```sh
+PYTHONPATH=src:scripts python scripts/aggregate_mtg_audio_feature_consequence.py   --config configs/mtg_audio_feature_consequence_v2.json   --fold-dir reports/mtg_audio_feature_consequence_v2/folds   --output reproduced/mtg_audio_feature_consequence_aggregate.json
+cmp reports/mtg_audio_feature_consequence_v2/aggregate.json     reproduced/mtg_audio_feature_consequence_aggregate.json
+```
+
+Portable paths and the sanitized metadata report change the packaged audio
+config and fold hashes from the private run. The archive rebinding preserves
+all fold scores, condition targets, feature and prediction hashes, and the
+descriptive interval values. The audio comparison uses precomputed statistics
+from 30-second excerpts on the previously studied MTG tracks; it does not
+measure full-song quality or listener preference.
