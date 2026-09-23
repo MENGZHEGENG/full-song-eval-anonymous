@@ -1,0 +1,465 @@
+{
+  "all_supported_block_count": 160,
+  "feature_coverage": {
+    "artist_fold_00": {
+      "heldout_consensus_tracks": 79,
+      "heldout_tracks": 5466,
+      "training_tracks": 49660
+    },
+    "artist_fold_01": {
+      "heldout_consensus_tracks": 162,
+      "heldout_tracks": 5686,
+      "training_tracks": 49440
+    },
+    "artist_fold_02": {
+      "heldout_consensus_tracks": 81,
+      "heldout_tracks": 5479,
+      "training_tracks": 49647
+    },
+    "artist_fold_03": {
+      "heldout_consensus_tracks": 86,
+      "heldout_tracks": 6266,
+      "training_tracks": 48860
+    },
+    "artist_fold_04": {
+      "heldout_consensus_tracks": 124,
+      "heldout_tracks": 5201,
+      "training_tracks": 49925
+    },
+    "artist_fold_05": {
+      "heldout_consensus_tracks": 45,
+      "heldout_tracks": 5184,
+      "training_tracks": 49942
+    },
+    "artist_fold_06": {
+      "heldout_consensus_tracks": 83,
+      "heldout_tracks": 5236,
+      "training_tracks": 49890
+    },
+    "artist_fold_07": {
+      "heldout_consensus_tracks": 113,
+      "heldout_tracks": 5758,
+      "training_tracks": 49368
+    },
+    "artist_fold_08": {
+      "heldout_consensus_tracks": 101,
+      "heldout_tracks": 6097,
+      "training_tracks": 49029
+    },
+    "artist_fold_09": {
+      "heldout_consensus_tracks": 78,
+      "heldout_tracks": 4753,
+      "training_tracks": 50373
+    }
+  },
+  "fold_reports_sha256": {
+    "reports/mtg_audio_feature_consequence_v2/folds/fold_00.json": "30e382c5bbcc19e630e767c48cba852e611bd67a76cea29d7e70421bdb457d69",
+    "reports/mtg_audio_feature_consequence_v2/folds/fold_01.json": "8c6901e1f83cbeb23b9e8001d21f77f38b436073762948318011fe709f35f05d",
+    "reports/mtg_audio_feature_consequence_v2/folds/fold_02.json": "96bace3fdef8df6449ef3e7597ffc58352db7b577506ec08f61a9851f0156e57",
+    "reports/mtg_audio_feature_consequence_v2/folds/fold_03.json": "db0be3eaaee1f796cde17849ad411e58b50fe5b7949a89fe3ad03a723bf2e2d7",
+    "reports/mtg_audio_feature_consequence_v2/folds/fold_04.json": "280a8915cfaf254cb6c4211248abf63baa6ab7b03e4788974212a853deef4e68",
+    "reports/mtg_audio_feature_consequence_v2/folds/fold_05.json": "569dd799fdc284d02fcd6c602a27d5ad00dc4041ec50e1924427e67ff0232545",
+    "reports/mtg_audio_feature_consequence_v2/folds/fold_06.json": "4a08e1b71db3d2f056d46e025add7d349294abfce3e362b493b0327bc027ea2f",
+    "reports/mtg_audio_feature_consequence_v2/folds/fold_07.json": "968fcfd1a38bcec952922bd7b61e6527036232e827118b6414af64683715a9be",
+    "reports/mtg_audio_feature_consequence_v2/folds/fold_08.json": "f3b41d58100dda5bc485542968e4151f83066bdcf0647a0bb2a5924c4bc5440d",
+    "reports/mtg_audio_feature_consequence_v2/folds/fold_09.json": "5c8b5f7fadf956bb18201766fa386f99d96a683e9ca92f3670dd466e8a9ca34c"
+  },
+  "primary_five_positive": {
+    "block_count": 106,
+    "fold_scores": {
+      "artist_fold_00": {
+        "full_label_corruption": 0.4942815777168717,
+        "label_set_permutation": 0.46589439117885434,
+        "observed": 0.8284198688866058
+      },
+      "artist_fold_01": {
+        "full_label_corruption": 0.4420251055279001,
+        "label_set_permutation": 0.49610801822813855,
+        "observed": 0.8726174612580162
+      },
+      "artist_fold_02": {
+        "full_label_corruption": 0.4180555000853383,
+        "label_set_permutation": 0.4676912075374431,
+        "observed": 0.8160264629816806
+      },
+      "artist_fold_03": {
+        "full_label_corruption": 0.2613338848740054,
+        "label_set_permutation": 0.3627545971789497,
+        "observed": 0.6859561447489106
+      },
+      "artist_fold_04": {
+        "full_label_corruption": 0.4513712833045504,
+        "label_set_permutation": 0.4161903960449572,
+        "observed": 0.7890046430057489
+      },
+      "artist_fold_05": {
+        "full_label_corruption": 0.3387543476080494,
+        "label_set_permutation": 0.3796660205940876,
+        "observed": 0.9414761673752002
+      },
+      "artist_fold_06": {
+        "full_label_corruption": 0.6219713364248833,
+        "label_set_permutation": 0.5392423175265068,
+        "observed": 0.8374799577544467
+      },
+      "artist_fold_07": {
+        "full_label_corruption": 0.3611480525587791,
+        "label_set_permutation": 0.36085957546178304,
+        "observed": 0.688254333666385
+      },
+      "artist_fold_08": {
+        "full_label_corruption": 0.40259648042084256,
+        "label_set_permutation": 0.36192132383694897,
+        "observed": 0.7097007041884276
+      },
+      "artist_fold_09": {
+        "full_label_corruption": 0.5127586679130807,
+        "label_set_permutation": 0.5151539109710692,
+        "observed": 0.7585415546189813
+      }
+    },
+    "paired_contrasts": {
+      "observed_minus_full_label_corruption": {
+        "author_differences": {
+          "artist_fold_00": 0.334138,
+          "artist_fold_01": 0.430592,
+          "artist_fold_02": 0.397971,
+          "artist_fold_03": 0.424622,
+          "artist_fold_04": 0.337633,
+          "artist_fold_05": 0.602722,
+          "artist_fold_06": 0.215509,
+          "artist_fold_07": 0.327106,
+          "artist_fold_08": 0.307104,
+          "artist_fold_09": 0.245783
+        },
+        "ci95_high": 0.440833,
+        "ci95_low": 0.283803,
+        "ci95_method": "paired_student_t_95",
+        "mean_difference": 0.362318,
+        "n_independent_authors": 10,
+        "sample_standard_deviation": 0.109764,
+        "standard_error": 0.03471
+      },
+      "observed_minus_label_set_permutation": {
+        "author_differences": {
+          "artist_fold_00": 0.362525,
+          "artist_fold_01": 0.376509,
+          "artist_fold_02": 0.348335,
+          "artist_fold_03": 0.323202,
+          "artist_fold_04": 0.372814,
+          "artist_fold_05": 0.56181,
+          "artist_fold_06": 0.298238,
+          "artist_fold_07": 0.327395,
+          "artist_fold_08": 0.347779,
+          "artist_fold_09": 0.243388
+        },
+        "ci95_high": 0.415157,
+        "ci95_low": 0.297242,
+        "ci95_method": "paired_student_t_95",
+        "mean_difference": 0.3562,
+        "n_independent_authors": 10,
+        "sample_standard_deviation": 0.082423,
+        "standard_error": 0.026064
+      }
+    },
+    "status": "complete",
+    "support_by_fold": {
+      "artist_fold_00": {
+        "genre_dortmund": 2,
+        "genre_electronic": 1,
+        "genre_rosamerica": 4,
+        "genre_tzanetakis": 3
+      },
+      "artist_fold_01": {
+        "genre_dortmund": 2,
+        "genre_electronic": 1,
+        "genre_rosamerica": 4,
+        "genre_tzanetakis": 3
+      },
+      "artist_fold_02": {
+        "genre_dortmund": 2,
+        "genre_electronic": 1,
+        "genre_rosamerica": 4,
+        "genre_tzanetakis": 3
+      },
+      "artist_fold_03": {
+        "genre_dortmund": 2,
+        "genre_rosamerica": 5,
+        "genre_tzanetakis": 4
+      },
+      "artist_fold_04": {
+        "genre_dortmund": 2,
+        "genre_electronic": 1,
+        "genre_rosamerica": 5,
+        "genre_tzanetakis": 4
+      },
+      "artist_fold_05": {
+        "genre_dortmund": 2,
+        "genre_rosamerica": 3,
+        "genre_tzanetakis": 2
+      },
+      "artist_fold_06": {
+        "genre_dortmund": 2,
+        "genre_electronic": 1,
+        "genre_rosamerica": 3,
+        "genre_tzanetakis": 2
+      },
+      "artist_fold_07": {
+        "genre_dortmund": 4,
+        "genre_electronic": 1,
+        "genre_rosamerica": 6,
+        "genre_tzanetakis": 5
+      },
+      "artist_fold_08": {
+        "genre_dortmund": 3,
+        "genre_electronic": 1,
+        "genre_rosamerica": 5,
+        "genre_tzanetakis": 4
+      },
+      "artist_fold_09": {
+        "genre_dortmund": 2,
+        "genre_electronic": 1,
+        "genre_rosamerica": 3,
+        "genre_tzanetakis": 3
+      }
+    }
+  },
+  "protocol_sha256": "d432c098d7f92b634ed4bd337a2478ed58ab6b6e1fa7f6d91db3f6ca01607b24",
+  "schema": "fullsongeval-mtg-audio-feature-consequence/v2",
+  "scope": "A controlled downstream audio genre-classification consequence of admitting reassigned uploader labels on previously studied MTG tracks. The audio features are precomputed, the outcome is independent human-consensus genre, and the design is post-audit; it does not establish song quality, listener preference, a deployed evaluation workflow, or untouched-source confirmation of a replacement admission rule.",
+  "secondary_any_positive": {
+    "block_count": 160,
+    "fold_scores": {
+      "artist_fold_00": {
+        "full_label_corruption": 0.4176015013737024,
+        "label_set_permutation": 0.39197831770961555,
+        "observed": 0.7423900226069325
+      },
+      "artist_fold_01": {
+        "full_label_corruption": 0.36923920801500276,
+        "label_set_permutation": 0.38072393940897736,
+        "observed": 0.6535390585751638
+      },
+      "artist_fold_02": {
+        "full_label_corruption": 0.3535684673989212,
+        "label_set_permutation": 0.35397366004222425,
+        "observed": 0.6403952437087056
+      },
+      "artist_fold_03": {
+        "full_label_corruption": 0.21139214735698098,
+        "label_set_permutation": 0.4307676355560029,
+        "observed": 0.6214784103653587
+      },
+      "artist_fold_04": {
+        "full_label_corruption": 0.42120506504487476,
+        "label_set_permutation": 0.33778213967193416,
+        "observed": 0.6183971008740237
+      },
+      "artist_fold_05": {
+        "full_label_corruption": 0.46068599983975217,
+        "label_set_permutation": 0.45022100281327193,
+        "observed": 0.8287850398393017
+      },
+      "artist_fold_06": {
+        "full_label_corruption": 0.4496431727293392,
+        "label_set_permutation": 0.37261115072440804,
+        "observed": 0.6345649519601564
+      },
+      "artist_fold_07": {
+        "full_label_corruption": 0.3611480525587791,
+        "label_set_permutation": 0.36085957546178304,
+        "observed": 0.688254333666385
+      },
+      "artist_fold_08": {
+        "full_label_corruption": 0.3633935120979162,
+        "label_set_permutation": 0.3216894873915197,
+        "observed": 0.6542927225989761
+      },
+      "artist_fold_09": {
+        "full_label_corruption": 0.4638264038622104,
+        "label_set_permutation": 0.4754333896958371,
+        "observed": 0.751871963977868
+      }
+    },
+    "paired_contrasts": {
+      "observed_minus_full_label_corruption": {
+        "author_differences": {
+          "artist_fold_00": 0.324789,
+          "artist_fold_01": 0.2843,
+          "artist_fold_02": 0.286827,
+          "artist_fold_03": 0.410086,
+          "artist_fold_04": 0.197192,
+          "artist_fold_05": 0.368099,
+          "artist_fold_06": 0.184922,
+          "artist_fold_07": 0.327106,
+          "artist_fold_08": 0.290899,
+          "artist_fold_09": 0.288046
+        },
+        "ci95_high": 0.345336,
+        "ci95_low": 0.247117,
+        "ci95_method": "paired_student_t_95",
+        "mean_difference": 0.296227,
+        "n_independent_authors": 10,
+        "sample_standard_deviation": 0.068655,
+        "standard_error": 0.021711
+      },
+      "observed_minus_label_set_permutation": {
+        "author_differences": {
+          "artist_fold_00": 0.350412,
+          "artist_fold_01": 0.272815,
+          "artist_fold_02": 0.286422,
+          "artist_fold_03": 0.190711,
+          "artist_fold_04": 0.280615,
+          "artist_fold_05": 0.378564,
+          "artist_fold_06": 0.261954,
+          "artist_fold_07": 0.327395,
+          "artist_fold_08": 0.332603,
+          "artist_fold_09": 0.276439
+        },
+        "ci95_high": 0.33394,
+        "ci95_low": 0.257646,
+        "ci95_method": "paired_student_t_95",
+        "mean_difference": 0.295793,
+        "n_independent_authors": 10,
+        "sample_standard_deviation": 0.053329,
+        "standard_error": 0.016864
+      }
+    },
+    "status": "complete",
+    "support_by_fold": {
+      "artist_fold_00": {
+        "genre_dortmund": 3,
+        "genre_electronic": 1,
+        "genre_rosamerica": 5,
+        "genre_tzanetakis": 5
+      },
+      "artist_fold_01": {
+        "genre_dortmund": 5,
+        "genre_electronic": 1,
+        "genre_rosamerica": 6,
+        "genre_tzanetakis": 7
+      },
+      "artist_fold_02": {
+        "genre_dortmund": 5,
+        "genre_electronic": 1,
+        "genre_rosamerica": 6,
+        "genre_tzanetakis": 6
+      },
+      "artist_fold_03": {
+        "genre_dortmund": 5,
+        "genre_electronic": 1,
+        "genre_rosamerica": 6,
+        "genre_tzanetakis": 6
+      },
+      "artist_fold_04": {
+        "genre_dortmund": 4,
+        "genre_electronic": 1,
+        "genre_rosamerica": 6,
+        "genre_tzanetakis": 7
+      },
+      "artist_fold_05": {
+        "genre_dortmund": 3,
+        "genre_electronic": 1,
+        "genre_rosamerica": 4,
+        "genre_tzanetakis": 3
+      },
+      "artist_fold_06": {
+        "genre_dortmund": 5,
+        "genre_electronic": 1,
+        "genre_rosamerica": 6,
+        "genre_tzanetakis": 6
+      },
+      "artist_fold_07": {
+        "genre_dortmund": 4,
+        "genre_electronic": 1,
+        "genre_rosamerica": 6,
+        "genre_tzanetakis": 5
+      },
+      "artist_fold_08": {
+        "genre_dortmund": 4,
+        "genre_electronic": 1,
+        "genre_rosamerica": 6,
+        "genre_tzanetakis": 5
+      },
+      "artist_fold_09": {
+        "genre_dortmund": 2,
+        "genre_electronic": 1,
+        "genre_rosamerica": 5,
+        "genre_tzanetakis": 4
+      }
+    }
+  },
+  "shared_inputs_sha256": {
+    "annotations": "9b060b3db785d475870ceb0682241782bf20053d751863fbd42e02cf11088e1d",
+    "feature_report": "70a0228e071019e4b967acfcb034a40e7471c523ee5f87e2f8b1522ff2b98138",
+    "features": "42510cf3e1914701ea80a1af93f45ccefa22ef6f42a3203a751e86069d530226",
+    "gate_report": "a6b6386d94a65e7cd2ea099f4fe809f0ccc2f7227c1a94a3d46ff491e708374b",
+    "manifest": "6a6ec24b8847f5d228faf6dc9c8a4e9cf8bc70e934d5d1db10c3ac9cc1031f88"
+  },
+  "status": "complete",
+  "target_masked_admission_intervals": {
+    "full_label_corruption": {
+      "author_differences": {
+        "artist_fold_00": 0.001342,
+        "artist_fold_01": 0.001579,
+        "artist_fold_02": 0.001863,
+        "artist_fold_03": 0.001121,
+        "artist_fold_04": 0.000353,
+        "artist_fold_05": 0.001362,
+        "artist_fold_06": 0.001733,
+        "artist_fold_07": 0.001574,
+        "artist_fold_08": 0.001068,
+        "artist_fold_09": 0.003301
+      },
+      "ci95_high": 0.002069,
+      "ci95_low": 0.00099,
+      "ci95_method": "paired_student_t_95",
+      "mean_difference": 0.00153,
+      "n_independent_authors": 10,
+      "sample_standard_deviation": 0.000754,
+      "standard_error": 0.000239
+    },
+    "label_set_permutation": {
+      "author_differences": {
+        "artist_fold_00": 0.001407,
+        "artist_fold_01": 0.001025,
+        "artist_fold_02": 0.001822,
+        "artist_fold_03": 0.003889,
+        "artist_fold_04": 0.002606,
+        "artist_fold_05": 0.001471,
+        "artist_fold_06": 0.002029,
+        "artist_fold_07": 0.00165,
+        "artist_fold_08": 0.000409,
+        "artist_fold_09": 0.002533
+      },
+      "ci95_high": 0.002573,
+      "ci95_low": 0.001195,
+      "ci95_method": "paired_student_t_95",
+      "mean_difference": 0.001884,
+      "n_independent_authors": 10,
+      "sample_standard_deviation": 0.000963,
+      "standard_error": 0.000305
+    },
+    "observed": {
+      "author_differences": {
+        "artist_fold_00": 0.032537,
+        "artist_fold_01": 0.034739,
+        "artist_fold_02": 0.02226,
+        "artist_fold_03": 0.031832,
+        "artist_fold_04": 0.040411,
+        "artist_fold_05": 0.024703,
+        "artist_fold_06": 0.024766,
+        "artist_fold_07": 0.035843,
+        "artist_fold_08": 0.026041,
+        "artist_fold_09": 0.031685
+      },
+      "ci95_high": 0.034655,
+      "ci95_low": 0.026309,
+      "ci95_method": "paired_student_t_95",
+      "mean_difference": 0.030482,
+      "n_independent_authors": 10,
+      "sample_standard_deviation": 0.005834,
+      "standard_error": 0.001845
+    }
+  }
+}

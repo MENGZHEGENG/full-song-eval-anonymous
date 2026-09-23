@@ -1,0 +1,79 @@
+{
+  "completed_runs": 123,
+  "encoder_count": 25,
+  "encoder_families": [
+    {
+      "completed_runs": 24,
+      "family": "Sentence-transformer retrieval encoders",
+      "mean_label_prior_micro_f1": 0.199081,
+      "mean_masked_micro_f1": 0.124488,
+      "mean_masked_minus_prior_micro_f1": -0.074594
+    },
+    {
+      "completed_runs": 9,
+      "family": "E5 retrieval encoders",
+      "mean_label_prior_micro_f1": 0.199688,
+      "mean_masked_micro_f1": 0.151923,
+      "mean_masked_minus_prior_micro_f1": -0.047765
+    },
+    {
+      "completed_runs": 12,
+      "family": "BGE retrieval encoders",
+      "mean_label_prior_micro_f1": 0.199284,
+      "mean_masked_micro_f1": 0.153868,
+      "mean_masked_minus_prior_micro_f1": -0.045415
+    },
+    {
+      "completed_runs": 15,
+      "family": "ELECTRA discriminators",
+      "mean_label_prior_micro_f1": 0.199364,
+      "mean_masked_micro_f1": 0.103334,
+      "mean_masked_minus_prior_micro_f1": -0.096031
+    },
+    {
+      "completed_runs": 15,
+      "family": "RoBERTa encoders",
+      "mean_label_prior_micro_f1": 0.199364,
+      "mean_masked_micro_f1": 0.090738,
+      "mean_masked_minus_prior_micro_f1": -0.108627
+    },
+    {
+      "completed_runs": 6,
+      "family": "BERT base encoders",
+      "mean_label_prior_micro_f1": 0.198879,
+      "mean_masked_micro_f1": 0.088172,
+      "mean_masked_minus_prior_micro_f1": -0.110707
+    },
+    {
+      "completed_runs": 24,
+      "family": "BERT compact encoders",
+      "mean_label_prior_micro_f1": 0.199688,
+      "mean_masked_micro_f1": 0.099469,
+      "mean_masked_minus_prior_micro_f1": -0.10022
+    },
+    {
+      "completed_runs": 6,
+      "family": "MiniLM encoders",
+      "mean_label_prior_micro_f1": 0.199688,
+      "mean_masked_micro_f1": 0.087132,
+      "mean_masked_minus_prior_micro_f1": -0.112556
+    },
+    {
+      "completed_runs": 12,
+      "family": "DeBERTa encoders",
+      "mean_label_prior_micro_f1": 0.199284,
+      "mean_masked_micro_f1": 0.091293,
+      "mean_masked_minus_prior_micro_f1": -0.107991
+    }
+  ],
+  "families_below_prior_after_masking": 9,
+  "family_count": 9,
+  "masked_below_prior_runs": 123,
+  "mean_label_prior_micro_f1": 0.199372,
+  "mean_masked_micro_f1": 0.110952,
+  "mean_raw_micro_f1": 0.196912,
+  "mean_shuffled_micro_f1": 0.110358,
+  "scope": "MusicCaps top-16 frozen text encoder caption-to-tag classification; not a macro-AUPRC admission test",
+  "seed_count": 15,
+  "semantic_robustness_ready_runs": 0
+}

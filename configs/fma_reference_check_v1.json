@@ -1,0 +1,31 @@
+{
+  "schema": "fullsongeval-fma-reference-check/v1",
+  "frozen_before_source_inspection": true,
+  "source": {
+    "name": "Free Music Archive metadata",
+    "official_repo": "https://github.com/mdeff/fma",
+    "metadata_url": "https://os.unil.cloud.switch.ch/fma/fma_metadata.zip",
+    "metadata_sha1": "f0df49ffe5f2a6008d7dc83c6915b31835dfe733",
+    "subset": "small",
+    "audio_download": false
+  },
+  "protocol": {
+    "input_fields": ["track.title", "artist.name", "album.title"],
+    "target_field": "track.genre_top",
+    "group_field": "artist.id",
+    "empty_text_or_target": "exclude",
+    "fold_count": 10,
+    "fold_assignment": "sha256(seed|artist.id) modulo 10",
+    "top_label_count": 8,
+    "min_training_label_count": 25,
+    "label_selection": "training fold frequency descending with lexical tie break",
+    "scorer": "unchanged FullSongEval bag-of-tokens target-label-masked scorer",
+    "controls": ["two deterministic cyclic complete-label-set reassignments, separately within train and held-out folds"],
+    "references": ["constant-score prevalence", "exact finite-sample random-label average precision conditional on score ties and label support"],
+    "aggregation": "macro average precision over held-out supported labels, then equal artist-fold mean",
+    "uncertainty": "paired descriptive 95 percent Student-t interval over ten artist folds",
+    "decision": "accept if the lower endpoint of scorer-minus-reference interval is positive",
+    "seed": "full-song-eval-fma-reference-check-v1"
+  },
+  "interpretation": "A new-source collection-level check of the post-audit diagnostic. FMA genre labels and catalog text come from the same source; this is not a listener or generated-music evaluation. No outcome will be used to tune the reference or support rule."
+}

@@ -1,0 +1,67 @@
+{
+  "admission_and_training": {
+    "admission_decisions": "Recompute the paired lower-endpoint decision from the existing MTG report's target_label_masked macro AUPRC and the same fold-level frequency reference, for the original and both reassigned conditions. Require all three lower endpoints above zero. Do not tune the rule using audio outcomes.",
+    "admission_view": "target_label_masked",
+    "conditions": [
+      "observed",
+      "label_set_permutation",
+      "full_label_corruption"
+    ],
+    "control_generation": "Recreate the two existing fold-specific full-label-set reassignments with the original source function and seed; verify recipient/donor and prevalence integrity before audio fitting.",
+    "fit": "One independent binary L2 logistic regression per selected label and condition: C=1.0, class_weight=balanced, solver=liblinear, max_iter=1000. Standardize 80 features using the training fold only. No hyperparameter search, early stopping, or audio-model selection using clean annotations.",
+    "one_class_target": "Omit that label-fold block for all conditions and report the omission.",
+    "training_labels": "Within each artist fold, use only the 16 labels selected by the original metadata protocol from the nine training folds. Each condition supplies its corresponding uploader-label targets on those same training tracks."
+  },
+  "evaluation": {
+    "aggregation": "Average supported labels within each taxonomy and fold, then supported taxonomies equally within the fold, then the ten fold means equally.",
+    "class_match": "Casefold and remove nonalphanumeric characters; require exact normalized match between a selected uploader genre tag and a human-consensus class.",
+    "human_target_taxonomies": [
+      "genre_dortmund",
+      "genre_rosamerica",
+      "genre_tzanetakis",
+      "genre_electronic"
+    ],
+    "interval": "Descriptive paired Student-t 95% summary over ten fixed artist folds; shared training tracks limit population interpretation.",
+    "metric": "grouped-tie average precision of audio-model scores against clean consensus one-versus-rest genre labels, computed within each supported taxonomy-label-fold block",
+    "missing_fold": "If any fold has no supported taxonomy after feature exclusions, report the primary study as infeasible; do not lower support after seeing scores.",
+    "primary_contrasts": [
+      "observed_minus_label_set_permutation",
+      "observed_minus_full_label_corruption"
+    ],
+    "primary_support": "At least five positive and one negative clean annotations in a block, and the same track set and complete predictions across all three conditions.",
+    "secondary": "Also report all supported blocks with at least one positive and negative, without changing the primary support rule.",
+    "split": "Ten canonical artist-held-out MTG folds; the audio classifier has no training tracks from the test artists."
+  },
+  "feature_vector": {
+    "dimension": 80,
+    "exclusions": "Exclude tracks with a missing, nonfinite, or wrong-length vector from every condition; report counts and IDs. Do not use metadata, high-level predictions, or consensus annotations as model inputs.",
+    "fields": [
+      "lowlevel.melbands.mean",
+      "lowlevel.melbands.var"
+    ],
+    "transform": "log1p(max(0, value)) on each numeric coordinate"
+  },
+  "frozen_utc": "2026-09-23T06:29:14Z",
+  "interpretation": "A controlled downstream audio genre-classification consequence of admitting reassigned uploader labels on previously studied MTG tracks. The audio features are precomputed, the outcome is independent human-consensus genre, and the design is post-audit; it does not establish song quality, listener preference, a deployed evaluation workflow, or untouched-source confirmation of a replacement admission rule.",
+  "population": "canonical MTG tracks with complete, checksum-verified official audio features; consensus annotations are used only on held-out tracks for scoring",
+  "question": "Does using each label source admitted by the tested metadata rule change the performance of an audio genre classifier against independent human-consensus genre labels?",
+  "schema": "fullsongeval-mtg-audio-feature-consequence/v2",
+  "sources": {
+    "canonical_mtg_manifest": "data/mtg-jamendo/mtg_manifest.jsonl",
+    "canonical_mtg_manifest_sha256": "6a6ec24b8847f5d228faf6dc9c8a4e9cf8bc70e934d5d1db10c3ac9cc1031f88",
+    "clean_annotations": "data/mtg-jamendo/music-classification-annotations-clean.tsv",
+    "clean_annotations_sha256": "9b060b3db785d475870ceb0682241782bf20053d751863fbd42e02cf11088e1d",
+    "feature_kind": "Essentia audio-derived statistical features from the official MTG-Jamendo release",
+    "feature_manifest": "data/mtg_audio/sha256_tars.txt",
+    "feature_manifest_sha256": "5b5ea02a4365e77302dd93253412c06807b6d1517cc61b3cb7df7f40f970d353",
+    "feature_release": "raw_30s/acousticbrainz",
+    "feature_track_manifest": "data/mtg_audio/sha256_tracks.txt",
+    "feature_track_manifest_sha256": "996549c334d1cefff4eb8e6eb79ccb0352932f89d51bd3a1f22c5bd4db427a37",
+    "metadata_gate_report": "reports/mtg_jamendo_metadata_calibration.json",
+    "metadata_gate_report_sha256": "a6b6386d94a65e7cd2ea099f4fe809f0ccc2f7227c1a94a3d46ff491e708374b",
+    "mtg_repository": "https://github.com/MTG/mtg-jamendo-dataset",
+    "mtg_revision": "cafd8e20c265ed84f1e61f1c875327971f43a62f"
+  },
+  "status": "corrected_provenance_protocol_before_any_audio_model_outcome_read",
+  "supersedes": "configs/mtg_audio_feature_consequence_v1.json; v1 checked legacy unmasked admission flags although the paper's decision uses target-masked text; its single completed fold-0 canary is diagnostic only"
+}

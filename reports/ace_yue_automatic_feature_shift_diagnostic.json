@@ -1,0 +1,442 @@
+{
+  "claim_scope": "automatic_proxy_only",
+  "family_prediction": {
+    "pair_centered": {
+      "accuracy": 1.0,
+      "correct": 200,
+      "total": 200
+    },
+    "permutation_null_raw": {
+      "max_accuracy": 0.63,
+      "mean_accuracy": 0.5005555555555555,
+      "p_value_plus_one": 0.01,
+      "permutations": 99,
+      "seed": 20260912
+    },
+    "raw": {
+      "accuracy": 0.945,
+      "correct": 189,
+      "total": 200
+    }
+  },
+  "feature_policy": {
+    "excluded_capture_metadata": [
+      "candidate_index",
+      "channels",
+      "duration_seconds",
+      "sample_rate",
+      "section_count"
+    ],
+    "excluded_suffixes": [
+      "_aligned_duration_seconds",
+      "_analysis_duration_seconds",
+      "_channels",
+      "_duration_seconds",
+      "_end_seconds",
+      "_fmax_hz",
+      "_fmin_hz",
+      "_frame_count",
+      "_frame_length",
+      "_frames",
+      "_hop_length",
+      "_sample_count",
+      "_sample_rate",
+      "_start_seconds"
+    ],
+    "fields": [
+      "asr_char_edit_distance",
+      "asr_char_error_rate",
+      "asr_hypothesis_char_count",
+      "asr_hypothesis_token_count",
+      "asr_reference_char_count",
+      "asr_reference_token_count",
+      "asr_token_edit_distance",
+      "asr_token_error_rate",
+      "audio_peak_amplitude",
+      "audio_rms_amplitude",
+      "interaction_accompaniment_rms_amplitude",
+      "interaction_vocal_energy_share",
+      "interaction_vocal_rms_amplitude",
+      "melody_librosa_voiced_flag_fraction",
+      "melody_voiced_fraction",
+      "melody_voiced_probability_mean",
+      "section_0_peak_amplitude",
+      "section_0_rms_amplitude",
+      "section_1_peak_amplitude",
+      "section_1_rms_amplitude",
+      "section_2_peak_amplitude",
+      "section_2_rms_amplitude",
+      "section_peak_range",
+      "section_rms_max_abs_delta",
+      "section_rms_range",
+      "stem_accompaniment_peak_amplitude",
+      "stem_accompaniment_rms_amplitude",
+      "stem_vocal_peak_amplitude",
+      "stem_vocal_rms_amplitude",
+      "stem_vocal_to_accompaniment_rms_db"
+    ]
+  },
+  "feature_shift": [
+    {
+      "absolute_smd": 2.710272658512664,
+      "field": "audio_rms_amplitude",
+      "left_mean": 0.19456211081202127,
+      "left_records": 100,
+      "left_sd": 0.03885954468415061,
+      "right_mean": 0.09706113983733074,
+      "right_records": 100,
+      "right_sd": 0.032837163019560495,
+      "smd_right_minus_left": -2.710272658512664
+    },
+    {
+      "absolute_smd": 2.585804081336429,
+      "field": "section_1_rms_amplitude",
+      "left_mean": 0.19764351629199817,
+      "left_records": 100,
+      "left_sd": 0.042833278781928934,
+      "right_mean": 0.09058043695120047,
+      "right_records": 100,
+      "right_sd": 0.03992394394899883,
+      "smd_right_minus_left": -2.585804081336429
+    },
+    {
+      "absolute_smd": 2.5392183657625247,
+      "field": "section_1_peak_amplitude",
+      "left_mean": 0.921636962890625,
+      "left_records": 100,
+      "left_sd": 0.06867918626578291,
+      "right_mean": 0.50050537109375,
+      "right_records": 100,
+      "right_sd": 0.22426813393890854,
+      "smd_right_minus_left": -2.5392183657625247
+    },
+    {
+      "absolute_smd": 2.2810996335222904,
+      "field": "stem_accompaniment_peak_amplitude",
+      "left_mean": 0.72470458984375,
+      "left_records": 100,
+      "left_sd": 0.19597832068775578,
+      "right_mean": 0.2427764892578125,
+      "right_records": 100,
+      "right_sd": 0.22552736126665177,
+      "smd_right_minus_left": -2.2810996335222904
+    },
+    {
+      "absolute_smd": 2.2150355842527336,
+      "field": "section_2_peak_amplitude",
+      "left_mean": 0.905970458984375,
+      "left_records": 100,
+      "left_sd": 0.08647193201487859,
+      "right_mean": 0.506290283203125,
+      "right_records": 100,
+      "right_sd": 0.24008231259457366,
+      "smd_right_minus_left": -2.2150355842527336
+    },
+    {
+      "absolute_smd": 2.152464651930341,
+      "field": "section_0_peak_amplitude",
+      "left_mean": 0.8675131225585937,
+      "left_records": 100,
+      "left_sd": 0.11440137020564915,
+      "right_mean": 0.4882537841796875,
+      "right_records": 100,
+      "right_sd": 0.22136754765690778,
+      "smd_right_minus_left": -2.152464651930341
+    },
+    {
+      "absolute_smd": 2.143253957727927,
+      "field": "section_2_rms_amplitude",
+      "left_mean": 0.20442730607985962,
+      "left_records": 100,
+      "left_sd": 0.05656127456277002,
+      "right_mean": 0.09315292122992416,
+      "right_records": 100,
+      "right_sd": 0.04681740468291197,
+      "smd_right_minus_left": -2.143253957727927
+    },
+    {
+      "absolute_smd": 2.1367038914216256,
+      "field": "stem_vocal_rms_amplitude",
+      "left_mean": 0.15165121316833274,
+      "left_records": 100,
+      "left_sd": 0.03137697826215012,
+      "right_mean": 0.07678039021568771,
+      "right_records": 100,
+      "right_sd": 0.03835538518547596,
+      "smd_right_minus_left": -2.1367038914216256
+    },
+    {
+      "absolute_smd": 2.076397582734035,
+      "field": "audio_peak_amplitude",
+      "left_mean": 0.9478781127929687,
+      "left_records": 100,
+      "left_sd": 0.05415908775537769,
+      "right_mean": 0.6316775512695313,
+      "right_records": 100,
+      "right_sd": 0.20843983915082895,
+      "smd_right_minus_left": -2.076397582734035
+    },
+    {
+      "absolute_smd": 2.068229480480368,
+      "field": "stem_vocal_peak_amplitude",
+      "left_mean": 0.924984130859375,
+      "left_records": 100,
+      "left_sd": 0.07710871510189489,
+      "right_mean": 0.550064697265625,
+      "right_records": 100,
+      "right_sd": 0.24449109402363423,
+      "smd_right_minus_left": -2.068229480480368
+    },
+    {
+      "absolute_smd": 1.8192474836872494,
+      "field": "section_0_rms_amplitude",
+      "left_mean": 0.17402731419452094,
+      "left_records": 100,
+      "left_sd": 0.043824432564475393,
+      "right_mean": 0.09447622543641543,
+      "right_records": 100,
+      "right_sd": 0.043630290839594445,
+      "smd_right_minus_left": -1.8192474836872494
+    },
+    {
+      "absolute_smd": 1.5188479557799761,
+      "field": "interaction_vocal_rms_amplitude",
+      "left_mean": 0.12630042649436812,
+      "left_records": 100,
+      "left_sd": 0.025590477587120613,
+      "right_mean": 0.07678031277076001,
+      "right_records": 100,
+      "right_sd": 0.03835536874233633,
+      "smd_right_minus_left": -1.5188479557799761
+    },
+    {
+      "absolute_smd": 1.4720135271221715,
+      "field": "stem_accompaniment_rms_amplitude",
+      "left_mean": 0.10409577343352748,
+      "left_records": 100,
+      "left_sd": 0.049989884956761974,
+      "right_mean": 0.03851294741883787,
+      "right_records": 100,
+      "right_sd": 0.03835330653467878,
+      "smd_right_minus_left": -1.4720135271221715
+    },
+    {
+      "absolute_smd": 1.1193496149786957,
+      "field": "interaction_accompaniment_rms_amplitude",
+      "left_mean": 0.08325053561160066,
+      "left_records": 100,
+      "left_sd": 0.04152718519067701,
+      "right_mean": 0.03850294678951299,
+      "right_records": 100,
+      "right_sd": 0.03836301586178039,
+      "smd_right_minus_left": -1.1193496149786957
+    },
+    {
+      "absolute_smd": 1.0076873729110287,
+      "field": "section_peak_range",
+      "left_mean": 0.11409576416015625,
+      "left_records": 100,
+      "left_sd": 0.0942347838879446,
+      "right_mean": 0.2654483032226562,
+      "right_records": 100,
+      "right_sd": 0.19036446849803337,
+      "smd_right_minus_left": 1.0076873729110287
+    },
+    {
+      "absolute_smd": 0.7016209650477115,
+      "field": "asr_char_edit_distance",
+      "left_mean": 12.32,
+      "left_records": 100,
+      "left_sd": 24.11840790765427,
+      "right_mean": 61.97,
+      "right_records": 100,
+      "right_sd": 97.12666523668976,
+      "smd_right_minus_left": 0.7016209650477115
+    },
+    {
+      "absolute_smd": 0.4883894291287258,
+      "field": "asr_hypothesis_char_count",
+      "left_mean": 75.6,
+      "left_records": 100,
+      "left_sd": 48.84485643340555,
+      "right_mean": 37.97,
+      "right_records": 100,
+      "right_sd": 97.40292141409311,
+      "smd_right_minus_left": -0.4883894291287258
+    },
+    {
+      "absolute_smd": 0.4344505263191968,
+      "field": "asr_token_error_rate",
+      "left_mean": 0.1863684640522876,
+      "left_records": 100,
+      "left_sd": 0.2530931154696218,
+      "right_mean": 0.9690155228758169,
+      "right_records": 100,
+      "right_sd": 2.535052311102123,
+      "smd_right_minus_left": 0.4344505263191968
+    },
+    {
+      "absolute_smd": 0.4314031195033536,
+      "field": "asr_token_edit_distance",
+      "left_mean": 6.44,
+      "left_records": 100,
+      "left_sd": 8.85699723382592,
+      "right_mean": 32.88,
+      "right_records": 100,
+      "right_sd": 86.22114357859098,
+      "smd_right_minus_left": 0.4314031195033536
+    },
+    {
+      "absolute_smd": 0.4093000671655126,
+      "field": "asr_char_error_rate",
+      "left_mean": 0.2673413451402066,
+      "left_records": 100,
+      "left_sd": 0.6407908855226705,
+      "right_mean": 1.0921942863166771,
+      "right_records": 100,
+      "right_sd": 2.777061113897503,
+      "smd_right_minus_left": 0.4093000671655126
+    },
+    {
+      "absolute_smd": 0.3835392521112188,
+      "field": "stem_vocal_to_accompaniment_rms_db",
+      "left_mean": 4.37556403456196,
+      "left_records": 100,
+      "left_sd": 6.277910523957982,
+      "right_mean": 13.246632004779608,
+      "right_records": 100,
+      "right_sd": 32.10194102127681,
+      "smd_right_minus_left": 0.3835392521112188
+    },
+    {
+      "absolute_smd": 0.29214284092495685,
+      "field": "section_rms_range",
+      "left_mean": 0.06300166191418209,
+      "left_records": 100,
+      "left_sd": 0.038479192501026986,
+      "right_mean": 0.05248645126821581,
+      "right_records": 100,
+      "right_sd": 0.03332266067288542,
+      "smd_right_minus_left": -0.29214284092495685
+    },
+    {
+      "absolute_smd": 0.2126957140149683,
+      "field": "asr_hypothesis_token_count",
+      "left_mean": 34.29,
+      "left_records": 100,
+      "left_sd": 6.577681962515366,
+      "right_mean": 21.11,
+      "right_records": 100,
+      "right_sd": 87.38660023138559,
+      "smd_right_minus_left": -0.2126957140149683
+    },
+    {
+      "absolute_smd": 0.2028676695773257,
+      "field": "section_rms_max_abs_delta",
+      "left_mean": 0.051965515940576835,
+      "left_records": 100,
+      "left_sd": 0.03324547816906334,
+      "right_mean": 0.045484024343229235,
+      "right_records": 100,
+      "right_sd": 0.030598382402397796,
+      "smd_right_minus_left": -0.2028676695773257
+    },
+    {
+      "absolute_smd": 0.13949760671662462,
+      "field": "melody_voiced_probability_mean",
+      "left_mean": 0.3448191631124013,
+      "left_records": 100,
+      "left_sd": 0.12494694000612752,
+      "right_mean": 0.3682773097161986,
+      "right_records": 100,
+      "right_sd": 0.20234855541637664,
+      "smd_right_minus_left": 0.13949760671662462
+    },
+    {
+      "absolute_smd": 0.056433211928965304,
+      "field": "melody_librosa_voiced_flag_fraction",
+      "left_mean": 0.750042780748663,
+      "left_records": 100,
+      "left_sd": 0.11988797186179523,
+      "right_mean": 0.7396901107394145,
+      "right_records": 100,
+      "right_sd": 0.23007530038272642,
+      "smd_right_minus_left": -0.056433211928965304
+    },
+    {
+      "absolute_smd": 0.056433211928965304,
+      "field": "melody_voiced_fraction",
+      "left_mean": 0.750042780748663,
+      "left_records": 100,
+      "left_sd": 0.11988797186179523,
+      "right_mean": 0.7396901107394145,
+      "right_records": 100,
+      "right_sd": 0.23007530038272642,
+      "smd_right_minus_left": -0.056433211928965304
+    },
+    {
+      "absolute_smd": 0.015531853215152183,
+      "field": "interaction_vocal_energy_share",
+      "left_mean": 0.6872956061940215,
+      "left_records": 100,
+      "left_sd": 0.19959288974027115,
+      "right_mean": 0.6828634681271316,
+      "right_records": 100,
+      "right_sd": 0.3507435213038764,
+      "smd_right_minus_left": -0.015531853215152183
+    },
+    {
+      "absolute_smd": 0.0,
+      "field": "asr_reference_char_count",
+      "left_mean": 70.6,
+      "left_records": 100,
+      "left_sd": 43.60779746788411,
+      "right_mean": 70.6,
+      "right_records": 100,
+      "right_sd": 43.60779746788411,
+      "smd_right_minus_left": 0.0
+    },
+    {
+      "absolute_smd": 0.0,
+      "field": "asr_reference_token_count",
+      "left_mean": 33.8,
+      "left_records": 100,
+      "left_sd": 1.6613247725836149,
+      "right_mean": 33.8,
+      "right_records": 100,
+      "right_sd": 1.6613247725836149,
+      "smd_right_minus_left": 0.0
+    }
+  ],
+  "generator_labels": [
+    "ACE-Step",
+    "YuE"
+  ],
+  "inputs": {
+    "ACE-Step": {
+      "input_records": 200,
+      "missing_candidate_index_records": 10,
+      "selected_records": 100
+    },
+    "YuE": {
+      "input_records": 100,
+      "missing_candidate_index_records": 0,
+      "selected_records": 100
+    }
+  },
+  "interpretation": "Family predictability indicates automatic-feature distribution shift across the evaluated generator snapshots. It does not identify which family is better and does not provide listener preference, evaluator-human agreement, or deployment evidence.",
+  "pairing": {
+    "candidate_indices": {
+      "ACE-Step": 0,
+      "YuE": 0
+    },
+    "prompt_disjoint_leave_one_out": true,
+    "prompts": 100,
+    "selected_records": {
+      "ACE-Step": 100,
+      "YuE": 100
+    }
+  },
+  "schema_version": 1,
+  "status": "pass"
+}

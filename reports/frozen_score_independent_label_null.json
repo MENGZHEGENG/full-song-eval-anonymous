@@ -1,0 +1,192 @@
+{
+  "design": "For each held-out group and evaluated label, sample the observed positive count uniformly without replacement among records; keep observed scorer scores, score ties, training fits, and selected labels fixed.",
+  "replicates": 200,
+  "schema": "fullsongeval-frozen-score-independent-label-null/v1",
+  "scope": "Post-audit conditional control on previously evaluated groups; not untouched-cohort validation or a refitted broken-label benchmark.",
+  "seed_namespace": "full-song-eval-independent-heldout-label-null-v1",
+  "sources": {
+    "mtg_jamendo": {
+      "evaluated_label_blocks": 160,
+      "evaluated_pairs": 882048,
+      "group_label_counts": {
+        "artist_fold_00": 16,
+        "artist_fold_01": 16,
+        "artist_fold_02": 16,
+        "artist_fold_03": 16,
+        "artist_fold_04": 16,
+        "artist_fold_05": 16,
+        "artist_fold_06": 16,
+        "artist_fold_07": 16,
+        "artist_fold_08": 16,
+        "artist_fold_09": 16
+      },
+      "heldout_groups": 10,
+      "heldout_records": 55128,
+      "independent_label_reallocation": {
+        "prevalence": {
+          "accepted_draws": 200,
+          "admission_rate_wilson_95": [
+            0.9811546736227335,
+            1.0
+          ],
+          "draw_count": 200,
+          "mean_interval_low_across_draws": 0.0007957835250000001,
+          "mean_margin_across_draws": 0.0014054230949999999
+        },
+        "tie_expectation": {
+          "accepted_draws": 3,
+          "admission_rate_wilson_95": [
+            0.00511423779325831,
+            0.04316572879269026
+          ],
+          "draw_count": 200,
+          "mean_interval_low_across_draws": -0.0006072035700000001,
+          "mean_margin_across_draws": -5.398335e-06
+        }
+      },
+      "mean_sampled_ap_minus_exact_expectation": -5.398335e-06,
+      "original_observed": {
+        "prevalence": {
+          "accepted_above_random": true,
+          "ci95_high": 0.034655039,
+          "ci95_low": 0.026308131,
+          "group_count": 10,
+          "group_differences": {
+            "artist_fold_00": 0.032537483,
+            "artist_fold_01": 0.034739008,
+            "artist_fold_02": 0.022259743,
+            "artist_fold_03": 0.031831543,
+            "artist_fold_04": 0.040410596,
+            "artist_fold_05": 0.024702895,
+            "artist_fold_06": 0.024766323,
+            "artist_fold_07": 0.035843123,
+            "artist_fold_08": 0.026040836,
+            "artist_fold_09": 0.031684301
+          },
+          "interval_method": "paired_descriptive_student_t_95",
+          "mean_difference": 0.030481585,
+          "positive_group_count": 10,
+          "sample_standard_deviation": 0.005834086,
+          "standard_error": 0.0018449
+        },
+        "tie_expectation": {
+          "accepted_above_random": true,
+          "ci95_high": 0.033251632,
+          "ci95_low": 0.024889896,
+          "group_count": 10,
+          "group_differences": {
+            "artist_fold_00": 0.031112283,
+            "artist_fold_01": 0.033462457,
+            "artist_fold_02": 0.020837876,
+            "artist_fold_03": 0.030565174,
+            "artist_fold_04": 0.038921953,
+            "artist_fold_05": 0.023201091,
+            "artist_fold_06": 0.023294991,
+            "artist_fold_07": 0.034488513,
+            "artist_fold_08": 0.024743871,
+            "artist_fold_09": 0.030079427
+          },
+          "interval_method": "paired_descriptive_student_t_95",
+          "mean_difference": 0.029070764,
+          "positive_group_count": 10,
+          "sample_standard_deviation": 0.005844451,
+          "standard_error": 0.001848178
+        }
+      },
+      "replay_sha256": "a2f033247e659b40a3fef60baebbba0a8030131d190da5f25f6060ef26b4d4f9",
+      "report_sha256": "a6b6386d94a65e7cd2ea099f4fe809f0ccc2f7227c1a94a3d46ff491e708374b"
+    },
+    "musiccaps": {
+      "evaluated_label_blocks": 87,
+      "evaluated_pairs": 40926,
+      "group_label_counts": {
+        "0": 7,
+        "1": 13,
+        "2": 7,
+        "3": 9,
+        "4": 7,
+        "5": 7,
+        "6": 5,
+        "7": 13,
+        "8": 9,
+        "9": 10
+      },
+      "heldout_groups": 10,
+      "heldout_records": 4823,
+      "independent_label_reallocation": {
+        "prevalence": {
+          "accepted_draws": 124,
+          "admission_rate_wilson_95": [
+            0.5510671801561923,
+            0.6844099415132637
+          ],
+          "draw_count": 200,
+          "mean_interval_low_across_draws": 0.0009253120850000001,
+          "mean_margin_across_draws": 0.024320803729999996
+        },
+        "tie_expectation": {
+          "accepted_draws": 0,
+          "admission_rate_wilson_95": [
+            1.734723475976807e-18,
+            0.018845326377266575
+          ],
+          "draw_count": 200,
+          "mean_interval_low_across_draws": -0.013856935150000001,
+          "mean_margin_across_draws": 6.710364500000004e-05
+        }
+      },
+      "mean_sampled_ap_minus_exact_expectation": 6.710364500000004e-05,
+      "original_observed": {
+        "prevalence": {
+          "accepted_above_random": true,
+          "ci95_high": 0.110421388,
+          "ci95_low": 0.049991775,
+          "group_count": 10,
+          "group_differences": {
+            "0": 0.049353581,
+            "1": 0.071102311,
+            "2": 0.062064142,
+            "3": 0.077163767,
+            "4": 0.111842256,
+            "5": 0.164943379,
+            "6": 0.046243192,
+            "7": 0.129751726,
+            "8": 0.030903846,
+            "9": 0.058697616
+          },
+          "interval_method": "paired_descriptive_student_t_95",
+          "mean_difference": 0.080206582,
+          "positive_group_count": 10,
+          "sample_standard_deviation": 0.042237387,
+          "standard_error": 0.013356634
+        },
+        "tie_expectation": {
+          "accepted_above_random": true,
+          "ci95_high": 0.08261685,
+          "ci95_low": 0.029288913,
+          "group_count": 10,
+          "group_differences": {
+            "0": 0.039811079,
+            "1": 0.060869314,
+            "2": 0.024117922,
+            "3": 0.055285681,
+            "4": 0.107127113,
+            "5": 0.069536564,
+            "6": 0.03936782,
+            "7": 0.120115162,
+            "8": -0.007131201,
+            "9": 0.050429362
+          },
+          "interval_method": "paired_descriptive_student_t_95",
+          "mean_difference": 0.055952882,
+          "positive_group_count": 9,
+          "sample_standard_deviation": 0.037273658,
+          "standard_error": 0.011786966
+        }
+      },
+      "replay_sha256": "aa4c54f889058106b3ab270d974ee8f2d840aa435ffea6d7df68bb7f8fa35bdb",
+      "report_sha256": "05da63afb8463e72facd429cde3850a99c785b1214738aaf61255684ed54caab"
+    }
+  },
+  "status": "complete"
+}

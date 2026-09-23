@@ -1,0 +1,31 @@
+{
+  "schema": "fullsongeval-song-describer-reference-check/v1",
+  "frozen_utc": "2026-09-23T06:31:58Z",
+  "status": "prospective_post_audit_protocol_before_song_describer_score_or_reference_outcome_read",
+  "question": "On previously unused human-written music captions, does the prevalence reference accept reassigned genre tags while the exact tied-score random-label reference withholds acceptance?",
+  "source": {
+    "song_describer_record": "https://zenodo.org/records/10072001",
+    "caption_csv_sha256": "fb853b0327394cfdbdc205f712fdb64df70e6fcd3bae3a9d3f1617d54b45ad70",
+    "canonical_mtg_manifest_sha256": "6a6ec24b8847f5d228faf6dc9c8a4e9cf8bc70e934d5d1db10c3ac9cc1031f88",
+    "caption_filter": "is_valid_subset exactly True; retain the lexicographically smallest caption_id for each track_id; join by canonical track ID",
+    "labels": "the existing MTG uploader genre_list for each joined track; human-consensus labels are not used in this test",
+    "population_boundary": "New Song Describer caption text on overlapping MTG tracks and uploader labels; this is not an untouched collection of recordings or independently collected genre labels."
+  },
+  "protocol": {
+    "split": "ten canonical MTG artist-held-out folds",
+    "top_label_count": 5,
+    "min_training_label_count": 25,
+    "label_selection": "training fold only; frequency descending with alphabetical tie breaks",
+    "scorer": "the existing deterministic bag-of-tokens log-odds scorer",
+    "text_view": "target_label_masked",
+    "conditions": ["observed", "label_set_permutation", "full_label_corruption"],
+    "control_seed": "full-song-eval-song-describer-reference-v1",
+    "control_operation": "the existing two separate seeded complete-label-set rotations within training and held-out splits",
+    "metric": "macro grouped-tie average precision over selected labels with held-out positives",
+    "references": ["constant-score held-out prevalence", "exact random-label expected AP conditioned on each fitted score's tie groups"],
+    "decision": "lower endpoint of the descriptive paired ten-fold Student-t 95% summary for scorer minus reference above zero",
+    "primary_report": "Show original and both controls against both references, including all fold values, support, confidence endpoints, and non-acceptances; do not change label count or threshold after seeing scores.",
+    "infeasibility": "If a fold lacks five training-supported labels or positive held-out support, report infeasibility without retuning."
+  },
+  "interpretation": "A prospective application of a post-audit diagnostic to a new caption source, with shared MTG tracks and tags. It cannot establish operational validity on a fully untouched music collection, audio quality, or listener preference."
+}

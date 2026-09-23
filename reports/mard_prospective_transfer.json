@@ -1,0 +1,975 @@
+{
+  "album_count": 1300,
+  "artist_disjointness": "not verified; source subset has no artist field",
+  "candidate_audit_passes": false,
+  "comparisons": {
+    "codeword": {
+      "prevalence": {
+        "accepted": true,
+        "ci95_high": 0.04305106926987679,
+        "ci95_low": 0.03442975598698587,
+        "fold_count": 10,
+        "mean": 0.03874041262843133
+      },
+      "tie_aware": {
+        "accepted": true,
+        "ci95_high": 0.010671082889177,
+        "ci95_low": 0.0029369253654402544,
+        "fold_count": 10,
+        "mean": 0.006804004127308627
+      }
+    },
+    "observed": {
+      "prevalence": {
+        "accepted": true,
+        "ci95_high": 0.04298890796167715,
+        "ci95_low": 0.03437339852215951,
+        "fold_count": 10,
+        "mean": 0.03868115324191833
+      },
+      "tie_aware": {
+        "accepted": true,
+        "ci95_high": 0.010611294199732758,
+        "ci95_low": 0.0028781952818584923,
+        "fold_count": 10,
+        "mean": 0.006744744740795625
+      }
+    },
+    "rotation_a": {
+      "prevalence": {
+        "accepted": true,
+        "ci95_high": 0.03271176207703007,
+        "ci95_low": 0.023887718273090157,
+        "fold_count": 10,
+        "mean": 0.028299740175060113
+      },
+      "tie_aware": {
+        "accepted": false,
+        "ci95_high": 0.00031365785093444374,
+        "ci95_low": -0.0075869945030596275,
+        "fold_count": 10,
+        "mean": -0.003636668326062592
+      }
+    },
+    "rotation_b": {
+      "prevalence": {
+        "accepted": true,
+        "ci95_high": 0.03622378141624935,
+        "ci95_low": 0.02880654835430202,
+        "fold_count": 10,
+        "mean": 0.032515164885275685
+      },
+      "tie_aware": {
+        "accepted": false,
+        "ci95_high": 0.004357230690299187,
+        "ci95_low": -0.0031997179219932217,
+        "fold_count": 10,
+        "mean": 0.0005787563841529828
+      }
+    },
+    "sensitivity": {
+      "codeword_minus_observed": {
+        "accepted": true,
+        "ci95_high": 7.639320455066608e-05,
+        "ci95_low": 4.2125568475339035e-05,
+        "fold_count": 10,
+        "mean": 5.9259386513002556e-05
+      }
+    }
+  },
+  "excluded_label": "R&B",
+  "fold_count": 10,
+  "folds": [
+    {
+      "conditions": {
+        "codeword": {
+          "heldout_count": 124,
+          "label_support": {
+            "Alternative Rock": 8,
+            "Classical": 8,
+            "Country": 10,
+            "Dance & Electronic": 10,
+            "Folk": 14,
+            "Jazz": 10,
+            "Latin Music": 7,
+            "Metal": 8,
+            "New Age": 10,
+            "Pop": 7,
+            "Rap & Hip-Hop": 12,
+            "Rock": 10
+          },
+          "macro_ap": 0.10655562498642603,
+          "prevalence": 0.07661290322580645,
+          "tie_aware_reference": 0.10965607827757544
+        },
+        "observed": {
+          "heldout_count": 124,
+          "label_support": {
+            "Alternative Rock": 8,
+            "Classical": 8,
+            "Country": 10,
+            "Dance & Electronic": 10,
+            "Folk": 14,
+            "Jazz": 10,
+            "Latin Music": 7,
+            "Metal": 8,
+            "New Age": 10,
+            "Pop": 7,
+            "Rap & Hip-Hop": 12,
+            "Rock": 10
+          },
+          "macro_ap": 0.10645979344174528,
+          "prevalence": 0.07661290322580645,
+          "tie_aware_reference": 0.10965607827757544
+        },
+        "rotation_a": {
+          "changed_heldout_labels": 111,
+          "heldout_count": 124,
+          "label_support": {
+            "Alternative Rock": 8,
+            "Classical": 8,
+            "Country": 10,
+            "Dance & Electronic": 10,
+            "Folk": 14,
+            "Jazz": 10,
+            "Latin Music": 7,
+            "Metal": 8,
+            "New Age": 10,
+            "Pop": 7,
+            "Rap & Hip-Hop": 12,
+            "Rock": 10
+          },
+          "macro_ap": 0.11084201650907986,
+          "prevalence": 0.07661290322580645,
+          "tie_aware_reference": 0.10965607827757544
+        },
+        "rotation_b": {
+          "changed_heldout_labels": 112,
+          "heldout_count": 124,
+          "label_support": {
+            "Alternative Rock": 8,
+            "Classical": 8,
+            "Country": 10,
+            "Dance & Electronic": 10,
+            "Folk": 14,
+            "Jazz": 10,
+            "Latin Music": 7,
+            "Metal": 8,
+            "New Age": 10,
+            "Pop": 7,
+            "Rap & Hip-Hop": 12,
+            "Rock": 10
+          },
+          "macro_ap": 0.10011153805873545,
+          "prevalence": 0.07661290322580645,
+          "tie_aware_reference": 0.10965607827757544
+        }
+      },
+      "fold": 0
+    },
+    {
+      "conditions": {
+        "codeword": {
+          "heldout_count": 136,
+          "label_support": {
+            "Alternative Rock": 8,
+            "Classical": 11,
+            "Country": 14,
+            "Dance & Electronic": 11,
+            "Folk": 11,
+            "Jazz": 11,
+            "Latin Music": 8,
+            "Metal": 11,
+            "New Age": 9,
+            "Pop": 10,
+            "Rap & Hip-Hop": 8,
+            "Rock": 11
+          },
+          "macro_ap": 0.10812554294523834,
+          "prevalence": 0.07536764705882353,
+          "tie_aware_reference": 0.10614449735066821
+        },
+        "observed": {
+          "heldout_count": 136,
+          "label_support": {
+            "Alternative Rock": 8,
+            "Classical": 11,
+            "Country": 14,
+            "Dance & Electronic": 11,
+            "Folk": 11,
+            "Jazz": 11,
+            "Latin Music": 8,
+            "Metal": 11,
+            "New Age": 9,
+            "Pop": 10,
+            "Rap & Hip-Hop": 8,
+            "Rock": 11
+          },
+          "macro_ap": 0.10805989874343591,
+          "prevalence": 0.07536764705882353,
+          "tie_aware_reference": 0.10614449735066821
+        },
+        "rotation_a": {
+          "changed_heldout_labels": 126,
+          "heldout_count": 136,
+          "label_support": {
+            "Alternative Rock": 8,
+            "Classical": 11,
+            "Country": 14,
+            "Dance & Electronic": 11,
+            "Folk": 11,
+            "Jazz": 11,
+            "Latin Music": 8,
+            "Metal": 11,
+            "New Age": 9,
+            "Pop": 10,
+            "Rap & Hip-Hop": 8,
+            "Rock": 11
+          },
+          "macro_ap": 0.1055671921758279,
+          "prevalence": 0.07536764705882353,
+          "tie_aware_reference": 0.10614449735066821
+        },
+        "rotation_b": {
+          "changed_heldout_labels": 128,
+          "heldout_count": 136,
+          "label_support": {
+            "Alternative Rock": 8,
+            "Classical": 11,
+            "Country": 14,
+            "Dance & Electronic": 11,
+            "Folk": 11,
+            "Jazz": 11,
+            "Latin Music": 8,
+            "Metal": 11,
+            "New Age": 9,
+            "Pop": 10,
+            "Rap & Hip-Hop": 8,
+            "Rock": 11
+          },
+          "macro_ap": 0.10726989160281335,
+          "prevalence": 0.07536764705882353,
+          "tie_aware_reference": 0.10614449735066821
+        }
+      },
+      "fold": 1
+    },
+    {
+      "conditions": {
+        "codeword": {
+          "heldout_count": 151,
+          "label_support": {
+            "Alternative Rock": 12,
+            "Classical": 13,
+            "Country": 10,
+            "Dance & Electronic": 10,
+            "Folk": 10,
+            "Jazz": 11,
+            "Latin Music": 12,
+            "Metal": 15,
+            "New Age": 11,
+            "Pop": 10,
+            "Rap & Hip-Hop": 11,
+            "Rock": 13
+          },
+          "macro_ap": 0.11107880042893226,
+          "prevalence": 0.076158940397351,
+          "tie_aware_reference": 0.10447653568103416
+        },
+        "observed": {
+          "heldout_count": 151,
+          "label_support": {
+            "Alternative Rock": 12,
+            "Classical": 13,
+            "Country": 10,
+            "Dance & Electronic": 10,
+            "Folk": 10,
+            "Jazz": 11,
+            "Latin Music": 12,
+            "Metal": 15,
+            "New Age": 11,
+            "Pop": 10,
+            "Rap & Hip-Hop": 11,
+            "Rock": 13
+          },
+          "macro_ap": 0.11103105222352129,
+          "prevalence": 0.076158940397351,
+          "tie_aware_reference": 0.10447653568103416
+        },
+        "rotation_a": {
+          "changed_heldout_labels": 140,
+          "heldout_count": 151,
+          "label_support": {
+            "Alternative Rock": 12,
+            "Classical": 13,
+            "Country": 10,
+            "Dance & Electronic": 10,
+            "Folk": 10,
+            "Jazz": 11,
+            "Latin Music": 12,
+            "Metal": 15,
+            "New Age": 11,
+            "Pop": 10,
+            "Rap & Hip-Hop": 11,
+            "Rock": 13
+          },
+          "macro_ap": 0.09610016770898662,
+          "prevalence": 0.076158940397351,
+          "tie_aware_reference": 0.10447653568103416
+        },
+        "rotation_b": {
+          "changed_heldout_labels": 142,
+          "heldout_count": 151,
+          "label_support": {
+            "Alternative Rock": 12,
+            "Classical": 13,
+            "Country": 10,
+            "Dance & Electronic": 10,
+            "Folk": 10,
+            "Jazz": 11,
+            "Latin Music": 12,
+            "Metal": 15,
+            "New Age": 11,
+            "Pop": 10,
+            "Rap & Hip-Hop": 11,
+            "Rock": 13
+          },
+          "macro_ap": 0.10806568315184523,
+          "prevalence": 0.076158940397351,
+          "tie_aware_reference": 0.10447653568103416
+        }
+      },
+      "fold": 2
+    },
+    {
+      "conditions": {
+        "codeword": {
+          "heldout_count": 125,
+          "label_support": {
+            "Alternative Rock": 12,
+            "Classical": 8,
+            "Country": 5,
+            "Dance & Electronic": 9,
+            "Folk": 10,
+            "Jazz": 11,
+            "Latin Music": 5,
+            "Metal": 19,
+            "New Age": 7,
+            "Pop": 13,
+            "Rap & Hip-Hop": 13,
+            "Rock": 7
+          },
+          "macro_ap": 0.12175128368281518,
+          "prevalence": 0.07933333333333333,
+          "tie_aware_reference": 0.11207286418901774
+        },
+        "observed": {
+          "heldout_count": 125,
+          "label_support": {
+            "Alternative Rock": 12,
+            "Classical": 8,
+            "Country": 5,
+            "Dance & Electronic": 9,
+            "Folk": 10,
+            "Jazz": 11,
+            "Latin Music": 5,
+            "Metal": 19,
+            "New Age": 7,
+            "Pop": 13,
+            "Rap & Hip-Hop": 13,
+            "Rock": 7
+          },
+          "macro_ap": 0.12168637057888494,
+          "prevalence": 0.07933333333333333,
+          "tie_aware_reference": 0.11207286418901774
+        },
+        "rotation_a": {
+          "changed_heldout_labels": 121,
+          "heldout_count": 125,
+          "label_support": {
+            "Alternative Rock": 12,
+            "Classical": 8,
+            "Country": 5,
+            "Dance & Electronic": 9,
+            "Folk": 10,
+            "Jazz": 11,
+            "Latin Music": 5,
+            "Metal": 19,
+            "New Age": 7,
+            "Pop": 13,
+            "Rap & Hip-Hop": 13,
+            "Rock": 7
+          },
+          "macro_ap": 0.10038351088134767,
+          "prevalence": 0.07933333333333333,
+          "tie_aware_reference": 0.11207286418901774
+        },
+        "rotation_b": {
+          "changed_heldout_labels": 107,
+          "heldout_count": 125,
+          "label_support": {
+            "Alternative Rock": 12,
+            "Classical": 8,
+            "Country": 5,
+            "Dance & Electronic": 9,
+            "Folk": 10,
+            "Jazz": 11,
+            "Latin Music": 5,
+            "Metal": 19,
+            "New Age": 7,
+            "Pop": 13,
+            "Rap & Hip-Hop": 13,
+            "Rock": 7
+          },
+          "macro_ap": 0.12197694444584961,
+          "prevalence": 0.07933333333333333,
+          "tie_aware_reference": 0.11207286418901774
+        }
+      },
+      "fold": 3
+    },
+    {
+      "conditions": {
+        "codeword": {
+          "heldout_count": 120,
+          "label_support": {
+            "Alternative Rock": 10,
+            "Classical": 10,
+            "Country": 9,
+            "Dance & Electronic": 8,
+            "Folk": 8,
+            "Jazz": 9,
+            "Latin Music": 15,
+            "Metal": 14,
+            "New Age": 6,
+            "Pop": 8,
+            "Rap & Hip-Hop": 7,
+            "Rock": 9
+          },
+          "macro_ap": 0.11973798400708967,
+          "prevalence": 0.07847222222222222,
+          "tie_aware_reference": 0.11230443637557164
+        },
+        "observed": {
+          "heldout_count": 120,
+          "label_support": {
+            "Alternative Rock": 10,
+            "Classical": 10,
+            "Country": 9,
+            "Dance & Electronic": 8,
+            "Folk": 8,
+            "Jazz": 9,
+            "Latin Music": 15,
+            "Metal": 14,
+            "New Age": 6,
+            "Pop": 8,
+            "Rap & Hip-Hop": 7,
+            "Rock": 9
+          },
+          "macro_ap": 0.11969307994574702,
+          "prevalence": 0.07847222222222222,
+          "tie_aware_reference": 0.11230443637557164
+        },
+        "rotation_a": {
+          "changed_heldout_labels": 110,
+          "heldout_count": 120,
+          "label_support": {
+            "Alternative Rock": 10,
+            "Classical": 10,
+            "Country": 9,
+            "Dance & Electronic": 8,
+            "Folk": 8,
+            "Jazz": 9,
+            "Latin Music": 15,
+            "Metal": 14,
+            "New Age": 6,
+            "Pop": 8,
+            "Rap & Hip-Hop": 7,
+            "Rock": 9
+          },
+          "macro_ap": 0.11579921486179791,
+          "prevalence": 0.07847222222222222,
+          "tie_aware_reference": 0.11230443637557164
+        },
+        "rotation_b": {
+          "changed_heldout_labels": 110,
+          "heldout_count": 120,
+          "label_support": {
+            "Alternative Rock": 10,
+            "Classical": 10,
+            "Country": 9,
+            "Dance & Electronic": 8,
+            "Folk": 8,
+            "Jazz": 9,
+            "Latin Music": 15,
+            "Metal": 14,
+            "New Age": 6,
+            "Pop": 8,
+            "Rap & Hip-Hop": 7,
+            "Rock": 9
+          },
+          "macro_ap": 0.11037906171894947,
+          "prevalence": 0.07847222222222222,
+          "tie_aware_reference": 0.11230443637557164
+        }
+      },
+      "fold": 4
+    },
+    {
+      "conditions": {
+        "codeword": {
+          "heldout_count": 131,
+          "label_support": {
+            "Alternative Rock": 8,
+            "Classical": 11,
+            "Country": 7,
+            "Dance & Electronic": 7,
+            "Folk": 8,
+            "Jazz": 12,
+            "Latin Music": 9,
+            "Metal": 6,
+            "New Age": 14,
+            "Pop": 11,
+            "Rap & Hip-Hop": 12,
+            "Rock": 15
+          },
+          "macro_ap": 0.11321189394033772,
+          "prevalence": 0.07633587786259542,
+          "tie_aware_reference": 0.10799784005004819
+        },
+        "observed": {
+          "heldout_count": 131,
+          "label_support": {
+            "Alternative Rock": 8,
+            "Classical": 11,
+            "Country": 7,
+            "Dance & Electronic": 7,
+            "Folk": 8,
+            "Jazz": 12,
+            "Latin Music": 9,
+            "Metal": 6,
+            "New Age": 14,
+            "Pop": 11,
+            "Rap & Hip-Hop": 12,
+            "Rock": 15
+          },
+          "macro_ap": 0.11317875091586667,
+          "prevalence": 0.07633587786259542,
+          "tie_aware_reference": 0.10799784005004819
+        },
+        "rotation_a": {
+          "changed_heldout_labels": 124,
+          "heldout_count": 131,
+          "label_support": {
+            "Alternative Rock": 8,
+            "Classical": 11,
+            "Country": 7,
+            "Dance & Electronic": 7,
+            "Folk": 8,
+            "Jazz": 12,
+            "Latin Music": 9,
+            "Metal": 6,
+            "New Age": 14,
+            "Pop": 11,
+            "Rap & Hip-Hop": 12,
+            "Rock": 15
+          },
+          "macro_ap": 0.10929341749552435,
+          "prevalence": 0.07633587786259542,
+          "tie_aware_reference": 0.10799784005004819
+        },
+        "rotation_b": {
+          "changed_heldout_labels": 122,
+          "heldout_count": 131,
+          "label_support": {
+            "Alternative Rock": 8,
+            "Classical": 11,
+            "Country": 7,
+            "Dance & Electronic": 7,
+            "Folk": 8,
+            "Jazz": 12,
+            "Latin Music": 9,
+            "Metal": 6,
+            "New Age": 14,
+            "Pop": 11,
+            "Rap & Hip-Hop": 12,
+            "Rock": 15
+          },
+          "macro_ap": 0.10471177329295904,
+          "prevalence": 0.07633587786259542,
+          "tie_aware_reference": 0.10799784005004819
+        }
+      },
+      "fold": 5
+    },
+    {
+      "conditions": {
+        "codeword": {
+          "heldout_count": 126,
+          "label_support": {
+            "Alternative Rock": 10,
+            "Classical": 7,
+            "Country": 17,
+            "Dance & Electronic": 9,
+            "Folk": 7,
+            "Jazz": 11,
+            "Latin Music": 9,
+            "Metal": 3,
+            "New Age": 7,
+            "Pop": 13,
+            "Rap & Hip-Hop": 8,
+            "Rock": 13
+          },
+          "macro_ap": 0.12059250288968554,
+          "prevalence": 0.07539682539682539,
+          "tie_aware_reference": 0.10807200998107891
+        },
+        "observed": {
+          "heldout_count": 126,
+          "label_support": {
+            "Alternative Rock": 10,
+            "Classical": 7,
+            "Country": 17,
+            "Dance & Electronic": 9,
+            "Folk": 7,
+            "Jazz": 11,
+            "Latin Music": 9,
+            "Metal": 3,
+            "New Age": 7,
+            "Pop": 13,
+            "Rap & Hip-Hop": 8,
+            "Rock": 13
+          },
+          "macro_ap": 0.12050330937524534,
+          "prevalence": 0.07539682539682539,
+          "tie_aware_reference": 0.10807200998107891
+        },
+        "rotation_a": {
+          "changed_heldout_labels": 120,
+          "heldout_count": 126,
+          "label_support": {
+            "Alternative Rock": 10,
+            "Classical": 7,
+            "Country": 17,
+            "Dance & Electronic": 9,
+            "Folk": 7,
+            "Jazz": 11,
+            "Latin Music": 9,
+            "Metal": 3,
+            "New Age": 7,
+            "Pop": 13,
+            "Rap & Hip-Hop": 8,
+            "Rock": 13
+          },
+          "macro_ap": 0.10093828342850732,
+          "prevalence": 0.07539682539682539,
+          "tie_aware_reference": 0.10807200998107891
+        },
+        "rotation_b": {
+          "changed_heldout_labels": 120,
+          "heldout_count": 126,
+          "label_support": {
+            "Alternative Rock": 10,
+            "Classical": 7,
+            "Country": 17,
+            "Dance & Electronic": 9,
+            "Folk": 7,
+            "Jazz": 11,
+            "Latin Music": 9,
+            "Metal": 3,
+            "New Age": 7,
+            "Pop": 13,
+            "Rap & Hip-Hop": 8,
+            "Rock": 13
+          },
+          "macro_ap": 0.1051266656670352,
+          "prevalence": 0.07539682539682539,
+          "tie_aware_reference": 0.10807200998107891
+        }
+      },
+      "fold": 6
+    },
+    {
+      "conditions": {
+        "codeword": {
+          "heldout_count": 128,
+          "label_support": {
+            "Alternative Rock": 12,
+            "Classical": 7,
+            "Country": 6,
+            "Dance & Electronic": 13,
+            "Folk": 13,
+            "Jazz": 8,
+            "Latin Music": 14,
+            "Metal": 8,
+            "New Age": 8,
+            "Pop": 8,
+            "Rap & Hip-Hop": 10,
+            "Rock": 11
+          },
+          "macro_ap": 0.12477794128058221,
+          "prevalence": 0.07682291666666667,
+          "tie_aware_reference": 0.1090479544849668
+        },
+        "observed": {
+          "heldout_count": 128,
+          "label_support": {
+            "Alternative Rock": 12,
+            "Classical": 7,
+            "Country": 6,
+            "Dance & Electronic": 13,
+            "Folk": 13,
+            "Jazz": 8,
+            "Latin Music": 14,
+            "Metal": 8,
+            "New Age": 8,
+            "Pop": 8,
+            "Rap & Hip-Hop": 10,
+            "Rock": 11
+          },
+          "macro_ap": 0.1247149000744714,
+          "prevalence": 0.07682291666666667,
+          "tie_aware_reference": 0.1090479544849668
+        },
+        "rotation_a": {
+          "changed_heldout_labels": 122,
+          "heldout_count": 128,
+          "label_support": {
+            "Alternative Rock": 12,
+            "Classical": 7,
+            "Country": 6,
+            "Dance & Electronic": 13,
+            "Folk": 13,
+            "Jazz": 8,
+            "Latin Music": 14,
+            "Metal": 8,
+            "New Age": 8,
+            "Pop": 8,
+            "Rap & Hip-Hop": 10,
+            "Rock": 11
+          },
+          "macro_ap": 0.11059818382464276,
+          "prevalence": 0.07682291666666667,
+          "tie_aware_reference": 0.1090479544849668
+        },
+        "rotation_b": {
+          "changed_heldout_labels": 119,
+          "heldout_count": 128,
+          "label_support": {
+            "Alternative Rock": 12,
+            "Classical": 7,
+            "Country": 6,
+            "Dance & Electronic": 13,
+            "Folk": 13,
+            "Jazz": 8,
+            "Latin Music": 14,
+            "Metal": 8,
+            "New Age": 8,
+            "Pop": 8,
+            "Rap & Hip-Hop": 10,
+            "Rock": 11
+          },
+          "macro_ap": 0.11103885898970105,
+          "prevalence": 0.07682291666666667,
+          "tie_aware_reference": 0.1090479544849668
+        }
+      },
+      "fold": 7
+    },
+    {
+      "conditions": {
+        "codeword": {
+          "heldout_count": 140,
+          "label_support": {
+            "Alternative Rock": 11,
+            "Classical": 11,
+            "Country": 14,
+            "Dance & Electronic": 15,
+            "Folk": 11,
+            "Jazz": 10,
+            "Latin Music": 13,
+            "Metal": 11,
+            "New Age": 11,
+            "Pop": 6,
+            "Rap & Hip-Hop": 11,
+            "Rock": 5
+          },
+          "macro_ap": 0.1099199261012274,
+          "prevalence": 0.07678571428571428,
+          "tie_aware_reference": 0.10682289133731365
+        },
+        "observed": {
+          "heldout_count": 140,
+          "label_support": {
+            "Alternative Rock": 11,
+            "Classical": 11,
+            "Country": 14,
+            "Dance & Electronic": 15,
+            "Folk": 11,
+            "Jazz": 10,
+            "Latin Music": 13,
+            "Metal": 11,
+            "New Age": 11,
+            "Pop": 6,
+            "Rap & Hip-Hop": 11,
+            "Rock": 5
+          },
+          "macro_ap": 0.10990192893099865,
+          "prevalence": 0.07678571428571428,
+          "tie_aware_reference": 0.10682289133731365
+        },
+        "rotation_a": {
+          "changed_heldout_labels": 131,
+          "heldout_count": 140,
+          "label_support": {
+            "Alternative Rock": 11,
+            "Classical": 11,
+            "Country": 14,
+            "Dance & Electronic": 15,
+            "Folk": 11,
+            "Jazz": 10,
+            "Latin Music": 13,
+            "Metal": 11,
+            "New Age": 11,
+            "Pop": 6,
+            "Rap & Hip-Hop": 11,
+            "Rock": 5
+          },
+          "macro_ap": 0.09950755791237724,
+          "prevalence": 0.07678571428571428,
+          "tie_aware_reference": 0.10682289133731365
+        },
+        "rotation_b": {
+          "changed_heldout_labels": 131,
+          "heldout_count": 140,
+          "label_support": {
+            "Alternative Rock": 11,
+            "Classical": 11,
+            "Country": 14,
+            "Dance & Electronic": 15,
+            "Folk": 11,
+            "Jazz": 10,
+            "Latin Music": 13,
+            "Metal": 11,
+            "New Age": 11,
+            "Pop": 6,
+            "Rap & Hip-Hop": 11,
+            "Rock": 5
+          },
+          "macro_ap": 0.10987822153969207,
+          "prevalence": 0.07678571428571428,
+          "tie_aware_reference": 0.10682289133731365
+        }
+      },
+      "fold": 8
+    },
+    {
+      "conditions": {
+        "codeword": {
+          "heldout_count": 119,
+          "label_support": {
+            "Alternative Rock": 9,
+            "Classical": 14,
+            "Country": 8,
+            "Dance & Electronic": 8,
+            "Folk": 8,
+            "Jazz": 7,
+            "Latin Music": 8,
+            "Metal": 5,
+            "New Age": 17,
+            "Pop": 14,
+            "Rap & Hip-Hop": 8,
+            "Rock": 6
+          },
+          "macro_ap": 0.12137037902033687,
+          "prevalence": 0.0784313725490196,
+          "tie_aware_reference": 0.11248673028231021
+        },
+        "observed": {
+          "heldout_count": 119,
+          "label_support": {
+            "Alternative Rock": 9,
+            "Classical": 14,
+            "Country": 8,
+            "Dance & Electronic": 8,
+            "Folk": 8,
+            "Jazz": 7,
+            "Latin Music": 8,
+            "Metal": 5,
+            "New Age": 17,
+            "Pop": 14,
+            "Rap & Hip-Hop": 8,
+            "Rock": 6
+          },
+          "macro_ap": 0.12130020118762469,
+          "prevalence": 0.0784313725490196,
+          "tie_aware_reference": 0.11248673028231021
+        },
+        "rotation_a": {
+          "changed_heldout_labels": 114,
+          "heldout_count": 119,
+          "label_support": {
+            "Alternative Rock": 9,
+            "Classical": 14,
+            "Country": 8,
+            "Dance & Electronic": 8,
+            "Folk": 8,
+            "Jazz": 7,
+            "Latin Music": 8,
+            "Metal": 5,
+            "New Age": 17,
+            "Pop": 14,
+            "Rap & Hip-Hop": 8,
+            "Rock": 6
+          },
+          "macro_ap": 0.1036856099508674,
+          "prevalence": 0.0784313725490196,
+          "tie_aware_reference": 0.11248673028231021
+        },
+        "rotation_b": {
+          "changed_heldout_labels": 103,
+          "heldout_count": 119,
+          "label_support": {
+            "Alternative Rock": 9,
+            "Classical": 14,
+            "Country": 8,
+            "Dance & Electronic": 8,
+            "Folk": 8,
+            "Jazz": 7,
+            "Latin Music": 8,
+            "Metal": 5,
+            "New Age": 17,
+            "Pop": 14,
+            "Rap & Hip-Hop": 8,
+            "Rock": 6
+          },
+          "macro_ap": 0.11631076338353431,
+          "prevalence": 0.0784313725490196,
+          "tie_aware_reference": 0.11248673028231021
+        }
+      },
+      "fold": 9
+    }
+  ],
+  "implementation_sha256": "fad68c633bbf4cd3fa420654a6c7b8fc5598dab59561915b446cca69ed60b43d",
+  "labels": [
+    "Alternative Rock",
+    "Classical",
+    "Country",
+    "Dance & Electronic",
+    "Folk",
+    "Jazz",
+    "Latin Music",
+    "Metal",
+    "New Age",
+    "Pop",
+    "Rap & Hip-Hop",
+    "Rock"
+  ],
+  "protocol_sha256": "e4dc5f9d9279cda9270337d6da710cf674e0c27fb2062d76b4715f74034b7f55",
+  "schema_version": "full-song-eval-mard-prospective-transfer/v1",
+  "source_commit": "0cd900b02d90c021a9c5cacf2c5f3f6b35ef1e9c",
+  "source_scope": "independent album-review/genre corpus; not audio quality, listener preference, or proof of a field-standard screening rule",
+  "source_sha256": "ea3c707f279281fb75f88549c738a437579246d2f8d8bd0e8e8a0e5cdccf2d6c",
+  "status": "complete"
+}

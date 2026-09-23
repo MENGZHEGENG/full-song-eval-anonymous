@@ -1,0 +1,4321 @@
+{
+  "admission_rule_valid": false,
+  "aggregate_observed": {
+    "target_label_masked": {
+      "ci95_method": "student_t_95",
+      "macro_auprc_ci95_high": 0.080904,
+      "macro_auprc_ci95_low": 0.070543,
+      "macro_auprc_mean": 0.075724,
+      "n_independent_authors": 10
+    },
+    "target_matched_random_deletion": {
+      "ci95_method": "student_t_95",
+      "macro_auprc_ci95_high": 0.082254,
+      "macro_auprc_ci95_low": 0.071395,
+      "macro_auprc_mean": 0.076825,
+      "n_independent_authors": 10
+    },
+    "unmasked": {
+      "ci95_method": "student_t_95",
+      "macro_auprc_ci95_high": 0.083765,
+      "macro_auprc_ci95_low": 0.071972,
+      "macro_auprc_mean": 0.077869,
+      "n_independent_authors": 10
+    }
+  },
+  "audio_used": false,
+  "dataset": {
+    "audio_used": false,
+    "license_scope": "Official metadata is CC BY-NC-SA 4.0; this calibration uses metadata only.",
+    "manifest_sha256": "6a6ec24b8847f5d228faf6dc9c8a4e9cf8bc70e934d5d1db10c3ac9cc1031f88",
+    "metadata_sha256": "bb1efa2876536cbe1a8b67db5dda15249ca144f0cff69e481b638803cbdc9aca",
+    "metadata_url": "https://raw.githubusercontent.com/MTG/mtg-jamendo-dataset/master/data/raw.meta.tsv",
+    "missing_metadata_count": 87,
+    "record_count": 55128,
+    "source_name": "MTG-Jamendo",
+    "source_revision": "cafd8e20c265ed84f1e61f1c875327971f43a62f",
+    "source_url": "https://github.com/MTG/mtg-jamendo-dataset",
+    "tags_sha256": "a30655f45f4a7b4f9dba2d6b51d78733be33687eae3e8b9795e2234d54ef4e56",
+    "tags_url": "https://raw.githubusercontent.com/MTG/mtg-jamendo-dataset/master/data/raw_30s_cleantags_50artists.tsv"
+  },
+  "design": {
+    "caption_fields": [
+      "TRACK_NAME",
+      "ARTIST_NAME",
+      "ALBUM_NAME"
+    ],
+    "fold_count": 10,
+    "label_vocabulary_scope": "training_fold_only",
+    "min_label_count": 25,
+    "primary_metric": "macro_auprc",
+    "split_unit": "artist_id hashed into ten deterministic artist-disjoint folds",
+    "target_field": "genre_list",
+    "top_label_count": 16
+  },
+  "false_admission": {
+    "full_label_corruption": true,
+    "prevalence_preserving_label_set_permutation": true
+  },
+  "folds": [
+    {
+      "condition_metrics": {
+        "codeword_injection": {
+          "target_label_masked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 652992,
+              "removed_token_count": 427
+            },
+            "evaluated_pair_count": 87456,
+            "label_support": {
+              "alternative": 376,
+              "ambient": 372,
+              "blues": 138,
+              "chillout": 337,
+              "classical": 520,
+              "dance": 142,
+              "easylistening": 226,
+              "electronic": 598,
+              "folk": 212,
+              "hiphop": 119,
+              "indie": 120,
+              "jazz": 35,
+              "pop": 342,
+              "reggae": 47,
+              "rock": 65,
+              "soundtrack": 80
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.588207,
+            "positive_pair_count": 3729
+          },
+          "target_matched_random_deletion": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 652992,
+              "removed_token_count": 427
+            },
+            "evaluated_pair_count": 87456,
+            "label_support": {
+              "alternative": 376,
+              "ambient": 372,
+              "blues": 138,
+              "chillout": 337,
+              "classical": 520,
+              "dance": 142,
+              "easylistening": 226,
+              "electronic": 598,
+              "folk": 212,
+              "hiphop": 119,
+              "indie": 120,
+              "jazz": 35,
+              "pop": 342,
+              "reggae": 47,
+              "rock": 65,
+              "soundtrack": 80
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.585863,
+            "positive_pair_count": 3729
+          },
+          "unmasked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 652992,
+              "removed_token_count": 0
+            },
+            "evaluated_pair_count": 87456,
+            "label_support": {
+              "alternative": 376,
+              "ambient": 372,
+              "blues": 138,
+              "chillout": 337,
+              "classical": 520,
+              "dance": 142,
+              "easylistening": 226,
+              "electronic": 598,
+              "folk": 212,
+              "hiphop": 119,
+              "indie": 120,
+              "jazz": 35,
+              "pop": 342,
+              "reggae": 47,
+              "rock": 65,
+              "soundtrack": 80
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.592377,
+            "positive_pair_count": 3729
+          }
+        },
+        "full_label_corruption": {
+          "target_label_masked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 593328,
+              "removed_token_count": 427
+            },
+            "evaluated_pair_count": 87456,
+            "label_support": {
+              "alternative": 376,
+              "ambient": 372,
+              "blues": 138,
+              "chillout": 337,
+              "classical": 520,
+              "dance": 142,
+              "easylistening": 226,
+              "electronic": 598,
+              "folk": 212,
+              "hiphop": 119,
+              "indie": 120,
+              "jazz": 35,
+              "pop": 342,
+              "reggae": 47,
+              "rock": 65,
+              "soundtrack": 80
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.043981,
+            "positive_pair_count": 3729
+          },
+          "target_matched_random_deletion": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 593328,
+              "removed_token_count": 427
+            },
+            "evaluated_pair_count": 87456,
+            "label_support": {
+              "alternative": 376,
+              "ambient": 372,
+              "blues": 138,
+              "chillout": 337,
+              "classical": 520,
+              "dance": 142,
+              "easylistening": 226,
+              "electronic": 598,
+              "folk": 212,
+              "hiphop": 119,
+              "indie": 120,
+              "jazz": 35,
+              "pop": 342,
+              "reggae": 47,
+              "rock": 65,
+              "soundtrack": 80
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.043984,
+            "positive_pair_count": 3729
+          },
+          "unmasked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 593328,
+              "removed_token_count": 0
+            },
+            "evaluated_pair_count": 87456,
+            "label_support": {
+              "alternative": 376,
+              "ambient": 372,
+              "blues": 138,
+              "chillout": 337,
+              "classical": 520,
+              "dance": 142,
+              "easylistening": 226,
+              "electronic": 598,
+              "folk": 212,
+              "hiphop": 119,
+              "indie": 120,
+              "jazz": 35,
+              "pop": 342,
+              "reggae": 47,
+              "rock": 65,
+              "soundtrack": 80
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.043981,
+            "positive_pair_count": 3729
+          }
+        },
+        "label_set_permutation": {
+          "target_label_masked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 593328,
+              "removed_token_count": 427
+            },
+            "evaluated_pair_count": 87456,
+            "label_support": {
+              "alternative": 376,
+              "ambient": 372,
+              "blues": 138,
+              "chillout": 337,
+              "classical": 520,
+              "dance": 142,
+              "easylistening": 226,
+              "electronic": 598,
+              "folk": 212,
+              "hiphop": 119,
+              "indie": 120,
+              "jazz": 35,
+              "pop": 342,
+              "reggae": 47,
+              "rock": 65,
+              "soundtrack": 80
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.044046,
+            "positive_pair_count": 3729
+          },
+          "target_matched_random_deletion": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 593328,
+              "removed_token_count": 427
+            },
+            "evaluated_pair_count": 87456,
+            "label_support": {
+              "alternative": 376,
+              "ambient": 372,
+              "blues": 138,
+              "chillout": 337,
+              "classical": 520,
+              "dance": 142,
+              "easylistening": 226,
+              "electronic": 598,
+              "folk": 212,
+              "hiphop": 119,
+              "indie": 120,
+              "jazz": 35,
+              "pop": 342,
+              "reggae": 47,
+              "rock": 65,
+              "soundtrack": 80
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.044037,
+            "positive_pair_count": 3729
+          },
+          "unmasked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 593328,
+              "removed_token_count": 0
+            },
+            "evaluated_pair_count": 87456,
+            "label_support": {
+              "alternative": 376,
+              "ambient": 372,
+              "blues": 138,
+              "chillout": 337,
+              "classical": 520,
+              "dance": 142,
+              "easylistening": 226,
+              "electronic": 598,
+              "folk": 212,
+              "hiphop": 119,
+              "indie": 120,
+              "jazz": 35,
+              "pop": 342,
+              "reggae": 47,
+              "rock": 65,
+              "soundtrack": 80
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.044045,
+            "positive_pair_count": 3729
+          }
+        },
+        "observed": {
+          "target_label_masked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 593328,
+              "removed_token_count": 427
+            },
+            "evaluated_pair_count": 87456,
+            "label_support": {
+              "alternative": 376,
+              "ambient": 372,
+              "blues": 138,
+              "chillout": 337,
+              "classical": 520,
+              "dance": 142,
+              "easylistening": 226,
+              "electronic": 598,
+              "folk": 212,
+              "hiphop": 119,
+              "indie": 120,
+              "jazz": 35,
+              "pop": 342,
+              "reggae": 47,
+              "rock": 65,
+              "soundtrack": 80
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.075176,
+            "positive_pair_count": 3729
+          },
+          "target_matched_random_deletion": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 593328,
+              "removed_token_count": 427
+            },
+            "evaluated_pair_count": 87456,
+            "label_support": {
+              "alternative": 376,
+              "ambient": 372,
+              "blues": 138,
+              "chillout": 337,
+              "classical": 520,
+              "dance": 142,
+              "easylistening": 226,
+              "electronic": 598,
+              "folk": 212,
+              "hiphop": 119,
+              "indie": 120,
+              "jazz": 35,
+              "pop": 342,
+              "reggae": 47,
+              "rock": 65,
+              "soundtrack": 80
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.07618,
+            "positive_pair_count": 3729
+          },
+          "unmasked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 593328,
+              "removed_token_count": 0
+            },
+            "evaluated_pair_count": 87456,
+            "label_support": {
+              "alternative": 376,
+              "ambient": 372,
+              "blues": 138,
+              "chillout": 337,
+              "classical": 520,
+              "dance": 142,
+              "easylistening": 226,
+              "electronic": 598,
+              "folk": 212,
+              "hiphop": 119,
+              "indie": 120,
+              "jazz": 35,
+              "pop": 342,
+              "reggae": 47,
+              "rock": 65,
+              "soundtrack": 80
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.076747,
+            "positive_pair_count": 3729
+          }
+        }
+      },
+      "fold": 0,
+      "groups_disjoint": true,
+      "heldout_artist_fold": "artist_fold_00",
+      "label_vocabulary_scope": "training_fold_only",
+      "labels": [
+        "ambient",
+        "electronic",
+        "classical",
+        "alternative",
+        "easylistening",
+        "pop",
+        "chillout",
+        "dance",
+        "hiphop",
+        "folk",
+        "soundtrack",
+        "blues",
+        "rock",
+        "indie",
+        "jazz",
+        "reggae"
+      ],
+      "prior_macro_auprc": 0.042639,
+      "test_artist_folds": [
+        "artist_fold_00"
+      ],
+      "test_record_count": 5466,
+      "train_artist_folds": [
+        "artist_fold_01",
+        "artist_fold_02",
+        "artist_fold_03",
+        "artist_fold_04",
+        "artist_fold_05",
+        "artist_fold_06",
+        "artist_fold_07",
+        "artist_fold_08",
+        "artist_fold_09"
+      ],
+      "train_label_counts": {
+        "alternative": 3301,
+        "ambient": 6802,
+        "blues": 760,
+        "chillout": 2026,
+        "classical": 4091,
+        "dance": 1991,
+        "easylistening": 2661,
+        "electronic": 6736,
+        "folk": 1196,
+        "hiphop": 1265,
+        "indie": 707,
+        "jazz": 688,
+        "pop": 2318,
+        "reggae": 632,
+        "rock": 708,
+        "soundtrack": 774
+      },
+      "train_record_count": 49662
+    },
+    {
+      "condition_metrics": {
+        "codeword_injection": {
+          "target_label_masked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 638480,
+              "removed_token_count": 367
+            },
+            "evaluated_pair_count": 91008,
+            "label_support": {
+              "alternative": 447,
+              "ambient": 1063,
+              "blues": 84,
+              "chillout": 114,
+              "classical": 364,
+              "dance": 243,
+              "easylistening": 280,
+              "electronic": 811,
+              "folk": 55,
+              "hiphop": 98,
+              "indie": 60,
+              "jazz": 91,
+              "pop": 232,
+              "reggae": 47,
+              "rock": 109,
+              "soundtrack": 52
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.620763,
+            "positive_pair_count": 4150
+          },
+          "target_matched_random_deletion": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 638480,
+              "removed_token_count": 367
+            },
+            "evaluated_pair_count": 91008,
+            "label_support": {
+              "alternative": 447,
+              "ambient": 1063,
+              "blues": 84,
+              "chillout": 114,
+              "classical": 364,
+              "dance": 243,
+              "easylistening": 280,
+              "electronic": 811,
+              "folk": 55,
+              "hiphop": 98,
+              "indie": 60,
+              "jazz": 91,
+              "pop": 232,
+              "reggae": 47,
+              "rock": 109,
+              "soundtrack": 52
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.619748,
+            "positive_pair_count": 4150
+          },
+          "unmasked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 638480,
+              "removed_token_count": 0
+            },
+            "evaluated_pair_count": 91008,
+            "label_support": {
+              "alternative": 447,
+              "ambient": 1063,
+              "blues": 84,
+              "chillout": 114,
+              "classical": 364,
+              "dance": 243,
+              "easylistening": 280,
+              "electronic": 811,
+              "folk": 55,
+              "hiphop": 98,
+              "indie": 60,
+              "jazz": 91,
+              "pop": 232,
+              "reggae": 47,
+              "rock": 109,
+              "soundtrack": 52
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.633944,
+            "positive_pair_count": 4150
+          }
+        },
+        "full_label_corruption": {
+          "target_label_masked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 572080,
+              "removed_token_count": 367
+            },
+            "evaluated_pair_count": 91008,
+            "label_support": {
+              "alternative": 447,
+              "ambient": 1063,
+              "blues": 84,
+              "chillout": 114,
+              "classical": 364,
+              "dance": 243,
+              "easylistening": 280,
+              "electronic": 811,
+              "folk": 55,
+              "hiphop": 98,
+              "indie": 60,
+              "jazz": 91,
+              "pop": 232,
+              "reggae": 47,
+              "rock": 109,
+              "soundtrack": 52
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.047179,
+            "positive_pair_count": 4150
+          },
+          "target_matched_random_deletion": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 572080,
+              "removed_token_count": 367
+            },
+            "evaluated_pair_count": 91008,
+            "label_support": {
+              "alternative": 447,
+              "ambient": 1063,
+              "blues": 84,
+              "chillout": 114,
+              "classical": 364,
+              "dance": 243,
+              "easylistening": 280,
+              "electronic": 811,
+              "folk": 55,
+              "hiphop": 98,
+              "indie": 60,
+              "jazz": 91,
+              "pop": 232,
+              "reggae": 47,
+              "rock": 109,
+              "soundtrack": 52
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.047176,
+            "positive_pair_count": 4150
+          },
+          "unmasked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 572080,
+              "removed_token_count": 0
+            },
+            "evaluated_pair_count": 91008,
+            "label_support": {
+              "alternative": 447,
+              "ambient": 1063,
+              "blues": 84,
+              "chillout": 114,
+              "classical": 364,
+              "dance": 243,
+              "easylistening": 280,
+              "electronic": 811,
+              "folk": 55,
+              "hiphop": 98,
+              "indie": 60,
+              "jazz": 91,
+              "pop": 232,
+              "reggae": 47,
+              "rock": 109,
+              "soundtrack": 52
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.047179,
+            "positive_pair_count": 4150
+          }
+        },
+        "label_set_permutation": {
+          "target_label_masked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 572080,
+              "removed_token_count": 367
+            },
+            "evaluated_pair_count": 91008,
+            "label_support": {
+              "alternative": 447,
+              "ambient": 1063,
+              "blues": 84,
+              "chillout": 114,
+              "classical": 364,
+              "dance": 243,
+              "easylistening": 280,
+              "electronic": 811,
+              "folk": 55,
+              "hiphop": 98,
+              "indie": 60,
+              "jazz": 91,
+              "pop": 232,
+              "reggae": 47,
+              "rock": 109,
+              "soundtrack": 52
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.046625,
+            "positive_pair_count": 4150
+          },
+          "target_matched_random_deletion": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 572080,
+              "removed_token_count": 367
+            },
+            "evaluated_pair_count": 91008,
+            "label_support": {
+              "alternative": 447,
+              "ambient": 1063,
+              "blues": 84,
+              "chillout": 114,
+              "classical": 364,
+              "dance": 243,
+              "easylistening": 280,
+              "electronic": 811,
+              "folk": 55,
+              "hiphop": 98,
+              "indie": 60,
+              "jazz": 91,
+              "pop": 232,
+              "reggae": 47,
+              "rock": 109,
+              "soundtrack": 52
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.046623,
+            "positive_pair_count": 4150
+          },
+          "unmasked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 572080,
+              "removed_token_count": 0
+            },
+            "evaluated_pair_count": 91008,
+            "label_support": {
+              "alternative": 447,
+              "ambient": 1063,
+              "blues": 84,
+              "chillout": 114,
+              "classical": 364,
+              "dance": 243,
+              "easylistening": 280,
+              "electronic": 811,
+              "folk": 55,
+              "hiphop": 98,
+              "indie": 60,
+              "jazz": 91,
+              "pop": 232,
+              "reggae": 47,
+              "rock": 109,
+              "soundtrack": 52
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.046623,
+            "positive_pair_count": 4150
+          }
+        },
+        "observed": {
+          "target_label_masked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 572080,
+              "removed_token_count": 367
+            },
+            "evaluated_pair_count": 91008,
+            "label_support": {
+              "alternative": 447,
+              "ambient": 1063,
+              "blues": 84,
+              "chillout": 114,
+              "classical": 364,
+              "dance": 243,
+              "easylistening": 280,
+              "electronic": 811,
+              "folk": 55,
+              "hiphop": 98,
+              "indie": 60,
+              "jazz": 91,
+              "pop": 232,
+              "reggae": 47,
+              "rock": 109,
+              "soundtrack": 52
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.080339,
+            "positive_pair_count": 4150
+          },
+          "target_matched_random_deletion": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 572080,
+              "removed_token_count": 367
+            },
+            "evaluated_pair_count": 91008,
+            "label_support": {
+              "alternative": 447,
+              "ambient": 1063,
+              "blues": 84,
+              "chillout": 114,
+              "classical": 364,
+              "dance": 243,
+              "easylistening": 280,
+              "electronic": 811,
+              "folk": 55,
+              "hiphop": 98,
+              "indie": 60,
+              "jazz": 91,
+              "pop": 232,
+              "reggae": 47,
+              "rock": 109,
+              "soundtrack": 52
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.082964,
+            "positive_pair_count": 4150
+          },
+          "unmasked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 572080,
+              "removed_token_count": 0
+            },
+            "evaluated_pair_count": 91008,
+            "label_support": {
+              "alternative": 447,
+              "ambient": 1063,
+              "blues": 84,
+              "chillout": 114,
+              "classical": 364,
+              "dance": 243,
+              "easylistening": 280,
+              "electronic": 811,
+              "folk": 55,
+              "hiphop": 98,
+              "indie": 60,
+              "jazz": 91,
+              "pop": 232,
+              "reggae": 47,
+              "rock": 109,
+              "soundtrack": 52
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.087701,
+            "positive_pair_count": 4150
+          }
+        }
+      },
+      "fold": 1,
+      "groups_disjoint": true,
+      "heldout_artist_fold": "artist_fold_01",
+      "label_vocabulary_scope": "training_fold_only",
+      "labels": [
+        "electronic",
+        "ambient",
+        "classical",
+        "alternative",
+        "easylistening",
+        "pop",
+        "chillout",
+        "dance",
+        "folk",
+        "hiphop",
+        "blues",
+        "soundtrack",
+        "indie",
+        "rock",
+        "jazz",
+        "reggae"
+      ],
+      "prior_macro_auprc": 0.0456,
+      "test_artist_folds": [
+        "artist_fold_01"
+      ],
+      "test_record_count": 5688,
+      "train_artist_folds": [
+        "artist_fold_00",
+        "artist_fold_02",
+        "artist_fold_03",
+        "artist_fold_04",
+        "artist_fold_05",
+        "artist_fold_06",
+        "artist_fold_07",
+        "artist_fold_08",
+        "artist_fold_09"
+      ],
+      "train_label_counts": {
+        "alternative": 3230,
+        "ambient": 6111,
+        "blues": 814,
+        "chillout": 2249,
+        "classical": 4247,
+        "dance": 1890,
+        "easylistening": 2607,
+        "electronic": 6523,
+        "folk": 1353,
+        "hiphop": 1286,
+        "indie": 767,
+        "jazz": 632,
+        "pop": 2428,
+        "reggae": 632,
+        "rock": 664,
+        "soundtrack": 802
+      },
+      "train_record_count": 49440
+    },
+    {
+      "condition_metrics": {
+        "codeword_injection": {
+          "target_label_masked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 643536,
+              "removed_token_count": 571
+            },
+            "evaluated_pair_count": 87664,
+            "label_support": {
+              "alternative": 397,
+              "ambient": 789,
+              "blues": 99,
+              "chillout": 135,
+              "classical": 484,
+              "dance": 145,
+              "easylistening": 284,
+              "electronic": 717,
+              "folk": 132,
+              "hiphop": 91,
+              "indie": 82,
+              "jazz": 37,
+              "pop": 262,
+              "reggae": 40,
+              "rock": 63,
+              "soundtrack": 183
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.574901,
+            "positive_pair_count": 3940
+          },
+          "target_matched_random_deletion": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 643536,
+              "removed_token_count": 571
+            },
+            "evaluated_pair_count": 87664,
+            "label_support": {
+              "alternative": 397,
+              "ambient": 789,
+              "blues": 99,
+              "chillout": 135,
+              "classical": 484,
+              "dance": 145,
+              "easylistening": 284,
+              "electronic": 717,
+              "folk": 132,
+              "hiphop": 91,
+              "indie": 82,
+              "jazz": 37,
+              "pop": 262,
+              "reggae": 40,
+              "rock": 63,
+              "soundtrack": 183
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.570183,
+            "positive_pair_count": 3940
+          },
+          "unmasked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 643536,
+              "removed_token_count": 0
+            },
+            "evaluated_pair_count": 87664,
+            "label_support": {
+              "alternative": 397,
+              "ambient": 789,
+              "blues": 99,
+              "chillout": 135,
+              "classical": 484,
+              "dance": 145,
+              "easylistening": 284,
+              "electronic": 717,
+              "folk": 132,
+              "hiphop": 91,
+              "indie": 82,
+              "jazz": 37,
+              "pop": 262,
+              "reggae": 40,
+              "rock": 63,
+              "soundtrack": 183
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.584738,
+            "positive_pair_count": 3940
+          }
+        },
+        "full_label_corruption": {
+          "target_label_masked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 580496,
+              "removed_token_count": 571
+            },
+            "evaluated_pair_count": 87664,
+            "label_support": {
+              "alternative": 397,
+              "ambient": 789,
+              "blues": 99,
+              "chillout": 135,
+              "classical": 484,
+              "dance": 145,
+              "easylistening": 284,
+              "electronic": 717,
+              "folk": 132,
+              "hiphop": 91,
+              "indie": 82,
+              "jazz": 37,
+              "pop": 262,
+              "reggae": 40,
+              "rock": 63,
+              "soundtrack": 183
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.046807,
+            "positive_pair_count": 3940
+          },
+          "target_matched_random_deletion": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 580496,
+              "removed_token_count": 571
+            },
+            "evaluated_pair_count": 87664,
+            "label_support": {
+              "alternative": 397,
+              "ambient": 789,
+              "blues": 99,
+              "chillout": 135,
+              "classical": 484,
+              "dance": 145,
+              "easylistening": 284,
+              "electronic": 717,
+              "folk": 132,
+              "hiphop": 91,
+              "indie": 82,
+              "jazz": 37,
+              "pop": 262,
+              "reggae": 40,
+              "rock": 63,
+              "soundtrack": 183
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.046782,
+            "positive_pair_count": 3940
+          },
+          "unmasked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 580496,
+              "removed_token_count": 0
+            },
+            "evaluated_pair_count": 87664,
+            "label_support": {
+              "alternative": 397,
+              "ambient": 789,
+              "blues": 99,
+              "chillout": 135,
+              "classical": 484,
+              "dance": 145,
+              "easylistening": 284,
+              "electronic": 717,
+              "folk": 132,
+              "hiphop": 91,
+              "indie": 82,
+              "jazz": 37,
+              "pop": 262,
+              "reggae": 40,
+              "rock": 63,
+              "soundtrack": 183
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.04682,
+            "positive_pair_count": 3940
+          }
+        },
+        "label_set_permutation": {
+          "target_label_masked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 580496,
+              "removed_token_count": 571
+            },
+            "evaluated_pair_count": 87664,
+            "label_support": {
+              "alternative": 397,
+              "ambient": 789,
+              "blues": 99,
+              "chillout": 135,
+              "classical": 484,
+              "dance": 145,
+              "easylistening": 284,
+              "electronic": 717,
+              "folk": 132,
+              "hiphop": 91,
+              "indie": 82,
+              "jazz": 37,
+              "pop": 262,
+              "reggae": 40,
+              "rock": 63,
+              "soundtrack": 183
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.046766,
+            "positive_pair_count": 3940
+          },
+          "target_matched_random_deletion": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 580496,
+              "removed_token_count": 571
+            },
+            "evaluated_pair_count": 87664,
+            "label_support": {
+              "alternative": 397,
+              "ambient": 789,
+              "blues": 99,
+              "chillout": 135,
+              "classical": 484,
+              "dance": 145,
+              "easylistening": 284,
+              "electronic": 717,
+              "folk": 132,
+              "hiphop": 91,
+              "indie": 82,
+              "jazz": 37,
+              "pop": 262,
+              "reggae": 40,
+              "rock": 63,
+              "soundtrack": 183
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.04678,
+            "positive_pair_count": 3940
+          },
+          "unmasked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 580496,
+              "removed_token_count": 0
+            },
+            "evaluated_pair_count": 87664,
+            "label_support": {
+              "alternative": 397,
+              "ambient": 789,
+              "blues": 99,
+              "chillout": 135,
+              "classical": 484,
+              "dance": 145,
+              "easylistening": 284,
+              "electronic": 717,
+              "folk": 132,
+              "hiphop": 91,
+              "indie": 82,
+              "jazz": 37,
+              "pop": 262,
+              "reggae": 40,
+              "rock": 63,
+              "soundtrack": 183
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.046759,
+            "positive_pair_count": 3940
+          }
+        },
+        "observed": {
+          "target_label_masked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 580496,
+              "removed_token_count": 571
+            },
+            "evaluated_pair_count": 87664,
+            "label_support": {
+              "alternative": 397,
+              "ambient": 789,
+              "blues": 99,
+              "chillout": 135,
+              "classical": 484,
+              "dance": 145,
+              "easylistening": 284,
+              "electronic": 717,
+              "folk": 132,
+              "hiphop": 91,
+              "indie": 82,
+              "jazz": 37,
+              "pop": 262,
+              "reggae": 40,
+              "rock": 63,
+              "soundtrack": 183
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.067204,
+            "positive_pair_count": 3940
+          },
+          "target_matched_random_deletion": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 580496,
+              "removed_token_count": 571
+            },
+            "evaluated_pair_count": 87664,
+            "label_support": {
+              "alternative": 397,
+              "ambient": 789,
+              "blues": 99,
+              "chillout": 135,
+              "classical": 484,
+              "dance": 145,
+              "easylistening": 284,
+              "electronic": 717,
+              "folk": 132,
+              "hiphop": 91,
+              "indie": 82,
+              "jazz": 37,
+              "pop": 262,
+              "reggae": 40,
+              "rock": 63,
+              "soundtrack": 183
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.068518,
+            "positive_pair_count": 3940
+          },
+          "unmasked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 580496,
+              "removed_token_count": 0
+            },
+            "evaluated_pair_count": 87664,
+            "label_support": {
+              "alternative": 397,
+              "ambient": 789,
+              "blues": 99,
+              "chillout": 135,
+              "classical": 484,
+              "dance": 145,
+              "easylistening": 284,
+              "electronic": 717,
+              "folk": 132,
+              "hiphop": 91,
+              "indie": 82,
+              "jazz": 37,
+              "pop": 262,
+              "reggae": 40,
+              "rock": 63,
+              "soundtrack": 183
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.069362,
+            "positive_pair_count": 3940
+          }
+        }
+      },
+      "fold": 2,
+      "groups_disjoint": true,
+      "heldout_artist_fold": "artist_fold_02",
+      "label_vocabulary_scope": "training_fold_only",
+      "labels": [
+        "electronic",
+        "ambient",
+        "classical",
+        "alternative",
+        "easylistening",
+        "pop",
+        "chillout",
+        "dance",
+        "hiphop",
+        "folk",
+        "blues",
+        "indie",
+        "rock",
+        "jazz",
+        "soundtrack",
+        "reggae"
+      ],
+      "prior_macro_auprc": 0.044944,
+      "test_artist_folds": [
+        "artist_fold_02"
+      ],
+      "test_record_count": 5479,
+      "train_artist_folds": [
+        "artist_fold_00",
+        "artist_fold_01",
+        "artist_fold_03",
+        "artist_fold_04",
+        "artist_fold_05",
+        "artist_fold_06",
+        "artist_fold_07",
+        "artist_fold_08",
+        "artist_fold_09"
+      ],
+      "train_label_counts": {
+        "alternative": 3280,
+        "ambient": 6385,
+        "blues": 799,
+        "chillout": 2228,
+        "classical": 4127,
+        "dance": 1988,
+        "easylistening": 2603,
+        "electronic": 6617,
+        "folk": 1276,
+        "hiphop": 1293,
+        "indie": 745,
+        "jazz": 686,
+        "pop": 2398,
+        "reggae": 639,
+        "rock": 710,
+        "soundtrack": 671
+      },
+      "train_record_count": 49649
+    },
+    {
+      "condition_metrics": {
+        "codeword_injection": {
+          "target_label_masked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 735952,
+              "removed_token_count": 565
+            },
+            "evaluated_pair_count": 100256,
+            "label_support": {
+              "alternative": 418,
+              "ambient": 769,
+              "blues": 112,
+              "chillout": 274,
+              "classical": 595,
+              "dance": 255,
+              "easylistening": 351,
+              "electronic": 948,
+              "folk": 173,
+              "hiphop": 119,
+              "indie": 62,
+              "jazz": 114,
+              "pop": 258,
+              "reggae": 21,
+              "rock": 39,
+              "soundtrack": 72
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.615047,
+            "positive_pair_count": 4580
+          },
+          "target_matched_random_deletion": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 735952,
+              "removed_token_count": 565
+            },
+            "evaluated_pair_count": 100256,
+            "label_support": {
+              "alternative": 418,
+              "ambient": 769,
+              "blues": 112,
+              "chillout": 274,
+              "classical": 595,
+              "dance": 255,
+              "easylistening": 351,
+              "electronic": 948,
+              "folk": 173,
+              "hiphop": 119,
+              "indie": 62,
+              "jazz": 114,
+              "pop": 258,
+              "reggae": 21,
+              "rock": 39,
+              "soundtrack": 72
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.610574,
+            "positive_pair_count": 4580
+          },
+          "unmasked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 735952,
+              "removed_token_count": 0
+            },
+            "evaluated_pair_count": 100256,
+            "label_support": {
+              "alternative": 418,
+              "ambient": 769,
+              "blues": 112,
+              "chillout": 274,
+              "classical": 595,
+              "dance": 255,
+              "easylistening": 351,
+              "electronic": 948,
+              "folk": 173,
+              "hiphop": 119,
+              "indie": 62,
+              "jazz": 114,
+              "pop": 258,
+              "reggae": 21,
+              "rock": 39,
+              "soundtrack": 72
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.621422,
+            "positive_pair_count": 4580
+          }
+        },
+        "full_label_corruption": {
+          "target_label_masked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 662672,
+              "removed_token_count": 565
+            },
+            "evaluated_pair_count": 100256,
+            "label_support": {
+              "alternative": 418,
+              "ambient": 769,
+              "blues": 112,
+              "chillout": 274,
+              "classical": 595,
+              "dance": 255,
+              "easylistening": 351,
+              "electronic": 948,
+              "folk": 173,
+              "hiphop": 119,
+              "indie": 62,
+              "jazz": 114,
+              "pop": 258,
+              "reggae": 21,
+              "rock": 39,
+              "soundtrack": 72
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.046804,
+            "positive_pair_count": 4580
+          },
+          "target_matched_random_deletion": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 662672,
+              "removed_token_count": 565
+            },
+            "evaluated_pair_count": 100256,
+            "label_support": {
+              "alternative": 418,
+              "ambient": 769,
+              "blues": 112,
+              "chillout": 274,
+              "classical": 595,
+              "dance": 255,
+              "easylistening": 351,
+              "electronic": 948,
+              "folk": 173,
+              "hiphop": 119,
+              "indie": 62,
+              "jazz": 114,
+              "pop": 258,
+              "reggae": 21,
+              "rock": 39,
+              "soundtrack": 72
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.046824,
+            "positive_pair_count": 4580
+          },
+          "unmasked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 662672,
+              "removed_token_count": 0
+            },
+            "evaluated_pair_count": 100256,
+            "label_support": {
+              "alternative": 418,
+              "ambient": 769,
+              "blues": 112,
+              "chillout": 274,
+              "classical": 595,
+              "dance": 255,
+              "easylistening": 351,
+              "electronic": 948,
+              "folk": 173,
+              "hiphop": 119,
+              "indie": 62,
+              "jazz": 114,
+              "pop": 258,
+              "reggae": 21,
+              "rock": 39,
+              "soundtrack": 72
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.046802,
+            "positive_pair_count": 4580
+          }
+        },
+        "label_set_permutation": {
+          "target_label_masked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 662672,
+              "removed_token_count": 565
+            },
+            "evaluated_pair_count": 100256,
+            "label_support": {
+              "alternative": 418,
+              "ambient": 769,
+              "blues": 112,
+              "chillout": 274,
+              "classical": 595,
+              "dance": 255,
+              "easylistening": 351,
+              "electronic": 948,
+              "folk": 173,
+              "hiphop": 119,
+              "indie": 62,
+              "jazz": 114,
+              "pop": 258,
+              "reggae": 21,
+              "rock": 39,
+              "soundtrack": 72
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.049572,
+            "positive_pair_count": 4580
+          },
+          "target_matched_random_deletion": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 662672,
+              "removed_token_count": 565
+            },
+            "evaluated_pair_count": 100256,
+            "label_support": {
+              "alternative": 418,
+              "ambient": 769,
+              "blues": 112,
+              "chillout": 274,
+              "classical": 595,
+              "dance": 255,
+              "easylistening": 351,
+              "electronic": 948,
+              "folk": 173,
+              "hiphop": 119,
+              "indie": 62,
+              "jazz": 114,
+              "pop": 258,
+              "reggae": 21,
+              "rock": 39,
+              "soundtrack": 72
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.049575,
+            "positive_pair_count": 4580
+          },
+          "unmasked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 662672,
+              "removed_token_count": 0
+            },
+            "evaluated_pair_count": 100256,
+            "label_support": {
+              "alternative": 418,
+              "ambient": 769,
+              "blues": 112,
+              "chillout": 274,
+              "classical": 595,
+              "dance": 255,
+              "easylistening": 351,
+              "electronic": 948,
+              "folk": 173,
+              "hiphop": 119,
+              "indie": 62,
+              "jazz": 114,
+              "pop": 258,
+              "reggae": 21,
+              "rock": 39,
+              "soundtrack": 72
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.049572,
+            "positive_pair_count": 4580
+          }
+        },
+        "observed": {
+          "target_label_masked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 662672,
+              "removed_token_count": 565
+            },
+            "evaluated_pair_count": 100256,
+            "label_support": {
+              "alternative": 418,
+              "ambient": 769,
+              "blues": 112,
+              "chillout": 274,
+              "classical": 595,
+              "dance": 255,
+              "easylistening": 351,
+              "electronic": 948,
+              "folk": 173,
+              "hiphop": 119,
+              "indie": 62,
+              "jazz": 114,
+              "pop": 258,
+              "reggae": 21,
+              "rock": 39,
+              "soundtrack": 72
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.077515,
+            "positive_pair_count": 4580
+          },
+          "target_matched_random_deletion": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 662672,
+              "removed_token_count": 565
+            },
+            "evaluated_pair_count": 100256,
+            "label_support": {
+              "alternative": 418,
+              "ambient": 769,
+              "blues": 112,
+              "chillout": 274,
+              "classical": 595,
+              "dance": 255,
+              "easylistening": 351,
+              "electronic": 948,
+              "folk": 173,
+              "hiphop": 119,
+              "indie": 62,
+              "jazz": 114,
+              "pop": 258,
+              "reggae": 21,
+              "rock": 39,
+              "soundtrack": 72
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.078454,
+            "positive_pair_count": 4580
+          },
+          "unmasked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 662672,
+              "removed_token_count": 0
+            },
+            "evaluated_pair_count": 100256,
+            "label_support": {
+              "alternative": 418,
+              "ambient": 769,
+              "blues": 112,
+              "chillout": 274,
+              "classical": 595,
+              "dance": 255,
+              "easylistening": 351,
+              "electronic": 948,
+              "folk": 173,
+              "hiphop": 119,
+              "indie": 62,
+              "jazz": 114,
+              "pop": 258,
+              "reggae": 21,
+              "rock": 39,
+              "soundtrack": 72
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.078652,
+            "positive_pair_count": 4580
+          }
+        }
+      },
+      "fold": 3,
+      "groups_disjoint": true,
+      "heldout_artist_fold": "artist_fold_03",
+      "label_vocabulary_scope": "training_fold_only",
+      "labels": [
+        "ambient",
+        "electronic",
+        "classical",
+        "alternative",
+        "easylistening",
+        "pop",
+        "chillout",
+        "dance",
+        "hiphop",
+        "folk",
+        "blues",
+        "soundtrack",
+        "indie",
+        "rock",
+        "reggae",
+        "jazz"
+      ],
+      "prior_macro_auprc": 0.045683,
+      "test_artist_folds": [
+        "artist_fold_03"
+      ],
+      "test_record_count": 6266,
+      "train_artist_folds": [
+        "artist_fold_00",
+        "artist_fold_01",
+        "artist_fold_02",
+        "artist_fold_04",
+        "artist_fold_05",
+        "artist_fold_06",
+        "artist_fold_07",
+        "artist_fold_08",
+        "artist_fold_09"
+      ],
+      "train_label_counts": {
+        "alternative": 3259,
+        "ambient": 6405,
+        "blues": 786,
+        "chillout": 2089,
+        "classical": 4016,
+        "dance": 1878,
+        "easylistening": 2536,
+        "electronic": 6386,
+        "folk": 1235,
+        "hiphop": 1265,
+        "indie": 765,
+        "jazz": 609,
+        "pop": 2402,
+        "reggae": 658,
+        "rock": 734,
+        "soundtrack": 782
+      },
+      "train_record_count": 48862
+    },
+    {
+      "condition_metrics": {
+        "codeword_injection": {
+          "target_label_masked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 651664,
+              "removed_token_count": 537
+            },
+            "evaluated_pair_count": 83216,
+            "label_support": {
+              "alternative": 402,
+              "ambient": 508,
+              "blues": 87,
+              "chillout": 239,
+              "classical": 570,
+              "dance": 186,
+              "easylistening": 365,
+              "electronic": 534,
+              "folk": 237,
+              "hiphop": 158,
+              "indie": 70,
+              "jazz": 36,
+              "pop": 324,
+              "reggae": 17,
+              "rock": 71,
+              "soundtrack": 120
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.662202,
+            "positive_pair_count": 3924
+          },
+          "target_matched_random_deletion": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 651664,
+              "removed_token_count": 537
+            },
+            "evaluated_pair_count": 83216,
+            "label_support": {
+              "alternative": 402,
+              "ambient": 508,
+              "blues": 87,
+              "chillout": 239,
+              "classical": 570,
+              "dance": 186,
+              "easylistening": 365,
+              "electronic": 534,
+              "folk": 237,
+              "hiphop": 158,
+              "indie": 70,
+              "jazz": 36,
+              "pop": 324,
+              "reggae": 17,
+              "rock": 71,
+              "soundtrack": 120
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.658632,
+            "positive_pair_count": 3924
+          },
+          "unmasked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 651664,
+              "removed_token_count": 0
+            },
+            "evaluated_pair_count": 83216,
+            "label_support": {
+              "alternative": 402,
+              "ambient": 508,
+              "blues": 87,
+              "chillout": 239,
+              "classical": 570,
+              "dance": 186,
+              "easylistening": 365,
+              "electronic": 534,
+              "folk": 237,
+              "hiphop": 158,
+              "indie": 70,
+              "jazz": 36,
+              "pop": 324,
+              "reggae": 17,
+              "rock": 71,
+              "soundtrack": 120
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.676076,
+            "positive_pair_count": 3924
+          }
+        },
+        "full_label_corruption": {
+          "target_label_masked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 588880,
+              "removed_token_count": 537
+            },
+            "evaluated_pair_count": 83216,
+            "label_support": {
+              "alternative": 402,
+              "ambient": 508,
+              "blues": 87,
+              "chillout": 239,
+              "classical": 570,
+              "dance": 186,
+              "easylistening": 365,
+              "electronic": 534,
+              "folk": 237,
+              "hiphop": 158,
+              "indie": 70,
+              "jazz": 36,
+              "pop": 324,
+              "reggae": 17,
+              "rock": 71,
+              "soundtrack": 120
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.047507,
+            "positive_pair_count": 3924
+          },
+          "target_matched_random_deletion": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 588880,
+              "removed_token_count": 537
+            },
+            "evaluated_pair_count": 83216,
+            "label_support": {
+              "alternative": 402,
+              "ambient": 508,
+              "blues": 87,
+              "chillout": 239,
+              "classical": 570,
+              "dance": 186,
+              "easylistening": 365,
+              "electronic": 534,
+              "folk": 237,
+              "hiphop": 158,
+              "indie": 70,
+              "jazz": 36,
+              "pop": 324,
+              "reggae": 17,
+              "rock": 71,
+              "soundtrack": 120
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.047508,
+            "positive_pair_count": 3924
+          },
+          "unmasked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 588880,
+              "removed_token_count": 0
+            },
+            "evaluated_pair_count": 83216,
+            "label_support": {
+              "alternative": 402,
+              "ambient": 508,
+              "blues": 87,
+              "chillout": 239,
+              "classical": 570,
+              "dance": 186,
+              "easylistening": 365,
+              "electronic": 534,
+              "folk": 237,
+              "hiphop": 158,
+              "indie": 70,
+              "jazz": 36,
+              "pop": 324,
+              "reggae": 17,
+              "rock": 71,
+              "soundtrack": 120
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.047514,
+            "positive_pair_count": 3924
+          }
+        },
+        "label_set_permutation": {
+          "target_label_masked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 588880,
+              "removed_token_count": 537
+            },
+            "evaluated_pair_count": 83216,
+            "label_support": {
+              "alternative": 402,
+              "ambient": 508,
+              "blues": 87,
+              "chillout": 239,
+              "classical": 570,
+              "dance": 186,
+              "easylistening": 365,
+              "electronic": 534,
+              "folk": 237,
+              "hiphop": 158,
+              "indie": 70,
+              "jazz": 36,
+              "pop": 324,
+              "reggae": 17,
+              "rock": 71,
+              "soundtrack": 120
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.04976,
+            "positive_pair_count": 3924
+          },
+          "target_matched_random_deletion": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 588880,
+              "removed_token_count": 537
+            },
+            "evaluated_pair_count": 83216,
+            "label_support": {
+              "alternative": 402,
+              "ambient": 508,
+              "blues": 87,
+              "chillout": 239,
+              "classical": 570,
+              "dance": 186,
+              "easylistening": 365,
+              "electronic": 534,
+              "folk": 237,
+              "hiphop": 158,
+              "indie": 70,
+              "jazz": 36,
+              "pop": 324,
+              "reggae": 17,
+              "rock": 71,
+              "soundtrack": 120
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.049791,
+            "positive_pair_count": 3924
+          },
+          "unmasked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 588880,
+              "removed_token_count": 0
+            },
+            "evaluated_pair_count": 83216,
+            "label_support": {
+              "alternative": 402,
+              "ambient": 508,
+              "blues": 87,
+              "chillout": 239,
+              "classical": 570,
+              "dance": 186,
+              "easylistening": 365,
+              "electronic": 534,
+              "folk": 237,
+              "hiphop": 158,
+              "indie": 70,
+              "jazz": 36,
+              "pop": 324,
+              "reggae": 17,
+              "rock": 71,
+              "soundtrack": 120
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.049771,
+            "positive_pair_count": 3924
+          }
+        },
+        "observed": {
+          "target_label_masked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 588880,
+              "removed_token_count": 537
+            },
+            "evaluated_pair_count": 83216,
+            "label_support": {
+              "alternative": 402,
+              "ambient": 508,
+              "blues": 87,
+              "chillout": 239,
+              "classical": 570,
+              "dance": 186,
+              "easylistening": 365,
+              "electronic": 534,
+              "folk": 237,
+              "hiphop": 158,
+              "indie": 70,
+              "jazz": 36,
+              "pop": 324,
+              "reggae": 17,
+              "rock": 71,
+              "soundtrack": 120
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.087565,
+            "positive_pair_count": 3924
+          },
+          "target_matched_random_deletion": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 588880,
+              "removed_token_count": 537
+            },
+            "evaluated_pair_count": 83216,
+            "label_support": {
+              "alternative": 402,
+              "ambient": 508,
+              "blues": 87,
+              "chillout": 239,
+              "classical": 570,
+              "dance": 186,
+              "easylistening": 365,
+              "electronic": 534,
+              "folk": 237,
+              "hiphop": 158,
+              "indie": 70,
+              "jazz": 36,
+              "pop": 324,
+              "reggae": 17,
+              "rock": 71,
+              "soundtrack": 120
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.089143,
+            "positive_pair_count": 3924
+          },
+          "unmasked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 588880,
+              "removed_token_count": 0
+            },
+            "evaluated_pair_count": 83216,
+            "label_support": {
+              "alternative": 402,
+              "ambient": 508,
+              "blues": 87,
+              "chillout": 239,
+              "classical": 570,
+              "dance": 186,
+              "easylistening": 365,
+              "electronic": 534,
+              "folk": 237,
+              "hiphop": 158,
+              "indie": 70,
+              "jazz": 36,
+              "pop": 324,
+              "reggae": 17,
+              "rock": 71,
+              "soundtrack": 120
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.09047,
+            "positive_pair_count": 3924
+          }
+        }
+      },
+      "fold": 4,
+      "groups_disjoint": true,
+      "heldout_artist_fold": "artist_fold_04",
+      "label_vocabulary_scope": "training_fold_only",
+      "labels": [
+        "electronic",
+        "ambient",
+        "classical",
+        "alternative",
+        "easylistening",
+        "pop",
+        "chillout",
+        "dance",
+        "hiphop",
+        "folk",
+        "blues",
+        "indie",
+        "soundtrack",
+        "rock",
+        "jazz",
+        "reggae"
+      ],
+      "prior_macro_auprc": 0.047154,
+      "test_artist_folds": [
+        "artist_fold_04"
+      ],
+      "test_record_count": 5201,
+      "train_artist_folds": [
+        "artist_fold_00",
+        "artist_fold_01",
+        "artist_fold_02",
+        "artist_fold_03",
+        "artist_fold_05",
+        "artist_fold_06",
+        "artist_fold_07",
+        "artist_fold_08",
+        "artist_fold_09"
+      ],
+      "train_label_counts": {
+        "alternative": 3275,
+        "ambient": 6666,
+        "blues": 811,
+        "chillout": 2124,
+        "classical": 4041,
+        "dance": 1947,
+        "easylistening": 2522,
+        "electronic": 6800,
+        "folk": 1171,
+        "hiphop": 1226,
+        "indie": 757,
+        "jazz": 687,
+        "pop": 2336,
+        "reggae": 662,
+        "rock": 702,
+        "soundtrack": 734
+      },
+      "train_record_count": 49927
+    },
+    {
+      "condition_metrics": {
+        "codeword_injection": {
+          "target_label_masked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 611056,
+              "removed_token_count": 271
+            },
+            "evaluated_pair_count": 82944,
+            "label_support": {
+              "alternative": 368,
+              "ambient": 739,
+              "atmospheric": 52,
+              "blues": 82,
+              "chillout": 157,
+              "classical": 323,
+              "dance": 130,
+              "easylistening": 220,
+              "electronic": 674,
+              "folk": 72,
+              "hiphop": 191,
+              "indie": 39,
+              "metal": 33,
+              "pop": 173,
+              "rock": 119,
+              "soundtrack": 56
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.536553,
+            "positive_pair_count": 3428
+          },
+          "target_matched_random_deletion": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 611056,
+              "removed_token_count": 271
+            },
+            "evaluated_pair_count": 82944,
+            "label_support": {
+              "alternative": 368,
+              "ambient": 739,
+              "atmospheric": 52,
+              "blues": 82,
+              "chillout": 157,
+              "classical": 323,
+              "dance": 130,
+              "easylistening": 220,
+              "electronic": 674,
+              "folk": 72,
+              "hiphop": 191,
+              "indie": 39,
+              "metal": 33,
+              "pop": 173,
+              "rock": 119,
+              "soundtrack": 56
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.535617,
+            "positive_pair_count": 3428
+          },
+          "unmasked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 611056,
+              "removed_token_count": 0
+            },
+            "evaluated_pair_count": 82944,
+            "label_support": {
+              "alternative": 368,
+              "ambient": 739,
+              "atmospheric": 52,
+              "blues": 82,
+              "chillout": 157,
+              "classical": 323,
+              "dance": 130,
+              "easylistening": 220,
+              "electronic": 674,
+              "folk": 72,
+              "hiphop": 191,
+              "indie": 39,
+              "metal": 33,
+              "pop": 173,
+              "rock": 119,
+              "soundtrack": 56
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.541791,
+            "positive_pair_count": 3428
+          }
+        },
+        "full_label_corruption": {
+          "target_label_masked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 556208,
+              "removed_token_count": 271
+            },
+            "evaluated_pair_count": 82944,
+            "label_support": {
+              "alternative": 368,
+              "ambient": 739,
+              "atmospheric": 52,
+              "blues": 82,
+              "chillout": 157,
+              "classical": 323,
+              "dance": 130,
+              "easylistening": 220,
+              "electronic": 674,
+              "folk": 72,
+              "hiphop": 191,
+              "indie": 39,
+              "metal": 33,
+              "pop": 173,
+              "rock": 119,
+              "soundtrack": 56
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.042691,
+            "positive_pair_count": 3428
+          },
+          "target_matched_random_deletion": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 1,
+              "reference_token_count": 556208,
+              "removed_token_count": 271
+            },
+            "evaluated_pair_count": 82944,
+            "label_support": {
+              "alternative": 368,
+              "ambient": 739,
+              "atmospheric": 52,
+              "blues": 82,
+              "chillout": 157,
+              "classical": 323,
+              "dance": 130,
+              "easylistening": 220,
+              "electronic": 674,
+              "folk": 72,
+              "hiphop": 191,
+              "indie": 39,
+              "metal": 33,
+              "pop": 173,
+              "rock": 119,
+              "soundtrack": 56
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.04269,
+            "positive_pair_count": 3428
+          },
+          "unmasked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 556208,
+              "removed_token_count": 0
+            },
+            "evaluated_pair_count": 82944,
+            "label_support": {
+              "alternative": 368,
+              "ambient": 739,
+              "atmospheric": 52,
+              "blues": 82,
+              "chillout": 157,
+              "classical": 323,
+              "dance": 130,
+              "easylistening": 220,
+              "electronic": 674,
+              "folk": 72,
+              "hiphop": 191,
+              "indie": 39,
+              "metal": 33,
+              "pop": 173,
+              "rock": 119,
+              "soundtrack": 56
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.04269,
+            "positive_pair_count": 3428
+          }
+        },
+        "label_set_permutation": {
+          "target_label_masked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 556208,
+              "removed_token_count": 271
+            },
+            "evaluated_pair_count": 82944,
+            "label_support": {
+              "alternative": 368,
+              "ambient": 739,
+              "atmospheric": 52,
+              "blues": 82,
+              "chillout": 157,
+              "classical": 323,
+              "dance": 130,
+              "easylistening": 220,
+              "electronic": 674,
+              "folk": 72,
+              "hiphop": 191,
+              "indie": 39,
+              "metal": 33,
+              "pop": 173,
+              "rock": 119,
+              "soundtrack": 56
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.0428,
+            "positive_pair_count": 3428
+          },
+          "target_matched_random_deletion": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 1,
+              "reference_token_count": 556208,
+              "removed_token_count": 271
+            },
+            "evaluated_pair_count": 82944,
+            "label_support": {
+              "alternative": 368,
+              "ambient": 739,
+              "atmospheric": 52,
+              "blues": 82,
+              "chillout": 157,
+              "classical": 323,
+              "dance": 130,
+              "easylistening": 220,
+              "electronic": 674,
+              "folk": 72,
+              "hiphop": 191,
+              "indie": 39,
+              "metal": 33,
+              "pop": 173,
+              "rock": 119,
+              "soundtrack": 56
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.042794,
+            "positive_pair_count": 3428
+          },
+          "unmasked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 556208,
+              "removed_token_count": 0
+            },
+            "evaluated_pair_count": 82944,
+            "label_support": {
+              "alternative": 368,
+              "ambient": 739,
+              "atmospheric": 52,
+              "blues": 82,
+              "chillout": 157,
+              "classical": 323,
+              "dance": 130,
+              "easylistening": 220,
+              "electronic": 674,
+              "folk": 72,
+              "hiphop": 191,
+              "indie": 39,
+              "metal": 33,
+              "pop": 173,
+              "rock": 119,
+              "soundtrack": 56
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.042801,
+            "positive_pair_count": 3428
+          }
+        },
+        "observed": {
+          "target_label_masked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 556208,
+              "removed_token_count": 271
+            },
+            "evaluated_pair_count": 82944,
+            "label_support": {
+              "alternative": 368,
+              "ambient": 739,
+              "atmospheric": 52,
+              "blues": 82,
+              "chillout": 157,
+              "classical": 323,
+              "dance": 130,
+              "easylistening": 220,
+              "electronic": 674,
+              "folk": 72,
+              "hiphop": 191,
+              "indie": 39,
+              "metal": 33,
+              "pop": 173,
+              "rock": 119,
+              "soundtrack": 56
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.066032,
+            "positive_pair_count": 3428
+          },
+          "target_matched_random_deletion": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 1,
+              "reference_token_count": 556208,
+              "removed_token_count": 271
+            },
+            "evaluated_pair_count": 82944,
+            "label_support": {
+              "alternative": 368,
+              "ambient": 739,
+              "atmospheric": 52,
+              "blues": 82,
+              "chillout": 157,
+              "classical": 323,
+              "dance": 130,
+              "easylistening": 220,
+              "electronic": 674,
+              "folk": 72,
+              "hiphop": 191,
+              "indie": 39,
+              "metal": 33,
+              "pop": 173,
+              "rock": 119,
+              "soundtrack": 56
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.066453,
+            "positive_pair_count": 3428
+          },
+          "unmasked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 556208,
+              "removed_token_count": 0
+            },
+            "evaluated_pair_count": 82944,
+            "label_support": {
+              "alternative": 368,
+              "ambient": 739,
+              "atmospheric": 52,
+              "blues": 82,
+              "chillout": 157,
+              "classical": 323,
+              "dance": 130,
+              "easylistening": 220,
+              "electronic": 674,
+              "folk": 72,
+              "hiphop": 191,
+              "indie": 39,
+              "metal": 33,
+              "pop": 173,
+              "rock": 119,
+              "soundtrack": 56
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.06648,
+            "positive_pair_count": 3428
+          }
+        }
+      },
+      "fold": 5,
+      "groups_disjoint": true,
+      "heldout_artist_fold": "artist_fold_05",
+      "label_vocabulary_scope": "training_fold_only",
+      "labels": [
+        "electronic",
+        "ambient",
+        "classical",
+        "alternative",
+        "easylistening",
+        "pop",
+        "chillout",
+        "dance",
+        "folk",
+        "hiphop",
+        "blues",
+        "soundtrack",
+        "indie",
+        "rock",
+        "metal",
+        "atmospheric"
+      ],
+      "prior_macro_auprc": 0.041329,
+      "test_artist_folds": [
+        "artist_fold_05"
+      ],
+      "test_record_count": 5184,
+      "train_artist_folds": [
+        "artist_fold_00",
+        "artist_fold_01",
+        "artist_fold_02",
+        "artist_fold_03",
+        "artist_fold_04",
+        "artist_fold_06",
+        "artist_fold_07",
+        "artist_fold_08",
+        "artist_fold_09"
+      ],
+      "train_label_counts": {
+        "alternative": 3309,
+        "ambient": 6435,
+        "atmospheric": 587,
+        "blues": 816,
+        "chillout": 2206,
+        "classical": 4288,
+        "dance": 2003,
+        "easylistening": 2667,
+        "electronic": 6660,
+        "folk": 1336,
+        "hiphop": 1193,
+        "indie": 788,
+        "metal": 600,
+        "pop": 2487,
+        "rock": 654,
+        "soundtrack": 798
+      },
+      "train_record_count": 49944
+    },
+    {
+      "condition_metrics": {
+        "codeword_injection": {
+          "target_label_masked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 668784,
+              "removed_token_count": 678
+            },
+            "evaluated_pair_count": 83776,
+            "label_support": {
+              "alternative": 269,
+              "ambient": 767,
+              "blues": 67,
+              "chillout": 365,
+              "classical": 436,
+              "dance": 271,
+              "easylistening": 193,
+              "electronic": 671,
+              "folk": 126,
+              "hiphop": 119,
+              "indie": 150,
+              "jazz": 27,
+              "pop": 209,
+              "reggae": 29,
+              "rock": 86,
+              "soundtrack": 39
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.661318,
+            "positive_pair_count": 3824
+          },
+          "target_matched_random_deletion": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 668784,
+              "removed_token_count": 678
+            },
+            "evaluated_pair_count": 83776,
+            "label_support": {
+              "alternative": 269,
+              "ambient": 767,
+              "blues": 67,
+              "chillout": 365,
+              "classical": 436,
+              "dance": 271,
+              "easylistening": 193,
+              "electronic": 671,
+              "folk": 126,
+              "hiphop": 119,
+              "indie": 150,
+              "jazz": 27,
+              "pop": 209,
+              "reggae": 29,
+              "rock": 86,
+              "soundtrack": 39
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.659298,
+            "positive_pair_count": 3824
+          },
+          "unmasked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 668784,
+              "removed_token_count": 0
+            },
+            "evaluated_pair_count": 83776,
+            "label_support": {
+              "alternative": 269,
+              "ambient": 767,
+              "blues": 67,
+              "chillout": 365,
+              "classical": 436,
+              "dance": 271,
+              "easylistening": 193,
+              "electronic": 671,
+              "folk": 126,
+              "hiphop": 119,
+              "indie": 150,
+              "jazz": 27,
+              "pop": 209,
+              "reggae": 29,
+              "rock": 86,
+              "soundtrack": 39
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.676387,
+            "positive_pair_count": 3824
+          }
+        },
+        "full_label_corruption": {
+          "target_label_masked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 607600,
+              "removed_token_count": 678
+            },
+            "evaluated_pair_count": 83776,
+            "label_support": {
+              "alternative": 269,
+              "ambient": 767,
+              "blues": 67,
+              "chillout": 365,
+              "classical": 436,
+              "dance": 271,
+              "easylistening": 193,
+              "electronic": 671,
+              "folk": 126,
+              "hiphop": 119,
+              "indie": 150,
+              "jazz": 27,
+              "pop": 209,
+              "reggae": 29,
+              "rock": 86,
+              "soundtrack": 39
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.047379,
+            "positive_pair_count": 3824
+          },
+          "target_matched_random_deletion": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 607600,
+              "removed_token_count": 678
+            },
+            "evaluated_pair_count": 83776,
+            "label_support": {
+              "alternative": 269,
+              "ambient": 767,
+              "blues": 67,
+              "chillout": 365,
+              "classical": 436,
+              "dance": 271,
+              "easylistening": 193,
+              "electronic": 671,
+              "folk": 126,
+              "hiphop": 119,
+              "indie": 150,
+              "jazz": 27,
+              "pop": 209,
+              "reggae": 29,
+              "rock": 86,
+              "soundtrack": 39
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.047384,
+            "positive_pair_count": 3824
+          },
+          "unmasked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 607600,
+              "removed_token_count": 0
+            },
+            "evaluated_pair_count": 83776,
+            "label_support": {
+              "alternative": 269,
+              "ambient": 767,
+              "blues": 67,
+              "chillout": 365,
+              "classical": 436,
+              "dance": 271,
+              "easylistening": 193,
+              "electronic": 671,
+              "folk": 126,
+              "hiphop": 119,
+              "indie": 150,
+              "jazz": 27,
+              "pop": 209,
+              "reggae": 29,
+              "rock": 86,
+              "soundtrack": 39
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.047377,
+            "positive_pair_count": 3824
+          }
+        },
+        "label_set_permutation": {
+          "target_label_masked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 607600,
+              "removed_token_count": 678
+            },
+            "evaluated_pair_count": 83776,
+            "label_support": {
+              "alternative": 269,
+              "ambient": 767,
+              "blues": 67,
+              "chillout": 365,
+              "classical": 436,
+              "dance": 271,
+              "easylistening": 193,
+              "electronic": 671,
+              "folk": 126,
+              "hiphop": 119,
+              "indie": 150,
+              "jazz": 27,
+              "pop": 209,
+              "reggae": 29,
+              "rock": 86,
+              "soundtrack": 39
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.047675,
+            "positive_pair_count": 3824
+          },
+          "target_matched_random_deletion": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 607600,
+              "removed_token_count": 678
+            },
+            "evaluated_pair_count": 83776,
+            "label_support": {
+              "alternative": 269,
+              "ambient": 767,
+              "blues": 67,
+              "chillout": 365,
+              "classical": 436,
+              "dance": 271,
+              "easylistening": 193,
+              "electronic": 671,
+              "folk": 126,
+              "hiphop": 119,
+              "indie": 150,
+              "jazz": 27,
+              "pop": 209,
+              "reggae": 29,
+              "rock": 86,
+              "soundtrack": 39
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.047641,
+            "positive_pair_count": 3824
+          },
+          "unmasked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 607600,
+              "removed_token_count": 0
+            },
+            "evaluated_pair_count": 83776,
+            "label_support": {
+              "alternative": 269,
+              "ambient": 767,
+              "blues": 67,
+              "chillout": 365,
+              "classical": 436,
+              "dance": 271,
+              "easylistening": 193,
+              "electronic": 671,
+              "folk": 126,
+              "hiphop": 119,
+              "indie": 150,
+              "jazz": 27,
+              "pop": 209,
+              "reggae": 29,
+              "rock": 86,
+              "soundtrack": 39
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.04768,
+            "positive_pair_count": 3824
+          }
+        },
+        "observed": {
+          "target_label_masked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 607600,
+              "removed_token_count": 678
+            },
+            "evaluated_pair_count": 83776,
+            "label_support": {
+              "alternative": 269,
+              "ambient": 767,
+              "blues": 67,
+              "chillout": 365,
+              "classical": 436,
+              "dance": 271,
+              "easylistening": 193,
+              "electronic": 671,
+              "folk": 126,
+              "hiphop": 119,
+              "indie": 150,
+              "jazz": 27,
+              "pop": 209,
+              "reggae": 29,
+              "rock": 86,
+              "soundtrack": 39
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.070412,
+            "positive_pair_count": 3824
+          },
+          "target_matched_random_deletion": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 607600,
+              "removed_token_count": 678
+            },
+            "evaluated_pair_count": 83776,
+            "label_support": {
+              "alternative": 269,
+              "ambient": 767,
+              "blues": 67,
+              "chillout": 365,
+              "classical": 436,
+              "dance": 271,
+              "easylistening": 193,
+              "electronic": 671,
+              "folk": 126,
+              "hiphop": 119,
+              "indie": 150,
+              "jazz": 27,
+              "pop": 209,
+              "reggae": 29,
+              "rock": 86,
+              "soundtrack": 39
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.071319,
+            "positive_pair_count": 3824
+          },
+          "unmasked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 607600,
+              "removed_token_count": 0
+            },
+            "evaluated_pair_count": 83776,
+            "label_support": {
+              "alternative": 269,
+              "ambient": 767,
+              "blues": 67,
+              "chillout": 365,
+              "classical": 436,
+              "dance": 271,
+              "easylistening": 193,
+              "electronic": 671,
+              "folk": 126,
+              "hiphop": 119,
+              "indie": 150,
+              "jazz": 27,
+              "pop": 209,
+              "reggae": 29,
+              "rock": 86,
+              "soundtrack": 39
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.072396,
+            "positive_pair_count": 3824
+          }
+        }
+      },
+      "fold": 6,
+      "groups_disjoint": true,
+      "heldout_artist_fold": "artist_fold_06",
+      "label_vocabulary_scope": "training_fold_only",
+      "labels": [
+        "electronic",
+        "ambient",
+        "classical",
+        "alternative",
+        "easylistening",
+        "pop",
+        "chillout",
+        "dance",
+        "folk",
+        "hiphop",
+        "blues",
+        "soundtrack",
+        "jazz",
+        "rock",
+        "indie",
+        "reggae"
+      ],
+      "prior_macro_auprc": 0.045646,
+      "test_artist_folds": [
+        "artist_fold_06"
+      ],
+      "test_record_count": 5236,
+      "train_artist_folds": [
+        "artist_fold_00",
+        "artist_fold_01",
+        "artist_fold_02",
+        "artist_fold_03",
+        "artist_fold_04",
+        "artist_fold_05",
+        "artist_fold_07",
+        "artist_fold_08",
+        "artist_fold_09"
+      ],
+      "train_label_counts": {
+        "alternative": 3408,
+        "ambient": 6407,
+        "blues": 831,
+        "chillout": 1998,
+        "classical": 4175,
+        "dance": 1862,
+        "easylistening": 2694,
+        "electronic": 6663,
+        "folk": 1282,
+        "hiphop": 1265,
+        "indie": 677,
+        "jazz": 696,
+        "pop": 2451,
+        "reggae": 650,
+        "rock": 687,
+        "soundtrack": 815
+      },
+      "train_record_count": 49892
+    },
+    {
+      "condition_metrics": {
+        "codeword_injection": {
+          "target_label_masked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 685536,
+              "removed_token_count": 430
+            },
+            "evaluated_pair_count": 92128,
+            "label_support": {
+              "alternative": 442,
+              "ambient": 854,
+              "blues": 65,
+              "chillout": 209,
+              "classical": 711,
+              "dance": 195,
+              "easylistening": 265,
+              "electronic": 891,
+              "folk": 47,
+              "hiphop": 145,
+              "indie": 68,
+              "jazz": 71,
+              "pop": 335,
+              "reggae": 45,
+              "rock": 33,
+              "soundtrack": 76
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.624259,
+            "positive_pair_count": 4452
+          },
+          "target_matched_random_deletion": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 685536,
+              "removed_token_count": 430
+            },
+            "evaluated_pair_count": 92128,
+            "label_support": {
+              "alternative": 442,
+              "ambient": 854,
+              "blues": 65,
+              "chillout": 209,
+              "classical": 711,
+              "dance": 195,
+              "easylistening": 265,
+              "electronic": 891,
+              "folk": 47,
+              "hiphop": 145,
+              "indie": 68,
+              "jazz": 71,
+              "pop": 335,
+              "reggae": 45,
+              "rock": 33,
+              "soundtrack": 76
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.622907,
+            "positive_pair_count": 4452
+          },
+          "unmasked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 685536,
+              "removed_token_count": 0
+            },
+            "evaluated_pair_count": 92128,
+            "label_support": {
+              "alternative": 442,
+              "ambient": 854,
+              "blues": 65,
+              "chillout": 209,
+              "classical": 711,
+              "dance": 195,
+              "easylistening": 265,
+              "electronic": 891,
+              "folk": 47,
+              "hiphop": 145,
+              "indie": 68,
+              "jazz": 71,
+              "pop": 335,
+              "reggae": 45,
+              "rock": 33,
+              "soundtrack": 76
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.641252,
+            "positive_pair_count": 4452
+          }
+        },
+        "full_label_corruption": {
+          "target_label_masked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 614304,
+              "removed_token_count": 430
+            },
+            "evaluated_pair_count": 92128,
+            "label_support": {
+              "alternative": 442,
+              "ambient": 854,
+              "blues": 65,
+              "chillout": 209,
+              "classical": 711,
+              "dance": 195,
+              "easylistening": 265,
+              "electronic": 891,
+              "folk": 47,
+              "hiphop": 145,
+              "indie": 68,
+              "jazz": 71,
+              "pop": 335,
+              "reggae": 45,
+              "rock": 33,
+              "soundtrack": 76
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.049898,
+            "positive_pair_count": 4452
+          },
+          "target_matched_random_deletion": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 1,
+              "reference_token_count": 614304,
+              "removed_token_count": 430
+            },
+            "evaluated_pair_count": 92128,
+            "label_support": {
+              "alternative": 442,
+              "ambient": 854,
+              "blues": 65,
+              "chillout": 209,
+              "classical": 711,
+              "dance": 195,
+              "easylistening": 265,
+              "electronic": 891,
+              "folk": 47,
+              "hiphop": 145,
+              "indie": 68,
+              "jazz": 71,
+              "pop": 335,
+              "reggae": 45,
+              "rock": 33,
+              "soundtrack": 76
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.049913,
+            "positive_pair_count": 4452
+          },
+          "unmasked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 614304,
+              "removed_token_count": 0
+            },
+            "evaluated_pair_count": 92128,
+            "label_support": {
+              "alternative": 442,
+              "ambient": 854,
+              "blues": 65,
+              "chillout": 209,
+              "classical": 711,
+              "dance": 195,
+              "easylistening": 265,
+              "electronic": 891,
+              "folk": 47,
+              "hiphop": 145,
+              "indie": 68,
+              "jazz": 71,
+              "pop": 335,
+              "reggae": 45,
+              "rock": 33,
+              "soundtrack": 76
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.049898,
+            "positive_pair_count": 4452
+          }
+        },
+        "label_set_permutation": {
+          "target_label_masked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 614304,
+              "removed_token_count": 430
+            },
+            "evaluated_pair_count": 92128,
+            "label_support": {
+              "alternative": 442,
+              "ambient": 854,
+              "blues": 65,
+              "chillout": 209,
+              "classical": 711,
+              "dance": 195,
+              "easylistening": 265,
+              "electronic": 891,
+              "folk": 47,
+              "hiphop": 145,
+              "indie": 68,
+              "jazz": 71,
+              "pop": 335,
+              "reggae": 45,
+              "rock": 33,
+              "soundtrack": 76
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.049974,
+            "positive_pair_count": 4452
+          },
+          "target_matched_random_deletion": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 1,
+              "reference_token_count": 614304,
+              "removed_token_count": 430
+            },
+            "evaluated_pair_count": 92128,
+            "label_support": {
+              "alternative": 442,
+              "ambient": 854,
+              "blues": 65,
+              "chillout": 209,
+              "classical": 711,
+              "dance": 195,
+              "easylistening": 265,
+              "electronic": 891,
+              "folk": 47,
+              "hiphop": 145,
+              "indie": 68,
+              "jazz": 71,
+              "pop": 335,
+              "reggae": 45,
+              "rock": 33,
+              "soundtrack": 76
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.049979,
+            "positive_pair_count": 4452
+          },
+          "unmasked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 614304,
+              "removed_token_count": 0
+            },
+            "evaluated_pair_count": 92128,
+            "label_support": {
+              "alternative": 442,
+              "ambient": 854,
+              "blues": 65,
+              "chillout": 209,
+              "classical": 711,
+              "dance": 195,
+              "easylistening": 265,
+              "electronic": 891,
+              "folk": 47,
+              "hiphop": 145,
+              "indie": 68,
+              "jazz": 71,
+              "pop": 335,
+              "reggae": 45,
+              "rock": 33,
+              "soundtrack": 76
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.049966,
+            "positive_pair_count": 4452
+          }
+        },
+        "observed": {
+          "target_label_masked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 614304,
+              "removed_token_count": 430
+            },
+            "evaluated_pair_count": 92128,
+            "label_support": {
+              "alternative": 442,
+              "ambient": 854,
+              "blues": 65,
+              "chillout": 209,
+              "classical": 711,
+              "dance": 195,
+              "easylistening": 265,
+              "electronic": 891,
+              "folk": 47,
+              "hiphop": 145,
+              "indie": 68,
+              "jazz": 71,
+              "pop": 335,
+              "reggae": 45,
+              "rock": 33,
+              "soundtrack": 76
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.084167,
+            "positive_pair_count": 4452
+          },
+          "target_matched_random_deletion": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 1,
+              "reference_token_count": 614304,
+              "removed_token_count": 430
+            },
+            "evaluated_pair_count": 92128,
+            "label_support": {
+              "alternative": 442,
+              "ambient": 854,
+              "blues": 65,
+              "chillout": 209,
+              "classical": 711,
+              "dance": 195,
+              "easylistening": 265,
+              "electronic": 891,
+              "folk": 47,
+              "hiphop": 145,
+              "indie": 68,
+              "jazz": 71,
+              "pop": 335,
+              "reggae": 45,
+              "rock": 33,
+              "soundtrack": 76
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.085098,
+            "positive_pair_count": 4452
+          },
+          "unmasked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 614304,
+              "removed_token_count": 0
+            },
+            "evaluated_pair_count": 92128,
+            "label_support": {
+              "alternative": 442,
+              "ambient": 854,
+              "blues": 65,
+              "chillout": 209,
+              "classical": 711,
+              "dance": 195,
+              "easylistening": 265,
+              "electronic": 891,
+              "folk": 47,
+              "hiphop": 145,
+              "indie": 68,
+              "jazz": 71,
+              "pop": 335,
+              "reggae": 45,
+              "rock": 33,
+              "soundtrack": 76
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.085785,
+            "positive_pair_count": 4452
+          }
+        }
+      },
+      "fold": 7,
+      "groups_disjoint": true,
+      "heldout_artist_fold": "artist_fold_07",
+      "label_vocabulary_scope": "training_fold_only",
+      "labels": [
+        "electronic",
+        "ambient",
+        "classical",
+        "alternative",
+        "easylistening",
+        "pop",
+        "chillout",
+        "dance",
+        "folk",
+        "hiphop",
+        "blues",
+        "soundtrack",
+        "indie",
+        "rock",
+        "jazz",
+        "reggae"
+      ],
+      "prior_macro_auprc": 0.048324,
+      "test_artist_folds": [
+        "artist_fold_07"
+      ],
+      "test_record_count": 5758,
+      "train_artist_folds": [
+        "artist_fold_00",
+        "artist_fold_01",
+        "artist_fold_02",
+        "artist_fold_03",
+        "artist_fold_04",
+        "artist_fold_05",
+        "artist_fold_06",
+        "artist_fold_08",
+        "artist_fold_09"
+      ],
+      "train_label_counts": {
+        "alternative": 3235,
+        "ambient": 6320,
+        "blues": 833,
+        "chillout": 2154,
+        "classical": 3900,
+        "dance": 1938,
+        "easylistening": 2622,
+        "electronic": 6443,
+        "folk": 1361,
+        "hiphop": 1239,
+        "indie": 759,
+        "jazz": 652,
+        "pop": 2325,
+        "reggae": 634,
+        "rock": 740,
+        "soundtrack": 778
+      },
+      "train_record_count": 49370
+    },
+    {
+      "condition_metrics": {
+        "codeword_injection": {
+          "target_label_masked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 710000,
+              "removed_token_count": 229
+            },
+            "evaluated_pair_count": 97552,
+            "label_support": {
+              "alternative": 284,
+              "ambient": 644,
+              "blues": 112,
+              "chillout": 324,
+              "classical": 316,
+              "dance": 393,
+              "easylistening": 358,
+              "electronic": 867,
+              "folk": 185,
+              "hiphop": 183,
+              "indie": 65,
+              "jazz": 55,
+              "pop": 298,
+              "reggae": 36,
+              "rock": 105,
+              "soundtrack": 71
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.618764,
+            "positive_pair_count": 4296
+          },
+          "target_matched_random_deletion": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 710000,
+              "removed_token_count": 229
+            },
+            "evaluated_pair_count": 97552,
+            "label_support": {
+              "alternative": 284,
+              "ambient": 644,
+              "blues": 112,
+              "chillout": 324,
+              "classical": 316,
+              "dance": 393,
+              "easylistening": 358,
+              "electronic": 867,
+              "folk": 185,
+              "hiphop": 183,
+              "indie": 65,
+              "jazz": 55,
+              "pop": 298,
+              "reggae": 36,
+              "rock": 105,
+              "soundtrack": 71
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.616249,
+            "positive_pair_count": 4296
+          },
+          "unmasked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 710000,
+              "removed_token_count": 0
+            },
+            "evaluated_pair_count": 97552,
+            "label_support": {
+              "alternative": 284,
+              "ambient": 644,
+              "blues": 112,
+              "chillout": 324,
+              "classical": 316,
+              "dance": 393,
+              "easylistening": 358,
+              "electronic": 867,
+              "folk": 185,
+              "hiphop": 183,
+              "indie": 65,
+              "jazz": 55,
+              "pop": 298,
+              "reggae": 36,
+              "rock": 105,
+              "soundtrack": 71
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.622888,
+            "positive_pair_count": 4296
+          }
+        },
+        "full_label_corruption": {
+          "target_label_masked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 641264,
+              "removed_token_count": 229
+            },
+            "evaluated_pair_count": 97552,
+            "label_support": {
+              "alternative": 284,
+              "ambient": 644,
+              "blues": 112,
+              "chillout": 324,
+              "classical": 316,
+              "dance": 393,
+              "easylistening": 358,
+              "electronic": 867,
+              "folk": 185,
+              "hiphop": 183,
+              "indie": 65,
+              "jazz": 55,
+              "pop": 298,
+              "reggae": 36,
+              "rock": 105,
+              "soundtrack": 71
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.045106,
+            "positive_pair_count": 4296
+          },
+          "target_matched_random_deletion": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 641264,
+              "removed_token_count": 229
+            },
+            "evaluated_pair_count": 97552,
+            "label_support": {
+              "alternative": 284,
+              "ambient": 644,
+              "blues": 112,
+              "chillout": 324,
+              "classical": 316,
+              "dance": 393,
+              "easylistening": 358,
+              "electronic": 867,
+              "folk": 185,
+              "hiphop": 183,
+              "indie": 65,
+              "jazz": 55,
+              "pop": 298,
+              "reggae": 36,
+              "rock": 105,
+              "soundtrack": 71
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.045095,
+            "positive_pair_count": 4296
+          },
+          "unmasked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 641264,
+              "removed_token_count": 0
+            },
+            "evaluated_pair_count": 97552,
+            "label_support": {
+              "alternative": 284,
+              "ambient": 644,
+              "blues": 112,
+              "chillout": 324,
+              "classical": 316,
+              "dance": 393,
+              "easylistening": 358,
+              "electronic": 867,
+              "folk": 185,
+              "hiphop": 183,
+              "indie": 65,
+              "jazz": 55,
+              "pop": 298,
+              "reggae": 36,
+              "rock": 105,
+              "soundtrack": 71
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.045107,
+            "positive_pair_count": 4296
+          }
+        },
+        "label_set_permutation": {
+          "target_label_masked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 641264,
+              "removed_token_count": 229
+            },
+            "evaluated_pair_count": 97552,
+            "label_support": {
+              "alternative": 284,
+              "ambient": 644,
+              "blues": 112,
+              "chillout": 324,
+              "classical": 316,
+              "dance": 393,
+              "easylistening": 358,
+              "electronic": 867,
+              "folk": 185,
+              "hiphop": 183,
+              "indie": 65,
+              "jazz": 55,
+              "pop": 298,
+              "reggae": 36,
+              "rock": 105,
+              "soundtrack": 71
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.044447,
+            "positive_pair_count": 4296
+          },
+          "target_matched_random_deletion": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 641264,
+              "removed_token_count": 229
+            },
+            "evaluated_pair_count": 97552,
+            "label_support": {
+              "alternative": 284,
+              "ambient": 644,
+              "blues": 112,
+              "chillout": 324,
+              "classical": 316,
+              "dance": 393,
+              "easylistening": 358,
+              "electronic": 867,
+              "folk": 185,
+              "hiphop": 183,
+              "indie": 65,
+              "jazz": 55,
+              "pop": 298,
+              "reggae": 36,
+              "rock": 105,
+              "soundtrack": 71
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.044431,
+            "positive_pair_count": 4296
+          },
+          "unmasked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 641264,
+              "removed_token_count": 0
+            },
+            "evaluated_pair_count": 97552,
+            "label_support": {
+              "alternative": 284,
+              "ambient": 644,
+              "blues": 112,
+              "chillout": 324,
+              "classical": 316,
+              "dance": 393,
+              "easylistening": 358,
+              "electronic": 867,
+              "folk": 185,
+              "hiphop": 183,
+              "indie": 65,
+              "jazz": 55,
+              "pop": 298,
+              "reggae": 36,
+              "rock": 105,
+              "soundtrack": 71
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.044445,
+            "positive_pair_count": 4296
+          }
+        },
+        "observed": {
+          "target_label_masked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 641264,
+              "removed_token_count": 229
+            },
+            "evaluated_pair_count": 97552,
+            "label_support": {
+              "alternative": 284,
+              "ambient": 644,
+              "blues": 112,
+              "chillout": 324,
+              "classical": 316,
+              "dance": 393,
+              "easylistening": 358,
+              "electronic": 867,
+              "folk": 185,
+              "hiphop": 183,
+              "indie": 65,
+              "jazz": 55,
+              "pop": 298,
+              "reggae": 36,
+              "rock": 105,
+              "soundtrack": 71
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.070079,
+            "positive_pair_count": 4296
+          },
+          "target_matched_random_deletion": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 641264,
+              "removed_token_count": 229
+            },
+            "evaluated_pair_count": 97552,
+            "label_support": {
+              "alternative": 284,
+              "ambient": 644,
+              "blues": 112,
+              "chillout": 324,
+              "classical": 316,
+              "dance": 393,
+              "easylistening": 358,
+              "electronic": 867,
+              "folk": 185,
+              "hiphop": 183,
+              "indie": 65,
+              "jazz": 55,
+              "pop": 298,
+              "reggae": 36,
+              "rock": 105,
+              "soundtrack": 71
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.070344,
+            "positive_pair_count": 4296
+          },
+          "unmasked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 641264,
+              "removed_token_count": 0
+            },
+            "evaluated_pair_count": 97552,
+            "label_support": {
+              "alternative": 284,
+              "ambient": 644,
+              "blues": 112,
+              "chillout": 324,
+              "classical": 316,
+              "dance": 393,
+              "easylistening": 358,
+              "electronic": 867,
+              "folk": 185,
+              "hiphop": 183,
+              "indie": 65,
+              "jazz": 55,
+              "pop": 298,
+              "reggae": 36,
+              "rock": 105,
+              "soundtrack": 71
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.070612,
+            "positive_pair_count": 4296
+          }
+        }
+      },
+      "fold": 8,
+      "groups_disjoint": true,
+      "heldout_artist_fold": "artist_fold_08",
+      "label_vocabulary_scope": "training_fold_only",
+      "labels": [
+        "ambient",
+        "electronic",
+        "classical",
+        "alternative",
+        "easylistening",
+        "pop",
+        "chillout",
+        "dance",
+        "folk",
+        "hiphop",
+        "blues",
+        "soundtrack",
+        "indie",
+        "jazz",
+        "rock",
+        "reggae"
+      ],
+      "prior_macro_auprc": 0.044038,
+      "test_artist_folds": [
+        "artist_fold_08"
+      ],
+      "test_record_count": 6097,
+      "train_artist_folds": [
+        "artist_fold_00",
+        "artist_fold_01",
+        "artist_fold_02",
+        "artist_fold_03",
+        "artist_fold_04",
+        "artist_fold_05",
+        "artist_fold_06",
+        "artist_fold_07",
+        "artist_fold_09"
+      ],
+      "train_label_counts": {
+        "alternative": 3393,
+        "ambient": 6530,
+        "blues": 786,
+        "chillout": 2039,
+        "classical": 4295,
+        "dance": 1740,
+        "easylistening": 2529,
+        "electronic": 6467,
+        "folk": 1223,
+        "hiphop": 1201,
+        "indie": 762,
+        "jazz": 668,
+        "pop": 2362,
+        "reggae": 643,
+        "rock": 668,
+        "soundtrack": 783
+      },
+      "train_record_count": 49031
+    },
+    {
+      "condition_metrics": {
+        "codeword_injection": {
+          "target_label_masked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 555872,
+              "removed_token_count": 457
+            },
+            "evaluated_pair_count": 76048,
+            "label_support": {
+              "alternative": 274,
+              "ambient": 669,
+              "blues": 52,
+              "chillout": 209,
+              "classical": 292,
+              "dance": 173,
+              "easylistening": 345,
+              "electronic": 623,
+              "folk": 169,
+              "hiphop": 161,
+              "indie": 111,
+              "jazz": 45,
+              "pop": 227,
+              "reggae": 41,
+              "rock": 83,
+              "soundtrack": 105
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.723514,
+            "positive_pair_count": 3579
+          },
+          "target_matched_random_deletion": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 555872,
+              "removed_token_count": 457
+            },
+            "evaluated_pair_count": 76048,
+            "label_support": {
+              "alternative": 274,
+              "ambient": 669,
+              "blues": 52,
+              "chillout": 209,
+              "classical": 292,
+              "dance": 173,
+              "easylistening": 345,
+              "electronic": 623,
+              "folk": 169,
+              "hiphop": 161,
+              "indie": 111,
+              "jazz": 45,
+              "pop": 227,
+              "reggae": 41,
+              "rock": 83,
+              "soundtrack": 105
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.717054,
+            "positive_pair_count": 3579
+          },
+          "unmasked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 555872,
+              "removed_token_count": 0
+            },
+            "evaluated_pair_count": 76048,
+            "label_support": {
+              "alternative": 274,
+              "ambient": 669,
+              "blues": 52,
+              "chillout": 209,
+              "classical": 292,
+              "dance": 173,
+              "easylistening": 345,
+              "electronic": 623,
+              "folk": 169,
+              "hiphop": 161,
+              "indie": 111,
+              "jazz": 45,
+              "pop": 227,
+              "reggae": 41,
+              "rock": 83,
+              "soundtrack": 105
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.734659,
+            "positive_pair_count": 3579
+          }
+        },
+        "full_label_corruption": {
+          "target_label_masked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 498608,
+              "removed_token_count": 457
+            },
+            "evaluated_pair_count": 76048,
+            "label_support": {
+              "alternative": 274,
+              "ambient": 669,
+              "blues": 52,
+              "chillout": 209,
+              "classical": 292,
+              "dance": 173,
+              "easylistening": 345,
+              "electronic": 623,
+              "folk": 169,
+              "hiphop": 161,
+              "indie": 111,
+              "jazz": 45,
+              "pop": 227,
+              "reggae": 41,
+              "rock": 83,
+              "soundtrack": 105
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.050363,
+            "positive_pair_count": 3579
+          },
+          "target_matched_random_deletion": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 498608,
+              "removed_token_count": 457
+            },
+            "evaluated_pair_count": 76048,
+            "label_support": {
+              "alternative": 274,
+              "ambient": 669,
+              "blues": 52,
+              "chillout": 209,
+              "classical": 292,
+              "dance": 173,
+              "easylistening": 345,
+              "electronic": 623,
+              "folk": 169,
+              "hiphop": 161,
+              "indie": 111,
+              "jazz": 45,
+              "pop": 227,
+              "reggae": 41,
+              "rock": 83,
+              "soundtrack": 105
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.05036,
+            "positive_pair_count": 3579
+          },
+          "unmasked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 498608,
+              "removed_token_count": 0
+            },
+            "evaluated_pair_count": 76048,
+            "label_support": {
+              "alternative": 274,
+              "ambient": 669,
+              "blues": 52,
+              "chillout": 209,
+              "classical": 292,
+              "dance": 173,
+              "easylistening": 345,
+              "electronic": 623,
+              "folk": 169,
+              "hiphop": 161,
+              "indie": 111,
+              "jazz": 45,
+              "pop": 227,
+              "reggae": 41,
+              "rock": 83,
+              "soundtrack": 105
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.050363,
+            "positive_pair_count": 3579
+          }
+        },
+        "label_set_permutation": {
+          "target_label_masked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 498608,
+              "removed_token_count": 457
+            },
+            "evaluated_pair_count": 76048,
+            "label_support": {
+              "alternative": 274,
+              "ambient": 669,
+              "blues": 52,
+              "chillout": 209,
+              "classical": 292,
+              "dance": 173,
+              "easylistening": 345,
+              "electronic": 623,
+              "folk": 169,
+              "hiphop": 161,
+              "indie": 111,
+              "jazz": 45,
+              "pop": 227,
+              "reggae": 41,
+              "rock": 83,
+              "soundtrack": 105
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.049595,
+            "positive_pair_count": 3579
+          },
+          "target_matched_random_deletion": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 498608,
+              "removed_token_count": 457
+            },
+            "evaluated_pair_count": 76048,
+            "label_support": {
+              "alternative": 274,
+              "ambient": 669,
+              "blues": 52,
+              "chillout": 209,
+              "classical": 292,
+              "dance": 173,
+              "easylistening": 345,
+              "electronic": 623,
+              "folk": 169,
+              "hiphop": 161,
+              "indie": 111,
+              "jazz": 45,
+              "pop": 227,
+              "reggae": 41,
+              "rock": 83,
+              "soundtrack": 105
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.049591,
+            "positive_pair_count": 3579
+          },
+          "unmasked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 498608,
+              "removed_token_count": 0
+            },
+            "evaluated_pair_count": 76048,
+            "label_support": {
+              "alternative": 274,
+              "ambient": 669,
+              "blues": 52,
+              "chillout": 209,
+              "classical": 292,
+              "dance": 173,
+              "easylistening": 345,
+              "electronic": 623,
+              "folk": 169,
+              "hiphop": 161,
+              "indie": 111,
+              "jazz": 45,
+              "pop": 227,
+              "reggae": 41,
+              "rock": 83,
+              "soundtrack": 105
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.049592,
+            "positive_pair_count": 3579
+          }
+        },
+        "observed": {
+          "target_label_masked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 498608,
+              "removed_token_count": 457
+            },
+            "evaluated_pair_count": 76048,
+            "label_support": {
+              "alternative": 274,
+              "ambient": 669,
+              "blues": 52,
+              "chillout": 209,
+              "classical": 292,
+              "dance": 173,
+              "easylistening": 345,
+              "electronic": 623,
+              "folk": 169,
+              "hiphop": 161,
+              "indie": 111,
+              "jazz": 45,
+              "pop": 227,
+              "reggae": 41,
+              "rock": 83,
+              "soundtrack": 105
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.078747,
+            "positive_pair_count": 3579
+          },
+          "target_matched_random_deletion": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 498608,
+              "removed_token_count": 457
+            },
+            "evaluated_pair_count": 76048,
+            "label_support": {
+              "alternative": 274,
+              "ambient": 669,
+              "blues": 52,
+              "chillout": 209,
+              "classical": 292,
+              "dance": 173,
+              "easylistening": 345,
+              "electronic": 623,
+              "folk": 169,
+              "hiphop": 161,
+              "indie": 111,
+              "jazz": 45,
+              "pop": 227,
+              "reggae": 41,
+              "rock": 83,
+              "soundtrack": 105
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.079773,
+            "positive_pair_count": 3579
+          },
+          "unmasked": {
+            "deletion_diagnostics": {
+              "fallback_target_deletions": 0,
+              "reference_token_count": 498608,
+              "removed_token_count": 0
+            },
+            "evaluated_pair_count": 76048,
+            "label_support": {
+              "alternative": 274,
+              "ambient": 669,
+              "blues": 52,
+              "chillout": 209,
+              "classical": 292,
+              "dance": 173,
+              "easylistening": 345,
+              "electronic": 623,
+              "folk": 169,
+              "hiphop": 161,
+              "indie": 111,
+              "jazz": 45,
+              "pop": 227,
+              "reggae": 41,
+              "rock": 83,
+              "soundtrack": 105
+            },
+            "labels_with_positive_support": 16,
+            "macro_auprc": 0.080481,
+            "positive_pair_count": 3579
+          }
+        }
+      },
+      "fold": 9,
+      "groups_disjoint": true,
+      "heldout_artist_fold": "artist_fold_09",
+      "label_vocabulary_scope": "training_fold_only",
+      "labels": [
+        "electronic",
+        "ambient",
+        "classical",
+        "alternative",
+        "easylistening",
+        "pop",
+        "chillout",
+        "dance",
+        "folk",
+        "hiphop",
+        "blues",
+        "soundtrack",
+        "indie",
+        "rock",
+        "jazz",
+        "reggae"
+      ],
+      "prior_macro_auprc": 0.047062,
+      "test_artist_folds": [
+        "artist_fold_09"
+      ],
+      "test_record_count": 4753,
+      "train_artist_folds": [
+        "artist_fold_00",
+        "artist_fold_01",
+        "artist_fold_02",
+        "artist_fold_03",
+        "artist_fold_04",
+        "artist_fold_05",
+        "artist_fold_06",
+        "artist_fold_07",
+        "artist_fold_08"
+      ],
+      "train_label_counts": {
+        "alternative": 3403,
+        "ambient": 6505,
+        "blues": 846,
+        "chillout": 2154,
+        "classical": 4319,
+        "dance": 1960,
+        "easylistening": 2542,
+        "electronic": 6711,
+        "folk": 1239,
+        "hiphop": 1223,
+        "indie": 716,
+        "jazz": 678,
+        "pop": 2433,
+        "reggae": 638,
+        "rock": 690,
+        "soundtrack": 749
+      },
+      "train_record_count": 50375
+    }
+  ],
+  "interpretation": "A positive codeword response tests sensitivity. Any true false_admission entry rejects the prevalence-only admission rule.",
+  "paired_intervals": {
+    "codeword_target_masked_minus_observed_target_masked": {
+      "author_differences": {
+        "artist_fold_00": 0.513031,
+        "artist_fold_01": 0.540424,
+        "artist_fold_02": 0.507697,
+        "artist_fold_03": 0.537532,
+        "artist_fold_04": 0.574637,
+        "artist_fold_05": 0.470521,
+        "artist_fold_06": 0.590906,
+        "artist_fold_07": 0.540092,
+        "artist_fold_08": 0.548685,
+        "artist_fold_09": 0.644767
+      },
+      "ci95_high": 0.581366,
+      "ci95_low": 0.512292,
+      "ci95_method": "paired_student_t_95",
+      "mean_difference": 0.546829,
+      "n_independent_authors": 10,
+      "sample_standard_deviation": 0.048282,
+      "standard_error": 0.015268
+    },
+    "corrupted_unmasked_minus_prior": {
+      "author_differences": {
+        "artist_fold_00": 0.001342,
+        "artist_fold_01": 0.001579,
+        "artist_fold_02": 0.001876,
+        "artist_fold_03": 0.001119,
+        "artist_fold_04": 0.00036,
+        "artist_fold_05": 0.001361,
+        "artist_fold_06": 0.001731,
+        "artist_fold_07": 0.001574,
+        "artist_fold_08": 0.001069,
+        "artist_fold_09": 0.003301
+      },
+      "ci95_high": 0.00207,
+      "ci95_low": 0.000992,
+      "ci95_method": "paired_student_t_95",
+      "mean_difference": 0.001531,
+      "n_independent_authors": 10,
+      "sample_standard_deviation": 0.000754,
+      "standard_error": 0.000238
+    },
+    "observed_unmasked_minus_prior": {
+      "author_differences": {
+        "artist_fold_00": 0.034108,
+        "artist_fold_01": 0.042101,
+        "artist_fold_02": 0.024418,
+        "artist_fold_03": 0.032969,
+        "artist_fold_04": 0.043316,
+        "artist_fold_05": 0.025151,
+        "artist_fold_06": 0.02675,
+        "artist_fold_07": 0.037461,
+        "artist_fold_08": 0.026574,
+        "artist_fold_09": 0.033419
+      },
+      "ci95_high": 0.037541,
+      "ci95_low": 0.027713,
+      "ci95_method": "paired_student_t_95",
+      "mean_difference": 0.032627,
+      "n_independent_authors": 10,
+      "sample_standard_deviation": 0.00687,
+      "standard_error": 0.002172
+    },
+    "permuted_unmasked_minus_prior": {
+      "author_differences": {
+        "artist_fold_00": 0.001406,
+        "artist_fold_01": 0.001023,
+        "artist_fold_02": 0.001815,
+        "artist_fold_03": 0.003889,
+        "artist_fold_04": 0.002617,
+        "artist_fold_05": 0.001472,
+        "artist_fold_06": 0.002034,
+        "artist_fold_07": 0.001642,
+        "artist_fold_08": 0.000407,
+        "artist_fold_09": 0.00253
+      },
+      "ci95_high": 0.002574,
+      "ci95_low": 0.001193,
+      "ci95_method": "paired_student_t_95",
+      "mean_difference": 0.001883,
+      "n_independent_authors": 10,
+      "sample_standard_deviation": 0.000965,
+      "standard_error": 0.000305
+    }
+  },
+  "schema_version": 1,
+  "scope": "Independent public metadata calibration; not audio quality, listener preference, or full-song evidence.",
+  "status": "complete"
+}

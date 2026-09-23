@@ -1,0 +1,4407 @@
+{
+  "audio_downloaded": false,
+  "backend": "hashing",
+  "batch_size": 32,
+  "claim_scope": "public-label MusicCaps text-representation stress test only; not listener preference or perceptual-quality evidence",
+  "embedding_dim": 384,
+  "encoder_name": "hashing",
+  "fold_confidence_intervals": {
+    "hashing_caption_embedding": {
+      "exact_match_rate": {
+        "ci95_high": 0.034015,
+        "ci95_low": 0.019062,
+        "fold_count": 5,
+        "mean": 0.026538
+      },
+      "macro_f1": {
+        "ci95_high": 0.409775,
+        "ci95_low": 0.397724,
+        "fold_count": 5,
+        "mean": 0.40375
+      },
+      "micro_f1": {
+        "ci95_high": 0.36753,
+        "ci95_low": 0.350906,
+        "fold_count": 5,
+        "mean": 0.359218
+      },
+      "micro_precision": {
+        "ci95_high": 0.334701,
+        "ci95_low": 0.309912,
+        "fold_count": 5,
+        "mean": 0.322307
+      },
+      "micro_recall": {
+        "ci95_high": 0.413053,
+        "ci95_low": 0.398706,
+        "fold_count": 5,
+        "mean": 0.40588
+      }
+    },
+    "hashing_masked_caption_embedding": {
+      "exact_match_rate": {
+        "ci95_high": 0.002157,
+        "ci95_low": 0.000746,
+        "fold_count": 5,
+        "mean": 0.001451
+      },
+      "macro_f1": {
+        "ci95_high": 0.046319,
+        "ci95_low": 0.039364,
+        "fold_count": 5,
+        "mean": 0.042841
+      },
+      "micro_f1": {
+        "ci95_high": 0.080725,
+        "ci95_low": 0.064932,
+        "fold_count": 5,
+        "mean": 0.072828
+      },
+      "micro_precision": {
+        "ci95_high": 0.07208,
+        "ci95_low": 0.058542,
+        "fold_count": 5,
+        "mean": 0.065311
+      },
+      "micro_recall": {
+        "ci95_high": 0.091995,
+        "ci95_low": 0.072685,
+        "fold_count": 5,
+        "mean": 0.08234
+      }
+    },
+    "hashing_shuffled_label_control": {
+      "exact_match_rate": {
+        "ci95_high": 0.002323,
+        "ci95_low": -0.00025,
+        "fold_count": 5,
+        "mean": 0.001036
+      },
+      "macro_f1": {
+        "ci95_high": 0.043336,
+        "ci95_low": 0.030926,
+        "fold_count": 5,
+        "mean": 0.037131
+      },
+      "micro_f1": {
+        "ci95_high": 0.080083,
+        "ci95_low": 0.05895,
+        "fold_count": 5,
+        "mean": 0.069516
+      },
+      "micro_precision": {
+        "ci95_high": 0.071104,
+        "ci95_low": 0.053511,
+        "fold_count": 5,
+        "mean": 0.062308
+      },
+      "micro_recall": {
+        "ci95_high": 0.091767,
+        "ci95_low": 0.065529,
+        "fold_count": 5,
+        "mean": 0.078648
+      }
+    },
+    "prior_topk": {
+      "exact_match_rate": {
+        "ci95_high": 0.0,
+        "ci95_low": 0.0,
+        "fold_count": 5,
+        "mean": 0.0
+      },
+      "macro_f1": {
+        "ci95_high": 0.038962,
+        "ci95_low": 0.036303,
+        "fold_count": 5,
+        "mean": 0.037633
+      },
+      "micro_f1": {
+        "ci95_high": 0.205689,
+        "ci95_low": 0.193593,
+        "fold_count": 5,
+        "mean": 0.199641
+      },
+      "micro_precision": {
+        "ci95_high": 0.187512,
+        "ci95_low": 0.170769,
+        "fold_count": 5,
+        "mean": 0.17914
+      },
+      "micro_recall": {
+        "ci95_high": 0.229681,
+        "ci95_low": 0.221425,
+        "fold_count": 5,
+        "mean": 0.225553
+      }
+    }
+  },
+  "fold_count": 5,
+  "fold_delta_diagnostics": {
+    "hashing_caption_embedding_vs_hashing_masked_caption_embedding": {
+      "all_folds_positive": true,
+      "ci95_high": 0.295661,
+      "ci95_low": 0.277119,
+      "fold_count": 5,
+      "mean": 0.28639,
+      "metric": "micro_f1_delta",
+      "positive_fold_count": 5
+    },
+    "hashing_masked_caption_embedding_vs_hashing_shuffled_label_control": {
+      "all_folds_positive": false,
+      "ci95_high": 0.014479,
+      "ci95_low": -0.007855,
+      "fold_count": 5,
+      "mean": 0.003312,
+      "metric": "micro_f1_delta",
+      "positive_fold_count": 3
+    },
+    "hashing_masked_caption_embedding_vs_prior_topk": {
+      "all_folds_positive": false,
+      "ci95_high": -0.116949,
+      "ci95_low": -0.136675,
+      "fold_count": 5,
+      "mean": -0.126812,
+      "metric": "micro_f1_delta",
+      "positive_fold_count": 0
+    }
+  },
+  "fold_reports": [
+    {
+      "fold": 0,
+      "metrics": {
+        "hashing_caption_embedding": {
+          "exact_match_rate": 0.027979,
+          "fn": 891,
+          "fp": 1316,
+          "macro_f1": 0.401133,
+          "micro_f1": 0.357496,
+          "micro_precision": 0.318135,
+          "micro_recall": 0.407973,
+          "per_label": {
+            "acoustic drums": {
+              "f1": 0.149701,
+              "fn": 49,
+              "fp": 235,
+              "precision": 0.096154,
+              "predicted": 260,
+              "recall": 0.337838,
+              "support": 74,
+              "tp": 25
+            },
+            "acoustic guitar": {
+              "f1": 0.256039,
+              "fn": 6,
+              "fp": 302,
+              "precision": 0.149296,
+              "predicted": 355,
+              "recall": 0.898305,
+              "support": 59,
+              "tp": 53
+            },
+            "amateur recording": {
+              "f1": 0.258993,
+              "fn": 62,
+              "fp": 144,
+              "precision": 0.2,
+              "predicted": 180,
+              "recall": 0.367347,
+              "support": 98,
+              "tp": 36
+            },
+            "bass guitar": {
+              "f1": 0.215297,
+              "fn": 11,
+              "fp": 266,
+              "precision": 0.125,
+              "predicted": 304,
+              "recall": 0.77551,
+              "support": 49,
+              "tp": 38
+            },
+            "emotional": {
+              "f1": 0.528736,
+              "fn": 79,
+              "fp": 3,
+              "precision": 0.938776,
+              "predicted": 49,
+              "recall": 0.368,
+              "support": 125,
+              "tp": 46
+            },
+            "energetic": {
+              "f1": 0.544379,
+              "fn": 58,
+              "fp": 19,
+              "precision": 0.707692,
+              "predicted": 65,
+              "recall": 0.442308,
+              "support": 104,
+              "tp": 46
+            },
+            "fast tempo": {
+              "f1": 0.593023,
+              "fn": 22,
+              "fp": 48,
+              "precision": 0.515152,
+              "predicted": 99,
+              "recall": 0.69863,
+              "support": 73,
+              "tp": 51
+            },
+            "groovy": {
+              "f1": 0.311111,
+              "fn": 30,
+              "fp": 63,
+              "precision": 0.25,
+              "predicted": 84,
+              "recall": 0.411765,
+              "support": 51,
+              "tp": 21
+            },
+            "instrumental": {
+              "f1": 0.351464,
+              "fn": 88,
+              "fp": 67,
+              "precision": 0.385321,
+              "predicted": 109,
+              "recall": 0.323077,
+              "support": 130,
+              "tp": 42
+            },
+            "live performance": {
+              "f1": 0.474227,
+              "fn": 33,
+              "fp": 69,
+              "precision": 0.4,
+              "predicted": 115,
+              "recall": 0.582278,
+              "support": 79,
+              "tp": 46
+            },
+            "low quality": {
+              "f1": 0.0,
+              "fn": 202,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 202,
+              "tp": 0
+            },
+            "medium tempo": {
+              "f1": 0.550388,
+              "fn": 52,
+              "fp": 64,
+              "precision": 0.525926,
+              "predicted": 135,
+              "recall": 0.577236,
+              "support": 123,
+              "tp": 71
+            },
+            "mono": {
+              "f1": 0.807339,
+              "fn": 17,
+              "fp": 4,
+              "precision": 0.916667,
+              "predicted": 48,
+              "recall": 0.721311,
+              "support": 61,
+              "tp": 44
+            },
+            "noisy": {
+              "f1": 0.64,
+              "fn": 48,
+              "fp": 6,
+              "precision": 0.888889,
+              "predicted": 54,
+              "recall": 0.5,
+              "support": 96,
+              "tp": 48
+            },
+            "passionate": {
+              "f1": 0.380282,
+              "fn": 74,
+              "fp": 14,
+              "precision": 0.658537,
+              "predicted": 41,
+              "recall": 0.267327,
+              "support": 101,
+              "tp": 27
+            },
+            "slow tempo": {
+              "f1": 0.357143,
+              "fn": 60,
+              "fp": 12,
+              "precision": 0.625,
+              "predicted": 32,
+              "recall": 0.25,
+              "support": 80,
+              "tp": 20
+            }
+          },
+          "row_count": 965,
+          "tp": 614
+        },
+        "hashing_masked_caption_embedding": {
+          "exact_match_rate": 0.002073,
+          "fn": 1378,
+          "fp": 1803,
+          "macro_f1": 0.040069,
+          "micro_f1": 0.073945,
+          "micro_precision": 0.065803,
+          "micro_recall": 0.084385,
+          "per_label": {
+            "acoustic drums": {
+              "f1": 0.126499,
+              "fn": 16,
+              "fp": 785,
+              "precision": 0.068802,
+              "predicted": 843,
+              "recall": 0.783784,
+              "support": 74,
+              "tp": 58
+            },
+            "acoustic guitar": {
+              "f1": 0.082935,
+              "fn": 33,
+              "fp": 542,
+              "precision": 0.045775,
+              "predicted": 568,
+              "recall": 0.440678,
+              "support": 59,
+              "tp": 26
+            },
+            "amateur recording": {
+              "f1": 0.092715,
+              "fn": 84,
+              "fp": 190,
+              "precision": 0.068627,
+              "predicted": 204,
+              "recall": 0.142857,
+              "support": 98,
+              "tp": 14
+            },
+            "bass guitar": {
+              "f1": 0.044444,
+              "fn": 47,
+              "fp": 39,
+              "precision": 0.04878,
+              "predicted": 41,
+              "recall": 0.040816,
+              "support": 49,
+              "tp": 2
+            },
+            "emotional": {
+              "f1": 0.0,
+              "fn": 125,
+              "fp": 1,
+              "precision": 0.0,
+              "predicted": 1,
+              "recall": 0.0,
+              "support": 125,
+              "tp": 0
+            },
+            "energetic": {
+              "f1": 0.0,
+              "fn": 104,
+              "fp": 1,
+              "precision": 0.0,
+              "predicted": 1,
+              "recall": 0.0,
+              "support": 104,
+              "tp": 0
+            },
+            "fast tempo": {
+              "f1": 0.0,
+              "fn": 73,
+              "fp": 16,
+              "precision": 0.0,
+              "predicted": 16,
+              "recall": 0.0,
+              "support": 73,
+              "tp": 0
+            },
+            "groovy": {
+              "f1": 0.0,
+              "fn": 51,
+              "fp": 11,
+              "precision": 0.0,
+              "predicted": 11,
+              "recall": 0.0,
+              "support": 51,
+              "tp": 0
+            },
+            "instrumental": {
+              "f1": 0.116402,
+              "fn": 119,
+              "fp": 48,
+              "precision": 0.186441,
+              "predicted": 59,
+              "recall": 0.084615,
+              "support": 130,
+              "tp": 11
+            },
+            "live performance": {
+              "f1": 0.131868,
+              "fn": 67,
+              "fp": 91,
+              "precision": 0.116505,
+              "predicted": 103,
+              "recall": 0.151899,
+              "support": 79,
+              "tp": 12
+            },
+            "low quality": {
+              "f1": 0.0,
+              "fn": 202,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 202,
+              "tp": 0
+            },
+            "medium tempo": {
+              "f1": 0.046243,
+              "fn": 119,
+              "fp": 46,
+              "precision": 0.08,
+              "predicted": 50,
+              "recall": 0.03252,
+              "support": 123,
+              "tp": 4
+            },
+            "mono": {
+              "f1": 0.0,
+              "fn": 61,
+              "fp": 10,
+              "precision": 0.0,
+              "predicted": 10,
+              "recall": 0.0,
+              "support": 61,
+              "tp": 0
+            },
+            "noisy": {
+              "f1": 0.0,
+              "fn": 96,
+              "fp": 9,
+              "precision": 0.0,
+              "predicted": 9,
+              "recall": 0.0,
+              "support": 96,
+              "tp": 0
+            },
+            "passionate": {
+              "f1": 0.0,
+              "fn": 101,
+              "fp": 6,
+              "precision": 0.0,
+              "predicted": 6,
+              "recall": 0.0,
+              "support": 101,
+              "tp": 0
+            },
+            "slow tempo": {
+              "f1": 0.0,
+              "fn": 80,
+              "fp": 8,
+              "precision": 0.0,
+              "predicted": 8,
+              "recall": 0.0,
+              "support": 80,
+              "tp": 0
+            }
+          },
+          "row_count": 965,
+          "tp": 127
+        },
+        "hashing_shuffled_label_control": {
+          "exact_match_rate": 0.002073,
+          "fn": 1400,
+          "fp": 1825,
+          "macro_f1": 0.033913,
+          "micro_f1": 0.061135,
+          "micro_precision": 0.054404,
+          "micro_recall": 0.069767,
+          "per_label": {
+            "acoustic drums": {
+              "f1": 0.130862,
+              "fn": 14,
+              "fp": 783,
+              "precision": 0.071174,
+              "predicted": 843,
+              "recall": 0.810811,
+              "support": 74,
+              "tp": 60
+            },
+            "acoustic guitar": {
+              "f1": 0.085667,
+              "fn": 33,
+              "fp": 522,
+              "precision": 0.047445,
+              "predicted": 548,
+              "recall": 0.440678,
+              "support": 59,
+              "tp": 26
+            },
+            "amateur recording": {
+              "f1": 0.0,
+              "fn": 98,
+              "fp": 4,
+              "precision": 0.0,
+              "predicted": 4,
+              "recall": 0.0,
+              "support": 98,
+              "tp": 0
+            },
+            "bass guitar": {
+              "f1": 0.0,
+              "fn": 49,
+              "fp": 108,
+              "precision": 0.0,
+              "predicted": 108,
+              "recall": 0.0,
+              "support": 49,
+              "tp": 0
+            },
+            "emotional": {
+              "f1": 0.014706,
+              "fn": 124,
+              "fp": 10,
+              "precision": 0.090909,
+              "predicted": 11,
+              "recall": 0.008,
+              "support": 125,
+              "tp": 1
+            },
+            "energetic": {
+              "f1": 0.01227,
+              "fn": 103,
+              "fp": 58,
+              "precision": 0.016949,
+              "predicted": 59,
+              "recall": 0.009615,
+              "support": 104,
+              "tp": 1
+            },
+            "fast tempo": {
+              "f1": 0.0,
+              "fn": 73,
+              "fp": 1,
+              "precision": 0.0,
+              "predicted": 1,
+              "recall": 0.0,
+              "support": 73,
+              "tp": 0
+            },
+            "groovy": {
+              "f1": 0.033898,
+              "fn": 50,
+              "fp": 7,
+              "precision": 0.125,
+              "predicted": 8,
+              "recall": 0.019608,
+              "support": 51,
+              "tp": 1
+            },
+            "instrumental": {
+              "f1": 0.028571,
+              "fn": 128,
+              "fp": 8,
+              "precision": 0.2,
+              "predicted": 10,
+              "recall": 0.015385,
+              "support": 130,
+              "tp": 2
+            },
+            "live performance": {
+              "f1": 0.045802,
+              "fn": 76,
+              "fp": 49,
+              "precision": 0.057692,
+              "predicted": 52,
+              "recall": 0.037975,
+              "support": 79,
+              "tp": 3
+            },
+            "low quality": {
+              "f1": 0.0,
+              "fn": 202,
+              "fp": 17,
+              "precision": 0.0,
+              "predicted": 17,
+              "recall": 0.0,
+              "support": 202,
+              "tp": 0
+            },
+            "medium tempo": {
+              "f1": 0.053691,
+              "fn": 119,
+              "fp": 22,
+              "precision": 0.153846,
+              "predicted": 26,
+              "recall": 0.03252,
+              "support": 123,
+              "tp": 4
+            },
+            "mono": {
+              "f1": 0.0,
+              "fn": 61,
+              "fp": 202,
+              "precision": 0.0,
+              "predicted": 202,
+              "recall": 0.0,
+              "support": 61,
+              "tp": 0
+            },
+            "noisy": {
+              "f1": 0.0,
+              "fn": 96,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 96,
+              "tp": 0
+            },
+            "passionate": {
+              "f1": 0.044118,
+              "fn": 98,
+              "fp": 32,
+              "precision": 0.085714,
+              "predicted": 35,
+              "recall": 0.029703,
+              "support": 101,
+              "tp": 3
+            },
+            "slow tempo": {
+              "f1": 0.093023,
+              "fn": 76,
+              "fp": 2,
+              "precision": 0.666667,
+              "predicted": 6,
+              "recall": 0.05,
+              "support": 80,
+              "tp": 4
+            }
+          },
+          "row_count": 965,
+          "tp": 105
+        },
+        "prior_topk": {
+          "exact_match_rate": 0.0,
+          "fn": 1173,
+          "fp": 1598,
+          "macro_f1": 0.036477,
+          "micro_f1": 0.193304,
+          "micro_precision": 0.172021,
+          "micro_recall": 0.220598,
+          "per_label": {
+            "acoustic drums": {
+              "f1": 0.0,
+              "fn": 74,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 74,
+              "tp": 0
+            },
+            "acoustic guitar": {
+              "f1": 0.0,
+              "fn": 59,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 59,
+              "tp": 0
+            },
+            "amateur recording": {
+              "f1": 0.0,
+              "fn": 98,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 98,
+              "tp": 0
+            },
+            "bass guitar": {
+              "f1": 0.0,
+              "fn": 49,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 49,
+              "tp": 0
+            },
+            "emotional": {
+              "f1": 0.0,
+              "fn": 125,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 125,
+              "tp": 0
+            },
+            "energetic": {
+              "f1": 0.0,
+              "fn": 104,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 104,
+              "tp": 0
+            },
+            "fast tempo": {
+              "f1": 0.0,
+              "fn": 73,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 73,
+              "tp": 0
+            },
+            "groovy": {
+              "f1": 0.0,
+              "fn": 51,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 51,
+              "tp": 0
+            },
+            "instrumental": {
+              "f1": 0.237443,
+              "fn": 0,
+              "fp": 835,
+              "precision": 0.134715,
+              "predicted": 965,
+              "recall": 1.0,
+              "support": 130,
+              "tp": 130
+            },
+            "live performance": {
+              "f1": 0.0,
+              "fn": 79,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 79,
+              "tp": 0
+            },
+            "low quality": {
+              "f1": 0.346187,
+              "fn": 0,
+              "fp": 763,
+              "precision": 0.209326,
+              "predicted": 965,
+              "recall": 1.0,
+              "support": 202,
+              "tp": 202
+            },
+            "medium tempo": {
+              "f1": 0.0,
+              "fn": 123,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 123,
+              "tp": 0
+            },
+            "mono": {
+              "f1": 0.0,
+              "fn": 61,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 61,
+              "tp": 0
+            },
+            "noisy": {
+              "f1": 0.0,
+              "fn": 96,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 96,
+              "tp": 0
+            },
+            "passionate": {
+              "f1": 0.0,
+              "fn": 101,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 101,
+              "tp": 0
+            },
+            "slow tempo": {
+              "f1": 0.0,
+              "fn": 80,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 80,
+              "tp": 0
+            }
+          },
+          "row_count": 965,
+          "tp": 332
+        }
+      },
+      "prediction_count": 2,
+      "test_rows": 965,
+      "train_label_cardinality": 1.5956,
+      "train_rows": 3858
+    },
+    {
+      "fold": 1,
+      "metrics": {
+        "hashing_caption_embedding": {
+          "exact_match_rate": 0.033161,
+          "fn": 895,
+          "fp": 1298,
+          "macro_f1": 0.40848,
+          "micro_f1": 0.365635,
+          "micro_precision": 0.327461,
+          "micro_recall": 0.413883,
+          "per_label": {
+            "acoustic drums": {
+              "f1": 0.2,
+              "fn": 42,
+              "fp": 230,
+              "precision": 0.128788,
+              "predicted": 264,
+              "recall": 0.447368,
+              "support": 76,
+              "tp": 34
+            },
+            "acoustic guitar": {
+              "f1": 0.22716,
+              "fn": 6,
+              "fp": 307,
+              "precision": 0.130312,
+              "predicted": 353,
+              "recall": 0.884615,
+              "support": 52,
+              "tp": 46
+            },
+            "amateur recording": {
+              "f1": 0.269231,
+              "fn": 55,
+              "fp": 173,
+              "precision": 0.195349,
+              "predicted": 215,
+              "recall": 0.43299,
+              "support": 97,
+              "tp": 42
+            },
+            "bass guitar": {
+              "f1": 0.307692,
+              "fn": 6,
+              "fp": 246,
+              "precision": 0.18543,
+              "predicted": 302,
+              "recall": 0.903226,
+              "support": 62,
+              "tp": 56
+            },
+            "emotional": {
+              "f1": 0.683673,
+              "fn": 53,
+              "fp": 9,
+              "precision": 0.881579,
+              "predicted": 76,
+              "recall": 0.558333,
+              "support": 120,
+              "tp": 67
+            },
+            "energetic": {
+              "f1": 0.5,
+              "fn": 69,
+              "fp": 21,
+              "precision": 0.681818,
+              "predicted": 66,
+              "recall": 0.394737,
+              "support": 114,
+              "tp": 45
+            },
+            "fast tempo": {
+              "f1": 0.486111,
+              "fn": 20,
+              "fp": 54,
+              "precision": 0.393258,
+              "predicted": 89,
+              "recall": 0.636364,
+              "support": 55,
+              "tp": 35
+            },
+            "groovy": {
+              "f1": 0.387097,
+              "fn": 34,
+              "fp": 61,
+              "precision": 0.32967,
+              "predicted": 91,
+              "recall": 0.46875,
+              "support": 64,
+              "tp": 30
+            },
+            "instrumental": {
+              "f1": 0.364372,
+              "fn": 90,
+              "fp": 67,
+              "precision": 0.401786,
+              "predicted": 112,
+              "recall": 0.333333,
+              "support": 135,
+              "tp": 45
+            },
+            "live performance": {
+              "f1": 0.5125,
+              "fn": 31,
+              "fp": 47,
+              "precision": 0.465909,
+              "predicted": 88,
+              "recall": 0.569444,
+              "support": 72,
+              "tp": 41
+            },
+            "low quality": {
+              "f1": 0.0,
+              "fn": 216,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 216,
+              "tp": 0
+            },
+            "medium tempo": {
+              "f1": 0.497653,
+              "fn": 58,
+              "fp": 49,
+              "precision": 0.519608,
+              "predicted": 102,
+              "recall": 0.477477,
+              "support": 111,
+              "tp": 53
+            },
+            "mono": {
+              "f1": 0.698113,
+              "fn": 25,
+              "fp": 7,
+              "precision": 0.840909,
+              "predicted": 44,
+              "recall": 0.596774,
+              "support": 62,
+              "tp": 37
+            },
+            "noisy": {
+              "f1": 0.573034,
+              "fn": 68,
+              "fp": 8,
+              "precision": 0.864407,
+              "predicted": 59,
+              "recall": 0.428571,
+              "support": 119,
+              "tp": 51
+            },
+            "passionate": {
+              "f1": 0.416667,
+              "fn": 74,
+              "fp": 10,
+              "precision": 0.75,
+              "predicted": 40,
+              "recall": 0.288462,
+              "support": 104,
+              "tp": 30
+            },
+            "slow tempo": {
+              "f1": 0.412371,
+              "fn": 48,
+              "fp": 9,
+              "precision": 0.689655,
+              "predicted": 29,
+              "recall": 0.294118,
+              "support": 68,
+              "tp": 20
+            }
+          },
+          "row_count": 965,
+          "tp": 632
+        },
+        "hashing_masked_caption_embedding": {
+          "exact_match_rate": 0.001036,
+          "fn": 1383,
+          "fp": 1786,
+          "macro_f1": 0.04656,
+          "micro_f1": 0.083309,
+          "micro_precision": 0.074611,
+          "micro_recall": 0.094303,
+          "per_label": {
+            "acoustic drums": {
+              "f1": 0.145055,
+              "fn": 10,
+              "fp": 768,
+              "precision": 0.079137,
+              "predicted": 834,
+              "recall": 0.868421,
+              "support": 76,
+              "tp": 66
+            },
+            "acoustic guitar": {
+              "f1": 0.101754,
+              "fn": 23,
+              "fp": 489,
+              "precision": 0.055985,
+              "predicted": 518,
+              "recall": 0.557692,
+              "support": 52,
+              "tp": 29
+            },
+            "amateur recording": {
+              "f1": 0.118644,
+              "fn": 76,
+              "fp": 236,
+              "precision": 0.081712,
+              "predicted": 257,
+              "recall": 0.216495,
+              "support": 97,
+              "tp": 21
+            },
+            "bass guitar": {
+              "f1": 0.017857,
+              "fn": 61,
+              "fp": 49,
+              "precision": 0.02,
+              "predicted": 50,
+              "recall": 0.016129,
+              "support": 62,
+              "tp": 1
+            },
+            "emotional": {
+              "f1": 0.0,
+              "fn": 120,
+              "fp": 5,
+              "precision": 0.0,
+              "predicted": 5,
+              "recall": 0.0,
+              "support": 120,
+              "tp": 0
+            },
+            "energetic": {
+              "f1": 0.016949,
+              "fn": 113,
+              "fp": 3,
+              "precision": 0.25,
+              "predicted": 4,
+              "recall": 0.008772,
+              "support": 114,
+              "tp": 1
+            },
+            "fast tempo": {
+              "f1": 0.028986,
+              "fn": 54,
+              "fp": 13,
+              "precision": 0.071429,
+              "predicted": 14,
+              "recall": 0.018182,
+              "support": 55,
+              "tp": 1
+            },
+            "groovy": {
+              "f1": 0.027027,
+              "fn": 63,
+              "fp": 9,
+              "precision": 0.1,
+              "predicted": 10,
+              "recall": 0.015625,
+              "support": 64,
+              "tp": 1
+            },
+            "instrumental": {
+              "f1": 0.10628,
+              "fn": 124,
+              "fp": 61,
+              "precision": 0.152778,
+              "predicted": 72,
+              "recall": 0.081481,
+              "support": 135,
+              "tp": 11
+            },
+            "live performance": {
+              "f1": 0.125,
+              "fn": 62,
+              "fp": 78,
+              "precision": 0.113636,
+              "predicted": 88,
+              "recall": 0.138889,
+              "support": 72,
+              "tp": 10
+            },
+            "low quality": {
+              "f1": 0.0,
+              "fn": 216,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 216,
+              "tp": 0
+            },
+            "medium tempo": {
+              "f1": 0.013072,
+              "fn": 110,
+              "fp": 41,
+              "precision": 0.02381,
+              "predicted": 42,
+              "recall": 0.009009,
+              "support": 111,
+              "tp": 1
+            },
+            "mono": {
+              "f1": 0.0,
+              "fn": 62,
+              "fp": 14,
+              "precision": 0.0,
+              "predicted": 14,
+              "recall": 0.0,
+              "support": 62,
+              "tp": 0
+            },
+            "noisy": {
+              "f1": 0.0,
+              "fn": 119,
+              "fp": 9,
+              "precision": 0.0,
+              "predicted": 9,
+              "recall": 0.0,
+              "support": 119,
+              "tp": 0
+            },
+            "passionate": {
+              "f1": 0.018692,
+              "fn": 103,
+              "fp": 2,
+              "precision": 0.333333,
+              "predicted": 3,
+              "recall": 0.009615,
+              "support": 104,
+              "tp": 1
+            },
+            "slow tempo": {
+              "f1": 0.025641,
+              "fn": 67,
+              "fp": 9,
+              "precision": 0.1,
+              "predicted": 10,
+              "recall": 0.014706,
+              "support": 68,
+              "tp": 1
+            }
+          },
+          "row_count": 965,
+          "tp": 144
+        },
+        "hashing_shuffled_label_control": {
+          "exact_match_rate": 0.002073,
+          "fn": 1398,
+          "fp": 1801,
+          "macro_f1": 0.036405,
+          "micro_f1": 0.074631,
+          "micro_precision": 0.066839,
+          "micro_recall": 0.084479,
+          "per_label": {
+            "acoustic drums": {
+              "f1": 0.141499,
+              "fn": 9,
+              "fp": 804,
+              "precision": 0.076923,
+              "predicted": 871,
+              "recall": 0.881579,
+              "support": 76,
+              "tp": 67
+            },
+            "acoustic guitar": {
+              "f1": 0.099644,
+              "fn": 24,
+              "fp": 482,
+              "precision": 0.054902,
+              "predicted": 510,
+              "recall": 0.538462,
+              "support": 52,
+              "tp": 28
+            },
+            "amateur recording": {
+              "f1": 0.071429,
+              "fn": 92,
+              "fp": 38,
+              "precision": 0.116279,
+              "predicted": 43,
+              "recall": 0.051546,
+              "support": 97,
+              "tp": 5
+            },
+            "bass guitar": {
+              "f1": 0.0,
+              "fn": 62,
+              "fp": 5,
+              "precision": 0.0,
+              "predicted": 5,
+              "recall": 0.0,
+              "support": 62,
+              "tp": 0
+            },
+            "emotional": {
+              "f1": 0.092896,
+              "fn": 103,
+              "fp": 229,
+              "precision": 0.069106,
+              "predicted": 246,
+              "recall": 0.141667,
+              "support": 120,
+              "tp": 17
+            },
+            "energetic": {
+              "f1": 0.015504,
+              "fn": 113,
+              "fp": 14,
+              "precision": 0.066667,
+              "predicted": 15,
+              "recall": 0.008772,
+              "support": 114,
+              "tp": 1
+            },
+            "fast tempo": {
+              "f1": 0.0,
+              "fn": 55,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 55,
+              "tp": 0
+            },
+            "groovy": {
+              "f1": 0.0,
+              "fn": 64,
+              "fp": 5,
+              "precision": 0.0,
+              "predicted": 5,
+              "recall": 0.0,
+              "support": 64,
+              "tp": 0
+            },
+            "instrumental": {
+              "f1": 0.014388,
+              "fn": 134,
+              "fp": 3,
+              "precision": 0.25,
+              "predicted": 4,
+              "recall": 0.007407,
+              "support": 135,
+              "tp": 1
+            },
+            "live performance": {
+              "f1": 0.071429,
+              "fn": 68,
+              "fp": 36,
+              "precision": 0.1,
+              "predicted": 40,
+              "recall": 0.055556,
+              "support": 72,
+              "tp": 4
+            },
+            "low quality": {
+              "f1": 0.0,
+              "fn": 216,
+              "fp": 9,
+              "precision": 0.0,
+              "predicted": 9,
+              "recall": 0.0,
+              "support": 216,
+              "tp": 0
+            },
+            "medium tempo": {
+              "f1": 0.040609,
+              "fn": 107,
+              "fp": 82,
+              "precision": 0.046512,
+              "predicted": 86,
+              "recall": 0.036036,
+              "support": 111,
+              "tp": 4
+            },
+            "mono": {
+              "f1": 0.0,
+              "fn": 62,
+              "fp": 73,
+              "precision": 0.0,
+              "predicted": 73,
+              "recall": 0.0,
+              "support": 62,
+              "tp": 0
+            },
+            "noisy": {
+              "f1": 0.0,
+              "fn": 119,
+              "fp": 4,
+              "precision": 0.0,
+              "predicted": 4,
+              "recall": 0.0,
+              "support": 119,
+              "tp": 0
+            },
+            "passionate": {
+              "f1": 0.035088,
+              "fn": 102,
+              "fp": 8,
+              "precision": 0.2,
+              "predicted": 10,
+              "recall": 0.019231,
+              "support": 104,
+              "tp": 2
+            },
+            "slow tempo": {
+              "f1": 0.0,
+              "fn": 68,
+              "fp": 9,
+              "precision": 0.0,
+              "predicted": 9,
+              "recall": 0.0,
+              "support": 68,
+              "tp": 0
+            }
+          },
+          "row_count": 965,
+          "tp": 129
+        },
+        "prior_topk": {
+          "exact_match_rate": 0.0,
+          "fn": 1176,
+          "fp": 1579,
+          "macro_f1": 0.038203,
+          "micro_f1": 0.203066,
+          "micro_precision": 0.181865,
+          "micro_recall": 0.229862,
+          "per_label": {
+            "acoustic drums": {
+              "f1": 0.0,
+              "fn": 76,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 76,
+              "tp": 0
+            },
+            "acoustic guitar": {
+              "f1": 0.0,
+              "fn": 52,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 52,
+              "tp": 0
+            },
+            "amateur recording": {
+              "f1": 0.0,
+              "fn": 97,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 97,
+              "tp": 0
+            },
+            "bass guitar": {
+              "f1": 0.0,
+              "fn": 62,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 62,
+              "tp": 0
+            },
+            "emotional": {
+              "f1": 0.0,
+              "fn": 120,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 120,
+              "tp": 0
+            },
+            "energetic": {
+              "f1": 0.0,
+              "fn": 114,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 114,
+              "tp": 0
+            },
+            "fast tempo": {
+              "f1": 0.0,
+              "fn": 55,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 55,
+              "tp": 0
+            },
+            "groovy": {
+              "f1": 0.0,
+              "fn": 64,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 64,
+              "tp": 0
+            },
+            "instrumental": {
+              "f1": 0.245455,
+              "fn": 0,
+              "fp": 830,
+              "precision": 0.139896,
+              "predicted": 965,
+              "recall": 1.0,
+              "support": 135,
+              "tp": 135
+            },
+            "live performance": {
+              "f1": 0.0,
+              "fn": 72,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 72,
+              "tp": 0
+            },
+            "low quality": {
+              "f1": 0.365792,
+              "fn": 0,
+              "fp": 749,
+              "precision": 0.223834,
+              "predicted": 965,
+              "recall": 1.0,
+              "support": 216,
+              "tp": 216
+            },
+            "medium tempo": {
+              "f1": 0.0,
+              "fn": 111,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 111,
+              "tp": 0
+            },
+            "mono": {
+              "f1": 0.0,
+              "fn": 62,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 62,
+              "tp": 0
+            },
+            "noisy": {
+              "f1": 0.0,
+              "fn": 119,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 119,
+              "tp": 0
+            },
+            "passionate": {
+              "f1": 0.0,
+              "fn": 104,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 104,
+              "tp": 0
+            },
+            "slow tempo": {
+              "f1": 0.0,
+              "fn": 68,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 68,
+              "tp": 0
+            }
+          },
+          "row_count": 965,
+          "tp": 351
+        }
+      },
+      "prediction_count": 2,
+      "test_rows": 965,
+      "train_label_cardinality": 1.5899,
+      "train_rows": 3858
+    },
+    {
+      "fold": 2,
+      "metrics": {
+        "hashing_caption_embedding": {
+          "exact_match_rate": 0.023834,
+          "fn": 973,
+          "fp": 1283,
+          "macro_f1": 0.403494,
+          "micro_f1": 0.364507,
+          "micro_precision": 0.335233,
+          "micro_recall": 0.399383,
+          "per_label": {
+            "acoustic drums": {
+              "f1": 0.170886,
+              "fn": 49,
+              "fp": 213,
+              "precision": 0.1125,
+              "predicted": 240,
+              "recall": 0.355263,
+              "support": 76,
+              "tp": 27
+            },
+            "acoustic guitar": {
+              "f1": 0.234332,
+              "fn": 4,
+              "fp": 277,
+              "precision": 0.134375,
+              "predicted": 320,
+              "recall": 0.914894,
+              "support": 47,
+              "tp": 43
+            },
+            "amateur recording": {
+              "f1": 0.244604,
+              "fn": 42,
+              "fp": 168,
+              "precision": 0.168317,
+              "predicted": 202,
+              "recall": 0.447368,
+              "support": 76,
+              "tp": 34
+            },
+            "bass guitar": {
+              "f1": 0.239316,
+              "fn": 6,
+              "fp": 261,
+              "precision": 0.138614,
+              "predicted": 303,
+              "recall": 0.875,
+              "support": 48,
+              "tp": 42
+            },
+            "emotional": {
+              "f1": 0.57561,
+              "fn": 78,
+              "fp": 9,
+              "precision": 0.867647,
+              "predicted": 68,
+              "recall": 0.430657,
+              "support": 137,
+              "tp": 59
+            },
+            "energetic": {
+              "f1": 0.609626,
+              "fn": 59,
+              "fp": 14,
+              "precision": 0.802817,
+              "predicted": 71,
+              "recall": 0.491379,
+              "support": 116,
+              "tp": 57
+            },
+            "fast tempo": {
+              "f1": 0.38961,
+              "fn": 31,
+              "fp": 63,
+              "precision": 0.322581,
+              "predicted": 93,
+              "recall": 0.491803,
+              "support": 61,
+              "tp": 30
+            },
+            "groovy": {
+              "f1": 0.303448,
+              "fn": 32,
+              "fp": 69,
+              "precision": 0.241758,
+              "predicted": 91,
+              "recall": 0.407407,
+              "support": 54,
+              "tp": 22
+            },
+            "instrumental": {
+              "f1": 0.297872,
+              "fn": 84,
+              "fp": 81,
+              "precision": 0.301724,
+              "predicted": 116,
+              "recall": 0.294118,
+              "support": 119,
+              "tp": 35
+            },
+            "live performance": {
+              "f1": 0.527363,
+              "fn": 47,
+              "fp": 48,
+              "precision": 0.524752,
+              "predicted": 101,
+              "recall": 0.53,
+              "support": 100,
+              "tp": 53
+            },
+            "low quality": {
+              "f1": 0.0,
+              "fn": 246,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 246,
+              "tp": 0
+            },
+            "medium tempo": {
+              "f1": 0.616034,
+              "fn": 42,
+              "fp": 49,
+              "precision": 0.598361,
+              "predicted": 122,
+              "recall": 0.634783,
+              "support": 115,
+              "tp": 73
+            },
+            "mono": {
+              "f1": 0.756757,
+              "fn": 23,
+              "fp": 4,
+              "precision": 0.913043,
+              "predicted": 46,
+              "recall": 0.646154,
+              "support": 65,
+              "tp": 42
+            },
+            "noisy": {
+              "f1": 0.63388,
+              "fn": 61,
+              "fp": 6,
+              "precision": 0.90625,
+              "predicted": 64,
+              "recall": 0.487395,
+              "support": 119,
+              "tp": 58
+            },
+            "passionate": {
+              "f1": 0.441176,
+              "fn": 103,
+              "fp": 11,
+              "precision": 0.803571,
+              "predicted": 56,
+              "recall": 0.304054,
+              "support": 148,
+              "tp": 45
+            },
+            "slow tempo": {
+              "f1": 0.415385,
+              "fn": 66,
+              "fp": 10,
+              "precision": 0.72973,
+              "predicted": 37,
+              "recall": 0.290323,
+              "support": 93,
+              "tp": 27
+            }
+          },
+          "row_count": 965,
+          "tp": 647
+        },
+        "hashing_masked_caption_embedding": {
+          "exact_match_rate": 0.001036,
+          "fn": 1501,
+          "fp": 1811,
+          "macro_f1": 0.041573,
+          "micro_f1": 0.067042,
+          "micro_precision": 0.061658,
+          "micro_recall": 0.073457,
+          "per_label": {
+            "acoustic drums": {
+              "f1": 0.123894,
+              "fn": 20,
+              "fp": 772,
+              "precision": 0.067633,
+              "predicted": 828,
+              "recall": 0.736842,
+              "support": 76,
+              "tp": 56
+            },
+            "acoustic guitar": {
+              "f1": 0.071795,
+              "fn": 26,
+              "fp": 517,
+              "precision": 0.039033,
+              "predicted": 538,
+              "recall": 0.446809,
+              "support": 47,
+              "tp": 21
+            },
+            "amateur recording": {
+              "f1": 0.070968,
+              "fn": 65,
+              "fp": 223,
+              "precision": 0.047009,
+              "predicted": 234,
+              "recall": 0.144737,
+              "support": 76,
+              "tp": 11
+            },
+            "bass guitar": {
+              "f1": 0.057143,
+              "fn": 45,
+              "fp": 54,
+              "precision": 0.052632,
+              "predicted": 57,
+              "recall": 0.0625,
+              "support": 48,
+              "tp": 3
+            },
+            "emotional": {
+              "f1": 0.0,
+              "fn": 137,
+              "fp": 2,
+              "precision": 0.0,
+              "predicted": 2,
+              "recall": 0.0,
+              "support": 137,
+              "tp": 0
+            },
+            "energetic": {
+              "f1": 0.0,
+              "fn": 116,
+              "fp": 5,
+              "precision": 0.0,
+              "predicted": 5,
+              "recall": 0.0,
+              "support": 116,
+              "tp": 0
+            },
+            "fast tempo": {
+              "f1": 0.071429,
+              "fn": 58,
+              "fp": 20,
+              "precision": 0.130435,
+              "predicted": 23,
+              "recall": 0.04918,
+              "support": 61,
+              "tp": 3
+            },
+            "groovy": {
+              "f1": 0.0,
+              "fn": 54,
+              "fp": 11,
+              "precision": 0.0,
+              "predicted": 11,
+              "recall": 0.0,
+              "support": 54,
+              "tp": 0
+            },
+            "instrumental": {
+              "f1": 0.078212,
+              "fn": 112,
+              "fp": 53,
+              "precision": 0.116667,
+              "predicted": 60,
+              "recall": 0.058824,
+              "support": 119,
+              "tp": 7
+            },
+            "live performance": {
+              "f1": 0.141414,
+              "fn": 86,
+              "fp": 84,
+              "precision": 0.142857,
+              "predicted": 98,
+              "recall": 0.14,
+              "support": 100,
+              "tp": 14
+            },
+            "low quality": {
+              "f1": 0.0,
+              "fn": 246,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 246,
+              "tp": 0
+            },
+            "medium tempo": {
+              "f1": 0.050314,
+              "fn": 111,
+              "fp": 40,
+              "precision": 0.090909,
+              "predicted": 44,
+              "recall": 0.034783,
+              "support": 115,
+              "tp": 4
+            },
+            "mono": {
+              "f1": 0.0,
+              "fn": 65,
+              "fp": 7,
+              "precision": 0.0,
+              "predicted": 7,
+              "recall": 0.0,
+              "support": 65,
+              "tp": 0
+            },
+            "noisy": {
+              "f1": 0.0,
+              "fn": 119,
+              "fp": 12,
+              "precision": 0.0,
+              "predicted": 12,
+              "recall": 0.0,
+              "support": 119,
+              "tp": 0
+            },
+            "passionate": {
+              "f1": 0.0,
+              "fn": 148,
+              "fp": 3,
+              "precision": 0.0,
+              "predicted": 3,
+              "recall": 0.0,
+              "support": 148,
+              "tp": 0
+            },
+            "slow tempo": {
+              "f1": 0.0,
+              "fn": 93,
+              "fp": 8,
+              "precision": 0.0,
+              "predicted": 8,
+              "recall": 0.0,
+              "support": 93,
+              "tp": 0
+            }
+          },
+          "row_count": 965,
+          "tp": 119
+        },
+        "hashing_shuffled_label_control": {
+          "exact_match_rate": 0.001036,
+          "fn": 1512,
+          "fp": 1822,
+          "macro_f1": 0.032983,
+          "micro_f1": 0.060845,
+          "micro_precision": 0.055959,
+          "micro_recall": 0.066667,
+          "per_label": {
+            "acoustic drums": {
+              "f1": 0.129386,
+              "fn": 17,
+              "fp": 777,
+              "precision": 0.070574,
+              "predicted": 836,
+              "recall": 0.776316,
+              "support": 76,
+              "tp": 59
+            },
+            "acoustic guitar": {
+              "f1": 0.067616,
+              "fn": 28,
+              "fp": 496,
+              "precision": 0.036893,
+              "predicted": 515,
+              "recall": 0.404255,
+              "support": 47,
+              "tp": 19
+            },
+            "amateur recording": {
+              "f1": 0.0,
+              "fn": 76,
+              "fp": 6,
+              "precision": 0.0,
+              "predicted": 6,
+              "recall": 0.0,
+              "support": 76,
+              "tp": 0
+            },
+            "bass guitar": {
+              "f1": 0.013423,
+              "fn": 47,
+              "fp": 100,
+              "precision": 0.009901,
+              "predicted": 101,
+              "recall": 0.020833,
+              "support": 48,
+              "tp": 1
+            },
+            "emotional": {
+              "f1": 0.0,
+              "fn": 137,
+              "fp": 11,
+              "precision": 0.0,
+              "predicted": 11,
+              "recall": 0.0,
+              "support": 137,
+              "tp": 0
+            },
+            "energetic": {
+              "f1": 0.011364,
+              "fn": 115,
+              "fp": 59,
+              "precision": 0.016667,
+              "predicted": 60,
+              "recall": 0.008621,
+              "support": 116,
+              "tp": 1
+            },
+            "fast tempo": {
+              "f1": 0.0,
+              "fn": 61,
+              "fp": 5,
+              "precision": 0.0,
+              "predicted": 5,
+              "recall": 0.0,
+              "support": 61,
+              "tp": 0
+            },
+            "groovy": {
+              "f1": 0.030769,
+              "fn": 53,
+              "fp": 10,
+              "precision": 0.090909,
+              "predicted": 11,
+              "recall": 0.018519,
+              "support": 54,
+              "tp": 1
+            },
+            "instrumental": {
+              "f1": 0.0,
+              "fn": 119,
+              "fp": 7,
+              "precision": 0.0,
+              "predicted": 7,
+              "recall": 0.0,
+              "support": 119,
+              "tp": 0
+            },
+            "live performance": {
+              "f1": 0.067568,
+              "fn": 95,
+              "fp": 43,
+              "precision": 0.104167,
+              "predicted": 48,
+              "recall": 0.05,
+              "support": 100,
+              "tp": 5
+            },
+            "low quality": {
+              "f1": 0.074074,
+              "fn": 236,
+              "fp": 14,
+              "precision": 0.416667,
+              "predicted": 24,
+              "recall": 0.04065,
+              "support": 246,
+              "tp": 10
+            },
+            "medium tempo": {
+              "f1": 0.053333,
+              "fn": 111,
+              "fp": 31,
+              "precision": 0.114286,
+              "predicted": 35,
+              "recall": 0.034783,
+              "support": 115,
+              "tp": 4
+            },
+            "mono": {
+              "f1": 0.006897,
+              "fn": 64,
+              "fp": 224,
+              "precision": 0.004444,
+              "predicted": 225,
+              "recall": 0.015385,
+              "support": 65,
+              "tp": 1
+            },
+            "noisy": {
+              "f1": 0.0,
+              "fn": 119,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 119,
+              "tp": 0
+            },
+            "passionate": {
+              "f1": 0.073298,
+              "fn": 141,
+              "fp": 36,
+              "precision": 0.162791,
+              "predicted": 43,
+              "recall": 0.047297,
+              "support": 148,
+              "tp": 7
+            },
+            "slow tempo": {
+              "f1": 0.0,
+              "fn": 93,
+              "fp": 3,
+              "precision": 0.0,
+              "predicted": 3,
+              "recall": 0.0,
+              "support": 93,
+              "tp": 0
+            }
+          },
+          "row_count": 965,
+          "tp": 108
+        },
+        "prior_topk": {
+          "exact_match_rate": 0.0,
+          "fn": 1255,
+          "fp": 1565,
+          "macro_f1": 0.039115,
+          "micro_f1": 0.205634,
+          "micro_precision": 0.189119,
+          "micro_recall": 0.225309,
+          "per_label": {
+            "acoustic drums": {
+              "f1": 0.0,
+              "fn": 76,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 76,
+              "tp": 0
+            },
+            "acoustic guitar": {
+              "f1": 0.0,
+              "fn": 47,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 47,
+              "tp": 0
+            },
+            "amateur recording": {
+              "f1": 0.0,
+              "fn": 76,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 76,
+              "tp": 0
+            },
+            "bass guitar": {
+              "f1": 0.0,
+              "fn": 48,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 48,
+              "tp": 0
+            },
+            "emotional": {
+              "f1": 0.0,
+              "fn": 137,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 137,
+              "tp": 0
+            },
+            "energetic": {
+              "f1": 0.0,
+              "fn": 116,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 116,
+              "tp": 0
+            },
+            "fast tempo": {
+              "f1": 0.0,
+              "fn": 61,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 61,
+              "tp": 0
+            },
+            "groovy": {
+              "f1": 0.0,
+              "fn": 54,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 54,
+              "tp": 0
+            },
+            "instrumental": {
+              "f1": 0.219557,
+              "fn": 0,
+              "fp": 846,
+              "precision": 0.123316,
+              "predicted": 965,
+              "recall": 1.0,
+              "support": 119,
+              "tp": 119
+            },
+            "live performance": {
+              "f1": 0.0,
+              "fn": 100,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 100,
+              "tp": 0
+            },
+            "low quality": {
+              "f1": 0.406276,
+              "fn": 0,
+              "fp": 719,
+              "precision": 0.254922,
+              "predicted": 965,
+              "recall": 1.0,
+              "support": 246,
+              "tp": 246
+            },
+            "medium tempo": {
+              "f1": 0.0,
+              "fn": 115,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 115,
+              "tp": 0
+            },
+            "mono": {
+              "f1": 0.0,
+              "fn": 65,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 65,
+              "tp": 0
+            },
+            "noisy": {
+              "f1": 0.0,
+              "fn": 119,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 119,
+              "tp": 0
+            },
+            "passionate": {
+              "f1": 0.0,
+              "fn": 148,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 148,
+              "tp": 0
+            },
+            "slow tempo": {
+              "f1": 0.0,
+              "fn": 93,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 93,
+              "tp": 0
+            }
+          },
+          "row_count": 965,
+          "tp": 365
+        }
+      },
+      "prediction_count": 2,
+      "test_rows": 965,
+      "train_label_cardinality": 1.5658,
+      "train_rows": 3858
+    },
+    {
+      "fold": 3,
+      "metrics": {
+        "hashing_caption_embedding": {
+          "exact_match_rate": 0.017635,
+          "fn": 888,
+          "fp": 1333,
+          "macro_f1": 0.397199,
+          "micro_f1": 0.348871,
+          "micro_precision": 0.30861,
+          "micro_recall": 0.401214,
+          "per_label": {
+            "acoustic drums": {
+              "f1": 0.173913,
+              "fn": 37,
+              "fp": 248,
+              "precision": 0.107914,
+              "predicted": 278,
+              "recall": 0.447761,
+              "support": 67,
+              "tp": 30
+            },
+            "acoustic guitar": {
+              "f1": 0.246377,
+              "fn": 6,
+              "fp": 306,
+              "precision": 0.142857,
+              "predicted": 357,
+              "recall": 0.894737,
+              "support": 57,
+              "tp": 51
+            },
+            "amateur recording": {
+              "f1": 0.214047,
+              "fn": 54,
+              "fp": 181,
+              "precision": 0.150235,
+              "predicted": 213,
+              "recall": 0.372093,
+              "support": 86,
+              "tp": 32
+            },
+            "bass guitar": {
+              "f1": 0.237838,
+              "fn": 13,
+              "fp": 269,
+              "precision": 0.140575,
+              "predicted": 313,
+              "recall": 0.77193,
+              "support": 57,
+              "tp": 44
+            },
+            "emotional": {
+              "f1": 0.615385,
+              "fn": 62,
+              "fp": 8,
+              "precision": 0.875,
+              "predicted": 64,
+              "recall": 0.474576,
+              "support": 118,
+              "tp": 56
+            },
+            "energetic": {
+              "f1": 0.535032,
+              "fn": 55,
+              "fp": 18,
+              "precision": 0.7,
+              "predicted": 60,
+              "recall": 0.43299,
+              "support": 97,
+              "tp": 42
+            },
+            "fast tempo": {
+              "f1": 0.526316,
+              "fn": 20,
+              "fp": 43,
+              "precision": 0.448718,
+              "predicted": 78,
+              "recall": 0.636364,
+              "support": 55,
+              "tp": 35
+            },
+            "groovy": {
+              "f1": 0.274194,
+              "fn": 32,
+              "fp": 58,
+              "precision": 0.226667,
+              "predicted": 75,
+              "recall": 0.346939,
+              "support": 49,
+              "tp": 17
+            },
+            "instrumental": {
+              "f1": 0.357447,
+              "fn": 82,
+              "fp": 69,
+              "precision": 0.378378,
+              "predicted": 111,
+              "recall": 0.33871,
+              "support": 124,
+              "tp": 42
+            },
+            "live performance": {
+              "f1": 0.466258,
+              "fn": 39,
+              "fp": 48,
+              "precision": 0.44186,
+              "predicted": 86,
+              "recall": 0.493506,
+              "support": 77,
+              "tp": 38
+            },
+            "low quality": {
+              "f1": 0.0,
+              "fn": 212,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 212,
+              "tp": 0
+            },
+            "medium tempo": {
+              "f1": 0.531401,
+              "fn": 50,
+              "fp": 47,
+              "precision": 0.539216,
+              "predicted": 102,
+              "recall": 0.52381,
+              "support": 105,
+              "tp": 55
+            },
+            "mono": {
+              "f1": 0.803571,
+              "fn": 14,
+              "fp": 8,
+              "precision": 0.849057,
+              "predicted": 53,
+              "recall": 0.762712,
+              "support": 59,
+              "tp": 45
+            },
+            "noisy": {
+              "f1": 0.606742,
+              "fn": 64,
+              "fp": 6,
+              "precision": 0.9,
+              "predicted": 60,
+              "recall": 0.457627,
+              "support": 118,
+              "tp": 54
+            },
+            "passionate": {
+              "f1": 0.4,
+              "fn": 85,
+              "fp": 11,
+              "precision": 0.744186,
+              "predicted": 43,
+              "recall": 0.273504,
+              "support": 117,
+              "tp": 32
+            },
+            "slow tempo": {
+              "f1": 0.366667,
+              "fn": 63,
+              "fp": 13,
+              "precision": 0.628571,
+              "predicted": 35,
+              "recall": 0.258824,
+              "support": 85,
+              "tp": 22
+            }
+          },
+          "row_count": 964,
+          "tp": 595
+        },
+        "hashing_masked_caption_embedding": {
+          "exact_match_rate": 0.001037,
+          "fn": 1363,
+          "fp": 1808,
+          "macro_f1": 0.045028,
+          "micro_f1": 0.070361,
+          "micro_precision": 0.062241,
+          "micro_recall": 0.080917,
+          "per_label": {
+            "acoustic drums": {
+              "f1": 0.116228,
+              "fn": 14,
+              "fp": 792,
+              "precision": 0.062722,
+              "predicted": 845,
+              "recall": 0.791045,
+              "support": 67,
+              "tp": 53
+            },
+            "acoustic guitar": {
+              "f1": 0.075214,
+              "fn": 35,
+              "fp": 506,
+              "precision": 0.041667,
+              "predicted": 528,
+              "recall": 0.385965,
+              "support": 57,
+              "tp": 22
+            },
+            "amateur recording": {
+              "f1": 0.083832,
+              "fn": 72,
+              "fp": 234,
+              "precision": 0.056452,
+              "predicted": 248,
+              "recall": 0.162791,
+              "support": 86,
+              "tp": 14
+            },
+            "bass guitar": {
+              "f1": 0.019608,
+              "fn": 56,
+              "fp": 44,
+              "precision": 0.022222,
+              "predicted": 45,
+              "recall": 0.017544,
+              "support": 57,
+              "tp": 1
+            },
+            "emotional": {
+              "f1": 0.016667,
+              "fn": 117,
+              "fp": 1,
+              "precision": 0.5,
+              "predicted": 2,
+              "recall": 0.008475,
+              "support": 118,
+              "tp": 1
+            },
+            "energetic": {
+              "f1": 0.0,
+              "fn": 97,
+              "fp": 4,
+              "precision": 0.0,
+              "predicted": 4,
+              "recall": 0.0,
+              "support": 97,
+              "tp": 0
+            },
+            "fast tempo": {
+              "f1": 0.028571,
+              "fn": 54,
+              "fp": 14,
+              "precision": 0.066667,
+              "predicted": 15,
+              "recall": 0.018182,
+              "support": 55,
+              "tp": 1
+            },
+            "groovy": {
+              "f1": 0.059701,
+              "fn": 47,
+              "fp": 16,
+              "precision": 0.111111,
+              "predicted": 18,
+              "recall": 0.040816,
+              "support": 49,
+              "tp": 2
+            },
+            "instrumental": {
+              "f1": 0.131148,
+              "fn": 112,
+              "fp": 47,
+              "precision": 0.20339,
+              "predicted": 59,
+              "recall": 0.096774,
+              "support": 124,
+              "tp": 12
+            },
+            "live performance": {
+              "f1": 0.093023,
+              "fn": 69,
+              "fp": 87,
+              "precision": 0.084211,
+              "predicted": 95,
+              "recall": 0.103896,
+              "support": 77,
+              "tp": 8
+            },
+            "low quality": {
+              "f1": 0.0,
+              "fn": 212,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 212,
+              "tp": 0
+            },
+            "medium tempo": {
+              "f1": 0.054795,
+              "fn": 101,
+              "fp": 37,
+              "precision": 0.097561,
+              "predicted": 41,
+              "recall": 0.038095,
+              "support": 105,
+              "tp": 4
+            },
+            "mono": {
+              "f1": 0.0,
+              "fn": 59,
+              "fp": 8,
+              "precision": 0.0,
+              "predicted": 8,
+              "recall": 0.0,
+              "support": 59,
+              "tp": 0
+            },
+            "noisy": {
+              "f1": 0.0,
+              "fn": 118,
+              "fp": 7,
+              "precision": 0.0,
+              "predicted": 7,
+              "recall": 0.0,
+              "support": 118,
+              "tp": 0
+            },
+            "passionate": {
+              "f1": 0.0,
+              "fn": 117,
+              "fp": 2,
+              "precision": 0.0,
+              "predicted": 2,
+              "recall": 0.0,
+              "support": 117,
+              "tp": 0
+            },
+            "slow tempo": {
+              "f1": 0.041667,
+              "fn": 83,
+              "fp": 9,
+              "precision": 0.181818,
+              "predicted": 11,
+              "recall": 0.023529,
+              "support": 85,
+              "tp": 2
+            }
+          },
+          "row_count": 964,
+          "tp": 120
+        },
+        "hashing_shuffled_label_control": {
+          "exact_match_rate": 0.0,
+          "fn": 1346,
+          "fp": 1791,
+          "macro_f1": 0.045598,
+          "micro_f1": 0.080328,
+          "micro_precision": 0.071058,
+          "micro_recall": 0.09238,
+          "per_label": {
+            "acoustic drums": {
+              "f1": 0.124048,
+              "fn": 10,
+              "fp": 795,
+              "precision": 0.066901,
+              "predicted": 852,
+              "recall": 0.850746,
+              "support": 67,
+              "tp": 57
+            },
+            "acoustic guitar": {
+              "f1": 0.074336,
+              "fn": 36,
+              "fp": 487,
+              "precision": 0.041339,
+              "predicted": 508,
+              "recall": 0.368421,
+              "support": 57,
+              "tp": 21
+            },
+            "amateur recording": {
+              "f1": 0.04,
+              "fn": 84,
+              "fp": 12,
+              "precision": 0.142857,
+              "predicted": 14,
+              "recall": 0.023256,
+              "support": 86,
+              "tp": 2
+            },
+            "bass guitar": {
+              "f1": 0.051282,
+              "fn": 54,
+              "fp": 57,
+              "precision": 0.05,
+              "predicted": 60,
+              "recall": 0.052632,
+              "support": 57,
+              "tp": 3
+            },
+            "emotional": {
+              "f1": 0.0,
+              "fn": 118,
+              "fp": 7,
+              "precision": 0.0,
+              "predicted": 7,
+              "recall": 0.0,
+              "support": 118,
+              "tp": 0
+            },
+            "energetic": {
+              "f1": 0.154639,
+              "fn": 82,
+              "fp": 82,
+              "precision": 0.154639,
+              "predicted": 97,
+              "recall": 0.154639,
+              "support": 97,
+              "tp": 15
+            },
+            "fast tempo": {
+              "f1": 0.020408,
+              "fn": 54,
+              "fp": 42,
+              "precision": 0.023256,
+              "predicted": 43,
+              "recall": 0.018182,
+              "support": 55,
+              "tp": 1
+            },
+            "groovy": {
+              "f1": 0.0,
+              "fn": 49,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 49,
+              "tp": 0
+            },
+            "instrumental": {
+              "f1": 0.058824,
+              "fn": 119,
+              "fp": 41,
+              "precision": 0.108696,
+              "predicted": 46,
+              "recall": 0.040323,
+              "support": 124,
+              "tp": 5
+            },
+            "live performance": {
+              "f1": 0.0,
+              "fn": 77,
+              "fp": 9,
+              "precision": 0.0,
+              "predicted": 9,
+              "recall": 0.0,
+              "support": 77,
+              "tp": 0
+            },
+            "low quality": {
+              "f1": 0.0,
+              "fn": 212,
+              "fp": 2,
+              "precision": 0.0,
+              "predicted": 2,
+              "recall": 0.0,
+              "support": 212,
+              "tp": 0
+            },
+            "medium tempo": {
+              "f1": 0.184971,
+              "fn": 73,
+              "fp": 209,
+              "precision": 0.13278,
+              "predicted": 241,
+              "recall": 0.304762,
+              "support": 105,
+              "tp": 32
+            },
+            "mono": {
+              "f1": 0.0,
+              "fn": 59,
+              "fp": 21,
+              "precision": 0.0,
+              "predicted": 21,
+              "recall": 0.0,
+              "support": 59,
+              "tp": 0
+            },
+            "noisy": {
+              "f1": 0.0,
+              "fn": 118,
+              "fp": 14,
+              "precision": 0.0,
+              "predicted": 14,
+              "recall": 0.0,
+              "support": 118,
+              "tp": 0
+            },
+            "passionate": {
+              "f1": 0.0,
+              "fn": 117,
+              "fp": 4,
+              "precision": 0.0,
+              "predicted": 4,
+              "recall": 0.0,
+              "support": 117,
+              "tp": 0
+            },
+            "slow tempo": {
+              "f1": 0.021053,
+              "fn": 84,
+              "fp": 9,
+              "precision": 0.1,
+              "predicted": 10,
+              "recall": 0.011765,
+              "support": 85,
+              "tp": 1
+            }
+          },
+          "row_count": 964,
+          "tp": 137
+        },
+        "prior_topk": {
+          "exact_match_rate": 0.0,
+          "fn": 1147,
+          "fp": 1592,
+          "macro_f1": 0.03678,
+          "micro_f1": 0.19701,
+          "micro_precision": 0.174274,
+          "micro_recall": 0.226568,
+          "per_label": {
+            "acoustic drums": {
+              "f1": 0.0,
+              "fn": 67,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 67,
+              "tp": 0
+            },
+            "acoustic guitar": {
+              "f1": 0.0,
+              "fn": 57,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 57,
+              "tp": 0
+            },
+            "amateur recording": {
+              "f1": 0.0,
+              "fn": 86,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 86,
+              "tp": 0
+            },
+            "bass guitar": {
+              "f1": 0.0,
+              "fn": 57,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 57,
+              "tp": 0
+            },
+            "emotional": {
+              "f1": 0.0,
+              "fn": 118,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 118,
+              "tp": 0
+            },
+            "energetic": {
+              "f1": 0.0,
+              "fn": 97,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 97,
+              "tp": 0
+            },
+            "fast tempo": {
+              "f1": 0.0,
+              "fn": 55,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 55,
+              "tp": 0
+            },
+            "groovy": {
+              "f1": 0.0,
+              "fn": 49,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 49,
+              "tp": 0
+            },
+            "instrumental": {
+              "f1": 0.227941,
+              "fn": 0,
+              "fp": 840,
+              "precision": 0.128631,
+              "predicted": 964,
+              "recall": 1.0,
+              "support": 124,
+              "tp": 124
+            },
+            "live performance": {
+              "f1": 0.0,
+              "fn": 77,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 77,
+              "tp": 0
+            },
+            "low quality": {
+              "f1": 0.360544,
+              "fn": 0,
+              "fp": 752,
+              "precision": 0.219917,
+              "predicted": 964,
+              "recall": 1.0,
+              "support": 212,
+              "tp": 212
+            },
+            "medium tempo": {
+              "f1": 0.0,
+              "fn": 105,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 105,
+              "tp": 0
+            },
+            "mono": {
+              "f1": 0.0,
+              "fn": 59,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 59,
+              "tp": 0
+            },
+            "noisy": {
+              "f1": 0.0,
+              "fn": 118,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 118,
+              "tp": 0
+            },
+            "passionate": {
+              "f1": 0.0,
+              "fn": 117,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 117,
+              "tp": 0
+            },
+            "slow tempo": {
+              "f1": 0.0,
+              "fn": 85,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 85,
+              "tp": 0
+            }
+          },
+          "row_count": 964,
+          "tp": 336
+        }
+      },
+      "prediction_count": 2,
+      "test_rows": 964,
+      "train_label_cardinality": 1.6009,
+      "train_rows": 3859
+    },
+    {
+      "fold": 4,
+      "metrics": {
+        "hashing_caption_embedding": {
+          "exact_match_rate": 0.030083,
+          "fn": 905,
+          "fp": 1307,
+          "macro_f1": 0.408443,
+          "micro_f1": 0.359583,
+          "micro_precision": 0.322095,
+          "micro_recall": 0.406946,
+          "per_label": {
+            "acoustic drums": {
+              "f1": 0.168605,
+              "fn": 41,
+              "fp": 245,
+              "precision": 0.105839,
+              "predicted": 274,
+              "recall": 0.414286,
+              "support": 70,
+              "tp": 29
+            },
+            "acoustic guitar": {
+              "f1": 0.265625,
+              "fn": 5,
+              "fp": 277,
+              "precision": 0.155488,
+              "predicted": 328,
+              "recall": 0.910714,
+              "support": 56,
+              "tp": 51
+            },
+            "amateur recording": {
+              "f1": 0.203822,
+              "fn": 68,
+              "fp": 182,
+              "precision": 0.149533,
+              "predicted": 214,
+              "recall": 0.32,
+              "support": 100,
+              "tp": 32
+            },
+            "bass guitar": {
+              "f1": 0.257534,
+              "fn": 9,
+              "fp": 262,
+              "precision": 0.152104,
+              "predicted": 309,
+              "recall": 0.839286,
+              "support": 56,
+              "tp": 47
+            },
+            "emotional": {
+              "f1": 0.625767,
+              "fn": 54,
+              "fp": 7,
+              "precision": 0.87931,
+              "predicted": 58,
+              "recall": 0.485714,
+              "support": 105,
+              "tp": 51
+            },
+            "energetic": {
+              "f1": 0.628571,
+              "fn": 54,
+              "fp": 11,
+              "precision": 0.833333,
+              "predicted": 66,
+              "recall": 0.504587,
+              "support": 109,
+              "tp": 55
+            },
+            "fast tempo": {
+              "f1": 0.545455,
+              "fn": 17,
+              "fp": 53,
+              "precision": 0.442105,
+              "predicted": 95,
+              "recall": 0.711864,
+              "support": 59,
+              "tp": 42
+            },
+            "groovy": {
+              "f1": 0.410596,
+              "fn": 29,
+              "fp": 60,
+              "precision": 0.340659,
+              "predicted": 91,
+              "recall": 0.516667,
+              "support": 60,
+              "tp": 31
+            },
+            "instrumental": {
+              "f1": 0.310924,
+              "fn": 95,
+              "fp": 69,
+              "precision": 0.349057,
+              "predicted": 106,
+              "recall": 0.280303,
+              "support": 132,
+              "tp": 37
+            },
+            "live performance": {
+              "f1": 0.611399,
+              "fn": 32,
+              "fp": 43,
+              "precision": 0.578431,
+              "predicted": 102,
+              "recall": 0.648352,
+              "support": 91,
+              "tp": 59
+            },
+            "low quality": {
+              "f1": 0.0,
+              "fn": 212,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 212,
+              "tp": 0
+            },
+            "medium tempo": {
+              "f1": 0.506438,
+              "fn": 50,
+              "fp": 65,
+              "precision": 0.475806,
+              "predicted": 124,
+              "recall": 0.541284,
+              "support": 109,
+              "tp": 59
+            },
+            "mono": {
+              "f1": 0.674157,
+              "fn": 23,
+              "fp": 6,
+              "precision": 0.833333,
+              "predicted": 36,
+              "recall": 0.566038,
+              "support": 53,
+              "tp": 30
+            },
+            "noisy": {
+              "f1": 0.521739,
+              "fn": 63,
+              "fp": 3,
+              "precision": 0.923077,
+              "predicted": 39,
+              "recall": 0.363636,
+              "support": 99,
+              "tp": 36
+            },
+            "passionate": {
+              "f1": 0.491018,
+              "fn": 70,
+              "fp": 15,
+              "precision": 0.732143,
+              "predicted": 56,
+              "recall": 0.369369,
+              "support": 111,
+              "tp": 41
+            },
+            "slow tempo": {
+              "f1": 0.313433,
+              "fn": 83,
+              "fp": 9,
+              "precision": 0.7,
+              "predicted": 30,
+              "recall": 0.201923,
+              "support": 104,
+              "tp": 21
+            }
+          },
+          "row_count": 964,
+          "tp": 621
+        },
+        "hashing_masked_caption_embedding": {
+          "exact_match_rate": 0.002075,
+          "fn": 1406,
+          "fp": 1808,
+          "macro_f1": 0.040976,
+          "micro_f1": 0.069485,
+          "micro_precision": 0.062241,
+          "micro_recall": 0.078637,
+          "per_label": {
+            "acoustic drums": {
+              "f1": 0.12318,
+              "fn": 15,
+              "fp": 768,
+              "precision": 0.066829,
+              "predicted": 823,
+              "recall": 0.785714,
+              "support": 70,
+              "tp": 55
+            },
+            "acoustic guitar": {
+              "f1": 0.083045,
+              "fn": 32,
+              "fp": 498,
+              "precision": 0.045977,
+              "predicted": 522,
+              "recall": 0.428571,
+              "support": 56,
+              "tp": 24
+            },
+            "amateur recording": {
+              "f1": 0.062323,
+              "fn": 89,
+              "fp": 242,
+              "precision": 0.043478,
+              "predicted": 253,
+              "recall": 0.11,
+              "support": 100,
+              "tp": 11
+            },
+            "bass guitar": {
+              "f1": 0.041237,
+              "fn": 54,
+              "fp": 39,
+              "precision": 0.04878,
+              "predicted": 41,
+              "recall": 0.035714,
+              "support": 56,
+              "tp": 2
+            },
+            "emotional": {
+              "f1": 0.0,
+              "fn": 105,
+              "fp": 3,
+              "precision": 0.0,
+              "predicted": 3,
+              "recall": 0.0,
+              "support": 105,
+              "tp": 0
+            },
+            "energetic": {
+              "f1": 0.034783,
+              "fn": 107,
+              "fp": 4,
+              "precision": 0.333333,
+              "predicted": 6,
+              "recall": 0.018349,
+              "support": 109,
+              "tp": 2
+            },
+            "fast tempo": {
+              "f1": 0.02381,
+              "fn": 58,
+              "fp": 24,
+              "precision": 0.04,
+              "predicted": 25,
+              "recall": 0.016949,
+              "support": 59,
+              "tp": 1
+            },
+            "groovy": {
+              "f1": 0.0,
+              "fn": 60,
+              "fp": 13,
+              "precision": 0.0,
+              "predicted": 13,
+              "recall": 0.0,
+              "support": 60,
+              "tp": 0
+            },
+            "instrumental": {
+              "f1": 0.08,
+              "fn": 124,
+              "fp": 60,
+              "precision": 0.117647,
+              "predicted": 68,
+              "recall": 0.060606,
+              "support": 132,
+              "tp": 8
+            },
+            "live performance": {
+              "f1": 0.108108,
+              "fn": 81,
+              "fp": 84,
+              "precision": 0.106383,
+              "predicted": 94,
+              "recall": 0.10989,
+              "support": 91,
+              "tp": 10
+            },
+            "low quality": {
+              "f1": 0.0,
+              "fn": 212,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 212,
+              "tp": 0
+            },
+            "medium tempo": {
+              "f1": 0.065789,
+              "fn": 104,
+              "fp": 38,
+              "precision": 0.116279,
+              "predicted": 43,
+              "recall": 0.045872,
+              "support": 109,
+              "tp": 5
+            },
+            "mono": {
+              "f1": 0.0,
+              "fn": 53,
+              "fp": 15,
+              "precision": 0.0,
+              "predicted": 15,
+              "recall": 0.0,
+              "support": 53,
+              "tp": 0
+            },
+            "noisy": {
+              "f1": 0.0,
+              "fn": 99,
+              "fp": 3,
+              "precision": 0.0,
+              "predicted": 3,
+              "recall": 0.0,
+              "support": 99,
+              "tp": 0
+            },
+            "passionate": {
+              "f1": 0.0,
+              "fn": 111,
+              "fp": 3,
+              "precision": 0.0,
+              "predicted": 3,
+              "recall": 0.0,
+              "support": 111,
+              "tp": 0
+            },
+            "slow tempo": {
+              "f1": 0.033333,
+              "fn": 102,
+              "fp": 14,
+              "precision": 0.125,
+              "predicted": 16,
+              "recall": 0.019231,
+              "support": 104,
+              "tp": 2
+            }
+          },
+          "row_count": 964,
+          "tp": 120
+        },
+        "hashing_shuffled_label_control": {
+          "exact_match_rate": 0.0,
+          "fn": 1404,
+          "fp": 1806,
+          "macro_f1": 0.036755,
+          "micro_f1": 0.070643,
+          "micro_precision": 0.063278,
+          "micro_recall": 0.079948,
+          "per_label": {
+            "acoustic drums": {
+              "f1": 0.12142,
+              "fn": 17,
+              "fp": 750,
+              "precision": 0.066002,
+              "predicted": 803,
+              "recall": 0.757143,
+              "support": 70,
+              "tp": 53
+            },
+            "acoustic guitar": {
+              "f1": 0.079723,
+              "fn": 33,
+              "fp": 498,
+              "precision": 0.044146,
+              "predicted": 521,
+              "recall": 0.410714,
+              "support": 56,
+              "tp": 23
+            },
+            "amateur recording": {
+              "f1": 0.05,
+              "fn": 97,
+              "fp": 17,
+              "precision": 0.15,
+              "predicted": 20,
+              "recall": 0.03,
+              "support": 100,
+              "tp": 3
+            },
+            "bass guitar": {
+              "f1": 0.018018,
+              "fn": 55,
+              "fp": 54,
+              "precision": 0.018182,
+              "predicted": 55,
+              "recall": 0.017857,
+              "support": 56,
+              "tp": 1
+            },
+            "emotional": {
+              "f1": 0.0,
+              "fn": 105,
+              "fp": 6,
+              "precision": 0.0,
+              "predicted": 6,
+              "recall": 0.0,
+              "support": 105,
+              "tp": 0
+            },
+            "energetic": {
+              "f1": 0.158192,
+              "fn": 81,
+              "fp": 217,
+              "precision": 0.114286,
+              "predicted": 245,
+              "recall": 0.256881,
+              "support": 109,
+              "tp": 28
+            },
+            "fast tempo": {
+              "f1": 0.027027,
+              "fn": 58,
+              "fp": 14,
+              "precision": 0.066667,
+              "predicted": 15,
+              "recall": 0.016949,
+              "support": 59,
+              "tp": 1
+            },
+            "groovy": {
+              "f1": 0.0,
+              "fn": 60,
+              "fp": 34,
+              "precision": 0.0,
+              "predicted": 34,
+              "recall": 0.0,
+              "support": 60,
+              "tp": 0
+            },
+            "instrumental": {
+              "f1": 0.0,
+              "fn": 132,
+              "fp": 1,
+              "precision": 0.0,
+              "predicted": 1,
+              "recall": 0.0,
+              "support": 132,
+              "tp": 0
+            },
+            "live performance": {
+              "f1": 0.0,
+              "fn": 91,
+              "fp": 5,
+              "precision": 0.0,
+              "predicted": 5,
+              "recall": 0.0,
+              "support": 91,
+              "tp": 0
+            },
+            "low quality": {
+              "f1": 0.02847,
+              "fn": 208,
+              "fp": 65,
+              "precision": 0.057971,
+              "predicted": 69,
+              "recall": 0.018868,
+              "support": 212,
+              "tp": 4
+            },
+            "medium tempo": {
+              "f1": 0.017857,
+              "fn": 108,
+              "fp": 2,
+              "precision": 0.333333,
+              "predicted": 3,
+              "recall": 0.009174,
+              "support": 109,
+              "tp": 1
+            },
+            "mono": {
+              "f1": 0.0,
+              "fn": 53,
+              "fp": 12,
+              "precision": 0.0,
+              "predicted": 12,
+              "recall": 0.0,
+              "support": 53,
+              "tp": 0
+            },
+            "noisy": {
+              "f1": 0.0,
+              "fn": 99,
+              "fp": 5,
+              "precision": 0.0,
+              "predicted": 5,
+              "recall": 0.0,
+              "support": 99,
+              "tp": 0
+            },
+            "passionate": {
+              "f1": 0.026144,
+              "fn": 109,
+              "fp": 40,
+              "precision": 0.047619,
+              "predicted": 42,
+              "recall": 0.018018,
+              "support": 111,
+              "tp": 2
+            },
+            "slow tempo": {
+              "f1": 0.061224,
+              "fn": 98,
+              "fp": 86,
+              "precision": 0.065217,
+              "predicted": 92,
+              "recall": 0.057692,
+              "support": 104,
+              "tp": 6
+            }
+          },
+          "row_count": 964,
+          "tp": 122
+        },
+        "prior_topk": {
+          "exact_match_rate": 0.0,
+          "fn": 1182,
+          "fp": 1584,
+          "macro_f1": 0.037589,
+          "micro_f1": 0.199189,
+          "micro_precision": 0.178423,
+          "micro_recall": 0.225426,
+          "per_label": {
+            "acoustic drums": {
+              "f1": 0.0,
+              "fn": 70,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 70,
+              "tp": 0
+            },
+            "acoustic guitar": {
+              "f1": 0.0,
+              "fn": 56,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 56,
+              "tp": 0
+            },
+            "amateur recording": {
+              "f1": 0.0,
+              "fn": 100,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 100,
+              "tp": 0
+            },
+            "bass guitar": {
+              "f1": 0.0,
+              "fn": 56,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 56,
+              "tp": 0
+            },
+            "emotional": {
+              "f1": 0.0,
+              "fn": 105,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 105,
+              "tp": 0
+            },
+            "energetic": {
+              "f1": 0.0,
+              "fn": 109,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 109,
+              "tp": 0
+            },
+            "fast tempo": {
+              "f1": 0.0,
+              "fn": 59,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 59,
+              "tp": 0
+            },
+            "groovy": {
+              "f1": 0.0,
+              "fn": 60,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 60,
+              "tp": 0
+            },
+            "instrumental": {
+              "f1": 0.240876,
+              "fn": 0,
+              "fp": 832,
+              "precision": 0.136929,
+              "predicted": 964,
+              "recall": 1.0,
+              "support": 132,
+              "tp": 132
+            },
+            "live performance": {
+              "f1": 0.0,
+              "fn": 91,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 91,
+              "tp": 0
+            },
+            "low quality": {
+              "f1": 0.360544,
+              "fn": 0,
+              "fp": 752,
+              "precision": 0.219917,
+              "predicted": 964,
+              "recall": 1.0,
+              "support": 212,
+              "tp": 212
+            },
+            "medium tempo": {
+              "f1": 0.0,
+              "fn": 109,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 109,
+              "tp": 0
+            },
+            "mono": {
+              "f1": 0.0,
+              "fn": 53,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 53,
+              "tp": 0
+            },
+            "noisy": {
+              "f1": 0.0,
+              "fn": 99,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 99,
+              "tp": 0
+            },
+            "passionate": {
+              "f1": 0.0,
+              "fn": 111,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 111,
+              "tp": 0
+            },
+            "slow tempo": {
+              "f1": 0.0,
+              "fn": 104,
+              "fp": 0,
+              "precision": 0.0,
+              "predicted": 0,
+              "recall": 0.0,
+              "support": 104,
+              "tp": 0
+            }
+          },
+          "row_count": 964,
+          "tp": 344
+        }
+      },
+      "prediction_count": 2,
+      "test_rows": 964,
+      "train_label_cardinality": 1.5898,
+      "train_rows": 3859
+    }
+  ],
+  "known_blockers": [],
+  "listener_preference_claim_allowed": false,
+  "manifest_path": "data/musiccaps_manifest.jsonl",
+  "metrics": {
+    "hashing_caption_embedding": {
+      "exact_match_rate": 0.026539,
+      "fn": 4552,
+      "fold_macro_f1_mean": 0.40375,
+      "fp": 6537,
+      "macro_f1": 0.404807,
+      "micro_f1": 0.359277,
+      "micro_precision": 0.32231,
+      "micro_recall": 0.405822,
+      "per_label": {
+        "acoustic drums": {
+          "f1": 0.172722,
+          "fn": 218,
+          "fp": 1171,
+          "precision": 0.110182,
+          "predicted": 1316,
+          "recall": 0.399449,
+          "support": 363,
+          "tp": 145
+        },
+        "acoustic guitar": {
+          "f1": 0.245968,
+          "fn": 27,
+          "fp": 1469,
+          "precision": 0.14244,
+          "predicted": 1713,
+          "recall": 0.900369,
+          "support": 271,
+          "tp": 244
+        },
+        "amateur recording": {
+          "f1": 0.237677,
+          "fn": 281,
+          "fp": 848,
+          "precision": 0.171875,
+          "predicted": 1024,
+          "recall": 0.38512,
+          "support": 457,
+          "tp": 176
+        },
+        "bass guitar": {
+          "f1": 0.251803,
+          "fn": 45,
+          "fp": 1304,
+          "precision": 0.148269,
+          "predicted": 1531,
+          "recall": 0.834559,
+          "support": 272,
+          "tp": 227
+        },
+        "emotional": {
+          "f1": 0.606522,
+          "fn": 326,
+          "fp": 36,
+          "precision": 0.885714,
+          "predicted": 315,
+          "recall": 0.461157,
+          "support": 605,
+          "tp": 279
+        },
+        "energetic": {
+          "f1": 0.564516,
+          "fn": 295,
+          "fp": 83,
+          "precision": 0.746951,
+          "predicted": 328,
+          "recall": 0.453704,
+          "support": 540,
+          "tp": 245
+        },
+        "fast tempo": {
+          "f1": 0.509908,
+          "fn": 110,
+          "fp": 261,
+          "precision": 0.42511,
+          "predicted": 454,
+          "recall": 0.636964,
+          "support": 303,
+          "tp": 193
+        },
+        "groovy": {
+          "f1": 0.340845,
+          "fn": 157,
+          "fp": 311,
+          "precision": 0.280093,
+          "predicted": 432,
+          "recall": 0.435252,
+          "support": 278,
+          "tp": 121
+        },
+        "instrumental": {
+          "f1": 0.336683,
+          "fn": 439,
+          "fp": 353,
+          "precision": 0.362816,
+          "predicted": 554,
+          "recall": 0.314063,
+          "support": 640,
+          "tp": 201
+        },
+        "live performance": {
+          "f1": 0.520307,
+          "fn": 182,
+          "fp": 255,
+          "precision": 0.481707,
+          "predicted": 492,
+          "recall": 0.565632,
+          "support": 419,
+          "tp": 237
+        },
+        "low quality": {
+          "f1": 0.0,
+          "fn": 1088,
+          "fp": 0,
+          "precision": 0.0,
+          "predicted": 0,
+          "recall": 0.0,
+          "support": 1088,
+          "tp": 0
+        },
+        "medium tempo": {
+          "f1": 0.541812,
+          "fn": 252,
+          "fp": 274,
+          "precision": 0.531624,
+          "predicted": 585,
+          "recall": 0.552398,
+          "support": 563,
+          "tp": 311
+        },
+        "mono": {
+          "f1": 0.751423,
+          "fn": 102,
+          "fp": 29,
+          "precision": 0.872247,
+          "predicted": 227,
+          "recall": 0.66,
+          "support": 300,
+          "tp": 198
+        },
+        "noisy": {
+          "f1": 0.59734,
+          "fn": 304,
+          "fp": 29,
+          "precision": 0.894928,
+          "predicted": 276,
+          "recall": 0.448276,
+          "support": 551,
+          "tp": 247
+        },
+        "passionate": {
+          "f1": 0.428397,
+          "fn": 406,
+          "fp": 61,
+          "precision": 0.741525,
+          "predicted": 236,
+          "recall": 0.301205,
+          "support": 581,
+          "tp": 175
+        },
+        "slow tempo": {
+          "f1": 0.370995,
+          "fn": 320,
+          "fp": 53,
+          "precision": 0.674847,
+          "predicted": 163,
+          "recall": 0.255814,
+          "support": 430,
+          "tp": 110
+        }
+      },
+      "row_count": 4823,
+      "tp": 3109
+    },
+    "hashing_masked_caption_embedding": {
+      "exact_match_rate": 0.001451,
+      "fn": 7031,
+      "fold_macro_f1_mean": 0.042841,
+      "fp": 9016,
+      "macro_f1": 0.042868,
+      "micro_f1": 0.072803,
+      "micro_precision": 0.065312,
+      "micro_recall": 0.082235,
+      "per_label": {
+        "acoustic drums": {
+          "f1": 0.126984,
+          "fn": 75,
+          "fp": 3885,
+          "precision": 0.069015,
+          "predicted": 4173,
+          "recall": 0.793388,
+          "support": 363,
+          "tp": 288
+        },
+        "acoustic guitar": {
+          "f1": 0.082852,
+          "fn": 149,
+          "fp": 2552,
+          "precision": 0.045625,
+          "predicted": 2674,
+          "recall": 0.450185,
+          "support": 271,
+          "tp": 122
+        },
+        "amateur recording": {
+          "f1": 0.085904,
+          "fn": 386,
+          "fp": 1125,
+          "precision": 0.059365,
+          "predicted": 1196,
+          "recall": 0.155361,
+          "support": 457,
+          "tp": 71
+        },
+        "bass guitar": {
+          "f1": 0.035573,
+          "fn": 263,
+          "fp": 225,
+          "precision": 0.038462,
+          "predicted": 234,
+          "recall": 0.033088,
+          "support": 272,
+          "tp": 9
+        },
+        "emotional": {
+          "f1": 0.003236,
+          "fn": 604,
+          "fp": 12,
+          "precision": 0.076923,
+          "predicted": 13,
+          "recall": 0.001653,
+          "support": 605,
+          "tp": 1
+        },
+        "energetic": {
+          "f1": 0.010714,
+          "fn": 537,
+          "fp": 17,
+          "precision": 0.15,
+          "predicted": 20,
+          "recall": 0.005556,
+          "support": 540,
+          "tp": 3
+        },
+        "fast tempo": {
+          "f1": 0.030303,
+          "fn": 297,
+          "fp": 87,
+          "precision": 0.064516,
+          "predicted": 93,
+          "recall": 0.019802,
+          "support": 303,
+          "tp": 6
+        },
+        "groovy": {
+          "f1": 0.017595,
+          "fn": 275,
+          "fp": 60,
+          "precision": 0.047619,
+          "predicted": 63,
+          "recall": 0.010791,
+          "support": 278,
+          "tp": 3
+        },
+        "instrumental": {
+          "f1": 0.102296,
+          "fn": 591,
+          "fp": 269,
+          "precision": 0.154088,
+          "predicted": 318,
+          "recall": 0.076563,
+          "support": 640,
+          "tp": 49
+        },
+        "live performance": {
+          "f1": 0.120401,
+          "fn": 365,
+          "fp": 424,
+          "precision": 0.112971,
+          "predicted": 478,
+          "recall": 0.128878,
+          "support": 419,
+          "tp": 54
+        },
+        "low quality": {
+          "f1": 0.0,
+          "fn": 1088,
+          "fp": 0,
+          "precision": 0.0,
+          "predicted": 0,
+          "recall": 0.0,
+          "support": 1088,
+          "tp": 0
+        },
+        "medium tempo": {
+          "f1": 0.045977,
+          "fn": 545,
+          "fp": 202,
+          "precision": 0.081818,
+          "predicted": 220,
+          "recall": 0.031972,
+          "support": 563,
+          "tp": 18
+        },
+        "mono": {
+          "f1": 0.0,
+          "fn": 300,
+          "fp": 54,
+          "precision": 0.0,
+          "predicted": 54,
+          "recall": 0.0,
+          "support": 300,
+          "tp": 0
+        },
+        "noisy": {
+          "f1": 0.0,
+          "fn": 551,
+          "fp": 40,
+          "precision": 0.0,
+          "predicted": 40,
+          "recall": 0.0,
+          "support": 551,
+          "tp": 0
+        },
+        "passionate": {
+          "f1": 0.003344,
+          "fn": 580,
+          "fp": 16,
+          "precision": 0.058824,
+          "predicted": 17,
+          "recall": 0.001721,
+          "support": 581,
+          "tp": 1
+        },
+        "slow tempo": {
+          "f1": 0.020704,
+          "fn": 425,
+          "fp": 48,
+          "precision": 0.09434,
+          "predicted": 53,
+          "recall": 0.011628,
+          "support": 430,
+          "tp": 5
+        }
+      },
+      "row_count": 4823,
+      "tp": 630
+    },
+    "hashing_shuffled_label_control": {
+      "exact_match_rate": 0.001037,
+      "fn": 7060,
+      "fold_macro_f1_mean": 0.037131,
+      "fp": 9045,
+      "macro_f1": 0.042624,
+      "micro_f1": 0.069452,
+      "micro_precision": 0.062306,
+      "micro_recall": 0.078449,
+      "per_label": {
+        "acoustic drums": {
+          "f1": 0.129597,
+          "fn": 67,
+          "fp": 3909,
+          "precision": 0.070392,
+          "predicted": 4205,
+          "recall": 0.815427,
+          "support": 363,
+          "tp": 296
+        },
+        "acoustic guitar": {
+          "f1": 0.081448,
+          "fn": 154,
+          "fp": 2485,
+          "precision": 0.044965,
+          "predicted": 2602,
+          "recall": 0.431734,
+          "support": 271,
+          "tp": 117
+        },
+        "amateur recording": {
+          "f1": 0.036765,
+          "fn": 447,
+          "fp": 77,
+          "precision": 0.114943,
+          "predicted": 87,
+          "recall": 0.021882,
+          "support": 457,
+          "tp": 10
+        },
+        "bass guitar": {
+          "f1": 0.016639,
+          "fn": 267,
+          "fp": 324,
+          "precision": 0.015198,
+          "predicted": 329,
+          "recall": 0.018382,
+          "support": 272,
+          "tp": 5
+        },
+        "emotional": {
+          "f1": 0.040632,
+          "fn": 587,
+          "fp": 263,
+          "precision": 0.064057,
+          "predicted": 281,
+          "recall": 0.029752,
+          "support": 605,
+          "tp": 18
+        },
+        "energetic": {
+          "f1": 0.090551,
+          "fn": 494,
+          "fp": 430,
+          "precision": 0.096639,
+          "predicted": 476,
+          "recall": 0.085185,
+          "support": 540,
+          "tp": 46
+        },
+        "fast tempo": {
+          "f1": 0.010899,
+          "fn": 301,
+          "fp": 62,
+          "precision": 0.03125,
+          "predicted": 64,
+          "recall": 0.006601,
+          "support": 303,
+          "tp": 2
+        },
+        "groovy": {
+          "f1": 0.011905,
+          "fn": 276,
+          "fp": 56,
+          "precision": 0.034483,
+          "predicted": 58,
+          "recall": 0.007194,
+          "support": 278,
+          "tp": 2
+        },
+        "instrumental": {
+          "f1": 0.022599,
+          "fn": 632,
+          "fp": 60,
+          "precision": 0.117647,
+          "predicted": 68,
+          "recall": 0.0125,
+          "support": 640,
+          "tp": 8
+        },
+        "live performance": {
+          "f1": 0.041885,
+          "fn": 407,
+          "fp": 142,
+          "precision": 0.077922,
+          "predicted": 154,
+          "recall": 0.02864,
+          "support": 419,
+          "tp": 12
+        },
+        "low quality": {
+          "f1": 0.02316,
+          "fn": 1074,
+          "fp": 107,
+          "precision": 0.115702,
+          "predicted": 121,
+          "recall": 0.012868,
+          "support": 1088,
+          "tp": 14
+        },
+        "medium tempo": {
+          "f1": 0.09434,
+          "fn": 518,
+          "fp": 346,
+          "precision": 0.11509,
+          "predicted": 391,
+          "recall": 0.079929,
+          "support": 563,
+          "tp": 45
+        },
+        "mono": {
+          "f1": 0.002401,
+          "fn": 299,
+          "fp": 532,
+          "precision": 0.001876,
+          "predicted": 533,
+          "recall": 0.003333,
+          "support": 300,
+          "tp": 1
+        },
+        "noisy": {
+          "f1": 0.0,
+          "fn": 551,
+          "fp": 23,
+          "precision": 0.0,
+          "predicted": 23,
+          "recall": 0.0,
+          "support": 551,
+          "tp": 0
+        },
+        "passionate": {
+          "f1": 0.039161,
+          "fn": 567,
+          "fp": 120,
+          "precision": 0.104478,
+          "predicted": 134,
+          "recall": 0.024096,
+          "support": 581,
+          "tp": 14
+        },
+        "slow tempo": {
+          "f1": 0.04,
+          "fn": 419,
+          "fp": 109,
+          "precision": 0.091667,
+          "predicted": 120,
+          "recall": 0.025581,
+          "support": 430,
+          "tp": 11
+        }
+      },
+      "row_count": 4823,
+      "tp": 601
+    },
+    "prior_topk": {
+      "exact_match_rate": 0.0,
+      "fn": 5933,
+      "fold_macro_f1_mean": 0.037633,
+      "fp": 7918,
+      "macro_f1": 0.037652,
+      "micro_f1": 0.199688,
+      "micro_precision": 0.179142,
+      "micro_recall": 0.225558,
+      "per_label": {
+        "acoustic drums": {
+          "f1": 0.0,
+          "fn": 363,
+          "fp": 0,
+          "precision": 0.0,
+          "predicted": 0,
+          "recall": 0.0,
+          "support": 363,
+          "tp": 0
+        },
+        "acoustic guitar": {
+          "f1": 0.0,
+          "fn": 271,
+          "fp": 0,
+          "precision": 0.0,
+          "predicted": 0,
+          "recall": 0.0,
+          "support": 271,
+          "tp": 0
+        },
+        "amateur recording": {
+          "f1": 0.0,
+          "fn": 457,
+          "fp": 0,
+          "precision": 0.0,
+          "predicted": 0,
+          "recall": 0.0,
+          "support": 457,
+          "tp": 0
+        },
+        "bass guitar": {
+          "f1": 0.0,
+          "fn": 272,
+          "fp": 0,
+          "precision": 0.0,
+          "predicted": 0,
+          "recall": 0.0,
+          "support": 272,
+          "tp": 0
+        },
+        "emotional": {
+          "f1": 0.0,
+          "fn": 605,
+          "fp": 0,
+          "precision": 0.0,
+          "predicted": 0,
+          "recall": 0.0,
+          "support": 605,
+          "tp": 0
+        },
+        "energetic": {
+          "f1": 0.0,
+          "fn": 540,
+          "fp": 0,
+          "precision": 0.0,
+          "predicted": 0,
+          "recall": 0.0,
+          "support": 540,
+          "tp": 0
+        },
+        "fast tempo": {
+          "f1": 0.0,
+          "fn": 303,
+          "fp": 0,
+          "precision": 0.0,
+          "predicted": 0,
+          "recall": 0.0,
+          "support": 303,
+          "tp": 0
+        },
+        "groovy": {
+          "f1": 0.0,
+          "fn": 278,
+          "fp": 0,
+          "precision": 0.0,
+          "predicted": 0,
+          "recall": 0.0,
+          "support": 278,
+          "tp": 0
+        },
+        "instrumental": {
+          "f1": 0.234303,
+          "fn": 0,
+          "fp": 4183,
+          "precision": 0.132697,
+          "predicted": 4823,
+          "recall": 1.0,
+          "support": 640,
+          "tp": 640
+        },
+        "live performance": {
+          "f1": 0.0,
+          "fn": 419,
+          "fp": 0,
+          "precision": 0.0,
+          "predicted": 0,
+          "recall": 0.0,
+          "support": 419,
+          "tp": 0
+        },
+        "low quality": {
+          "f1": 0.368127,
+          "fn": 0,
+          "fp": 3735,
+          "precision": 0.225586,
+          "predicted": 4823,
+          "recall": 1.0,
+          "support": 1088,
+          "tp": 1088
+        },
+        "medium tempo": {
+          "f1": 0.0,
+          "fn": 563,
+          "fp": 0,
+          "precision": 0.0,
+          "predicted": 0,
+          "recall": 0.0,
+          "support": 563,
+          "tp": 0
+        },
+        "mono": {
+          "f1": 0.0,
+          "fn": 300,
+          "fp": 0,
+          "precision": 0.0,
+          "predicted": 0,
+          "recall": 0.0,
+          "support": 300,
+          "tp": 0
+        },
+        "noisy": {
+          "f1": 0.0,
+          "fn": 551,
+          "fp": 0,
+          "precision": 0.0,
+          "predicted": 0,
+          "recall": 0.0,
+          "support": 551,
+          "tp": 0
+        },
+        "passionate": {
+          "f1": 0.0,
+          "fn": 581,
+          "fp": 0,
+          "precision": 0.0,
+          "predicted": 0,
+          "recall": 0.0,
+          "support": 581,
+          "tp": 0
+        },
+        "slow tempo": {
+          "f1": 0.0,
+          "fn": 430,
+          "fp": 0,
+          "precision": 0.0,
+          "predicted": 0,
+          "recall": 0.0,
+          "support": 430,
+          "tp": 0
+        }
+      },
+      "row_count": 4823,
+      "tp": 1728
+    }
+  },
+  "min_label_count": 25,
+  "model_checkpoint_downloaded": false,
+  "model_id": null,
+  "output_tex_rows": "paper/generated/musiccaps_representation_stress_rows.tex",
+  "recommended_next_action": "Report this as a surface-form sensitivity stress test and run a stronger frozen encoder before claiming semantic robustness.",
+  "row_count": 4823,
+  "seed": "full_song_eval_musiccaps_proxy_v1",
+  "semantic_robustness_ready": false,
+  "split_leakage_violation_count": 0,
+  "status": "pass",
+  "stress_test_ready": true,
+  "surface_form_sensitivity_detected": true,
+  "top_label_count": 16,
+  "top_labels": [
+    "low quality",
+    "instrumental",
+    "emotional",
+    "passionate",
+    "medium tempo",
+    "noisy",
+    "energetic",
+    "amateur recording",
+    "slow tempo",
+    "live performance",
+    "acoustic drums",
+    "fast tempo",
+    "mono",
+    "groovy",
+    "bass guitar",
+    "acoustic guitar"
+  ]
+}

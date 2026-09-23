@@ -1,0 +1,23 @@
+{
+  "schema_version": "full-song-eval-mard-prospective-transfer/v1",
+  "source": "MARD genre-classification subset from Oramas et al. (2016)",
+  "source_repository": "https://github.com/sergiooramas/music-genre-classification",
+  "source_commit": "0cd900b02d90c021a9c5cacf2c5f3f6b35ef1e9c",
+  "source_file": "dataset_classification.json",
+  "source_sha256": "ea3c707f279281fb75f88549c738a437579246d2f8d8bd0e8e8a0e5cdccf2d6c",
+  "source_license": "MIT according to the dataset authors' MARD page and repository; raw reviews stay local",
+  "data_path": "data/external/mard/dataset_classification.json",
+  "text_field": "all_text",
+  "target_field": "genre",
+  "excluded_label": "R&B",
+  "exclusion_reason": "the frozen two-or-more-character tokenizer produces no target tokens for this label",
+  "fold_count": 10,
+  "fold_seed": "full-song-eval-mard-transfer-2026-09-22",
+  "heldout_unit": "album; artist-disjointness is not verifiable in this subset",
+  "candidate_rule": "lower endpoint of the descriptive paired ten-fold 95% Student-t interval for target-masked macro AP minus held-out prevalence exceeds zero",
+  "negative_controls": "two fixed complete-label-set cyclic reassignments, applied independently to each train and held-out fold while preserving per-fold label support",
+  "sensitivity_control": "fixed per-label synthetic codeword appended to train and held-out text before target masking",
+  "diagnostic_reference": "exact random-label AP expectation conditioned on each fitted score's tie blocks",
+  "provenance_status": "Author-recorded local protocol with no independently sealed pre-run record; implementation corrections followed an initial output. Treat as a post-audit external-corpus check, not an independently preregistered test.",
+  "scope": "independent album-review/genre corpus; not audio quality, listener preference, or proof of a field-standard screening rule"
+}

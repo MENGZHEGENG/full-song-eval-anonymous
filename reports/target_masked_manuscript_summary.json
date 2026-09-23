@@ -1,0 +1,328 @@
+{
+  "entries": [
+    {
+      "condition": "Observed metadata",
+      "condition_macro_auprc_mean": 0.168363,
+      "group_count": 10,
+      "paired_summary": {
+        "author_differences": {
+          "0": 0.049354,
+          "1": 0.071102,
+          "2": 0.062064,
+          "3": 0.077164,
+          "4": 0.111842,
+          "5": 0.164944,
+          "6": 0.046244,
+          "7": 0.129751,
+          "8": 0.030904,
+          "9": 0.058698
+        },
+        "ci95_high": 0.110419,
+        "ci95_low": 0.049994,
+        "ci95_method": "paired_student_t_95",
+        "mean_difference": 0.080207,
+        "n_independent_authors": 10,
+        "sample_standard_deviation": 0.042237,
+        "standard_error": 0.013357
+      },
+      "positive_group_differences": 10,
+      "reference_condition": "Frequency baseline",
+      "reference_macro_auprc_mean": 0.088156,
+      "source": "MusicCaps",
+      "text_view": "target_label_masked"
+    },
+    {
+      "condition": "Paraphrase addition",
+      "condition_macro_auprc_mean": 0.635905,
+      "group_count": 10,
+      "paired_summary": {
+        "author_differences": {
+          "0": 0.456573,
+          "1": 0.528743,
+          "2": 0.448542,
+          "3": 0.409674,
+          "4": 0.504467,
+          "5": 0.537437,
+          "6": 0.52346,
+          "7": 0.365749,
+          "8": 0.439621,
+          "9": 0.461152
+        },
+        "ci95_high": 0.507535,
+        "ci95_low": 0.427549,
+        "ci95_method": "paired_student_t_95",
+        "mean_difference": 0.467542,
+        "n_independent_authors": 10,
+        "sample_standard_deviation": 0.05591,
+        "standard_error": 0.01768
+      },
+      "positive_group_differences": 10,
+      "reference_condition": "Observed metadata",
+      "reference_macro_auprc_mean": 0.168363,
+      "source": "MusicCaps",
+      "text_view": "target_label_masked"
+    },
+    {
+      "condition": "Label permutation",
+      "condition_macro_auprc_mean": 0.101863,
+      "group_count": 10,
+      "paired_summary": {
+        "author_differences": {
+          "0": 0.007692,
+          "1": 0.007736,
+          "2": 0.029239,
+          "3": 0.027953,
+          "4": 0.002005,
+          "5": 0.028556,
+          "6": -0.003577,
+          "7": 0.008113,
+          "8": 0.025887,
+          "9": 0.003468
+        },
+        "ci95_high": 0.022807,
+        "ci95_low": 0.004607,
+        "ci95_method": "paired_student_t_95",
+        "mean_difference": 0.013707,
+        "n_independent_authors": 10,
+        "sample_standard_deviation": 0.012722,
+        "standard_error": 0.004023
+      },
+      "positive_group_differences": 9,
+      "reference_condition": "Frequency baseline",
+      "reference_macro_auprc_mean": 0.088156,
+      "source": "MusicCaps",
+      "text_view": "target_label_masked"
+    },
+    {
+      "condition": "Full corruption",
+      "condition_macro_auprc_mean": 0.101969,
+      "group_count": 10,
+      "paired_summary": {
+        "author_differences": {
+          "0": 0.022776,
+          "1": 0.003112,
+          "2": 0.019132,
+          "3": 0.016412,
+          "4": 0.003873,
+          "5": 0.042733,
+          "6": -0.00111,
+          "7": 0.007179,
+          "8": 0.013589,
+          "9": 0.010431
+        },
+        "ci95_high": 0.022871,
+        "ci95_low": 0.004754,
+        "ci95_method": "paired_student_t_95",
+        "mean_difference": 0.013813,
+        "n_independent_authors": 10,
+        "sample_standard_deviation": 0.012663,
+        "standard_error": 0.004005
+      },
+      "positive_group_differences": 9,
+      "reference_condition": "Frequency baseline",
+      "reference_macro_auprc_mean": 0.088156,
+      "source": "MusicCaps",
+      "text_view": "target_label_masked"
+    },
+    {
+      "condition": "Target masking",
+      "condition_macro_auprc_mean": 0.168363,
+      "group_count": 10,
+      "paired_summary": {
+        "author_differences": {
+          "0": -0.021826,
+          "1": -0.037338,
+          "2": -0.062036,
+          "3": -0.019073,
+          "4": -0.131618,
+          "5": -0.13275,
+          "6": -0.019937,
+          "7": -0.042847,
+          "8": -0.027144,
+          "9": -0.052116
+        },
+        "ci95_high": -0.023738,
+        "ci95_low": -0.085599,
+        "ci95_method": "paired_student_t_95",
+        "mean_difference": -0.054668,
+        "n_independent_authors": 10,
+        "sample_standard_deviation": 0.043241,
+        "standard_error": 0.013674
+      },
+      "positive_group_differences": 0,
+      "reference_condition": "Matched deletion",
+      "reference_macro_auprc_mean": 0.223031,
+      "source": "MusicCaps",
+      "text_view": "target_label_masked"
+    },
+    {
+      "condition": "Observed metadata",
+      "condition_macro_auprc_mean": 0.075724,
+      "group_count": 10,
+      "paired_summary": {
+        "author_differences": {
+          "artist_fold_00": 0.032537,
+          "artist_fold_01": 0.034739,
+          "artist_fold_02": 0.02226,
+          "artist_fold_03": 0.031832,
+          "artist_fold_04": 0.040411,
+          "artist_fold_05": 0.024703,
+          "artist_fold_06": 0.024766,
+          "artist_fold_07": 0.035843,
+          "artist_fold_08": 0.026041,
+          "artist_fold_09": 0.031685
+        },
+        "ci95_high": 0.034655,
+        "ci95_low": 0.026309,
+        "ci95_method": "paired_student_t_95",
+        "mean_difference": 0.030482,
+        "n_independent_authors": 10,
+        "sample_standard_deviation": 0.005834,
+        "standard_error": 0.001845
+      },
+      "positive_group_differences": 10,
+      "reference_condition": "Frequency baseline",
+      "reference_macro_auprc_mean": 0.045242,
+      "source": "MTG-Jamendo",
+      "text_view": "target_label_masked"
+    },
+    {
+      "condition": "Codeword addition",
+      "condition_macro_auprc_mean": 0.622553,
+      "group_count": 10,
+      "paired_summary": {
+        "author_differences": {
+          "artist_fold_00": 0.513031,
+          "artist_fold_01": 0.540424,
+          "artist_fold_02": 0.507697,
+          "artist_fold_03": 0.537532,
+          "artist_fold_04": 0.574637,
+          "artist_fold_05": 0.470521,
+          "artist_fold_06": 0.590906,
+          "artist_fold_07": 0.540092,
+          "artist_fold_08": 0.548685,
+          "artist_fold_09": 0.644767
+        },
+        "ci95_high": 0.581366,
+        "ci95_low": 0.512292,
+        "ci95_method": "paired_student_t_95",
+        "mean_difference": 0.546829,
+        "n_independent_authors": 10,
+        "sample_standard_deviation": 0.048282,
+        "standard_error": 0.015268
+      },
+      "positive_group_differences": 10,
+      "reference_condition": "Observed metadata",
+      "reference_macro_auprc_mean": 0.075724,
+      "source": "MTG-Jamendo",
+      "text_view": "target_label_masked"
+    },
+    {
+      "condition": "Label permutation",
+      "condition_macro_auprc_mean": 0.047126,
+      "group_count": 10,
+      "paired_summary": {
+        "author_differences": {
+          "artist_fold_00": 0.001407,
+          "artist_fold_01": 0.001025,
+          "artist_fold_02": 0.001822,
+          "artist_fold_03": 0.003889,
+          "artist_fold_04": 0.002606,
+          "artist_fold_05": 0.001471,
+          "artist_fold_06": 0.002029,
+          "artist_fold_07": 0.00165,
+          "artist_fold_08": 0.000409,
+          "artist_fold_09": 0.002533
+        },
+        "ci95_high": 0.002573,
+        "ci95_low": 0.001195,
+        "ci95_method": "paired_student_t_95",
+        "mean_difference": 0.001884,
+        "n_independent_authors": 10,
+        "sample_standard_deviation": 0.000963,
+        "standard_error": 0.000305
+      },
+      "positive_group_differences": 10,
+      "reference_condition": "Frequency baseline",
+      "reference_macro_auprc_mean": 0.045242,
+      "source": "MTG-Jamendo",
+      "text_view": "target_label_masked"
+    },
+    {
+      "condition": "Full corruption",
+      "condition_macro_auprc_mean": 0.046772,
+      "group_count": 10,
+      "paired_summary": {
+        "author_differences": {
+          "artist_fold_00": 0.001342,
+          "artist_fold_01": 0.001579,
+          "artist_fold_02": 0.001863,
+          "artist_fold_03": 0.001121,
+          "artist_fold_04": 0.000353,
+          "artist_fold_05": 0.001362,
+          "artist_fold_06": 0.001733,
+          "artist_fold_07": 0.001574,
+          "artist_fold_08": 0.001068,
+          "artist_fold_09": 0.003301
+        },
+        "ci95_high": 0.002069,
+        "ci95_low": 0.00099,
+        "ci95_method": "paired_student_t_95",
+        "mean_difference": 0.00153,
+        "n_independent_authors": 10,
+        "sample_standard_deviation": 0.000754,
+        "standard_error": 0.000239
+      },
+      "positive_group_differences": 10,
+      "reference_condition": "Frequency baseline",
+      "reference_macro_auprc_mean": 0.045242,
+      "source": "MTG-Jamendo",
+      "text_view": "target_label_masked"
+    },
+    {
+      "condition": "Target masking",
+      "condition_macro_auprc_mean": 0.075724,
+      "group_count": 10,
+      "paired_summary": {
+        "author_differences": {
+          "artist_fold_00": -0.001004,
+          "artist_fold_01": -0.002625,
+          "artist_fold_02": -0.001314,
+          "artist_fold_03": -0.000939,
+          "artist_fold_04": -0.001578,
+          "artist_fold_05": -0.000421,
+          "artist_fold_06": -0.000907,
+          "artist_fold_07": -0.000931,
+          "artist_fold_08": -0.000265,
+          "artist_fold_09": -0.001026
+        },
+        "ci95_high": -0.000632,
+        "ci95_low": -0.00157,
+        "ci95_method": "paired_student_t_95",
+        "mean_difference": -0.001101,
+        "n_independent_authors": 10,
+        "sample_standard_deviation": 0.000655,
+        "standard_error": 0.000207
+      },
+      "positive_group_differences": 0,
+      "reference_condition": "Matched deletion",
+      "reference_macro_auprc_mean": 0.076825,
+      "source": "MTG-Jamendo",
+      "text_view": "target_label_masked"
+    }
+  ],
+  "inference_note": "Student-t summaries describe ten fixed held-out group differences; training sets overlap.",
+  "inputs": {
+    "mtg_jamendo": {
+      "path": "reports/mtg_jamendo_metadata_calibration.json",
+      "sha256": "a6b6386d94a65e7cd2ea099f4fe809f0ccc2f7227c1a94a3d46ff491e708374b"
+    },
+    "musiccaps": {
+      "path": "reports/musiccaps_gate_calibration.json",
+      "sha256": "26216b93a455edc6d84fdcd177959b1c7ba48b1862e511a77a1bbce171436088"
+    }
+  },
+  "schema_version": 1,
+  "scope": "Target-masked table values and matched-deletion comparisons used in the current manuscript.",
+  "status": "complete"
+}
