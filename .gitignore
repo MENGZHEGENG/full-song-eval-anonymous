@@ -1,7 +1,0 @@
-__pycache__/
-*.pyc
-.pytest_cache/
-.venv/
-reproduced/
-data/mtg-jamendo/
-data/external/

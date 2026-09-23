@@ -1,0 +1,1510 @@
+{
+  "decision_intervals": {
+    "full_label_corruption": {
+      "prevalence_reference": {
+        "accepts": true,
+        "summary": {
+          "author_differences": {
+            "artist_fold_00": 0.004711,
+            "artist_fold_01": 0.003419,
+            "artist_fold_02": 0.003385,
+            "artist_fold_03": 0.010076,
+            "artist_fold_04": 0.006335,
+            "artist_fold_05": 0.003184,
+            "artist_fold_06": 0.007552,
+            "artist_fold_07": 0.005207,
+            "artist_fold_08": 0.009326,
+            "artist_fold_09": 0.006223
+          },
+          "ci95_high": 0.007693,
+          "ci95_low": 0.004191,
+          "ci95_method": "paired_student_t_95",
+          "mean_difference": 0.005942,
+          "n_independent_authors": 10,
+          "sample_standard_deviation": 0.002448,
+          "standard_error": 0.000774
+        }
+      },
+      "tie_aware_reference": {
+        "accepts": false,
+        "summary": {
+          "author_differences": {
+            "artist_fold_00": -0.002532,
+            "artist_fold_01": -0.003427,
+            "artist_fold_02": -0.002559,
+            "artist_fold_03": 0.003305,
+            "artist_fold_04": 3.8e-05,
+            "artist_fold_05": -0.005127,
+            "artist_fold_06": 0.001051,
+            "artist_fold_07": -0.002525,
+            "artist_fold_08": 0.001405,
+            "artist_fold_09": 0.000653
+          },
+          "ci95_high": 0.000911,
+          "ci95_low": -0.002855,
+          "ci95_method": "paired_student_t_95",
+          "mean_difference": -0.000972,
+          "n_independent_authors": 10,
+          "sample_standard_deviation": 0.002632,
+          "standard_error": 0.000832
+        }
+      }
+    },
+    "label_set_permutation": {
+      "prevalence_reference": {
+        "accepts": true,
+        "summary": {
+          "author_differences": {
+            "artist_fold_00": 0.003723,
+            "artist_fold_01": 0.006226,
+            "artist_fold_02": 0.010947,
+            "artist_fold_03": 0.002638,
+            "artist_fold_04": 0.008441,
+            "artist_fold_05": 0.00761,
+            "artist_fold_06": 0.006278,
+            "artist_fold_07": 0.003899,
+            "artist_fold_08": 0.004445,
+            "artist_fold_09": 0.008023
+          },
+          "ci95_high": 0.008071,
+          "ci95_low": 0.004375,
+          "ci95_method": "paired_student_t_95",
+          "mean_difference": 0.006223,
+          "n_independent_authors": 10,
+          "sample_standard_deviation": 0.002583,
+          "standard_error": 0.000817
+        }
+      },
+      "tie_aware_reference": {
+        "accepts": false,
+        "summary": {
+          "author_differences": {
+            "artist_fold_00": -0.003588,
+            "artist_fold_01": -0.000618,
+            "artist_fold_02": 0.004991,
+            "artist_fold_03": -0.004137,
+            "artist_fold_04": 0.002151,
+            "artist_fold_05": -0.0007,
+            "artist_fold_06": -0.00023,
+            "artist_fold_07": -0.003837,
+            "artist_fold_08": -0.003465,
+            "artist_fold_09": 0.002453
+          },
+          "ci95_high": 0.001543,
+          "ci95_low": -0.002939,
+          "ci95_method": "paired_student_t_95",
+          "mean_difference": -0.000698,
+          "n_independent_authors": 10,
+          "sample_standard_deviation": 0.003133,
+          "standard_error": 0.000991
+        }
+      }
+    },
+    "observed": {
+      "prevalence_reference": {
+        "accepts": true,
+        "summary": {
+          "author_differences": {
+            "artist_fold_00": 0.348355,
+            "artist_fold_01": 0.200233,
+            "artist_fold_02": 0.250569,
+            "artist_fold_03": 0.230565,
+            "artist_fold_04": 0.228516,
+            "artist_fold_05": 0.230935,
+            "artist_fold_06": 0.196457,
+            "artist_fold_07": 0.336283,
+            "artist_fold_08": 0.219568,
+            "artist_fold_09": 0.298668
+          },
+          "ci95_high": 0.293048,
+          "ci95_low": 0.214982,
+          "ci95_method": "paired_student_t_95",
+          "mean_difference": 0.254015,
+          "n_independent_authors": 10,
+          "sample_standard_deviation": 0.054568,
+          "standard_error": 0.017256
+        }
+      },
+      "tie_aware_reference": {
+        "accepts": true,
+        "summary": {
+          "author_differences": {
+            "artist_fold_00": 0.340977,
+            "artist_fold_01": 0.193403,
+            "artist_fold_02": 0.244527,
+            "artist_fold_03": 0.223833,
+            "artist_fold_04": 0.222327,
+            "artist_fold_05": 0.222643,
+            "artist_fold_06": 0.189972,
+            "artist_fold_07": 0.328554,
+            "artist_fold_08": 0.211623,
+            "artist_fold_09": 0.293157
+          },
+          "ci95_high": 0.286087,
+          "ci95_low": 0.208116,
+          "ci95_method": "paired_student_t_95",
+          "mean_difference": 0.247102,
+          "n_independent_authors": 10,
+          "sample_standard_deviation": 0.054502,
+          "standard_error": 0.017235
+        }
+      }
+    }
+  },
+  "folds": {
+    "artist_fold_00": {
+      "conditions": {
+        "full_label_corruption": {
+          "ap": 0.12971085817145184,
+          "prevalence_reference": 0.125,
+          "support": {
+            "electronic": {
+              "k": 118,
+              "n": 722
+            },
+            "experimental": {
+              "k": 99,
+              "n": 722
+            },
+            "folk": {
+              "k": 70,
+              "n": 722
+            },
+            "hip-hop": {
+              "k": 74,
+              "n": 722
+            },
+            "instrumental": {
+              "k": 89,
+              "n": 722
+            },
+            "international": {
+              "k": 38,
+              "n": 722
+            },
+            "pop": {
+              "k": 124,
+              "n": 722
+            },
+            "rock": {
+              "k": 110,
+              "n": 722
+            }
+          },
+          "tie_aware_reference": 0.1322429838187454
+        },
+        "label_set_permutation": {
+          "ap": 0.1287230206034326,
+          "prevalence_reference": 0.125,
+          "support": {
+            "electronic": {
+              "k": 118,
+              "n": 722
+            },
+            "experimental": {
+              "k": 99,
+              "n": 722
+            },
+            "folk": {
+              "k": 70,
+              "n": 722
+            },
+            "hip-hop": {
+              "k": 74,
+              "n": 722
+            },
+            "instrumental": {
+              "k": 89,
+              "n": 722
+            },
+            "international": {
+              "k": 38,
+              "n": 722
+            },
+            "pop": {
+              "k": 124,
+              "n": 722
+            },
+            "rock": {
+              "k": 110,
+              "n": 722
+            }
+          },
+          "tie_aware_reference": 0.13231133935556155
+        },
+        "observed": {
+          "ap": 0.473354652060367,
+          "prevalence_reference": 0.125,
+          "support": {
+            "electronic": {
+              "k": 118,
+              "n": 722
+            },
+            "experimental": {
+              "k": 99,
+              "n": 722
+            },
+            "folk": {
+              "k": 70,
+              "n": 722
+            },
+            "hip-hop": {
+              "k": 74,
+              "n": 722
+            },
+            "instrumental": {
+              "k": 89,
+              "n": 722
+            },
+            "international": {
+              "k": 38,
+              "n": 722
+            },
+            "pop": {
+              "k": 124,
+              "n": 722
+            },
+            "rock": {
+              "k": 110,
+              "n": 722
+            }
+          },
+          "tie_aware_reference": 0.13237747842374228
+        }
+      },
+      "selected_labels": [
+        "international",
+        "folk",
+        "hip-hop",
+        "instrumental",
+        "experimental",
+        "rock",
+        "electronic",
+        "pop"
+      ],
+      "test_count": 722,
+      "train_count": 7278
+    },
+    "artist_fold_01": {
+      "conditions": {
+        "full_label_corruption": {
+          "ap": 0.12841873705555423,
+          "prevalence_reference": 0.125,
+          "support": {
+            "electronic": {
+              "k": 136,
+              "n": 801
+            },
+            "experimental": {
+              "k": 194,
+              "n": 801
+            },
+            "folk": {
+              "k": 94,
+              "n": 801
+            },
+            "hip-hop": {
+              "k": 71,
+              "n": 801
+            },
+            "instrumental": {
+              "k": 48,
+              "n": 801
+            },
+            "international": {
+              "k": 70,
+              "n": 801
+            },
+            "pop": {
+              "k": 91,
+              "n": 801
+            },
+            "rock": {
+              "k": 97,
+              "n": 801
+            }
+          },
+          "tie_aware_reference": 0.13184602597108264
+        },
+        "label_set_permutation": {
+          "ap": 0.1312262082460434,
+          "prevalence_reference": 0.125,
+          "support": {
+            "electronic": {
+              "k": 136,
+              "n": 801
+            },
+            "experimental": {
+              "k": 194,
+              "n": 801
+            },
+            "folk": {
+              "k": 94,
+              "n": 801
+            },
+            "hip-hop": {
+              "k": 71,
+              "n": 801
+            },
+            "instrumental": {
+              "k": 48,
+              "n": 801
+            },
+            "international": {
+              "k": 70,
+              "n": 801
+            },
+            "pop": {
+              "k": 91,
+              "n": 801
+            },
+            "rock": {
+              "k": 97,
+              "n": 801
+            }
+          },
+          "tie_aware_reference": 0.1318445585408622
+        },
+        "observed": {
+          "ap": 0.32523304406109416,
+          "prevalence_reference": 0.125,
+          "support": {
+            "electronic": {
+              "k": 136,
+              "n": 801
+            },
+            "experimental": {
+              "k": 194,
+              "n": 801
+            },
+            "folk": {
+              "k": 94,
+              "n": 801
+            },
+            "hip-hop": {
+              "k": 71,
+              "n": 801
+            },
+            "instrumental": {
+              "k": 48,
+              "n": 801
+            },
+            "international": {
+              "k": 70,
+              "n": 801
+            },
+            "pop": {
+              "k": 91,
+              "n": 801
+            },
+            "rock": {
+              "k": 97,
+              "n": 801
+            }
+          },
+          "tie_aware_reference": 0.13182967559594116
+        }
+      },
+      "selected_labels": [
+        "instrumental",
+        "international",
+        "hip-hop",
+        "pop",
+        "folk",
+        "rock",
+        "electronic",
+        "experimental"
+      ],
+      "test_count": 801,
+      "train_count": 7199
+    },
+    "artist_fold_02": {
+      "conditions": {
+        "full_label_corruption": {
+          "ap": 0.1283847446287051,
+          "prevalence_reference": 0.125,
+          "support": {
+            "electronic": {
+              "k": 76,
+              "n": 921
+            },
+            "experimental": {
+              "k": 98,
+              "n": 921
+            },
+            "folk": {
+              "k": 194,
+              "n": 921
+            },
+            "hip-hop": {
+              "k": 104,
+              "n": 921
+            },
+            "instrumental": {
+              "k": 147,
+              "n": 921
+            },
+            "international": {
+              "k": 82,
+              "n": 921
+            },
+            "pop": {
+              "k": 98,
+              "n": 921
+            },
+            "rock": {
+              "k": 122,
+              "n": 921
+            }
+          },
+          "tie_aware_reference": 0.13094361588815695
+        },
+        "label_set_permutation": {
+          "ap": 0.13594731709064883,
+          "prevalence_reference": 0.125,
+          "support": {
+            "electronic": {
+              "k": 76,
+              "n": 921
+            },
+            "experimental": {
+              "k": 98,
+              "n": 921
+            },
+            "folk": {
+              "k": 194,
+              "n": 921
+            },
+            "hip-hop": {
+              "k": 104,
+              "n": 921
+            },
+            "instrumental": {
+              "k": 147,
+              "n": 921
+            },
+            "international": {
+              "k": 82,
+              "n": 921
+            },
+            "pop": {
+              "k": 98,
+              "n": 921
+            },
+            "rock": {
+              "k": 122,
+              "n": 921
+            }
+          },
+          "tie_aware_reference": 0.13095613731676203
+        },
+        "observed": {
+          "ap": 0.37556923370281353,
+          "prevalence_reference": 0.125,
+          "support": {
+            "electronic": {
+              "k": 76,
+              "n": 921
+            },
+            "experimental": {
+              "k": 98,
+              "n": 921
+            },
+            "folk": {
+              "k": 194,
+              "n": 921
+            },
+            "hip-hop": {
+              "k": 104,
+              "n": 921
+            },
+            "instrumental": {
+              "k": 147,
+              "n": 921
+            },
+            "international": {
+              "k": 82,
+              "n": 921
+            },
+            "pop": {
+              "k": 98,
+              "n": 921
+            },
+            "rock": {
+              "k": 122,
+              "n": 921
+            }
+          },
+          "tie_aware_reference": 0.13104211674409283
+        }
+      },
+      "selected_labels": [
+        "electronic",
+        "international",
+        "experimental",
+        "pop",
+        "hip-hop",
+        "rock",
+        "instrumental",
+        "folk"
+      ],
+      "test_count": 921,
+      "train_count": 7079
+    },
+    "artist_fold_03": {
+      "conditions": {
+        "full_label_corruption": {
+          "ap": 0.13507584156980718,
+          "prevalence_reference": 0.12499999999999999,
+          "support": {
+            "electronic": {
+              "k": 85,
+              "n": 810
+            },
+            "experimental": {
+              "k": 101,
+              "n": 810
+            },
+            "folk": {
+              "k": 103,
+              "n": 810
+            },
+            "hip-hop": {
+              "k": 168,
+              "n": 810
+            },
+            "instrumental": {
+              "k": 85,
+              "n": 810
+            },
+            "international": {
+              "k": 75,
+              "n": 810
+            },
+            "pop": {
+              "k": 45,
+              "n": 810
+            },
+            "rock": {
+              "k": 148,
+              "n": 810
+            }
+          },
+          "tie_aware_reference": 0.13177044433331075
+        },
+        "label_set_permutation": {
+          "ap": 0.12763816569871803,
+          "prevalence_reference": 0.12499999999999999,
+          "support": {
+            "electronic": {
+              "k": 85,
+              "n": 810
+            },
+            "experimental": {
+              "k": 101,
+              "n": 810
+            },
+            "folk": {
+              "k": 103,
+              "n": 810
+            },
+            "hip-hop": {
+              "k": 168,
+              "n": 810
+            },
+            "instrumental": {
+              "k": 85,
+              "n": 810
+            },
+            "international": {
+              "k": 75,
+              "n": 810
+            },
+            "pop": {
+              "k": 45,
+              "n": 810
+            },
+            "rock": {
+              "k": 148,
+              "n": 810
+            }
+          },
+          "tie_aware_reference": 0.1317749463314424
+        },
+        "observed": {
+          "ap": 0.35556527900515594,
+          "prevalence_reference": 0.12499999999999999,
+          "support": {
+            "electronic": {
+              "k": 85,
+              "n": 810
+            },
+            "experimental": {
+              "k": 101,
+              "n": 810
+            },
+            "folk": {
+              "k": 103,
+              "n": 810
+            },
+            "hip-hop": {
+              "k": 168,
+              "n": 810
+            },
+            "instrumental": {
+              "k": 85,
+              "n": 810
+            },
+            "international": {
+              "k": 75,
+              "n": 810
+            },
+            "pop": {
+              "k": 45,
+              "n": 810
+            },
+            "rock": {
+              "k": 148,
+              "n": 810
+            }
+          },
+          "tie_aware_reference": 0.1317318615877019
+        }
+      },
+      "selected_labels": [
+        "pop",
+        "international",
+        "electronic",
+        "instrumental",
+        "experimental",
+        "folk",
+        "rock",
+        "hip-hop"
+      ],
+      "test_count": 810,
+      "train_count": 7190
+    },
+    "artist_fold_04": {
+      "conditions": {
+        "full_label_corruption": {
+          "ap": 0.13133498323332057,
+          "prevalence_reference": 0.125,
+          "support": {
+            "electronic": {
+              "k": 105,
+              "n": 880
+            },
+            "experimental": {
+              "k": 115,
+              "n": 880
+            },
+            "folk": {
+              "k": 95,
+              "n": 880
+            },
+            "hip-hop": {
+              "k": 129,
+              "n": 880
+            },
+            "instrumental": {
+              "k": 75,
+              "n": 880
+            },
+            "international": {
+              "k": 161,
+              "n": 880
+            },
+            "pop": {
+              "k": 118,
+              "n": 880
+            },
+            "rock": {
+              "k": 82,
+              "n": 880
+            }
+          },
+          "tie_aware_reference": 0.13129665327984938
+        },
+        "label_set_permutation": {
+          "ap": 0.13344060533250007,
+          "prevalence_reference": 0.125,
+          "support": {
+            "electronic": {
+              "k": 105,
+              "n": 880
+            },
+            "experimental": {
+              "k": 115,
+              "n": 880
+            },
+            "folk": {
+              "k": 95,
+              "n": 880
+            },
+            "hip-hop": {
+              "k": 129,
+              "n": 880
+            },
+            "instrumental": {
+              "k": 75,
+              "n": 880
+            },
+            "international": {
+              "k": 161,
+              "n": 880
+            },
+            "pop": {
+              "k": 118,
+              "n": 880
+            },
+            "rock": {
+              "k": 82,
+              "n": 880
+            }
+          },
+          "tie_aware_reference": 0.13128985230105594
+        },
+        "observed": {
+          "ap": 0.3535161054684206,
+          "prevalence_reference": 0.125,
+          "support": {
+            "electronic": {
+              "k": 105,
+              "n": 880
+            },
+            "experimental": {
+              "k": 115,
+              "n": 880
+            },
+            "folk": {
+              "k": 95,
+              "n": 880
+            },
+            "hip-hop": {
+              "k": 129,
+              "n": 880
+            },
+            "instrumental": {
+              "k": 75,
+              "n": 880
+            },
+            "international": {
+              "k": 161,
+              "n": 880
+            },
+            "pop": {
+              "k": 118,
+              "n": 880
+            },
+            "rock": {
+              "k": 82,
+              "n": 880
+            }
+          },
+          "tie_aware_reference": 0.13118919322247574
+        }
+      },
+      "selected_labels": [
+        "instrumental",
+        "rock",
+        "folk",
+        "electronic",
+        "experimental",
+        "pop",
+        "hip-hop",
+        "international"
+      ],
+      "test_count": 880,
+      "train_count": 7120
+    },
+    "artist_fold_05": {
+      "conditions": {
+        "full_label_corruption": {
+          "ap": 0.1281838476650129,
+          "prevalence_reference": 0.125,
+          "support": {
+            "electronic": {
+              "k": 81,
+              "n": 634
+            },
+            "experimental": {
+              "k": 61,
+              "n": 634
+            },
+            "folk": {
+              "k": 93,
+              "n": 634
+            },
+            "hip-hop": {
+              "k": 123,
+              "n": 634
+            },
+            "instrumental": {
+              "k": 37,
+              "n": 634
+            },
+            "international": {
+              "k": 105,
+              "n": 634
+            },
+            "pop": {
+              "k": 60,
+              "n": 634
+            },
+            "rock": {
+              "k": 74,
+              "n": 634
+            }
+          },
+          "tie_aware_reference": 0.1333112592064805
+        },
+        "label_set_permutation": {
+          "ap": 0.13261026023028016,
+          "prevalence_reference": 0.125,
+          "support": {
+            "electronic": {
+              "k": 81,
+              "n": 634
+            },
+            "experimental": {
+              "k": 61,
+              "n": 634
+            },
+            "folk": {
+              "k": 93,
+              "n": 634
+            },
+            "hip-hop": {
+              "k": 123,
+              "n": 634
+            },
+            "instrumental": {
+              "k": 37,
+              "n": 634
+            },
+            "international": {
+              "k": 105,
+              "n": 634
+            },
+            "pop": {
+              "k": 60,
+              "n": 634
+            },
+            "rock": {
+              "k": 74,
+              "n": 634
+            }
+          },
+          "tie_aware_reference": 0.13331071874466227
+        },
+        "observed": {
+          "ap": 0.35593544001037053,
+          "prevalence_reference": 0.125,
+          "support": {
+            "electronic": {
+              "k": 81,
+              "n": 634
+            },
+            "experimental": {
+              "k": 61,
+              "n": 634
+            },
+            "folk": {
+              "k": 93,
+              "n": 634
+            },
+            "hip-hop": {
+              "k": 123,
+              "n": 634
+            },
+            "instrumental": {
+              "k": 37,
+              "n": 634
+            },
+            "international": {
+              "k": 105,
+              "n": 634
+            },
+            "pop": {
+              "k": 60,
+              "n": 634
+            },
+            "rock": {
+              "k": 74,
+              "n": 634
+            }
+          },
+          "tie_aware_reference": 0.13329230723441626
+        }
+      },
+      "selected_labels": [
+        "instrumental",
+        "pop",
+        "experimental",
+        "rock",
+        "electronic",
+        "folk",
+        "international",
+        "hip-hop"
+      ],
+      "test_count": 634,
+      "train_count": 7366
+    },
+    "artist_fold_06": {
+      "conditions": {
+        "full_label_corruption": {
+          "ap": 0.1325520453156544,
+          "prevalence_reference": 0.125,
+          "support": {
+            "electronic": {
+              "k": 89,
+              "n": 850
+            },
+            "experimental": {
+              "k": 88,
+              "n": 850
+            },
+            "folk": {
+              "k": 87,
+              "n": 850
+            },
+            "hip-hop": {
+              "k": 83,
+              "n": 850
+            },
+            "instrumental": {
+              "k": 112,
+              "n": 850
+            },
+            "international": {
+              "k": 144,
+              "n": 850
+            },
+            "pop": {
+              "k": 171,
+              "n": 850
+            },
+            "rock": {
+              "k": 76,
+              "n": 850
+            }
+          },
+          "tie_aware_reference": 0.13150072626062093
+        },
+        "label_set_permutation": {
+          "ap": 0.13127805179503116,
+          "prevalence_reference": 0.125,
+          "support": {
+            "electronic": {
+              "k": 89,
+              "n": 850
+            },
+            "experimental": {
+              "k": 88,
+              "n": 850
+            },
+            "folk": {
+              "k": 87,
+              "n": 850
+            },
+            "hip-hop": {
+              "k": 83,
+              "n": 850
+            },
+            "instrumental": {
+              "k": 112,
+              "n": 850
+            },
+            "international": {
+              "k": 144,
+              "n": 850
+            },
+            "pop": {
+              "k": 171,
+              "n": 850
+            },
+            "rock": {
+              "k": 76,
+              "n": 850
+            }
+          },
+          "tie_aware_reference": 0.13150785615658925
+        },
+        "observed": {
+          "ap": 0.3214570693232954,
+          "prevalence_reference": 0.125,
+          "support": {
+            "electronic": {
+              "k": 89,
+              "n": 850
+            },
+            "experimental": {
+              "k": 88,
+              "n": 850
+            },
+            "folk": {
+              "k": 87,
+              "n": 850
+            },
+            "hip-hop": {
+              "k": 83,
+              "n": 850
+            },
+            "instrumental": {
+              "k": 112,
+              "n": 850
+            },
+            "international": {
+              "k": 144,
+              "n": 850
+            },
+            "pop": {
+              "k": 171,
+              "n": 850
+            },
+            "rock": {
+              "k": 76,
+              "n": 850
+            }
+          },
+          "tie_aware_reference": 0.1314854427026132
+        }
+      },
+      "selected_labels": [
+        "rock",
+        "hip-hop",
+        "folk",
+        "experimental",
+        "electronic",
+        "instrumental",
+        "international",
+        "pop"
+      ],
+      "test_count": 850,
+      "train_count": 7150
+    },
+    "artist_fold_07": {
+      "conditions": {
+        "full_label_corruption": {
+          "ap": 0.13020738213382435,
+          "prevalence_reference": 0.125,
+          "support": {
+            "electronic": {
+              "k": 86,
+              "n": 692
+            },
+            "experimental": {
+              "k": 87,
+              "n": 692
+            },
+            "folk": {
+              "k": 78,
+              "n": 692
+            },
+            "hip-hop": {
+              "k": 107,
+              "n": 692
+            },
+            "instrumental": {
+              "k": 29,
+              "n": 692
+            },
+            "international": {
+              "k": 132,
+              "n": 692
+            },
+            "pop": {
+              "k": 66,
+              "n": 692
+            },
+            "rock": {
+              "k": 107,
+              "n": 692
+            }
+          },
+          "tie_aware_reference": 0.13273279962410156
+        },
+        "label_set_permutation": {
+          "ap": 0.12889936215779427,
+          "prevalence_reference": 0.125,
+          "support": {
+            "electronic": {
+              "k": 86,
+              "n": 692
+            },
+            "experimental": {
+              "k": 87,
+              "n": 692
+            },
+            "folk": {
+              "k": 78,
+              "n": 692
+            },
+            "hip-hop": {
+              "k": 107,
+              "n": 692
+            },
+            "instrumental": {
+              "k": 29,
+              "n": 692
+            },
+            "international": {
+              "k": 132,
+              "n": 692
+            },
+            "pop": {
+              "k": 66,
+              "n": 692
+            },
+            "rock": {
+              "k": 107,
+              "n": 692
+            }
+          },
+          "tie_aware_reference": 0.13273668035064481
+        },
+        "observed": {
+          "ap": 0.4612829794878873,
+          "prevalence_reference": 0.125,
+          "support": {
+            "electronic": {
+              "k": 86,
+              "n": 692
+            },
+            "experimental": {
+              "k": 87,
+              "n": 692
+            },
+            "folk": {
+              "k": 78,
+              "n": 692
+            },
+            "hip-hop": {
+              "k": 107,
+              "n": 692
+            },
+            "instrumental": {
+              "k": 29,
+              "n": 692
+            },
+            "international": {
+              "k": 132,
+              "n": 692
+            },
+            "pop": {
+              "k": 66,
+              "n": 692
+            },
+            "rock": {
+              "k": 107,
+              "n": 692
+            }
+          },
+          "tie_aware_reference": 0.132728988337211
+        }
+      },
+      "selected_labels": [
+        "instrumental",
+        "pop",
+        "folk",
+        "electronic",
+        "experimental",
+        "hip-hop",
+        "rock",
+        "international"
+      ],
+      "test_count": 692,
+      "train_count": 7308
+    },
+    "artist_fold_08": {
+      "conditions": {
+        "full_label_corruption": {
+          "ap": 0.1343262378652102,
+          "prevalence_reference": 0.125,
+          "support": {
+            "electronic": {
+              "k": 72,
+              "n": 670
+            },
+            "experimental": {
+              "k": 79,
+              "n": 670
+            },
+            "folk": {
+              "k": 96,
+              "n": 670
+            },
+            "hip-hop": {
+              "k": 89,
+              "n": 670
+            },
+            "instrumental": {
+              "k": 68,
+              "n": 670
+            },
+            "international": {
+              "k": 77,
+              "n": 670
+            },
+            "pop": {
+              "k": 110,
+              "n": 670
+            },
+            "rock": {
+              "k": 79,
+              "n": 670
+            }
+          },
+          "tie_aware_reference": 0.13292083966352786
+        },
+        "label_set_permutation": {
+          "ap": 0.1294452984003345,
+          "prevalence_reference": 0.125,
+          "support": {
+            "electronic": {
+              "k": 72,
+              "n": 670
+            },
+            "experimental": {
+              "k": 79,
+              "n": 670
+            },
+            "folk": {
+              "k": 96,
+              "n": 670
+            },
+            "hip-hop": {
+              "k": 89,
+              "n": 670
+            },
+            "instrumental": {
+              "k": 68,
+              "n": 670
+            },
+            "international": {
+              "k": 77,
+              "n": 670
+            },
+            "pop": {
+              "k": 110,
+              "n": 670
+            },
+            "rock": {
+              "k": 79,
+              "n": 670
+            }
+          },
+          "tie_aware_reference": 0.13290994119406085
+        },
+        "observed": {
+          "ap": 0.34456787879836664,
+          "prevalence_reference": 0.125,
+          "support": {
+            "electronic": {
+              "k": 72,
+              "n": 670
+            },
+            "experimental": {
+              "k": 79,
+              "n": 670
+            },
+            "folk": {
+              "k": 96,
+              "n": 670
+            },
+            "hip-hop": {
+              "k": 89,
+              "n": 670
+            },
+            "instrumental": {
+              "k": 68,
+              "n": 670
+            },
+            "international": {
+              "k": 77,
+              "n": 670
+            },
+            "pop": {
+              "k": 110,
+              "n": 670
+            },
+            "rock": {
+              "k": 79,
+              "n": 670
+            }
+          },
+          "tie_aware_reference": 0.132944462745162
+        }
+      },
+      "selected_labels": [
+        "instrumental",
+        "electronic",
+        "international",
+        "experimental",
+        "rock",
+        "hip-hop",
+        "folk",
+        "pop"
+      ],
+      "test_count": 670,
+      "train_count": 7330
+    },
+    "artist_fold_09": {
+      "conditions": {
+        "full_label_corruption": {
+          "ap": 0.13122343888891605,
+          "prevalence_reference": 0.125,
+          "support": {
+            "electronic": {
+              "k": 152,
+              "n": 1020
+            },
+            "experimental": {
+              "k": 78,
+              "n": 1020
+            },
+            "folk": {
+              "k": 90,
+              "n": 1020
+            },
+            "hip-hop": {
+              "k": 52,
+              "n": 1020
+            },
+            "instrumental": {
+              "k": 310,
+              "n": 1020
+            },
+            "international": {
+              "k": 116,
+              "n": 1020
+            },
+            "pop": {
+              "k": 117,
+              "n": 1020
+            },
+            "rock": {
+              "k": 105,
+              "n": 1020
+            }
+          },
+          "tie_aware_reference": 0.13057082808735818
+        },
+        "label_set_permutation": {
+          "ap": 0.13302347617810664,
+          "prevalence_reference": 0.125,
+          "support": {
+            "electronic": {
+              "k": 152,
+              "n": 1020
+            },
+            "experimental": {
+              "k": 78,
+              "n": 1020
+            },
+            "folk": {
+              "k": 90,
+              "n": 1020
+            },
+            "hip-hop": {
+              "k": 52,
+              "n": 1020
+            },
+            "instrumental": {
+              "k": 310,
+              "n": 1020
+            },
+            "international": {
+              "k": 116,
+              "n": 1020
+            },
+            "pop": {
+              "k": 117,
+              "n": 1020
+            },
+            "rock": {
+              "k": 105,
+              "n": 1020
+            }
+          },
+          "tie_aware_reference": 0.13056999543251252
+        },
+        "observed": {
+          "ap": 0.42366830262640504,
+          "prevalence_reference": 0.125,
+          "support": {
+            "electronic": {
+              "k": 152,
+              "n": 1020
+            },
+            "experimental": {
+              "k": 78,
+              "n": 1020
+            },
+            "folk": {
+              "k": 90,
+              "n": 1020
+            },
+            "hip-hop": {
+              "k": 52,
+              "n": 1020
+            },
+            "instrumental": {
+              "k": 310,
+              "n": 1020
+            },
+            "international": {
+              "k": 116,
+              "n": 1020
+            },
+            "pop": {
+              "k": 117,
+              "n": 1020
+            },
+            "rock": {
+              "k": 105,
+              "n": 1020
+            }
+          },
+          "tie_aware_reference": 0.13051130262370536
+        }
+      },
+      "selected_labels": [
+        "hip-hop",
+        "experimental",
+        "folk",
+        "rock",
+        "international",
+        "pop",
+        "electronic",
+        "instrumental"
+      ],
+      "test_count": 1020,
+      "train_count": 6980
+    }
+  },
+  "manifest_sha256": "88e7c6e0390f631d8ae744edb699af0ef65e132739cf5c680d19acd6d10262f5",
+  "protocol_sha256": "aab698814ce7c8800069978e9e544376ca930eeb07a9f97270c4c702bb454d92",
+  "replay_sha256": "a19958ab542a4b2b8702750ad328c5be014cf728771d396797fea57dcde1991e",
+  "schema": "fullsongeval-fma-reference-check/v1",
+  "scope": "A new-source collection-level check of the post-audit diagnostic. FMA genre labels and catalog text come from the same source; this is not a listener or generated-music evaluation. No outcome will be used to tune the reference or support rule.",
+  "source": {
+    "artist_count": 2309,
+    "exclusions": {},
+    "genre_counts": {
+      "electronic": 1000,
+      "experimental": 1000,
+      "folk": 1000,
+      "hip-hop": 1000,
+      "instrumental": 1000,
+      "international": 1000,
+      "pop": 1000,
+      "rock": 1000
+    },
+    "manifest_sha256": "88e7c6e0390f631d8ae744edb699af0ef65e132739cf5c680d19acd6d10262f5",
+    "official_sha1": "f0df49ffe5f2a6008d7dc83c6915b31835dfe733",
+    "record_count": 8000,
+    "source_sha256": "d9527a5297a65da31c5676484d5047c3e2b8a8060ce72a46e26158be736bf265"
+  },
+  "status": "complete"
+}

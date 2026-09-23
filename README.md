@@ -247,3 +247,34 @@ all fold scores, condition targets, feature and prediction hashes, and the
 descriptive interval values. The audio comparison uses precomputed statistics
 from 30-second excerpts on the previously studied MTG tracks; it does not
 measure full-song quality or listener preference.
+
+## Reproduce the Free Music Archive catalog check
+
+The official Free Music Archive metadata ZIP is about 342 MiB and is not
+bundled. Download it from the URL pinned in
+`configs/fma_reference_check_v1.json` and verify SHA-1
+`f0df49ffe5f2a6008d7dc83c6915b31835dfe733`. The primary protocol was
+fixed before inspecting this source. The included report and compressed
+prediction replay permit independent checks without the download. The source
+contains catalog text and genre tags, not listener or generated-audio outcomes.
+
+```sh
+mkdir -p data/fma reproduced/fma_reference_check_v1
+curl -L https://os.unil.cloud.switch.ch/fma/fma_metadata.zip -o data/fma/fma_metadata.zip
+printf '%s  %s
+' f0df49ffe5f2a6008d7dc83c6915b31835dfe733 data/fma/fma_metadata.zip | shasum -a 1 -c -
+PYTHONPATH=src python scripts/evaluate_fma_reference_check.py   --config configs/fma_reference_check_v1.json   --archive data/fma/fma_metadata.zip   --manifest reproduced/fma_reference_check_v1/manifest.jsonl   --replay reproduced/fma_reference_check_v1/predictions.jsonl.gz   --output reproduced/fma_reference_check_v1/report.json
+```
+
+The report gives all ten artist-fold decisions, score-tie-aware references,
+source and replay hashes. The separate overlap analysis removed 90 FMA records
+whose normalized title, artist, and album strings matched earlier MTG records
+from fixed predictions. It is a post-audit sensitivity. After reproducing the
+MTG manifest above, run:
+
+```sh
+PYTHONPATH=src python scripts/audit_fma_overlap_sensitivity.py   --fma-manifest reproduced/fma_reference_check_v1/manifest.jsonl   --mtg-manifest reproduced/mtg_jamendo_manifest.jsonl   --replay reproduced/fma_reference_check_v1/predictions.jsonl.gz   --output reproduced/fma_reference_check_v1/overlap_sensitivity.json
+```
+
+Compare the six decision intervals with the packaged primary and sensitivity
+reports. Paths in the packaged reports may differ from local paths.

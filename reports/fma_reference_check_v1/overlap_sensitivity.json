@@ -1,0 +1,337 @@
+{
+  "decision_intervals": {
+    "full_label_corruption": {
+      "prevalence_reference": {
+        "accepts": true,
+        "summary": {
+          "author_differences": {
+            "artist_fold_00": 0.004956,
+            "artist_fold_01": 0.003622,
+            "artist_fold_02": 0.003894,
+            "artist_fold_03": 0.010109,
+            "artist_fold_04": 0.006288,
+            "artist_fold_05": 0.003184,
+            "artist_fold_06": 0.007449,
+            "artist_fold_07": 0.005217,
+            "artist_fold_08": 0.009689,
+            "artist_fold_09": 0.006247
+          },
+          "ci95_high": 0.007792,
+          "ci95_low": 0.004339,
+          "ci95_method": "paired_student_t_95",
+          "mean_difference": 0.006065,
+          "n_independent_authors": 10,
+          "sample_standard_deviation": 0.002413,
+          "standard_error": 0.000763
+        }
+      },
+      "tie_aware_reference": {
+        "accepts": false,
+        "summary": {
+          "author_differences": {
+            "artist_fold_00": -0.00238,
+            "artist_fold_01": -0.003261,
+            "artist_fold_02": -0.002194,
+            "artist_fold_03": 0.003142,
+            "artist_fold_04": -1.5e-05,
+            "artist_fold_05": -0.005127,
+            "artist_fold_06": 0.000929,
+            "artist_fold_07": -0.002544,
+            "artist_fold_08": 0.001687,
+            "artist_fold_09": 0.000648
+          },
+          "ci95_high": 0.000929,
+          "ci95_low": -0.002752,
+          "ci95_method": "paired_student_t_95",
+          "mean_difference": -0.000911,
+          "n_independent_authors": 10,
+          "sample_standard_deviation": 0.002573,
+          "standard_error": 0.000814
+        }
+      }
+    },
+    "label_set_permutation": {
+      "prevalence_reference": {
+        "accepts": true,
+        "summary": {
+          "author_differences": {
+            "artist_fold_00": 0.003766,
+            "artist_fold_01": 0.006345,
+            "artist_fold_02": 0.011379,
+            "artist_fold_03": 0.00243,
+            "artist_fold_04": 0.008571,
+            "artist_fold_05": 0.00761,
+            "artist_fold_06": 0.006216,
+            "artist_fold_07": 0.0039,
+            "artist_fold_08": 0.004353,
+            "artist_fold_09": 0.00817
+          },
+          "ci95_high": 0.008227,
+          "ci95_low": 0.004321,
+          "ci95_method": "paired_student_t_95",
+          "mean_difference": 0.006274,
+          "n_independent_authors": 10,
+          "sample_standard_deviation": 0.002731,
+          "standard_error": 0.000864
+        }
+      },
+      "tie_aware_reference": {
+        "accepts": false,
+        "summary": {
+          "author_differences": {
+            "artist_fold_00": -0.00364,
+            "artist_fold_01": -0.000536,
+            "artist_fold_02": 0.005278,
+            "artist_fold_03": -0.004542,
+            "artist_fold_04": 0.002275,
+            "artist_fold_05": -0.0007,
+            "artist_fold_06": -0.000311,
+            "artist_fold_07": -0.003865,
+            "artist_fold_08": -0.003638,
+            "artist_fold_09": 0.002572
+          },
+          "ci95_high": 0.001644,
+          "ci95_low": -0.003065,
+          "ci95_method": "paired_student_t_95",
+          "mean_difference": -0.000711,
+          "n_independent_authors": 10,
+          "sample_standard_deviation": 0.003292,
+          "standard_error": 0.001041
+        }
+      }
+    },
+    "observed": {
+      "prevalence_reference": {
+        "accepts": true,
+        "summary": {
+          "author_differences": {
+            "artist_fold_00": 0.351985,
+            "artist_fold_01": 0.199852,
+            "artist_fold_02": 0.253957,
+            "artist_fold_03": 0.22691,
+            "artist_fold_04": 0.228798,
+            "artist_fold_05": 0.230935,
+            "artist_fold_06": 0.197391,
+            "artist_fold_07": 0.336743,
+            "artist_fold_08": 0.219714,
+            "artist_fold_09": 0.297451
+          },
+          "ci95_high": 0.293948,
+          "ci95_low": 0.2148,
+          "ci95_method": "paired_student_t_95",
+          "mean_difference": 0.254374,
+          "n_independent_authors": 10,
+          "sample_standard_deviation": 0.055325,
+          "standard_error": 0.017495
+        }
+      },
+      "tie_aware_reference": {
+        "accepts": true,
+        "summary": {
+          "author_differences": {
+            "artist_fold_00": 0.344512,
+            "artist_fold_01": 0.192986,
+            "artist_fold_02": 0.247767,
+            "artist_fold_03": 0.219982,
+            "artist_fold_04": 0.222603,
+            "artist_fold_05": 0.222643,
+            "artist_fold_06": 0.190887,
+            "artist_fold_07": 0.328986,
+            "artist_fold_08": 0.211689,
+            "artist_fold_09": 0.291913
+          },
+          "ci95_high": 0.286921,
+          "ci95_low": 0.207872,
+          "ci95_method": "paired_student_t_95",
+          "mean_difference": 0.247397,
+          "n_independent_authors": 10,
+          "sample_standard_deviation": 0.055255,
+          "standard_error": 0.017473
+        }
+      }
+    }
+  },
+  "excluded_exact_normalized_text_matches": 90,
+  "fold_comparisons": {
+    "artist_fold_00": {
+      "full_label_corruption": {
+        "ap": 0.12995572776857006,
+        "prevalence_reference": 0.125,
+        "tie_aware_reference": 0.1323361911217798
+      },
+      "label_set_permutation": {
+        "ap": 0.12876598957296337,
+        "prevalence_reference": 0.125,
+        "tie_aware_reference": 0.13240568910159542
+      },
+      "observed": {
+        "ap": 0.4769852728098479,
+        "prevalence_reference": 0.125,
+        "tie_aware_reference": 0.1324730525928458
+      }
+    },
+    "artist_fold_01": {
+      "full_label_corruption": {
+        "ap": 0.12862150089138064,
+        "prevalence_reference": 0.125,
+        "tie_aware_reference": 0.13188217373326797
+      },
+      "label_set_permutation": {
+        "ap": 0.13134514586237467,
+        "prevalence_reference": 0.125,
+        "tie_aware_reference": 0.1318806976309757
+      },
+      "observed": {
+        "ap": 0.32485159948122533,
+        "prevalence_reference": 0.125,
+        "tie_aware_reference": 0.1318657203827101
+      }
+    },
+    "artist_fold_02": {
+      "full_label_corruption": {
+        "ap": 0.1288938701288037,
+        "prevalence_reference": 0.125,
+        "tie_aware_reference": 0.1310882168991392
+      },
+      "label_set_permutation": {
+        "ap": 0.13637857053532887,
+        "prevalence_reference": 0.125,
+        "tie_aware_reference": 0.1311009375416587
+      },
+      "observed": {
+        "ap": 0.378956853692832,
+        "prevalence_reference": 0.125,
+        "tie_aware_reference": 0.13118957696080855
+      }
+    },
+    "artist_fold_03": {
+      "full_label_corruption": {
+        "ap": 0.13510926353515784,
+        "prevalence_reference": 0.125,
+        "tie_aware_reference": 0.13196710292234806
+      },
+      "label_set_permutation": {
+        "ap": 0.12742971290031832,
+        "prevalence_reference": 0.125,
+        "tie_aware_reference": 0.13197163283901014
+      },
+      "observed": {
+        "ap": 0.3519095553050569,
+        "prevalence_reference": 0.125,
+        "tie_aware_reference": 0.1319275706913654
+      }
+    },
+    "artist_fold_04": {
+      "full_label_corruption": {
+        "ap": 0.13128780789822556,
+        "prevalence_reference": 0.125,
+        "tie_aware_reference": 0.13130262169068024
+      },
+      "label_set_permutation": {
+        "ap": 0.13357073239048456,
+        "prevalence_reference": 0.125,
+        "tie_aware_reference": 0.13129563996250856
+      },
+      "observed": {
+        "ap": 0.3537980202873486,
+        "prevalence_reference": 0.125,
+        "tie_aware_reference": 0.13119512933253605
+      }
+    },
+    "artist_fold_05": {
+      "full_label_corruption": {
+        "ap": 0.1281838476650129,
+        "prevalence_reference": 0.125,
+        "tie_aware_reference": 0.1333112592064805
+      },
+      "label_set_permutation": {
+        "ap": 0.13261026023028014,
+        "prevalence_reference": 0.125,
+        "tie_aware_reference": 0.13331071874466224
+      },
+      "observed": {
+        "ap": 0.35593544001037053,
+        "prevalence_reference": 0.125,
+        "tie_aware_reference": 0.13329230723441626
+      }
+    },
+    "artist_fold_06": {
+      "full_label_corruption": {
+        "ap": 0.1324493389656573,
+        "prevalence_reference": 0.125,
+        "tie_aware_reference": 0.13152012767165494
+      },
+      "label_set_permutation": {
+        "ap": 0.1312160876172427,
+        "prevalence_reference": 0.125,
+        "tie_aware_reference": 0.13152727874933975
+      },
+      "observed": {
+        "ap": 0.32239148829740033,
+        "prevalence_reference": 0.125,
+        "tie_aware_reference": 0.13150480405923048
+      }
+    },
+    "artist_fold_07": {
+      "full_label_corruption": {
+        "ap": 0.1302172885786147,
+        "prevalence_reference": 0.125,
+        "tie_aware_reference": 0.1327609987908616
+      },
+      "label_set_permutation": {
+        "ap": 0.12890001947727223,
+        "prevalence_reference": 0.125,
+        "tie_aware_reference": 0.1327648939011738
+      },
+      "observed": {
+        "ap": 0.4617432097973726,
+        "prevalence_reference": 0.125,
+        "tie_aware_reference": 0.1327571574371547
+      }
+    },
+    "artist_fold_08": {
+      "full_label_corruption": {
+        "ap": 0.134688920711138,
+        "prevalence_reference": 0.125,
+        "tie_aware_reference": 0.13300150492157167
+      },
+      "label_set_permutation": {
+        "ap": 0.12935288029870573,
+        "prevalence_reference": 0.125,
+        "tie_aware_reference": 0.13299049823789938
+      },
+      "observed": {
+        "ap": 0.34471436795442045,
+        "prevalence_reference": 0.125,
+        "tie_aware_reference": 0.1330258037734233
+      }
+    },
+    "artist_fold_09": {
+      "full_label_corruption": {
+        "ap": 0.13124673916835952,
+        "prevalence_reference": 0.125,
+        "tie_aware_reference": 0.13059871489624483
+      },
+      "label_set_permutation": {
+        "ap": 0.13316957993452105,
+        "prevalence_reference": 0.125,
+        "tie_aware_reference": 0.13059786705440618
+      },
+      "observed": {
+        "ap": 0.4224514548759421,
+        "prevalence_reference": 0.125,
+        "tie_aware_reference": 0.1305387147922113
+      }
+    }
+  },
+  "inputs_sha256": {
+    "fma_manifest": "88e7c6e0390f631d8ae744edb699af0ef65e132739cf5c680d19acd6d10262f5",
+    "mtg_manifest": "6a6ec24b8847f5d228faf6dc9c8a4e9cf8bc70e934d5d1db10c3ac9cc1031f88",
+    "replay": "a19958ab542a4b2b8702750ad328c5be014cf728771d396797fea57dcde1991e"
+  },
+  "interpretation": "Post-audit sensitivity only; the primary frozen FMA protocol includes these records. Excluding recipient records after reassignment can change label support across conditions.",
+  "original_fma_records": 8000,
+  "retained_records": 7910,
+  "schema": "fullsongeval-fma-overlap-sensitivity/v1",
+  "status": "complete"
+}
