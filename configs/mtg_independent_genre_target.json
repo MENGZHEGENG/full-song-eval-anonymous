@@ -1,0 +1,30 @@
+{
+  "schema": "fullsongeval-independent-genre-target-protocol/v1",
+  "frozen_before_outcome_file_read": "2026-09-23",
+  "source_revision": "cafd8e20c265ed84f1e61f1c875327971f43a62f",
+  "source_path": "derived/music-classification-annotations/music-classification-annotations-clean.tsv",
+  "source_repository": "https://github.com/MTG/mtg-jamendo-dataset",
+  "outcome_taxonomies": [
+    "genre_dortmund",
+    "genre_rosamerica",
+    "genre_tzanetakis"
+  ],
+  "label_match": "casefold and remove all non-alphanumeric characters; require exact normalized match between a consensus genre class and the scorer's training-fold-selected genre tag",
+  "conditions": [
+    "observed",
+    "label_set_permutation",
+    "full_label_corruption"
+  ],
+  "scorer": "unchanged frozen target-masked MTG-Jamendo score replay",
+  "population": "records in the canonical MTG manifest with a clean consensus annotation for the taxonomy",
+  "grouping": "the ten canonical artist-held-out folds",
+  "metric": "tie-aware average precision for one-vs-rest consensus genre labels",
+  "support_rule": "evaluate a taxonomy-label-fold block only when it has at least one positive and one negative consensus annotation and all three conditions have score records",
+  "aggregation": "mean AP over supported matched labels within each taxonomy and fold, then mean over supported taxonomies within each fold; compare conditions in the same ten folds",
+  "primary_contrasts": [
+    "observed_minus_label_set_permutation",
+    "observed_minus_full_label_corruption"
+  ],
+  "interval": "descriptive paired Student-t 95% interval over the ten artist folds",
+  "interpretation": "external human-consensus genre target on previously used MTG tracks; a retrospective downstream diagnostic, not a prospective untouched data-source study or an audio-quality claim"
+}

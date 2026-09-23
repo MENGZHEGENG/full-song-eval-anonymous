@@ -1,0 +1,215 @@
+{
+  "all_masked_minus_prior_negative": true,
+  "all_negative_two_sided_sign_test_log10_p": -759.799709,
+  "bootstrap_replicates": 5000,
+  "bootstrap_seed": 20260825,
+  "claim_scope": "Statistical stability for MusicCaps top1296/min5 public-label proxy diagnostics only; not listener preference or perceptual quality.",
+  "complete_summary_count": 17,
+  "confidence_level": 0.95,
+  "known_blockers": [],
+  "listener_preference_claim_allowed": false,
+  "masked_beats_prior_count": 0,
+  "masked_beats_prior_rate_upper95": 0.001186,
+  "masked_minus_shuffled_control": {
+    "ci95_high": 0.004984,
+    "ci95_low": 0.004444,
+    "mean": 0.00471,
+    "n": 2525,
+    "name": "Masked-shuffled control delta",
+    "std": 0.006973
+  },
+  "missing_or_incomplete_count": 0,
+  "model_count": 25,
+  "proxy_statistical_claim_allowed": true,
+  "raw_minus_masked_surface_gap": {
+    "ci95_high": 0.02924,
+    "ci95_low": 0.02659,
+    "mean": 0.027919,
+    "n": 2525,
+    "name": "Raw-masked surface-form gap",
+    "std": 0.033148
+  },
+  "recommended_next_action": "Use the confidence intervals and zero masked-over-prior rate as statistical support for the proxy-only stability claim.",
+  "resampling_protocol": {
+    "entry_level": {
+      "interpretation": "descriptive pooled interval; entries share encoder models and replication waves",
+      "n": 2525,
+      "seed": 20260825,
+      "unit": "completed proxy-result entry"
+    },
+    "interval_method": "percentile bootstrap using the 2.5th and 97.5th percentiles",
+    "replicates": 5000,
+    "wave_level": {
+      "interpretation": "repetition-level stability interval",
+      "n": 17,
+      "seed": 20260826,
+      "unit": "completed summary wave"
+    },
+    "zero_success_bound": {
+      "alpha": 0.05,
+      "denominator": 2525,
+      "formula": "1 - alpha**(1/N)",
+      "method": "exact one-sided binomial upper bound"
+    }
+  },
+  "result_count": 2525,
+  "row_masked_minus_prior": {
+    "ci95_high": -0.121053,
+    "ci95_low": -0.121584,
+    "mean": -0.121321,
+    "n": 2525,
+    "name": "Masked-prior result-entry delta",
+    "std": 0.006931
+  },
+  "seed_count": 101,
+  "semantic_robustness_ready_count": 0,
+  "semantic_robustness_ready_rate_upper95": 0.001186,
+  "status": "pass",
+  "summary_count": 17,
+  "wave_masked_minus_prior": {
+    "ci95_high": -0.121281,
+    "ci95_low": -0.121368,
+    "mean": -0.121327,
+    "n": 17,
+    "name": "Masked-prior wave delta",
+    "std": 9.4e-05
+  },
+  "wave_rows": [
+    {
+      "masked_minus_prior_micro_f1_mean": -0.121417,
+      "name": "full",
+      "result_count": 75,
+      "seed_count": 3,
+      "semantic_robustness_ready_count": 0,
+      "status": "pass"
+    },
+    {
+      "masked_minus_prior_micro_f1_mean": -0.121417,
+      "name": "replication1",
+      "result_count": 75,
+      "seed_count": 3,
+      "semantic_robustness_ready_count": 0,
+      "status": "pass"
+    },
+    {
+      "masked_minus_prior_micro_f1_mean": -0.121163,
+      "name": "replication2",
+      "result_count": 75,
+      "seed_count": 3,
+      "semantic_robustness_ready_count": 0,
+      "status": "pass"
+    },
+    {
+      "masked_minus_prior_micro_f1_mean": -0.121417,
+      "name": "replication3",
+      "result_count": 75,
+      "seed_count": 3,
+      "semantic_robustness_ready_count": 0,
+      "status": "pass"
+    },
+    {
+      "masked_minus_prior_micro_f1_mean": -0.121163,
+      "name": "replication4",
+      "result_count": 75,
+      "seed_count": 3,
+      "semantic_robustness_ready_count": 0,
+      "status": "pass"
+    },
+    {
+      "masked_minus_prior_micro_f1_mean": -0.121417,
+      "name": "replication5",
+      "result_count": 75,
+      "seed_count": 3,
+      "semantic_robustness_ready_count": 0,
+      "status": "pass"
+    },
+    {
+      "masked_minus_prior_micro_f1_mean": -0.121417,
+      "name": "replication6",
+      "result_count": 75,
+      "seed_count": 3,
+      "semantic_robustness_ready_count": 0,
+      "status": "pass"
+    },
+    {
+      "masked_minus_prior_micro_f1_mean": -0.121292,
+      "name": "replication7",
+      "result_count": 200,
+      "seed_count": 8,
+      "semantic_robustness_ready_count": 0,
+      "status": "pass"
+    },
+    {
+      "masked_minus_prior_micro_f1_mean": -0.121417,
+      "name": "replication8",
+      "result_count": 200,
+      "seed_count": 8,
+      "semantic_robustness_ready_count": 0,
+      "status": "pass"
+    },
+    {
+      "masked_minus_prior_micro_f1_mean": -0.121289,
+      "name": "replication9",
+      "result_count": 200,
+      "seed_count": 8,
+      "semantic_robustness_ready_count": 0,
+      "status": "pass"
+    },
+    {
+      "masked_minus_prior_micro_f1_mean": -0.1212,
+      "name": "replication10",
+      "result_count": 200,
+      "seed_count": 8,
+      "semantic_robustness_ready_count": 0,
+      "status": "pass"
+    },
+    {
+      "masked_minus_prior_micro_f1_mean": -0.121417,
+      "name": "replication11",
+      "result_count": 200,
+      "seed_count": 8,
+      "semantic_robustness_ready_count": 0,
+      "status": "pass"
+    },
+    {
+      "masked_minus_prior_micro_f1_mean": -0.121296,
+      "name": "replication12",
+      "result_count": 200,
+      "seed_count": 8,
+      "semantic_robustness_ready_count": 0,
+      "status": "pass"
+    },
+    {
+      "masked_minus_prior_micro_f1_mean": -0.12122,
+      "name": "replication13",
+      "result_count": 200,
+      "seed_count": 8,
+      "semantic_robustness_ready_count": 0,
+      "status": "pass"
+    },
+    {
+      "masked_minus_prior_micro_f1_mean": -0.121309,
+      "name": "replication14",
+      "result_count": 200,
+      "seed_count": 8,
+      "semantic_robustness_ready_count": 0,
+      "status": "pass"
+    },
+    {
+      "masked_minus_prior_micro_f1_mean": -0.121289,
+      "name": "replication15",
+      "result_count": 200,
+      "seed_count": 8,
+      "semantic_robustness_ready_count": 0,
+      "status": "pass"
+    },
+    {
+      "masked_minus_prior_micro_f1_mean": -0.121417,
+      "name": "replication16",
+      "result_count": 200,
+      "seed_count": 8,
+      "semantic_robustness_ready_count": 0,
+      "status": "pass"
+    }
+  ]
+}

@@ -1,0 +1,695 @@
+{
+  "code_commit": "5eef415b94400589ffdea0ed217349930b0197aa",
+  "implementation_sha256": "4d95689841877a38e64f4fc30f756617048e58fc3806ac042f00b14ed93828c5",
+  "independent_unit": "author_id",
+  "independent_unit_count": 10,
+  "inference_statement": "Paired differences use macro-AUPRC for the same ten held-out authors. Models, configurations, folds, and seeds are not counted as independent observations.",
+  "input_report_count": 4,
+  "input_reports": [
+    {
+      "design": "aspect_list:16:25",
+      "file_name": "aspect_top16_author10.json",
+      "sha256": "afaaa5ad494daf200048b2d177da0d467e95a690f9b3876d41975991bfd8e254"
+    },
+    {
+      "design": "aspect_list:1296:5",
+      "file_name": "aspect_top1296_author10.json",
+      "sha256": "5aa4dc7d20f85e9b00b38f5f7db406e8bc429ae684f21a9356f0b1c3e1185193"
+    },
+    {
+      "design": "audioset_positive_labels:16:25",
+      "file_name": "audioset_top16_author10.json",
+      "sha256": "197ee41b1701bd11f4264e4009c1f0e6b5c721e815346e6c84bcd5110f0bacb5"
+    },
+    {
+      "design": "audioset_positive_labels:211:5",
+      "file_name": "audioset_top211_author10.json",
+      "sha256": "57c933d0d3e55839ab16d578d2e5c59970b7a1fa445fd10502555fb6803af678"
+    }
+  ],
+  "interval_note": "Per-report paired Student-t 95% intervals; no multiplicity adjustment.",
+  "manifest_sha256": "dad59617a323a0aa56f09fb6c462a430df14c6184321b5851b93abcb14446a42",
+  "paper_branch_note": "Stage 1 emits only CI-supported directional findings. It does not select a named paper-position branch; equivalence, calibration, annotation shortcuts, and downstream transfer require later stages.",
+  "paper_branch_status": "pending_stage2",
+  "reports": [
+    {
+      "descriptive_only_contrasts": [
+        "target_mask_minus_matched_deletion"
+      ],
+      "design": "aspect_list:16:25",
+      "display_name": "Aspect labels (16)",
+      "inconclusive_contrasts": [],
+      "independent_author_count": 10,
+      "key_metrics": {
+        "global_union_masked": 0.162152,
+        "matched_random_deletion": 0.215041,
+        "normalized_unmasked": 0.223714,
+        "prior": 0.088156,
+        "raw": 0.220263,
+        "target_label_masked": 0.168363
+      },
+      "min_label_count": 25,
+      "outcome_branches": {
+        "global_mask_minus_matched_deletion": "global_mask_below_matched_deletion",
+        "global_mask_minus_prior": "global_mask_above_prior",
+        "target_mask_minus_matched_deletion": "descriptive_only_not_target_deletion_matched",
+        "target_mask_minus_prior": "target_mask_above_prior"
+      },
+      "paired_contrasts": {
+        "global_mask_minus_matched_deletion": {
+          "author_differences": {
+            "0": -0.024495,
+            "1": -0.020434,
+            "2": -0.039647,
+            "3": -0.023337,
+            "4": -0.193487,
+            "5": -0.061884,
+            "6": -0.032327,
+            "7": -0.045412,
+            "8": -0.043903,
+            "9": -0.043958
+          },
+          "ci95_high": -0.016418,
+          "ci95_low": -0.089359,
+          "ci95_method": "paired_student_t_95",
+          "interpretation_scope": "prespecified_directional_contrast",
+          "left": {
+            "condition": "global_union_masked",
+            "predictor": "prior_plus_text"
+          },
+          "mean_difference": -0.052888,
+          "metric": "macro_auprc",
+          "n_independent_authors": 10,
+          "outcome_branch": "global_mask_below_matched_deletion",
+          "right": {
+            "condition": "matched_random_deletion",
+            "predictor": "prior_plus_text"
+          },
+          "sample_standard_deviation": 0.050986,
+          "standard_error": 0.016123
+        },
+        "global_mask_minus_prior": {
+          "author_differences": {
+            "0": 0.047068,
+            "1": 0.066602,
+            "2": 0.059949,
+            "3": 0.066334,
+            "4": 0.09687,
+            "5": 0.163831,
+            "6": 0.042488,
+            "7": 0.106762,
+            "8": 0.031147,
+            "9": 0.058912
+          },
+          "ci95_high": 0.101965,
+          "ci95_low": 0.046028,
+          "ci95_method": "paired_student_t_95",
+          "interpretation_scope": "prespecified_directional_contrast",
+          "left": {
+            "condition": "global_union_masked",
+            "predictor": "prior_plus_text"
+          },
+          "mean_difference": 0.073996,
+          "metric": "macro_auprc",
+          "n_independent_authors": 10,
+          "outcome_branch": "global_mask_above_prior",
+          "right": {
+            "condition": "global_union_masked",
+            "predictor": "prior"
+          },
+          "sample_standard_deviation": 0.0391,
+          "standard_error": 0.012365
+        },
+        "target_mask_minus_matched_deletion": {
+          "author_differences": {
+            "0": -0.022209,
+            "1": -0.015934,
+            "2": -0.037532,
+            "3": -0.012507,
+            "4": -0.178515,
+            "5": -0.060771,
+            "6": -0.028571,
+            "7": -0.022423,
+            "8": -0.044146,
+            "9": -0.044172
+          },
+          "ci95_high": -0.011876,
+          "ci95_low": -0.08148,
+          "ci95_method": "paired_student_t_95",
+          "interpretation_scope": "descriptive_only; random deletion is count-matched to the global mask, not the target-specific mask",
+          "left": {
+            "condition": "target_label_masked",
+            "predictor": "prior_plus_text"
+          },
+          "mean_difference": -0.046678,
+          "metric": "macro_auprc",
+          "n_independent_authors": 10,
+          "outcome_branch": "descriptive_only_not_target_deletion_matched",
+          "right": {
+            "condition": "matched_random_deletion",
+            "predictor": "prior_plus_text"
+          },
+          "sample_standard_deviation": 0.048653,
+          "standard_error": 0.015385
+        },
+        "target_mask_minus_prior": {
+          "author_differences": {
+            "0": 0.049354,
+            "1": 0.071102,
+            "2": 0.062064,
+            "3": 0.077164,
+            "4": 0.111842,
+            "5": 0.164944,
+            "6": 0.046244,
+            "7": 0.129751,
+            "8": 0.030904,
+            "9": 0.058698
+          },
+          "ci95_high": 0.110419,
+          "ci95_low": 0.049994,
+          "ci95_method": "paired_student_t_95",
+          "interpretation_scope": "prespecified_directional_contrast",
+          "left": {
+            "condition": "target_label_masked",
+            "predictor": "prior_plus_text"
+          },
+          "mean_difference": 0.080207,
+          "metric": "macro_auprc",
+          "n_independent_authors": 10,
+          "outcome_branch": "target_mask_above_prior",
+          "right": {
+            "condition": "target_label_masked",
+            "predictor": "prior"
+          },
+          "sample_standard_deviation": 0.042237,
+          "standard_error": 0.013357
+        }
+      },
+      "row_count": 4823,
+      "source_file": "aspect_top16_author10.json",
+      "supported_outcomes": [
+        "global_mask_above_prior",
+        "global_mask_below_matched_deletion",
+        "target_mask_above_prior"
+      ],
+      "target_field": "aspect_list",
+      "top_label_count": 16
+    },
+    {
+      "descriptive_only_contrasts": [
+        "target_mask_minus_matched_deletion"
+      ],
+      "design": "aspect_list:1296:5",
+      "display_name": "Aspect labels (1296)",
+      "inconclusive_contrasts": [],
+      "independent_author_count": 10,
+      "key_metrics": {
+        "global_union_masked": 0.050463,
+        "matched_random_deletion": 0.058048,
+        "normalized_unmasked": 0.090952,
+        "prior": 0.02518,
+        "raw": 0.09092,
+        "target_label_masked": 0.067571
+      },
+      "min_label_count": 5,
+      "outcome_branches": {
+        "global_mask_minus_matched_deletion": "global_mask_below_matched_deletion",
+        "global_mask_minus_prior": "global_mask_above_prior",
+        "target_mask_minus_matched_deletion": "descriptive_only_not_target_deletion_matched",
+        "target_mask_minus_prior": "target_mask_above_prior"
+      },
+      "paired_contrasts": {
+        "global_mask_minus_matched_deletion": {
+          "author_differences": {
+            "0": -0.004908,
+            "1": -0.002271,
+            "2": -0.02098,
+            "3": -0.009504,
+            "4": -0.008425,
+            "5": -0.003283,
+            "6": -0.001889,
+            "7": -0.003796,
+            "8": -0.015059,
+            "9": -0.00573
+          },
+          "ci95_high": -0.003163,
+          "ci95_low": -0.012006,
+          "ci95_method": "paired_student_t_95",
+          "interpretation_scope": "prespecified_directional_contrast",
+          "left": {
+            "condition": "global_union_masked",
+            "predictor": "prior_plus_text"
+          },
+          "mean_difference": -0.007584,
+          "metric": "macro_auprc",
+          "n_independent_authors": 10,
+          "outcome_branch": "global_mask_below_matched_deletion",
+          "right": {
+            "condition": "matched_random_deletion",
+            "predictor": "prior_plus_text"
+          },
+          "sample_standard_deviation": 0.006181,
+          "standard_error": 0.001955
+        },
+        "global_mask_minus_prior": {
+          "author_differences": {
+            "0": 0.008137,
+            "1": 0.011905,
+            "2": 0.042745,
+            "3": 0.029071,
+            "4": 0.004982,
+            "5": 0.082255,
+            "6": 0.00932,
+            "7": 0.010816,
+            "8": 0.039758,
+            "9": 0.01384
+          },
+          "ci95_high": 0.042567,
+          "ci95_low": 0.007999,
+          "ci95_method": "paired_student_t_95",
+          "interpretation_scope": "prespecified_directional_contrast",
+          "left": {
+            "condition": "global_union_masked",
+            "predictor": "prior_plus_text"
+          },
+          "mean_difference": 0.025283,
+          "metric": "macro_auprc",
+          "n_independent_authors": 10,
+          "outcome_branch": "global_mask_above_prior",
+          "right": {
+            "condition": "global_union_masked",
+            "predictor": "prior"
+          },
+          "sample_standard_deviation": 0.024163,
+          "standard_error": 0.007641
+        },
+        "target_mask_minus_matched_deletion": {
+          "author_differences": {
+            "0": 0.002221,
+            "1": 0.009988,
+            "2": -0.001969,
+            "3": 0.004757,
+            "4": 0.000895,
+            "5": 0.067395,
+            "6": 0.005881,
+            "7": 0.009728,
+            "8": -0.00985,
+            "9": 0.006185
+          },
+          "ci95_high": 0.024663,
+          "ci95_low": -0.005617,
+          "ci95_method": "paired_student_t_95",
+          "interpretation_scope": "descriptive_only; random deletion is count-matched to the global mask, not the target-specific mask",
+          "left": {
+            "condition": "target_label_masked",
+            "predictor": "prior_plus_text"
+          },
+          "mean_difference": 0.009523,
+          "metric": "macro_auprc",
+          "n_independent_authors": 10,
+          "outcome_branch": "descriptive_only_not_target_deletion_matched",
+          "right": {
+            "condition": "matched_random_deletion",
+            "predictor": "prior_plus_text"
+          },
+          "sample_standard_deviation": 0.021165,
+          "standard_error": 0.006693
+        },
+        "target_mask_minus_prior": {
+          "author_differences": {
+            "0": 0.015266,
+            "1": 0.024164,
+            "2": 0.061756,
+            "3": 0.043332,
+            "4": 0.014302,
+            "5": 0.152933,
+            "6": 0.01709,
+            "7": 0.02434,
+            "8": 0.044967,
+            "9": 0.025755
+          },
+          "ci95_high": 0.072268,
+          "ci95_low": 0.012513,
+          "ci95_method": "paired_student_t_95",
+          "interpretation_scope": "prespecified_directional_contrast",
+          "left": {
+            "condition": "target_label_masked",
+            "predictor": "prior_plus_text"
+          },
+          "mean_difference": 0.042391,
+          "metric": "macro_auprc",
+          "n_independent_authors": 10,
+          "outcome_branch": "target_mask_above_prior",
+          "right": {
+            "condition": "target_label_masked",
+            "predictor": "prior"
+          },
+          "sample_standard_deviation": 0.041769,
+          "standard_error": 0.013208
+        }
+      },
+      "row_count": 4823,
+      "source_file": "aspect_top1296_author10.json",
+      "supported_outcomes": [
+        "global_mask_above_prior",
+        "global_mask_below_matched_deletion",
+        "target_mask_above_prior"
+      ],
+      "target_field": "aspect_list",
+      "top_label_count": 1296
+    },
+    {
+      "descriptive_only_contrasts": [
+        "target_mask_minus_matched_deletion"
+      ],
+      "design": "audioset_positive_labels:16:25",
+      "display_name": "AudioSet labels (16)",
+      "inconclusive_contrasts": [
+        "global_mask_minus_matched_deletion"
+      ],
+      "independent_author_count": 10,
+      "key_metrics": {
+        "global_union_masked": 0.2393,
+        "matched_random_deletion": 0.2393,
+        "normalized_unmasked": 0.2393,
+        "prior": 0.106899,
+        "raw": 0.244451,
+        "target_label_masked": 0.2393
+      },
+      "min_label_count": 25,
+      "outcome_branches": {
+        "global_mask_minus_matched_deletion": "global_mask_vs_matched_deletion_inconclusive",
+        "global_mask_minus_prior": "global_mask_above_prior",
+        "target_mask_minus_matched_deletion": "descriptive_only_not_target_deletion_matched",
+        "target_mask_minus_prior": "target_mask_above_prior"
+      },
+      "paired_contrasts": {
+        "global_mask_minus_matched_deletion": {
+          "author_differences": {
+            "0": 0.0,
+            "1": 0.0,
+            "2": 0.0,
+            "3": 0.0,
+            "4": 0.0,
+            "5": 0.0,
+            "6": 0.0,
+            "7": 0.0,
+            "8": 0.0,
+            "9": 0.0
+          },
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "ci95_method": "paired_student_t_95",
+          "interpretation_scope": "prespecified_directional_contrast",
+          "left": {
+            "condition": "global_union_masked",
+            "predictor": "prior_plus_text"
+          },
+          "mean_difference": 0.0,
+          "metric": "macro_auprc",
+          "n_independent_authors": 10,
+          "outcome_branch": "global_mask_vs_matched_deletion_inconclusive",
+          "right": {
+            "condition": "matched_random_deletion",
+            "predictor": "prior_plus_text"
+          },
+          "sample_standard_deviation": 0.0,
+          "standard_error": 0.0
+        },
+        "global_mask_minus_prior": {
+          "author_differences": {
+            "0": 0.138174,
+            "1": 0.114602,
+            "2": 0.084188,
+            "3": 0.099654,
+            "4": 0.103627,
+            "5": 0.323966,
+            "6": 0.083323,
+            "7": 0.066983,
+            "8": 0.170786,
+            "9": 0.138701
+          },
+          "ci95_high": 0.185435,
+          "ci95_low": 0.079366,
+          "ci95_method": "paired_student_t_95",
+          "interpretation_scope": "prespecified_directional_contrast",
+          "left": {
+            "condition": "global_union_masked",
+            "predictor": "prior_plus_text"
+          },
+          "mean_difference": 0.1324,
+          "metric": "macro_auprc",
+          "n_independent_authors": 10,
+          "outcome_branch": "global_mask_above_prior",
+          "right": {
+            "condition": "global_union_masked",
+            "predictor": "prior"
+          },
+          "sample_standard_deviation": 0.074142,
+          "standard_error": 0.023446
+        },
+        "target_mask_minus_matched_deletion": {
+          "author_differences": {
+            "0": 0.0,
+            "1": 0.0,
+            "2": 0.0,
+            "3": 0.0,
+            "4": 0.0,
+            "5": 0.0,
+            "6": 0.0,
+            "7": 0.0,
+            "8": 0.0,
+            "9": 0.0
+          },
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "ci95_method": "paired_student_t_95",
+          "interpretation_scope": "descriptive_only; random deletion is count-matched to the global mask, not the target-specific mask",
+          "left": {
+            "condition": "target_label_masked",
+            "predictor": "prior_plus_text"
+          },
+          "mean_difference": 0.0,
+          "metric": "macro_auprc",
+          "n_independent_authors": 10,
+          "outcome_branch": "descriptive_only_not_target_deletion_matched",
+          "right": {
+            "condition": "matched_random_deletion",
+            "predictor": "prior_plus_text"
+          },
+          "sample_standard_deviation": 0.0,
+          "standard_error": 0.0
+        },
+        "target_mask_minus_prior": {
+          "author_differences": {
+            "0": 0.138174,
+            "1": 0.114602,
+            "2": 0.084188,
+            "3": 0.099654,
+            "4": 0.103627,
+            "5": 0.323966,
+            "6": 0.083323,
+            "7": 0.066983,
+            "8": 0.170786,
+            "9": 0.138701
+          },
+          "ci95_high": 0.185435,
+          "ci95_low": 0.079366,
+          "ci95_method": "paired_student_t_95",
+          "interpretation_scope": "prespecified_directional_contrast",
+          "left": {
+            "condition": "target_label_masked",
+            "predictor": "prior_plus_text"
+          },
+          "mean_difference": 0.1324,
+          "metric": "macro_auprc",
+          "n_independent_authors": 10,
+          "outcome_branch": "target_mask_above_prior",
+          "right": {
+            "condition": "target_label_masked",
+            "predictor": "prior"
+          },
+          "sample_standard_deviation": 0.074142,
+          "standard_error": 0.023446
+        }
+      },
+      "row_count": 4823,
+      "source_file": "audioset_top16_author10.json",
+      "supported_outcomes": [
+        "global_mask_above_prior",
+        "target_mask_above_prior"
+      ],
+      "target_field": "audioset_positive_labels",
+      "top_label_count": 16
+    },
+    {
+      "descriptive_only_contrasts": [
+        "target_mask_minus_matched_deletion"
+      ],
+      "design": "audioset_positive_labels:211:5",
+      "display_name": "AudioSet labels (211)",
+      "inconclusive_contrasts": [
+        "global_mask_minus_matched_deletion"
+      ],
+      "independent_author_count": 10,
+      "key_metrics": {
+        "global_union_masked": 0.106021,
+        "matched_random_deletion": 0.106021,
+        "normalized_unmasked": 0.106021,
+        "prior": 0.024921,
+        "raw": 0.10662,
+        "target_label_masked": 0.106021
+      },
+      "min_label_count": 5,
+      "outcome_branches": {
+        "global_mask_minus_matched_deletion": "global_mask_vs_matched_deletion_inconclusive",
+        "global_mask_minus_prior": "global_mask_above_prior",
+        "target_mask_minus_matched_deletion": "descriptive_only_not_target_deletion_matched",
+        "target_mask_minus_prior": "target_mask_above_prior"
+      },
+      "paired_contrasts": {
+        "global_mask_minus_matched_deletion": {
+          "author_differences": {
+            "0": 0.0,
+            "1": 0.0,
+            "2": 0.0,
+            "3": 0.0,
+            "4": 0.0,
+            "5": 0.0,
+            "6": 0.0,
+            "7": 0.0,
+            "8": 0.0,
+            "9": 0.0
+          },
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "ci95_method": "paired_student_t_95",
+          "interpretation_scope": "prespecified_directional_contrast",
+          "left": {
+            "condition": "global_union_masked",
+            "predictor": "prior_plus_text"
+          },
+          "mean_difference": 0.0,
+          "metric": "macro_auprc",
+          "n_independent_authors": 10,
+          "outcome_branch": "global_mask_vs_matched_deletion_inconclusive",
+          "right": {
+            "condition": "matched_random_deletion",
+            "predictor": "prior_plus_text"
+          },
+          "sample_standard_deviation": 0.0,
+          "standard_error": 0.0
+        },
+        "global_mask_minus_prior": {
+          "author_differences": {
+            "0": 0.048255,
+            "1": 0.049205,
+            "2": 0.091716,
+            "3": 0.072103,
+            "4": 0.034072,
+            "5": 0.259715,
+            "6": 0.031692,
+            "7": 0.044294,
+            "8": 0.128539,
+            "9": 0.05141
+          },
+          "ci95_high": 0.130734,
+          "ci95_low": 0.031466,
+          "ci95_method": "paired_student_t_95",
+          "interpretation_scope": "prespecified_directional_contrast",
+          "left": {
+            "condition": "global_union_masked",
+            "predictor": "prior_plus_text"
+          },
+          "mean_difference": 0.0811,
+          "metric": "macro_auprc",
+          "n_independent_authors": 10,
+          "outcome_branch": "global_mask_above_prior",
+          "right": {
+            "condition": "global_union_masked",
+            "predictor": "prior"
+          },
+          "sample_standard_deviation": 0.069388,
+          "standard_error": 0.021942
+        },
+        "target_mask_minus_matched_deletion": {
+          "author_differences": {
+            "0": 0.0,
+            "1": 0.0,
+            "2": 0.0,
+            "3": 0.0,
+            "4": 0.0,
+            "5": 0.0,
+            "6": 0.0,
+            "7": 0.0,
+            "8": 0.0,
+            "9": 0.0
+          },
+          "ci95_high": 0.0,
+          "ci95_low": 0.0,
+          "ci95_method": "paired_student_t_95",
+          "interpretation_scope": "descriptive_only; random deletion is count-matched to the global mask, not the target-specific mask",
+          "left": {
+            "condition": "target_label_masked",
+            "predictor": "prior_plus_text"
+          },
+          "mean_difference": 0.0,
+          "metric": "macro_auprc",
+          "n_independent_authors": 10,
+          "outcome_branch": "descriptive_only_not_target_deletion_matched",
+          "right": {
+            "condition": "matched_random_deletion",
+            "predictor": "prior_plus_text"
+          },
+          "sample_standard_deviation": 0.0,
+          "standard_error": 0.0
+        },
+        "target_mask_minus_prior": {
+          "author_differences": {
+            "0": 0.048255,
+            "1": 0.049205,
+            "2": 0.091716,
+            "3": 0.072103,
+            "4": 0.034072,
+            "5": 0.259715,
+            "6": 0.031692,
+            "7": 0.044294,
+            "8": 0.128539,
+            "9": 0.05141
+          },
+          "ci95_high": 0.130734,
+          "ci95_low": 0.031466,
+          "ci95_method": "paired_student_t_95",
+          "interpretation_scope": "prespecified_directional_contrast",
+          "left": {
+            "condition": "target_label_masked",
+            "predictor": "prior_plus_text"
+          },
+          "mean_difference": 0.0811,
+          "metric": "macro_auprc",
+          "n_independent_authors": 10,
+          "outcome_branch": "target_mask_above_prior",
+          "right": {
+            "condition": "target_label_masked",
+            "predictor": "prior"
+          },
+          "sample_standard_deviation": 0.069388,
+          "standard_error": 0.021942
+        }
+      },
+      "row_count": 4823,
+      "source_file": "audioset_top211_author10.json",
+      "supported_outcomes": [
+        "global_mask_above_prior",
+        "target_mask_above_prior"
+      ],
+      "target_field": "audioset_positive_labels",
+      "top_label_count": 211
+    }
+  ],
+  "schema_version": 1,
+  "selected_paper_branches": [],
+  "status": "complete",
+  "summary_implementation_sha256": "9488142f2e22bd83840dfab801a9aba802ebee99b8a78c5fa50195d4e23c217d",
+  "validation_errors": []
+}

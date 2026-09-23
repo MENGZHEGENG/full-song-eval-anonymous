@@ -1,0 +1,14 @@
+{
+  "album_count": 1300,
+  "albums_in_cross_fold_artist_groups": 132,
+  "classification_sha256": "ea3c707f279281fb75f88549c738a437579246d2f8d8bd0e8e8a0e5cdccf2d6c",
+  "cross_fold_artist_mbid_count": 41,
+  "distinct_artist_mbid_count": 1205,
+  "mapping_sha256": "2f19ee22f822ef953f0fd1adec5580be23a66bbf408408dd38be621baa22318d",
+  "metadata_member": "mard/mard_metadata.json",
+  "metadata_sha256": "6796e633c000c0f79492002a3ff29b7fa834f123acd310635af498d62e6f540a",
+  "protocol_sha256": "e4dc5f9d9279cda9270337d6da710cf674e0c27fb2062d76b4715f74034b7f55",
+  "schema_version": "full-song-eval-mard-artist-audit/v1",
+  "source_url": "https://mtg.upf.edu/system/files/projectsweb/mard.zip",
+  "status": "complete"
+}
