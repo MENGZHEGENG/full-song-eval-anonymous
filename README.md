@@ -209,6 +209,6 @@ PYTHONPATH=src python scripts/evaluate_independent_genre_target.py \
   --output reproduced/mtg_independent_genre_target.json
 ```
 
-Compare the fold contrasts and support counts with the packaged reports. The genre target is separate from the scorer's training labels but uses previously analyzed MTG tracks; the five-positive-block check is post-audit.
+The frozen primary configuration contains three taxonomies. A post-audit check includes the fourth clean genre taxonomy with the same command and `--config configs/mtg_independent_genre_target_all_taxonomies_sensitivity.json --output reproduced/mtg_independent_genre_target_all_taxonomies_sensitivity.json`. Compare both fold contrasts and support counts with the packaged reports. The genre target is separate from the scorer's training labels but uses previously analyzed MTG tracks; the five-positive-block check is also post-audit.
 
 `reports/target_masked_manuscript_summary.json` records all ten fold-level contrasts used in the manuscript table, including the matched-deletion checks. The reported Student-t intervals summarize the ten fixed held-out-group differences; training sets overlap.

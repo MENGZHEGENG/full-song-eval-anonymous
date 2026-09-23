@@ -1,0 +1,48 @@
+{
+  "claim_scope": "label-count sensitivity of local CPU MusicCaps frozen-encoder metadata sweeps; not listener preference or perceptual-quality evidence",
+  "known_blockers": [],
+  "listener_preference_claim_allowed": false,
+  "missing_paths": [],
+  "recommended_next_action": "Use the label-scale degradation as no-new-human-eval evidence that surface-form shortcuts do not become semantic song evaluators.",
+  "scale_count": 2,
+  "scales": [
+    {
+      "label_count": 32,
+      "masked_micro_f1_mean": 0.094085,
+      "masked_minus_prior_micro_f1_mean": -0.071854,
+      "masked_minus_shuffled_micro_f1_mean": 0.028413,
+      "model_count": 8,
+      "prior_micro_f1_mean": 0.165938,
+      "raw_micro_f1_mean": 0.230458,
+      "raw_minus_masked_micro_f1_mean": 0.136374,
+      "result_count": 24,
+      "seed_count": 3,
+      "semantic_robustness_ready_count": 0,
+      "shuffled_micro_f1_mean": 0.065672,
+      "status": "pass",
+      "summary_json": "reports/musiccaps_hf_top32_sweep_summary.json",
+      "surface_form_sensitivity_count": 24
+    },
+    {
+      "label_count": 64,
+      "masked_micro_f1_delta_vs_previous": -0.025397,
+      "masked_micro_f1_mean": 0.068688,
+      "masked_minus_prior_micro_f1_mean": -0.085826,
+      "masked_minus_shuffled_micro_f1_mean": 0.02023,
+      "model_count": 8,
+      "prior_micro_f1_delta_vs_previous": -0.011424,
+      "prior_micro_f1_mean": 0.154514,
+      "raw_micro_f1_mean": 0.213698,
+      "raw_minus_masked_micro_f1_mean": 0.14501,
+      "result_count": 24,
+      "seed_count": 3,
+      "semantic_robustness_ready_count": 0,
+      "shuffled_micro_f1_mean": 0.048458,
+      "status": "pass",
+      "summary_json": "reports/musiccaps_hf_top64_sweep_summary.json",
+      "surface_form_sensitivity_count": 24
+    }
+  ],
+  "status": "pass",
+  "unresolved_scales": []
+}
